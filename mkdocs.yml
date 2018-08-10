@@ -13,4 +13,5 @@ nav:
     - About:
         - Release Notes: about/release-notes.md
         - Contributing: about/contributing.md
+        - ReadMe: README.md
 theme: readthedocs
