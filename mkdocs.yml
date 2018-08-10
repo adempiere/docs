@@ -1,4 +1,11 @@
 site_name: ADempiere Docs
-pages:
-  - Home: index.md
+nav:
+    - Home: index.md
+    - Developer Guide:
+        - How to Contribute: developer-guide/how-to-contribute.md
+    - ADempiere Foundation:
+        - Statute: foundation-guide/statute.md
+    - About:
+        - Release Notes: about/release-notes.md
+        - Contributing: about/contributing.md
 theme: readthedocs
