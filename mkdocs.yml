@@ -2,6 +2,10 @@ site_name: ADempiere Docs
 site_url: http://docs.adempiere.io
 site_description: Project documentation for ADempiere.
 site_author: ADempiere Team
+
+repo_url: https://github.com/adempiere/docs/
+edit_uri: ""
+
 nav:
     - Home: index.md
     - Developer Guide:

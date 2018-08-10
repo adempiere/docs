@@ -1,4 +1,4 @@
-![alt_text](images/ADempiere-Debug.png "image_tooltip")
+![ADempiere Debug](images/ADempiere-Debug.png "ADmpiere Debug")
 
     ADempiere Project Repository 
 
