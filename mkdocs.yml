@@ -7,7 +7,7 @@ repo_url: https://github.com/adempiere/docs/
 edit_uri: ""
 
 nav:
-    - Home: index.md
+    - Home: about/index.md
     - Developer Guide:
         - How to Contribute: developer-guide/how-to-contribute.md
         - Adempiere Project Repository: developer-guide/project-repository.md
