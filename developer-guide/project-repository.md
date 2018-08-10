@@ -38,7 +38,7 @@
 
 
     ```
-    # Navigate to the parent directory where the repository will be placed and type the following command
+- Navigate to the parent directory where the repository will be placed and type the following command
 C:\dev\repos\github>git clone [url]
     ```
 
@@ -49,7 +49,7 @@ C:\dev\repos\github>git clone [url]
 
 
     ```
-    # Navigate to the parent directory where the repository will be placed and type the following command
+- Navigate to the parent directory where the repository will be placed and type the following command
 C:\dev\repos\github>git clone [url] <optional name>
     ```
 
@@ -61,23 +61,23 @@ C:\dev\repos\github>git clone [url] <optional name>
 
 
     ```
-    # Create a directory for the repo and change to it
+- Create a directory for the repo and change to it
 C:\dev\repos\github>mkdir ADempiere
 
 C:\dev\repos\github>cd ADempiere
 
-## Initialize the repository
+- Initialize the repository
 C:\dev\repos\github\ADempiere>git init
 Initialized empty Git repository in C:/dev/repos/github/ADempiere/.git/
 
-## The default reference to the source repository in a clone is "origin".  Clone your
-## personal fork from your account <account>.
+- The default reference to the source repository in a clone is "origin".  Clone your
+- personal fork from your account <account>.
 C:\dev\repos\github\ADempiere>git remote add origin https://github.com/<account>/ADempiere.git
 
-## Fetch the contents.
+- Fetch the contents.
 C:\dev\repos\github\ADempiere>git fetch
 
-## Update to the current master branch - for example
+- Update to the current master branch - for example
 C:\dev\repos\github\ADempiere>git reset --hard origin/master
 
 
