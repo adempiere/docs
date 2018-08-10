@@ -20,3 +20,15 @@ For more information about using git request-pull, look at the [Git documentatio
 You should wait.
 
 You can check if your pull request is assigned to contributors. If you not have a reply or comment on pull request , so be patient. ADempiere developers are generally very busy people, so it may take a few weeks before your patch is looked at.
+
+## **How to test a existing pull request?**
+
+Is very easy, just need git for your test:
+ - Clone ADempiere repository
+ <pre>git clone</pre>
+ - Go to adempiere folder and get with fetch 
+<pre>git fetch origin pull/pull-request-number/head:local-branch-name</pre>
+ - switch to fetched branch
+
+Example: I want test pull request [1854](https://github.com/adempiere/adempiere/pull/1854), the command can be:
+<pre>git fetch origin pull/1854/head:pull-#1854</pre>
