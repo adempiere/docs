@@ -1,10 +1,15 @@
 site_name: ADempiere Docs
+site_url: http://docs.adempiere.io
+site_description: Project documentation for ADempiere.
+site_author: ADempiere Team
 nav:
     - Home: index.md
     - Developer Guide:
         - How to Contribute: developer-guide/how-to-contribute.md
+        - Adempiere Project Repository: developer-guide/project-repository.md
     - ADempiere Foundation:
         - Statute: foundation-guide/statute.md
+        - Basic Rules: foundation-guide/basic-rules.md
     - About:
         - Release Notes: about/release-notes.md
         - Contributing: about/contributing.md
