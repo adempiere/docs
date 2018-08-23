@@ -129,7 +129,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'ADempiereDocs.tex', 'ADempiereDocs Documentation',
-     'Raul Muñoz', 'manual'),
+     'Raul Munoz', 'manual'),
 ]
 
 
