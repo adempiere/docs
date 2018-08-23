@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ADempiereDocs'
-copyright = '2018, Raul Muñoz'
-author = 'Raul Muñoz'
+copyright = '2018, Raul Munoz'
+author = 'Raul Munoz'
 
 # The short X.Y version
 version = ''
