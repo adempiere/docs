@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ADempiereDocs'
-copyright = '2018, Raul Munoz'
+copyright = '2018, E.R.P. Consultores y Asociados, C.A'
 author = 'Raul Munoz'
 
 # The short X.Y version
