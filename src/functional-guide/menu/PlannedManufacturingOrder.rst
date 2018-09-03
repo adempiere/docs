@@ -1,0 +1,25 @@
+
+.. _menu-plannedmanufacturingorder:
+
+===========================
+Planned Manufacturing Order
+===========================
+
+
+Menu Path
+=========
+
+
+* Material Management
+
+ * Production Light
+
+  * Planned Manufacturing Order
+
+Menu Type
+---------
+\ **Window**\ 
+
+
+.. seealso::
+    :ref:`window-plannedmanufacturingorder`

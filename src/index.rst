@@ -1,3 +1,4 @@
+=======================
 ADempiere Documentation
 =======================
 
@@ -12,11 +13,9 @@ contained in the wiki while enhancing the readers experience.
 
 The collection includes a number of books covering the main topics of:
 
--  User Guides
--  Knowledge Bases
--  How To Guides
--  System Administration and Configuration
--  Development and Customization
+.. toctree::
+
+    functional-guide
 
 More References
 ===============
