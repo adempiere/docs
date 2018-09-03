@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ADempiereDocs'
-copyright = '2018, E.R.P. Consultores y Asociados, C.A'
+project = 'adempiere-docs'
+copyright = '2018, ADempiere ERP'
 author = 'Raul Munoz'
 
 # The short X.Y version
@@ -42,7 +42,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_statictemplates']
+#templates_path = ['_statictemplates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -85,7 +85,7 @@ html_theme = 'default'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_staticstatic']
+#html_static_path = ['_staticstatic']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -123,6 +123,9 @@ latex_elements = {
     #
     # 'figure_align': 'htbp',
 }
+
+
+locale_dirs = ['locale/']
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
