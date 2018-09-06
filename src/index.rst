@@ -15,7 +15,7 @@ The collection includes a number of books covering the main topics of:
 
 .. toctree::
 
-    functional-guide
+    functional-guide/index
 
 More References
 ===============
