@@ -11,4 +11,5 @@ The collection includes a number of books covering the main topics of:
 
 .. toctree::
 
-    process-ad_changelog_custom
+    smart-browse-activitiesprogresscontrol
+    smart-browse-approvalplanneddistributionorders
