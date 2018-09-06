@@ -17,6 +17,6 @@ The collection includes a number of books covering the main topics of:
 
 .. toctree::
 
-    menu
-    window
-    process
+    menu/index
+    window/index
+    process/index
