@@ -1,5 +1,5 @@
 
-.. _form-pos:
+.. _form/form-pos:
 
 ===
 POS

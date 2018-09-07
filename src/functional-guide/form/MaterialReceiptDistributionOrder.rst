@@ -1,5 +1,5 @@
 
-.. _form-materialreceiptdistributionorder:
+.. _form/form-materialreceiptdistributionorder:
 
 ===================================
 Material Receipt Distribution Order

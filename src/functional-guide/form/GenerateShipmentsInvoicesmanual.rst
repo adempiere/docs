@@ -1,5 +1,5 @@
 
-.. _form-generateshipmentsinvoicesmanual:
+.. _form/form-generateshipmentsinvoicesmanual:
 
 ======================================
 Generate Shipments & Invoices (manual)

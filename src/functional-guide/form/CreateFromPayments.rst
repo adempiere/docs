@@ -1,5 +1,5 @@
 
-.. _form-createfrompayments:
+.. _form/form-createfrompayments:
 
 ====================
 Create From Payments

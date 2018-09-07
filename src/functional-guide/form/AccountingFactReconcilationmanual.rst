@@ -1,5 +1,5 @@
 
-.. _form-accountingfactreconcilationmanual:
+.. _form/form-accountingfactreconcilationmanual:
 
 ======================================
 Accounting Fact Reconcilation (manual)

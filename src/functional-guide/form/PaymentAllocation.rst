@@ -1,5 +1,5 @@
 
-.. _form-paymentallocation:
+.. _form/form-paymentallocation:
 
 ==================
 Payment Allocation

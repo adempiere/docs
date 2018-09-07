@@ -1,5 +1,5 @@
 
-.. _form-productattributegrid:
+.. _form/form-productattributegrid:
 
 ======================
 Product Attribute Grid

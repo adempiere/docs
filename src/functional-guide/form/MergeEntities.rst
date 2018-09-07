@@ -1,5 +1,5 @@
 
-.. _form-mergeentities:
+.. _form/form-mergeentities:
 
 ==============
 Merge Entities

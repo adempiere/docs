@@ -1,5 +1,5 @@
 
-.. _form-manufacturingworkfloweditor:
+.. _form/form-manufacturingworkfloweditor:
 
 =============================
 Manufacturing Workflow Editor

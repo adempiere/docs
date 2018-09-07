@@ -1,5 +1,5 @@
 
-.. _form-stocktake:
+.. _form/form-stocktake:
 
 =========
 Stocktake

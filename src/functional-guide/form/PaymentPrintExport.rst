@@ -1,5 +1,5 @@
 
-.. _form-paymentprintexport:
+.. _form/form-paymentprintexport:
 
 ====================
 Payment Print/Export

@@ -1,5 +1,5 @@
 
-.. _form-workfloweditor:
+.. _form/form-workfloweditor:
 
 ===============
 Workflow Editor

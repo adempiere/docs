@@ -1,5 +1,5 @@
 
-.. _form-orderreceiptissue:
+.. _form/form-orderreceiptissue:
 
 =====================
 Order Receipt & Issue

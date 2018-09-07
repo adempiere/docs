@@ -1,5 +1,5 @@
 
-.. _form-bomviewer:
+.. _form/form-bomviewer:
 
 ==========
 BOM Viewer

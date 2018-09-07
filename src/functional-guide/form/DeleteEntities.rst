@@ -1,5 +1,5 @@
 
-.. _form-deleteentities:
+.. _form/form-deleteentities:
 
 ===============
 Delete Entities

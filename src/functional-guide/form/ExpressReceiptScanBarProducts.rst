@@ -1,5 +1,5 @@
 
-.. _form-expressreceiptscanbarproducts:
+.. _form/form-expressreceiptscanbarproducts:
 
 ================================
 Express Receipt ScanBar Products

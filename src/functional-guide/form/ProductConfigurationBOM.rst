@@ -1,5 +1,5 @@
 
-.. _form-productconfigurationbom:
+.. _form/form-productconfigurationbom:
 
 =========================
 Product Configuration BOM
