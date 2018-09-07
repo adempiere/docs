@@ -2,6 +2,10 @@
 .. _functional-guide/form:
 
 
+=====
+Forms
+=====
+
 .. toctree::
     :maxdepth: 1
     :numbered:
