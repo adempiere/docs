@@ -6,7 +6,7 @@
     :maxdepth: 3
     :numbered:
 
-    generateshipmentsinvoicesmanual
+    functional-guide/form/generateshipmentsinvoicesmanual
     workfloweditor
     workflowactivities
     generateinvoicesmanual
