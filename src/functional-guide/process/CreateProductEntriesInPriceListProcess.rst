@@ -1,0 +1,7 @@
+
+.. _process-createproductentriesinpricelistprocess:
+
+===============================
+CreateProductEntriesInPriceList
+===============================
+

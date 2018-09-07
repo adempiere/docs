@@ -20,3 +20,5 @@ The collection includes a number of books covering the main topics of:
     menu/index
     window/index
     process/index
+    form/index
+    smart-browse/index

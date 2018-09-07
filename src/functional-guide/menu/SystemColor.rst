@@ -1,0 +1,31 @@
+
+.. _menu-systemcolor:
+
+============
+System Color
+============
+
+Maintain System Colors
+
+Menu Path
+=========
+
+
+* System Admin
+
+ * General Rules
+
+  * System Rules
+
+   * System Color
+
+Menu Type
+---------
+\ **Window**\ 
+
+.. note::
+    The Sales Transaction checkbox indicates if this item is a Sales Transaction.
+
+
+.. seealso::
+    :ref:`window-systemcolor`

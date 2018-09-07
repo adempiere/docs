@@ -1,0 +1,26 @@
+
+.. _menu-createcostingrecords:
+
+======================
+Create Costing Records
+======================
+
+Create Costing Records
+
+Menu Path
+=========
+
+
+* Performance Analysis
+
+ * Costing
+
+  * Create Costing Records
+
+Menu Type
+---------
+\ **Process**\ 
+
+
+.. seealso::
+    :ref:`process-m_costcreate`

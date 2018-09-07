@@ -22,7 +22,7 @@ It is possible to change a Manufacturing Order into a Material Requisition by us
 
 
 .. seealso::
-    :ref:`window-mrp_distribution_order_approval`
+    :ref:`process-mrp_distribution_order_approval`
 
 
 Fields
