@@ -1,5 +1,5 @@
 
-.. _functional-guide/form/bomdrop:
+.. _form/bomdrop:
 
 ========
 BOM Drop
