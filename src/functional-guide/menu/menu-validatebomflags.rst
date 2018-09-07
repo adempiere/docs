@@ -1,0 +1,26 @@
+
+.. _functional-guide/menu/menu-validatebomflags:
+
+==================
+Validate BOM Flags
+==================
+
+Validate BOM Flags
+
+Menu Path
+=========
+
+
+* Material Management
+
+ * Production Light
+
+  * Validate BOM Flags
+
+Menu Type
+---------
+\ **Process**\ 
+
+
+.. seealso::
+    :ref:`functional-guideprocessprocessprocess-m_product_bom_flag`

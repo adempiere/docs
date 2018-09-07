@@ -1,0 +1,21 @@
+
+.. _functional-guide/menu/menu-rfqunanswered:
+
+==============
+RfQ Unanswered
+==============
+
+Outstanding RfQ Responses
+
+Menu Path
+=========
+
+
+* Requisition-to-Invoice
+
+ * RfQ Unanswered
+
+Menu Type
+---------
+\ **Report**\ 
+

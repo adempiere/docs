@@ -1,0 +1,23 @@
+
+.. _functional-guide/menu/menu-monthlyinvoice:
+
+===============
+Monthly Invoice
+===============
+
+Invoice Report per Month
+
+Menu Path
+=========
+
+
+* Quote-to-Invoice
+
+ * Invoice Inquiry
+
+  * Monthly Invoice
+
+Menu Type
+---------
+\ **Report**\ 
+

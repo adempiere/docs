@@ -1,0 +1,15 @@
+
+.. _functional-guide/process/process-a_build_depr_forefile:
+
+================================
+Build Depreciation Forecast File
+================================
+
+
+Parameters
+==========
+
+Delete old/existing records
+---------------------------
+\ **Description**\ 
+ \ *Otherwise records will be added*\ 
