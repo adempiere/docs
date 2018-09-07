@@ -25,4 +25,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindow-accessaudit`
+    :ref:`functional-guide/window/window-accessaudit`
