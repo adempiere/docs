@@ -1,5 +1,5 @@
 
-.. _form/form-plannedorderapproval:
+.. _functional-guide/form/plannedorderapproval:
 
 ======================
 Planned Order Approval

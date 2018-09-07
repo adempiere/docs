@@ -1,5 +1,5 @@
 
-.. _form/form-mergeentities:
+.. _functional-guide/form/mergeentities:
 
 ==============
 Merge Entities

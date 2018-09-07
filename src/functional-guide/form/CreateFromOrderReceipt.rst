@@ -1,5 +1,5 @@
 
-.. _form/form-createfromorderreceipt:
+.. _functional-guide/form/createfromorderreceipt:
 
 =========================
 Create From Order/Receipt

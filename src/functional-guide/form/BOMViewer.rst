@@ -1,5 +1,5 @@
 
-.. _form/form-bomviewer:
+.. _functional-guide/form/bomviewer:
 
 ==========
 BOM Viewer

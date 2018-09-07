@@ -1,5 +1,5 @@
 
-.. _form/form-trialbalancedrillablereport:
+.. _functional-guide/form/trialbalancedrillablereport:
 
 ==============================
 Trial Balance Drillable Report

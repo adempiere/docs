@@ -1,5 +1,5 @@
 
-.. _form/form-matchingpo-receipt-invoice:
+.. _functional-guide/form/matchingpo-receipt-invoice:
 
 ===========================
 Matching PO-Receipt-Invoice

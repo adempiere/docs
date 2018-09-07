@@ -1,5 +1,5 @@
 
-.. _form/form-mrpinfo:
+.. _functional-guide/form/mrpinfo:
 
 ========
 MRP Info

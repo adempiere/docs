@@ -1,5 +1,5 @@
 
-.. _form/form-crpinfo:
+.. _functional-guide/form/crpinfo:
 
 ========
 CRP Info

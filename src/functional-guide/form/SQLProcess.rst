@@ -1,5 +1,5 @@
 
-.. _form/form-sqlprocess:
+.. _functional-guide/form/sqlprocess:
 
 ===========
 SQL Process

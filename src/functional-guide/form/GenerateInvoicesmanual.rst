@@ -1,5 +1,5 @@
 
-.. _form/form-generateinvoicesmanual:
+.. _functional-guide/form/generateinvoicesmanual:
 
 ==========================
 Generate Invoices (manual)

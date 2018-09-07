@@ -1,5 +1,5 @@
 
-.. _form/form-bomformulainfo:
+.. _functional-guide/form/bomformulainfo:
 
 ==================
 BOM & Formula Info

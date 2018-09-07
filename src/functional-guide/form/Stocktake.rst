@@ -1,5 +1,5 @@
 
-.. _form/form-stocktake:
+.. _functional-guide/form/stocktake:
 
 =========
 Stocktake

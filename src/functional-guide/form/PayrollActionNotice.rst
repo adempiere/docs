@@ -1,5 +1,5 @@
 
-.. _form/form-payrollactionnotice:
+.. _functional-guide/form/payrollactionnotice:
 
 =====================
 Payroll Action Notice

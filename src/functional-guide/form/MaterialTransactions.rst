@@ -1,5 +1,5 @@
 
-.. _form/form-materialtransactions:
+.. _functional-guide/form/materialtransactions:
 
 =====================
 Material Transactions

@@ -1,5 +1,5 @@
 
-.. _form/form-generateshipmentsmanual:
+.. _functional-guide/form/generateshipmentsmanual:
 
 ===========================
 Generate Shipments (manual)

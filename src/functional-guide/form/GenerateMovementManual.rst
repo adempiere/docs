@@ -1,5 +1,5 @@
 
-.. _form/form-generatemovementmanual:
+.. _functional-guide/form/generatemovementmanual:
 
 ========================
 Generate Movement Manual

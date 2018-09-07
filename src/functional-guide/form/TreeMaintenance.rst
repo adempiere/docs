@@ -1,5 +1,5 @@
 
-.. _form/form-treemaintenance:
+.. _functional-guide/form/treemaintenance:
 
 ================
 Tree Maintenance

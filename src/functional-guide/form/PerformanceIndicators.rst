@@ -1,5 +1,5 @@
 
-.. _form/form-performanceindicators:
+.. _functional-guide/form/performanceindicators:
 
 ======================
 Performance Indicators

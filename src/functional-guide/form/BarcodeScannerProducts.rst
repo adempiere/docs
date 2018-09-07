@@ -1,5 +1,5 @@
 
-.. _form/form-barcodescannerproducts:
+.. _functional-guide/form/barcodescannerproducts:
 
 ========================
 Barcode Scanner Products

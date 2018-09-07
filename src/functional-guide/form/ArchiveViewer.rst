@@ -1,5 +1,5 @@
 
-.. _form/form-archiveviewer:
+.. _functional-guide/form/archiveviewer:
 
 ==============
 Archive Viewer

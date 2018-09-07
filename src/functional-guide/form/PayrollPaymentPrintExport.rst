@@ -1,5 +1,5 @@
 
-.. _form/form-payrollpaymentprintexport:
+.. _functional-guide/form/payrollpaymentprintexport:
 
 ============================
 Payroll Payment Print/Export

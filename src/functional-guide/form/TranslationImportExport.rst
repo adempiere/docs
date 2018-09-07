@@ -1,5 +1,5 @@
 
-.. _form/form-translationimportexport:
+.. _functional-guide/form/translationimportexport:
 
 =========================
 Translation Import/Export

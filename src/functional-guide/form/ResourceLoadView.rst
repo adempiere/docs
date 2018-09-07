@@ -1,5 +1,5 @@
 
-.. _form/form-resourceloadview:
+.. _functional-guide/form/resourceloadview:
 
 ==================
 Resource Load View

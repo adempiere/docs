@@ -1,5 +1,5 @@
 
-.. _form/form-workflowactivities:
+.. _functional-guide/form/workflowactivities:
 
 ===================
 Workflow Activities

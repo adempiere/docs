@@ -1,5 +1,5 @@
 
-.. _form/form-generatecharges:
+.. _functional-guide/form/generatecharges:
 
 ================
 Generate Charges

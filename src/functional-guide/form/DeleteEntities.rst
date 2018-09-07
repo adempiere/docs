@@ -1,5 +1,5 @@
 
-.. _form/form-deleteentities:
+.. _functional-guide/form/deleteentities:
 
 ===============
 Delete Entities
