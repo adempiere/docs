@@ -1,5 +1,5 @@
 
-.. _functional-guide/form
+.. _functional-guide/form:
 
 
 .. toctree::
