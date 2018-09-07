@@ -16,7 +16,7 @@ The collection includes a number of books covering the main topics of:
 Table of Contents
 =================
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :numbered:
     
     functional-guide/index

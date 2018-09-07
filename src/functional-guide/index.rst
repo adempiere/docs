@@ -3,7 +3,7 @@ Functional User Guide
 =======================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :numbered:
     
     menu/index
