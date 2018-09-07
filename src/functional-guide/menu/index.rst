@@ -1,3 +1,7 @@
+
+.. _menu
+
+
 .. toctree::
     :maxdepth: 3
     :numbered:

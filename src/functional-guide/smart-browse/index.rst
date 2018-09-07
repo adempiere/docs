@@ -1,3 +1,7 @@
+
+.. _smart-browse
+
+
 .. toctree::
     :maxdepth: 3
     :numbered:

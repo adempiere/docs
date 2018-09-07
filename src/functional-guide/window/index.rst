@@ -1,3 +1,7 @@
+
+.. _window
+
+
 .. toctree::
     :maxdepth: 3
     :numbered:
