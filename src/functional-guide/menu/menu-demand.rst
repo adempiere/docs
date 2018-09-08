@@ -24,4 +24,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-demand`
+    :ref:`functional-guide/window/window-demand`

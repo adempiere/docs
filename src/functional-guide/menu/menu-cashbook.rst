@@ -23,4 +23,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-cashbook`
+    :ref:`functional-guide/window/window-cashbook`

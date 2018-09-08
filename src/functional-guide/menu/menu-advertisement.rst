@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-advertisement`
+    :ref:`functional-guide/window/window-advertisement`

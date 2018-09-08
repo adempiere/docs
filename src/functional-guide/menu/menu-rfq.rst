@@ -21,4 +21,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-rfq`
+    :ref:`functional-guide/window/window-rfq`

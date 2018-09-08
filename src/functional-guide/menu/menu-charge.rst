@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-charge`
+    :ref:`functional-guide/window/window-charge`

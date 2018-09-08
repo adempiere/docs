@@ -25,4 +25,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-race`
+    :ref:`functional-guide/window/window-race`

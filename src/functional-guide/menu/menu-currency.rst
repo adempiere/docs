@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-currency`
+    :ref:`functional-guide/window/window-currency`

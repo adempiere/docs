@@ -23,4 +23,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-lot`
+    :ref:`functional-guide/window/window-lot`

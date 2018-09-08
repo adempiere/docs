@@ -21,4 +21,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-production`
+    :ref:`functional-guide/window/window-production`

@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-withholding`
+    :ref:`functional-guide/window/window-withholding`

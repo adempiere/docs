@@ -23,4 +23,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-chart`
+    :ref:`functional-guide/window/window-chart`

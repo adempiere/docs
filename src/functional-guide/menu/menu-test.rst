@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-test`
+    :ref:`functional-guide/window/window-test`

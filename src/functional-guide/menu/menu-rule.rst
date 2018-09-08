@@ -20,4 +20,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-rule`
+    :ref:`functional-guide/window/window-rule`

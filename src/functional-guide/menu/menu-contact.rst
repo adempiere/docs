@@ -21,4 +21,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-contact`
+    :ref:`functional-guide/window/window-contact`

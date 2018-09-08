@@ -24,4 +24,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-element`
+    :ref:`functional-guide/window/window-element`

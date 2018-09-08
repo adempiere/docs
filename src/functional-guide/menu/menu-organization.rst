@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-organization`
+    :ref:`functional-guide/window/window-organization`

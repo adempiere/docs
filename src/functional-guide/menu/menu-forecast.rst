@@ -25,4 +25,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-forecast`
+    :ref:`functional-guide/window/window-forecast`

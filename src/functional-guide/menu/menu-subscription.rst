@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-subscription`
+    :ref:`functional-guide/window/window-subscription`

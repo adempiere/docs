@@ -28,4 +28,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-user`
+    :ref:`functional-guide/window/window-user`

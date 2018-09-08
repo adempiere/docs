@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-bank`
+    :ref:`functional-guide/window/window-bank`

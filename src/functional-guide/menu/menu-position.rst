@@ -21,4 +21,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-position`
+    :ref:`functional-guide/window/window-position`

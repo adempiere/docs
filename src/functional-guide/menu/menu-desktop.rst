@@ -24,4 +24,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-desktop`
+    :ref:`functional-guide/window/window-desktop`

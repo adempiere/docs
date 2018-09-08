@@ -21,4 +21,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-migration`
+    :ref:`functional-guide/window/window-migration`

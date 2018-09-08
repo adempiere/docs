@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-promotion`
+    :ref:`functional-guide/window/window-promotion`

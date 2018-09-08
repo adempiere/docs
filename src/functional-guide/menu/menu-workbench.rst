@@ -24,4 +24,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-workbench`
+    :ref:`functional-guide/window/window-workbench`

@@ -28,4 +28,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-tree`
+    :ref:`functional-guide/window/window-tree`

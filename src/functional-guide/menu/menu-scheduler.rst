@@ -28,4 +28,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-scheduler`
+    :ref:`functional-guide/window/window-scheduler`

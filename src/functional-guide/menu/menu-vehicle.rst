@@ -23,4 +23,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-vehicle`
+    :ref:`functional-guide/window/window-vehicle`

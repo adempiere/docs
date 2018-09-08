@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-registration`
+    :ref:`functional-guide/window/window-registration`

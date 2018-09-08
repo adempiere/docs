@@ -28,4 +28,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-attachment`
+    :ref:`functional-guide/window/window-attachment`

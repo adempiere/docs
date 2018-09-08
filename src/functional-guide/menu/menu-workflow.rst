@@ -28,4 +28,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-workflow`
+    :ref:`functional-guide/window/window-workflow`

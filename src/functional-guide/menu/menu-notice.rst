@@ -28,4 +28,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-notice`
+    :ref:`functional-guide/window/window-notice`

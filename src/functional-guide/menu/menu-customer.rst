@@ -23,4 +23,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-customer`
+    :ref:`functional-guide/window/window-customer`

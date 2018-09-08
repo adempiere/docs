@@ -24,4 +24,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-reference`
+    :ref:`functional-guide/window/window-reference`

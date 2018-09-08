@@ -25,4 +25,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-degree`
+    :ref:`functional-guide/window/window-degree`

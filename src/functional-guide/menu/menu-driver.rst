@@ -23,4 +23,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-driver`
+    :ref:`functional-guide/window/window-driver`

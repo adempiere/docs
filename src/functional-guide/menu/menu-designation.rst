@@ -25,4 +25,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-designation`
+    :ref:`functional-guide/window/window-designation`

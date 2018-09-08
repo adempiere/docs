@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-alert`
+    :ref:`functional-guide/window/window-alert`

@@ -28,4 +28,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-replication`
+    :ref:`functional-guide/window/window-replication`

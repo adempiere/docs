@@ -23,4 +23,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-shipper`
+    :ref:`functional-guide/window/window-shipper`

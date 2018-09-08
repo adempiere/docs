@@ -28,4 +28,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-preference`
+    :ref:`functional-guide/window/window-preference`

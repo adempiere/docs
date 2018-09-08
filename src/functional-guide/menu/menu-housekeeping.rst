@@ -24,4 +24,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guideprocessprocessprocess-housekeepingpara`
+    :ref:`functional-guide/process/process-housekeepingpara`

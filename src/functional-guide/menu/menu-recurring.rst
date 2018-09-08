@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-recurring`
+    :ref:`functional-guide/window/window-recurring`

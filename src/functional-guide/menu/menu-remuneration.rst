@@ -23,4 +23,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-remuneration`
+    :ref:`functional-guide/window/window-remuneration`

@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-counter`
+    :ref:`functional-guide/window/window-counter`

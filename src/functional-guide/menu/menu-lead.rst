@@ -21,4 +21,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-lead`
+    :ref:`functional-guide/window/window-lead`

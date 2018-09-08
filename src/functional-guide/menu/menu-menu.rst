@@ -28,4 +28,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-menu`
+    :ref:`functional-guide/window/window-menu`

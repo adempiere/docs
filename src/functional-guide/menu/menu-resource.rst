@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-resource`
+    :ref:`functional-guide/window/window-resource`

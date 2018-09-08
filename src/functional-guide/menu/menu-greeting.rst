@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-greeting`
+    :ref:`functional-guide/window/window-greeting`

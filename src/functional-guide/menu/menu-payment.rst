@@ -24,4 +24,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-payment`
+    :ref:`functional-guide/window/window-payment`

@@ -21,4 +21,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guideprocessprocessprocess-yearendclosing`
+    :ref:`functional-guide/process/process-yearendclosing`

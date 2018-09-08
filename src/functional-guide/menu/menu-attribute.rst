@@ -23,4 +23,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-attribute`
+    :ref:`functional-guide/window/window-attribute`

@@ -26,4 +26,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-dunning`
+    :ref:`functional-guide/window/window-dunning`

@@ -25,4 +25,4 @@ Menu Type
 
 
 .. seealso::
-    :ref:`functional-guidewindowwindowwindow-grade`
+    :ref:`functional-guide/window/window-grade`
