@@ -11,13 +11,11 @@ Menu Path
 =========
 
 
-* Manufacturing Management
+* Material Management
 
- * Engineering Management
+ * Production Light
 
-  * Bill of Material & Formulas
-
-   * Simulated Pick List
+  * Simulated Pick List
 
 Menu Type
 ---------
