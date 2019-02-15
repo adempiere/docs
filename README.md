@@ -7,6 +7,7 @@ This is a collection of key documentation gathered from the ADempiere wiki and t
 The collection includes a number of books covering the main topics of:
 
 * User Guides
+* Functional Guide (**Generated automatically from ADempiere**)
 * Knowledge Bases
 * How To Guides
 * System Administration and Configuration
