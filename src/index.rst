@@ -19,22 +19,13 @@ Table of Contents
     :maxdepth: 2
     :numbered:
     
-    functional-guide/index
+    general/procedures/index
 
 More References
 ===============
 
--  The official page is in: http://www.adempiere.net
--  The official Wiki is in: http://wiki.adempiere.net
--  The installation steps are in:
-   http://wiki.adempiere.net/Installation_Steps
--  For download and debug the source see:
-   http://adempiere.net/web/guest/sourcecode
--  For see a demo see: http://adempiere.net/web/guest/demo
--  You can see the business process on:
-   http://adempiere.net/web/guest/business-process
--  If you need report a bug see:
-   https://github.com/adempiere/adempiere/issues
+-  The official page is in: http://erpya.com
+-  Si desea reportar un error o una mejora puede hacerlo en: https://github.com/erpcya/docs/issues
 
 |Gitter|
 
