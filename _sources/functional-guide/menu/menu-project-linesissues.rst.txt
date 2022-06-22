@@ -1,0 +1,27 @@
+
+.. _functional-guide/menu/menu-project-linesissues:
+
+======================
+Project (Lines/Issues)
+======================
+
+Maintain Sales Order and Work Order Details
+
+Menu Path
+=========
+
+
+* Project Management
+
+ * Project (Lines/Issues)
+
+Menu Type
+---------
+\ **Window**\ 
+
+.. note::
+    The Sales Transaction checkbox indicates if this item is a Sales Transaction.
+
+
+.. seealso::
+    :ref:`functional-guide/window/window-project-linesissues`
