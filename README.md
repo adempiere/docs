@@ -1,4 +1,4 @@
-# ADempiere Documentation
+# ADempiere Official Documentation
 
 Learn, use, configure and extend a world leading open-source ERP project.
 
