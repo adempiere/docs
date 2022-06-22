@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: docs-rst/sphinx-action@master
+    - uses: raul-mz/sphinx-action@master
       with:
         pre-build-command: "pip install sphinx_rtd_theme"
         docs-folder: "src/"
         build-command: "sphinx-build -b html . _build/html"
-    - uses: docs-rst/sphinx-action@master
+    - uses: raul-mz/sphinx-action@master
       with:
         pre-build-command: "pip install sphinx_rtd_theme"
         docs-folder: "src/"
@@ -41,7 +41,7 @@ jobs:
         branch: gh-pages
         directory: gh-pages
         github_token: ${{ secrets.GITHUB_TOKEN }}
-#     - uses: docs-rst/do-space-sync-action@master
+#     - uses: Raul-mz/do-space-sync-action@master
 #       with:
 #         args: --acl public-read
 #       env:
