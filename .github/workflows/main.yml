@@ -25,7 +25,7 @@ jobs:
         build-command: "sphinx-build -b epub . _build/epub"
     - name: Commit documentation changes
       run: |
-        git clone https://github.com/${{ github.repository }}/docs-rst.git --branch gh-pages --single-branch gh-pages
+        git clone https://github.com/${{ github.repository }}.git --branch gh-pages --single-branch gh-pages
         cp -r src/_build/html/* gh-pages/
         cd gh-pages
         touch .nojekyll
