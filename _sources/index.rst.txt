@@ -33,8 +33,8 @@ Table of Contents
 More References
 ===============
 
--  The official page is in: http://erpya.com
--  Si desea reportar un error o una mejora puede hacerlo en: https://github.com/erpcya/docs/issues
+-  The official page is in: http://adempiere.net
+-  You can publish a issue or feature for this documentation here: https://github.com/adempiere/docs/issues
 
 |Gitter|
 

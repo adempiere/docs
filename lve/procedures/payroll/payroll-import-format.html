@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>6.1. Formatos de Importación de Nóminas &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>7.1. Formatos de Importación de Nóminas &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
@@ -20,8 +20,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="6.8. Cancelación de Pasivo con Intermediarios" href="bonus-cancellation-with-intermediary.html" />
-    <link rel="prev" title="6. Gestión de Nóminas" href="index.html" /> 
+    <link rel="next" title="7.8. Cancelación de Pasivo con Intermediarios" href="bonus-cancellation-with-intermediary.html" />
+    <link rel="prev" title="7. Gestión de Nóminas" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,169 +46,169 @@
 <h2>Table of Contents</h2>
 
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">Foundation Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../adempiere/master/index.html">1. <strong>Datos Maestros</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../adempiere/requisition-to-invoice/index.html">2. <strong>Gestión de Compras</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../adempiere/open-items/index.html">3. <strong>Gestión de Saldos Pendientes</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../adempiere/quote-to-invoice/index.html">4. <strong>Gestión de Ventas</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">6. <strong>Gestión de Nóminas</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">6.1. <strong>Formatos de Importación de Nóminas</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#nominas-regulares">6.2. <strong>Nóminas Regulares</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-dias-trabajados-en-el-ano">6.2.1. <strong>Acumulado Días Trabajados en el Año</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#formato-de-importacion">6.2.1.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../adempiere/master/index.html">2. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../adempiere/requisition-to-invoice/index.html">3. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../adempiere/open-items/index.html">4. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../adempiere/quote-to-invoice/index.html">5. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../standard-coding/index.html">6. <strong>Codificación Estándar de ADempiere</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">7. <strong>Gestión de Nóminas</strong></a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7.1. <strong>Formatos de Importación de Nóminas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nominas-regulares">7.2. <strong>Nóminas Regulares</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-dias-trabajados-en-el-ano">7.2.1. <strong>Acumulado Días Trabajados en el Año</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#formato-de-importacion">7.2.1.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-antiguedad-de-prestaciones">6.2.2. <strong>Acumulado Provisión Antigüedad de Prestaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">6.2.2.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-antiguedad-de-prestaciones">7.2.2. <strong>Acumulado Provisión Antigüedad de Prestaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">7.2.2.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-bono-vacacional">6.2.3. <strong>Acumulado Provisión Bono Vacacional</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id2">6.2.3.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-bono-vacacional">7.2.3. <strong>Acumulado Provisión Bono Vacacional</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">7.2.3.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-disfrute-de-vacaciones">6.2.4. <strong>Acumulado Provisión Disfrute de Vacaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id3">6.2.4.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-disfrute-de-vacaciones">7.2.4. <strong>Acumulado Provisión Disfrute de Vacaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">7.2.4.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-garantia-de-prestaciones">6.2.5. <strong>Acumulado Provisión Garantía de Prestaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id4">6.2.5.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-garantia-de-prestaciones">7.2.5. <strong>Acumulado Provisión Garantía de Prestaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">7.2.5.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-intereses-prestaciones-de-antiguedad">6.2.6. <strong>Acumulado Provisión Intereses Prestaciones de Antigüedad</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id5">6.2.6.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-intereses-prestaciones-de-antiguedad">7.2.6. <strong>Acumulado Provisión Intereses Prestaciones de Antigüedad</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">7.2.6.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-intereses-prestaciones-de-garantia">6.2.7. <strong>Acumulado Provisión Intereses Prestaciones de Garantía</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id6">6.2.7.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-intereses-prestaciones-de-garantia">7.2.7. <strong>Acumulado Provisión Intereses Prestaciones de Garantía</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">7.2.7.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-literal-c">6.2.8. <strong>Acumulado Provisión Literal C</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id7">6.2.8.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-literal-c">7.2.8. <strong>Acumulado Provisión Literal C</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">7.2.8.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-utilidades">6.2.9. <strong>Acumulado Provisión Utilidades</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id8">6.2.9.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-provision-utilidades">7.2.9. <strong>Acumulado Provisión Utilidades</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">7.2.9.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-utilidades">6.2.10. <strong>Acumulado Utilidades</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id9">6.2.10.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-utilidades">7.2.10. <strong>Acumulado Utilidades</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">7.2.10.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#dias-totales-de-la-nomina">6.2.11. <strong>Días Totales de la Nómina</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id10">6.2.11.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dias-totales-de-la-nomina">7.2.11. <strong>Días Totales de la Nómina</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">7.2.11.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#provision-antiguedad-de-prestaciones">6.2.12. <strong>Provisión Antigüedad de Prestaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id11">6.2.12.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#provision-antiguedad-de-prestaciones">7.2.12. <strong>Provisión Antigüedad de Prestaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id11">7.2.12.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#provision-garantia-de-prestaciones">6.2.13. <strong>Provisión Garantía de Prestaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id12">6.2.13.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#provision-garantia-de-prestaciones">7.2.13. <strong>Provisión Garantía de Prestaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id12">7.2.13.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#provision-intereses-antiguedad-de-prestaciones">6.2.14. <strong>Provisión Intereses Antigüedad de Prestaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id13">6.2.14.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#provision-intereses-antiguedad-de-prestaciones">7.2.14. <strong>Provisión Intereses Antigüedad de Prestaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id13">7.2.14.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#provision-intereses-garantia-de-prestaciones">6.2.15. <strong>Provisión Intereses Garantía de Prestaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id14">6.2.15.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#provision-intereses-garantia-de-prestaciones">7.2.15. <strong>Provisión Intereses Garantía de Prestaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id14">7.2.15.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#salario-integral">6.2.16. <strong>Salario Integral</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id15">6.2.16.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#salario-integral">7.2.16. <strong>Salario Integral</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id15">7.2.16.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#salario-normal">6.2.17. <strong>Salario Normal</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id16">6.2.17.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#salario-normal">7.2.17. <strong>Salario Normal</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id16">7.2.17.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#salario-normal-mensual">6.2.18. <strong>Salario Normal Mensual</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id17">6.2.18.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#nomina-de-vacaciones">6.3. <strong>Nómina de Vacaciones</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fecha-de-vacaciones-anteriores">6.3.1. <strong>Fecha de Vacaciones Anteriores</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id18">6.3.1.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#fecha-real-de-salida-de-vacaciones">6.3.2. <strong>Fecha Real de Salida de Vacaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id19">6.3.2.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#total-de-asignaciones-de-la-nomina-de-vacaciones-anterior">6.3.3. <strong>Total de Asignaciones de la Nómina de Vacaciones Anterior</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id20">6.3.3.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#dias-totales-de-vacaciones-de-la-nomina-de-vacaciones-anterior">6.3.4. <strong>Días Totales de Vacaciones de la Nómina de Vacaciones Anterior</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id21">6.3.4.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#salario-normal-mensual">7.2.18. <strong>Salario Normal Mensual</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id17">7.2.18.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#nomina-de-utilidades">6.4. <strong>Nómina de Utilidades</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fecha-de-utilidades-anteriores">6.4.1. <strong>Fecha de Utilidades Anteriores</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id22">6.4.1.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nomina-de-vacaciones">7.3. <strong>Nómina de Vacaciones</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fecha-de-vacaciones-anteriores">7.3.1. <strong>Fecha de Vacaciones Anteriores</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id18">7.3.1.1. <strong>Formato de Importación</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#fecha-real-de-salida-de-vacaciones">7.3.2. <strong>Fecha Real de Salida de Vacaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id19">7.3.2.1. <strong>Formato de Importación</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#total-de-asignaciones-de-la-nomina-de-vacaciones-anterior">7.3.3. <strong>Total de Asignaciones de la Nómina de Vacaciones Anterior</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id20">7.3.3.1. <strong>Formato de Importación</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dias-totales-de-vacaciones-de-la-nomina-de-vacaciones-anterior">7.3.4. <strong>Días Totales de Vacaciones de la Nómina de Vacaciones Anterior</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id21">7.3.4.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#nomina-anticipo-de-vacaciones">6.5. <strong>Nómina Anticipo de Vacaciones</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#dias-anticipo-de-vacaciones">6.5.1. <strong>Días Anticipo de Vacaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id23">6.5.1.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nomina-de-utilidades">7.4. <strong>Nómina de Utilidades</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fecha-de-utilidades-anteriores">7.4.1. <strong>Fecha de Utilidades Anteriores</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id22">7.4.1.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#nomina-anticipo-de-prestaciones-sociales">6.6. <strong>Nómina Anticipo de Prestaciones Sociales</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#anticipo-de-prestaciones-sociales">6.6.1. <strong>Anticipo de Prestaciones Sociales</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id24">6.6.1.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nomina-anticipo-de-vacaciones">7.5. <strong>Nómina Anticipo de Vacaciones</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dias-anticipo-de-vacaciones">7.5.1. <strong>Días Anticipo de Vacaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id23">7.5.1.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#nomina-de-prestaciones-sociales">6.7. <strong>Nómina de Prestaciones Sociales</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-por-prestaciones-de-garantia">6.7.1. <strong>Acumulado por Prestaciones de Garantía</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id25">6.7.1.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#acumulado-por-prestaciones-de-antiguedad">6.7.2. <strong>Acumulado por Prestaciones de Antiguedad</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id26">6.7.2.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#porcion-mensual-prestaciones-de-garantia">6.7.3. <strong>Porción Mensual Prestaciones de Garantía</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id27">6.7.3.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#porcion-mensual-intereses-prestaciones-de-garantia">6.7.4. <strong>Porción Mensual Intereses Prestaciones de Garantía</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id28">6.7.4.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#promedio-salario-vacaciones">6.7.5. <strong>Promedio Salario Vacaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id29">6.7.5.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#promedio-salario-prestaciones">6.7.6. <strong>Promedio Salario Prestaciones</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id30">6.7.6.1. <strong>Formato de Importación</strong></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#promedio-salario-utilidades">6.7.7. <strong>Promedio Salario Utilidades</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id31">6.7.7.1. <strong>Formato de Importación</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nomina-anticipo-de-prestaciones-sociales">7.6. <strong>Nómina Anticipo de Prestaciones Sociales</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#anticipo-de-prestaciones-sociales">7.6.1. <strong>Anticipo de Prestaciones Sociales</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id24">7.6.1.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="bonus-cancellation-with-intermediary.html">6.8. <strong>Cancelación de Pasivo con Intermediarios</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="loans-to-employees/index.html">6.9. <strong>Préstamos a Empleados</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="arcv-report/index.html">6.10. <strong>Generar Reporte de ARCV en ADempiere</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="payroll-report/index.html">6.11. <strong>Reporte de Nómina en ADempiere</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="procedure-to-process-payroll/index.html">6.12. <strong>Procedimiento para Procesar Nómina</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nomina-de-prestaciones-sociales">7.7. <strong>Nómina de Prestaciones Sociales</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-por-prestaciones-de-garantia">7.7.1. <strong>Acumulado por Prestaciones de Garantía</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id25">7.7.1.1. <strong>Formato de Importación</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../fiscal-printer/index.html">7. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acumulado-por-prestaciones-de-antiguedad">7.7.2. <strong>Acumulado por Prestaciones de Antiguedad</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id26">7.7.2.1. <strong>Formato de Importación</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#porcion-mensual-prestaciones-de-garantia">7.7.3. <strong>Porción Mensual Prestaciones de Garantía</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id27">7.7.3.1. <strong>Formato de Importación</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#porcion-mensual-intereses-prestaciones-de-garantia">7.7.4. <strong>Porción Mensual Intereses Prestaciones de Garantía</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id28">7.7.4.1. <strong>Formato de Importación</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#promedio-salario-vacaciones">7.7.5. <strong>Promedio Salario Vacaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id29">7.7.5.1. <strong>Formato de Importación</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#promedio-salario-prestaciones">7.7.6. <strong>Promedio Salario Prestaciones</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id30">7.7.6.1. <strong>Formato de Importación</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#promedio-salario-utilidades">7.7.7. <strong>Promedio Salario Utilidades</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id31">7.7.7.1. <strong>Formato de Importación</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bonus-cancellation-with-intermediary.html">7.8. <strong>Cancelación de Pasivo con Intermediarios</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="loans-to-employees/index.html">7.9. <strong>Préstamos a Empleados</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcv-report/index.html">7.10. <strong>Generar Reporte de ARCV en ADempiere</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="payroll-report/index.html">7.11. <strong>Reporte de Nómina en ADempiere</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="procedure-to-process-payroll/index.html">7.12. <strong>Procedimiento para Procesar Nómina</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../fiscal-printer/index.html">8. <strong>Impresora Fiscal</strong></a></li>
 </ul>
 
 
@@ -216,7 +216,7 @@
 <ul>
 <li><a href="http://adempiere.net/">ADempiere Docs</a></li>
 <li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
-<li><a href="../../../download.html">Descargar Documentación</a></li>
+<li><a href="../../../download.html">Download Documentation</a></li>
 </ul>
 
 
@@ -234,8 +234,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html"><span class="section-number">6. </span><strong>Gestión de Nóminas</strong></a> &raquo;</li>
-      <li><span class="section-number">6.1. </span><strong>Formatos de Importación de Nóminas</strong></li>
+          <li><a href="index.html"><span class="section-number">7. </span><strong>Gestión de Nóminas</strong></a> &raquo;</li>
+      <li><span class="section-number">7.1. </span><strong>Formatos de Importación de Nóminas</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/lve/procedures/payroll/payroll-import-format.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -246,7 +246,7 @@
            <div itemprop="articleBody">
              
   <section id="formatos-de-importacion-de-nominas">
-<span id="documento-formato-de-importacion-de-nomina"></span><h1><span class="section-number">6.1. </span><strong>Formatos de Importación de Nóminas</strong><a class="headerlink" href="#formatos-de-importacion-de-nominas" title="Permalink to this headline"></a></h1>
+<span id="documento-formato-de-importacion-de-nomina"></span><h1><span class="section-number">7.1. </span><strong>Formatos de Importación de Nóminas</strong><a class="headerlink" href="#formatos-de-importacion-de-nominas" title="Permalink to this headline"></a></h1>
 <p>ADempiere requiere diferentes formatos de importación para ejecutar sus nóminas, dichos formatos se agrupan según la nómina a la que pertenecen:</p>
 <ul class="simple">
 <li><p>Nóminas Regulares.</p></li>
@@ -258,10 +258,10 @@
 </ul>
 </section>
 <section id="nominas-regulares">
-<h1><span class="section-number">6.2. </span><strong>Nóminas Regulares</strong><a class="headerlink" href="#nominas-regulares" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">7.2. </span><strong>Nóminas Regulares</strong><a class="headerlink" href="#nominas-regulares" title="Permalink to this headline"></a></h1>
 <p>ERPyA requiere los siguientes formatos de importación de “<strong>Nóminas Regulares</strong>”.</p>
 <section id="acumulado-dias-trabajados-en-el-ano">
-<h2><span class="section-number">6.2.1. </span><strong>Acumulado Días Trabajados en el Año</strong><a class="headerlink" href="#acumulado-dias-trabajados-en-el-ano" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.1. </span><strong>Acumulado Días Trabajados en el Año</strong><a class="headerlink" href="#acumulado-dias-trabajados-en-el-ano" title="Permalink to this headline"></a></h2>
 <p>Representa la cantidad de días que lleva acumulados el empleado, desde el inicio de su periodo anual, siendo este el inicio de los días que acumula para las utilidades, o en su defecto desde la fecha de ingreso del empleado. Este concepto será almacenado con la finalidad de que sea utilizado para el cálculo del promedio de salario utilidades.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -299,7 +299,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="formato-de-importacion">
-<h3><span class="section-number">6.2.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#formato-de-importacion" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#formato-de-importacion" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -379,7 +379,7 @@
 </section>
 </section>
 <section id="acumulado-provision-antiguedad-de-prestaciones">
-<h2><span class="section-number">6.2.2. </span><strong>Acumulado Provisión Antigüedad de Prestaciones</strong><a class="headerlink" href="#acumulado-provision-antiguedad-de-prestaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.2. </span><strong>Acumulado Provisión Antigüedad de Prestaciones</strong><a class="headerlink" href="#acumulado-provision-antiguedad-de-prestaciones" title="Permalink to this headline"></a></h2>
 <p>Representa al monto total que lleva acumulado cada empleado  por concepto de provisión antigüedad de prestaciones, utilizados en reportes para comparar los montos en la contabilidad con los montos en la nómina y posteriormente utilizados para la cancelación de dicha provisión. Cabe destacar que el valor de esta provisión es fundamental para el cálculo de sus prestaciones sociales.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -417,7 +417,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id1">
-<h3><span class="section-number">6.2.2.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id1" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.2.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id1" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -495,7 +495,7 @@
 </section>
 </section>
 <section id="acumulado-provision-bono-vacacional">
-<h2><span class="section-number">6.2.3. </span><strong>Acumulado Provisión Bono Vacacional</strong><a class="headerlink" href="#acumulado-provision-bono-vacacional" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.3. </span><strong>Acumulado Provisión Bono Vacacional</strong><a class="headerlink" href="#acumulado-provision-bono-vacacional" title="Permalink to this headline"></a></h2>
 <p>Representa al monto total que lleva acumulado cada empleado por concepto de provisión de bono vacacional, utilizados en reportes para comparar los montos en la contabilidad con los montos en la nómina y posteriormente utilizados para la cancelación de dicha provisión.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -533,7 +533,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id2">
-<h3><span class="section-number">6.2.3.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.3.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -613,7 +613,7 @@
 </section>
 </section>
 <section id="acumulado-provision-disfrute-de-vacaciones">
-<h2><span class="section-number">6.2.4. </span><strong>Acumulado Provisión Disfrute de Vacaciones</strong><a class="headerlink" href="#acumulado-provision-disfrute-de-vacaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.4. </span><strong>Acumulado Provisión Disfrute de Vacaciones</strong><a class="headerlink" href="#acumulado-provision-disfrute-de-vacaciones" title="Permalink to this headline"></a></h2>
 <p>Representa al monto total que lleva acumulado cada empleado por concepto de provisión de disfrute de vacaciones, utilizados en reportes para comparar los montos en la contabilidad con los montos en la nómina y posteriormente utilizados para la cancelación de dicha provisión.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -651,7 +651,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id3">
-<h3><span class="section-number">6.2.4.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.4.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -729,7 +729,7 @@
 </section>
 </section>
 <section id="acumulado-provision-garantia-de-prestaciones">
-<h2><span class="section-number">6.2.5. </span><strong>Acumulado Provisión Garantía de Prestaciones</strong><a class="headerlink" href="#acumulado-provision-garantia-de-prestaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.5. </span><strong>Acumulado Provisión Garantía de Prestaciones</strong><a class="headerlink" href="#acumulado-provision-garantia-de-prestaciones" title="Permalink to this headline"></a></h2>
 <p>Representa al monto total que lleva acumulado cada empleado por concepto de provisión de garantía de prestaciones, utilizados en reportes para comparar los montos en la contabilidad con los montos en la nómina y posteriormente utilizados para la cancelación de dicha provisión. Cabe destacar que el valor de esta provisión es fundamental para el cálculo de sus prestaciones sociales</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -767,7 +767,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id4">
-<h3><span class="section-number">6.2.5.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id4" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.5.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id4" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -845,7 +845,7 @@
 </section>
 </section>
 <section id="acumulado-provision-intereses-prestaciones-de-antiguedad">
-<h2><span class="section-number">6.2.6. </span><strong>Acumulado Provisión Intereses Prestaciones de Antigüedad</strong><a class="headerlink" href="#acumulado-provision-intereses-prestaciones-de-antiguedad" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.6. </span><strong>Acumulado Provisión Intereses Prestaciones de Antigüedad</strong><a class="headerlink" href="#acumulado-provision-intereses-prestaciones-de-antiguedad" title="Permalink to this headline"></a></h2>
 <p>Representa al monto total que lleva acumulado cada empleado por concepto de provisión de intereses antigüedad de prestaciones,  utilizados en reportes para comparar los montos en la contabilidad con los montos en la nómina y posteriormente utilizados para la cancelación de dicha provisión. Cabe destacar que el valor de esta provisión es fundamental para el cálculo de sus prestaciones sociales</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -883,7 +883,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id5">
-<h3><span class="section-number">6.2.6.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id5" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.6.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id5" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -961,7 +961,7 @@
 </section>
 </section>
 <section id="acumulado-provision-intereses-prestaciones-de-garantia">
-<h2><span class="section-number">6.2.7. </span><strong>Acumulado Provisión Intereses Prestaciones de Garantía</strong><a class="headerlink" href="#acumulado-provision-intereses-prestaciones-de-garantia" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.7. </span><strong>Acumulado Provisión Intereses Prestaciones de Garantía</strong><a class="headerlink" href="#acumulado-provision-intereses-prestaciones-de-garantia" title="Permalink to this headline"></a></h2>
 <p>Representa al monto total que lleva acumulado cada empleado por concepto de provisión intereses garantía de prestaciones,utilizados en reportes para comparar los montos en la contabilidad con los montos en la nómina y posteriormente utilizados para la cancelación de dicha provisión. Cabe destacar que el valor de esta provisión es fundamental para el cálculo de sus prestaciones sociales.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -999,7 +999,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id6">
-<h3><span class="section-number">6.2.7.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id6" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.7.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id6" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1077,7 +1077,7 @@
 </section>
 </section>
 <section id="acumulado-provision-literal-c">
-<h2><span class="section-number">6.2.8. </span><strong>Acumulado Provisión Literal C</strong><a class="headerlink" href="#acumulado-provision-literal-c" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.8. </span><strong>Acumulado Provisión Literal C</strong><a class="headerlink" href="#acumulado-provision-literal-c" title="Permalink to this headline"></a></h2>
 <p>Representa al monto total que lleva acumulado cada empleado por concepto de provisión literal C, utilizados en reportes para comparar los montos en la contabilidad con los montos en la nómina y posteriormente utilizados para la cancelación de dicha provisión. Cabe destacar que el valor de esta provisión es fundamental para el cálculo de sus prestaciones sociales.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -1115,7 +1115,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id7">
-<h3><span class="section-number">6.2.8.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id7" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.8.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id7" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1193,7 +1193,7 @@
 </section>
 </section>
 <section id="acumulado-provision-utilidades">
-<h2><span class="section-number">6.2.9. </span><strong>Acumulado Provisión Utilidades</strong><a class="headerlink" href="#acumulado-provision-utilidades" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.9. </span><strong>Acumulado Provisión Utilidades</strong><a class="headerlink" href="#acumulado-provision-utilidades" title="Permalink to this headline"></a></h2>
 <p>Representa al monto total que lleva acumulado cada empleado por concepto de provisión de utilidades, utilizados en reportes para comparar los montos en la contabilidad con los montos en la nómina y posteriormente utilizados para la cancelación de dicha provisión. Cabe destacar que el valor de esta provisión es fundamental para el cálculo de sus prestaciones sociales.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -1231,7 +1231,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id8">
-<h3><span class="section-number">6.2.9.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id8" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.9.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id8" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1309,7 +1309,7 @@
 </section>
 </section>
 <section id="acumulado-utilidades">
-<h2><span class="section-number">6.2.10. </span><strong>Acumulado Utilidades</strong><a class="headerlink" href="#acumulado-utilidades" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.10. </span><strong>Acumulado Utilidades</strong><a class="headerlink" href="#acumulado-utilidades" title="Permalink to this headline"></a></h2>
 <p>Representa el monto acumulado para el cálculo de las utilidades de cada empleado, desde el inicio de su periodo anual, siendo este el inicio de los días que acumula para las utilidades, o en su defecto desde la fecha de ingreso del empleado. Este concepto será almacenado con la finalidad de que sea utilizado para el cálculo del promedio de salario utilidades.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -1347,7 +1347,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id9">
-<h3><span class="section-number">6.2.10.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id9" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.10.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id9" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1425,7 +1425,7 @@
 </section>
 </section>
 <section id="dias-totales-de-la-nomina">
-<h2><span class="section-number">6.2.11. </span><strong>Días Totales de la Nómina</strong><a class="headerlink" href="#dias-totales-de-la-nomina" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.11. </span><strong>Días Totales de la Nómina</strong><a class="headerlink" href="#dias-totales-de-la-nomina" title="Permalink to this headline"></a></h2>
 <p>El concepto días totales de la nómina (días hábiles laborados), se utiliza para calcular el promedio del salario en las vacaciones. Cabe destacar que los datos de este formulario son necesarios los tres (3) meses anteriores para los procesos de “<strong>Nómina Semanal Mixta (NSM)</strong>”, “<strong>Nómina Quincenal Mixta (NQM)</strong>” o “<strong>Nómina Mensual Mixta (NMM)</strong>”.  Sí su proceso de nómina es “<strong>Nómina Semanal (NS)</strong>”, “<strong>Nómina Quincenal (NM)</strong>” o “<strong>Nómina Mensual (NM)</strong>”, debe suministrar los datos solamente del mes anterior al momento de la implementación de ADempiere.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -1467,7 +1467,7 @@
 <li><p>Si el empleado posee menos de tres (3) meses trabajando en la empresa debe cargar el valor de los días hábiles laborados durante el periodo de nómina desde el ingreso del empleado (nómina por nómina debe cargar cuántos días laboró), indique en el nombre de la pestaña la fecha correspondiente a esa carga de datos.</p></li>
 </ul>
 <section id="id10">
-<h3><span class="section-number">6.2.11.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id10" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.11.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id10" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1545,7 +1545,7 @@
 </section>
 </section>
 <section id="provision-antiguedad-de-prestaciones">
-<h2><span class="section-number">6.2.12. </span><strong>Provisión Antigüedad de Prestaciones</strong><a class="headerlink" href="#provision-antiguedad-de-prestaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.12. </span><strong>Provisión Antigüedad de Prestaciones</strong><a class="headerlink" href="#provision-antiguedad-de-prestaciones" title="Permalink to this headline"></a></h2>
 <p>Representa la provisión calculada a cada empleado durante los 12 meses anteriores, dicho monto será fundamental para el cálculo de las prestaciones sociales. <strong>Debe registrar los datos obtenidos por los empleados (nómina por nómina) durante el periodo de los doce (12) meses anteriores</strong>.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -1583,7 +1583,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id11">
-<h3><span class="section-number">6.2.12.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id11" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.12.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id11" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1661,7 +1661,7 @@
 </section>
 </section>
 <section id="provision-garantia-de-prestaciones">
-<h2><span class="section-number">6.2.13. </span><strong>Provisión Garantía de Prestaciones</strong><a class="headerlink" href="#provision-garantia-de-prestaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.13. </span><strong>Provisión Garantía de Prestaciones</strong><a class="headerlink" href="#provision-garantia-de-prestaciones" title="Permalink to this headline"></a></h2>
 <p>Representa la provisión calculada a cada empleado durante los tres (3) meses anteriores, dicho monto será fundamental para el cálculo de las prestaciones sociales. <strong>Debe registrar los datos obtenidos por los empleados (nómina por nómina) durante el periodo de los tres (3) meses anteriores</strong>.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -1699,7 +1699,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id12">
-<h3><span class="section-number">6.2.13.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id12" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.13.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id12" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1777,7 +1777,7 @@
 </section>
 </section>
 <section id="provision-intereses-antiguedad-de-prestaciones">
-<h2><span class="section-number">6.2.14. </span><strong>Provisión Intereses Antigüedad de Prestaciones</strong><a class="headerlink" href="#provision-intereses-antiguedad-de-prestaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.14. </span><strong>Provisión Intereses Antigüedad de Prestaciones</strong><a class="headerlink" href="#provision-intereses-antiguedad-de-prestaciones" title="Permalink to this headline"></a></h2>
 <p>Representa la provisión calculada a cada empleado durante los doce (12) meses anteriores, dicho monto será fundamental para el cálculo de las prestaciones sociales. <strong>Debe registrar los datos obtenidos por los empleados (nómina por nómina) durante el periodo de los doce (12) meses anteriores</strong>.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -1815,7 +1815,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id13">
-<h3><span class="section-number">6.2.14.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id13" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.14.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id13" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -1893,7 +1893,7 @@
 </section>
 </section>
 <section id="provision-intereses-garantia-de-prestaciones">
-<h2><span class="section-number">6.2.15. </span><strong>Provisión Intereses Garantía de Prestaciones</strong><a class="headerlink" href="#provision-intereses-garantia-de-prestaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.15. </span><strong>Provisión Intereses Garantía de Prestaciones</strong><a class="headerlink" href="#provision-intereses-garantia-de-prestaciones" title="Permalink to this headline"></a></h2>
 <p>Representa la provisión calculada a cada empleado durante los tres (3) meses anteriores, dicho monto será fundamental para el cálculo de las prestaciones sociales. <strong>Debe registrar los Datos obtenidos por los empleados (nómina por nómina) durante el periodo de los tres (3) meses anteriores</strong>.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -1931,7 +1931,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id14">
-<h3><span class="section-number">6.2.15.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id14" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.15.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id14" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2009,7 +2009,7 @@
 </section>
 </section>
 <section id="salario-integral">
-<h2><span class="section-number">6.2.16. </span><strong>Salario Integral</strong><a class="headerlink" href="#salario-integral" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.16. </span><strong>Salario Integral</strong><a class="headerlink" href="#salario-integral" title="Permalink to this headline"></a></h2>
 <p>Se utiliza para promediar el salario integral de los empleados. Cabe destacar que los datos de este formulario son necesarios solamente si existen procesos de “<strong>Nóminas Semanales Mixta (NSM)</strong>”, “<strong>Nóminas Quincenales Mixta (NQM)</strong>” o “<strong>Nóminas Mensuales Mixta (NMM)</strong>”. Sí su proceso de nómina es “<strong>Nómina Semanal (NS)</strong>”, “<strong>Nómina Quincenal (NM)</strong>” o “<strong>Nómina Mensual (NM)</strong>”, debe suministrar los datos solamente del mes anterior al momento de la implementación del ADempiere.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -2052,7 +2052,7 @@
 <li><p>Si el empleado posee un proceso de “<strong>Nómina Semanal (NS)</strong>”, “<strong>Nómina Quincenal (NQ)</strong>”, “<strong>Nómina Mensual (NM)</strong>”, debe suministrar solamente los datos del mes anterior del empleado.</p></li>
 </ul>
 <section id="id15">
-<h3><span class="section-number">6.2.16.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id15" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.16.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id15" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2130,7 +2130,7 @@
 </section>
 </section>
 <section id="salario-normal">
-<h2><span class="section-number">6.2.17. </span><strong>Salario Normal</strong><a class="headerlink" href="#salario-normal" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.17. </span><strong>Salario Normal</strong><a class="headerlink" href="#salario-normal" title="Permalink to this headline"></a></h2>
 <p>Se utiliza para promediar el salario normal de los empleados. Cabe destacar que los datos de este formulario son necesarios para los procesos de “<strong>Nómina Semanal Mixta (NSM)</strong>”, “<strong>Nómina Quincenal Mixta (NQM)</strong>” o “<strong>Nómina Mensual Mixta (NMM)</strong>”. Sí su proceso de nómina es “<strong>Nómina Semanal (NS)</strong>”, “<strong>Nómina Quincenal (NM)</strong>” o “<strong>Nómina Mensual (NM)</strong>”, debe suministrar los datos solamente del mes anterior al momento de la implementación de ADempiere.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -2173,7 +2173,7 @@
 <li><p>Si el empleado posee un proceso de “<strong>Nómina Semanal (NS)</strong>”, “<strong>Nómina Quincenal (NQ)</strong>”, “<strong>Nómina Mensual (NM)</strong>”, debe suministrar solamente los datos del mes anterior del empleado.</p></li>
 </ul>
 <section id="id16">
-<h3><span class="section-number">6.2.17.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id16" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.17.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id16" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2251,7 +2251,7 @@
 </section>
 </section>
 <section id="salario-normal-mensual">
-<h2><span class="section-number">6.2.18. </span><strong>Salario Normal Mensual</strong><a class="headerlink" href="#salario-normal-mensual" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.2.18. </span><strong>Salario Normal Mensual</strong><a class="headerlink" href="#salario-normal-mensual" title="Permalink to this headline"></a></h2>
 <p>El concepto acumulado promedio salario variable se utiliza para promediar el salario normal mensual del empleado según lo estipula el artículo 85 del Reglamento del SSO, se utilizará para compararlo con el tope SSO y así determinar el monto del salario base para calcular la deducción del SSO. Cabe destacar que los datos de este formulario son necesarios solamente si existen procesos de nóminas con salario variable. Si usted no posee ninguno de estos procesos de nomina por favor omita el llenado de este formulario.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -2299,7 +2299,7 @@
 </li>
 </ul>
 <section id="id17">
-<h3><span class="section-number">6.2.18.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id17" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.2.18.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id17" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de las nóminas semanal, quincenal, mensual, semanal mixta, quincenal mixta y mensual mixta es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2378,10 +2378,10 @@
 </section>
 </section>
 <section id="nomina-de-vacaciones">
-<h1><span class="section-number">6.3. </span><strong>Nómina de Vacaciones</strong><a class="headerlink" href="#nomina-de-vacaciones" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">7.3. </span><strong>Nómina de Vacaciones</strong><a class="headerlink" href="#nomina-de-vacaciones" title="Permalink to this headline"></a></h1>
 <p>ERPyA requiere el siguiente formato de importación de “<strong>Nómina de Vacaciones</strong>”.</p>
 <section id="fecha-de-vacaciones-anteriores">
-<h2><span class="section-number">6.3.1. </span><strong>Fecha de Vacaciones Anteriores</strong><a class="headerlink" href="#fecha-de-vacaciones-anteriores" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.3.1. </span><strong>Fecha de Vacaciones Anteriores</strong><a class="headerlink" href="#fecha-de-vacaciones-anteriores" title="Permalink to this headline"></a></h2>
 <p>Representa a la última fecha de inicio de vacaciones de los empleados.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -2407,7 +2407,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id18">
-<h3><span class="section-number">6.3.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id18" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.3.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id18" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de vacaciones es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2486,7 +2486,7 @@
 </section>
 </section>
 <section id="fecha-real-de-salida-de-vacaciones">
-<h2><span class="section-number">6.3.2. </span><strong>Fecha Real de Salida de Vacaciones</strong><a class="headerlink" href="#fecha-real-de-salida-de-vacaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.3.2. </span><strong>Fecha Real de Salida de Vacaciones</strong><a class="headerlink" href="#fecha-real-de-salida-de-vacaciones" title="Permalink to this headline"></a></h2>
 <p>Representa la fecha real que le correspondia salir a los trabajadores, basandose en la fecha que registro en la fecha de vacaciones anteriores registrada en el cuadro anteriores</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -2512,7 +2512,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id19">
-<h3><span class="section-number">6.3.2.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id19" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.3.2.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id19" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de vacaciones es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2590,7 +2590,7 @@
 </section>
 </section>
 <section id="total-de-asignaciones-de-la-nomina-de-vacaciones-anterior">
-<h2><span class="section-number">6.3.3. </span><strong>Total de Asignaciones de la Nómina de Vacaciones Anterior</strong><a class="headerlink" href="#total-de-asignaciones-de-la-nomina-de-vacaciones-anterior" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.3.3. </span><strong>Total de Asignaciones de la Nómina de Vacaciones Anterior</strong><a class="headerlink" href="#total-de-asignaciones-de-la-nomina-de-vacaciones-anterior" title="Permalink to this headline"></a></h2>
 <p>Representa monto total devengado por el empleado por concepto de sus vacaciones anteriores. Ese dato debe ser suministrado para que ADempiere lo tome en cuenta al momento de calcular las utilidades del empleado, por ejemplo “si su periodo de utilidades está entre el primero de noviembre de 2019 hasta el 31 de octubre de 2020”,  debe suministrar la información de las vacaciones que se procesaron durante ese período para que ese saldo pueda considerarse al momento de procesar su nómina de utilidades.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -2616,7 +2616,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id20">
-<h3><span class="section-number">6.3.3.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id20" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.3.3.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id20" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de utilidades es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2694,7 +2694,7 @@
 </section>
 </section>
 <section id="dias-totales-de-vacaciones-de-la-nomina-de-vacaciones-anterior">
-<h2><span class="section-number">6.3.4. </span><strong>Días Totales de Vacaciones de la Nómina de Vacaciones Anterior</strong><a class="headerlink" href="#dias-totales-de-vacaciones-de-la-nomina-de-vacaciones-anterior" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.3.4. </span><strong>Días Totales de Vacaciones de la Nómina de Vacaciones Anterior</strong><a class="headerlink" href="#dias-totales-de-vacaciones-de-la-nomina-de-vacaciones-anterior" title="Permalink to this headline"></a></h2>
 <p>Representa el total de días (Días de disfrutes de vacaciones, días de descanso y días feriados) otorgados por el empleado durante el periodo de vacaciones anteriores. Ese dato debe ser suministrado para que ADempiere lo tome en cuenta al momento de calcular las utilidades del empleado, por ejemplo “si su periodo de utilidades está entre el primero de noviembre de 2019 hasta el 31 de octubre de 2020”,  debe suministrar la información de las vacaciones que se procesaron durante ese período para que ese saldo pueda considerarse al momento de procesar su nómina de utilidades.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -2720,7 +2720,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id21">
-<h3><span class="section-number">6.3.4.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id21" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.3.4.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id21" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de utilidades es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2799,10 +2799,10 @@
 </section>
 </section>
 <section id="nomina-de-utilidades">
-<h1><span class="section-number">6.4. </span><strong>Nómina de Utilidades</strong><a class="headerlink" href="#nomina-de-utilidades" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">7.4. </span><strong>Nómina de Utilidades</strong><a class="headerlink" href="#nomina-de-utilidades" title="Permalink to this headline"></a></h1>
 <p>ERPyA requiere el siguiente formato de importación de “<strong>Nómina de Utilidades</strong>”.</p>
 <section id="fecha-de-utilidades-anteriores">
-<h2><span class="section-number">6.4.1. </span><strong>Fecha de Utilidades Anteriores</strong><a class="headerlink" href="#fecha-de-utilidades-anteriores" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.4.1. </span><strong>Fecha de Utilidades Anteriores</strong><a class="headerlink" href="#fecha-de-utilidades-anteriores" title="Permalink to this headline"></a></h2>
 <p>Representa a la última fecha de utilidades anteriores de los empleados.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -2828,7 +2828,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id22">
-<h3><span class="section-number">6.4.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id22" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.4.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id22" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de utilidades es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2907,10 +2907,10 @@
 </section>
 </section>
 <section id="nomina-anticipo-de-vacaciones">
-<h1><span class="section-number">6.5. </span><strong>Nómina Anticipo de Vacaciones</strong><a class="headerlink" href="#nomina-anticipo-de-vacaciones" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">7.5. </span><strong>Nómina Anticipo de Vacaciones</strong><a class="headerlink" href="#nomina-anticipo-de-vacaciones" title="Permalink to this headline"></a></h1>
 <p>ERPyA requiere el siguiente formato de importación de “<strong>Nómina Anticipo de Vacaciones</strong>”.</p>
 <section id="dias-anticipo-de-vacaciones">
-<h2><span class="section-number">6.5.1. </span><strong>Días Anticipo de Vacaciones</strong><a class="headerlink" href="#dias-anticipo-de-vacaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.5.1. </span><strong>Días Anticipo de Vacaciones</strong><a class="headerlink" href="#dias-anticipo-de-vacaciones" title="Permalink to this headline"></a></h2>
 <p>Representa los días otorgados a los empleados por concepto de anticipo de sus vacaciones.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -2936,7 +2936,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id23">
-<h3><span class="section-number">6.5.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id23" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.5.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id23" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de anticipo de vacaciones es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3015,10 +3015,10 @@
 </section>
 </section>
 <section id="nomina-anticipo-de-prestaciones-sociales">
-<h1><span class="section-number">6.6. </span><strong>Nómina Anticipo de Prestaciones Sociales</strong><a class="headerlink" href="#nomina-anticipo-de-prestaciones-sociales" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">7.6. </span><strong>Nómina Anticipo de Prestaciones Sociales</strong><a class="headerlink" href="#nomina-anticipo-de-prestaciones-sociales" title="Permalink to this headline"></a></h1>
 <p>ERPyA requiere el siguiente formato de importación de “<strong>Nómina Anticipo de Prestaciones Sociales</strong>”.</p>
 <section id="anticipo-de-prestaciones-sociales">
-<h2><span class="section-number">6.6.1. </span><strong>Anticipo de Prestaciones Sociales</strong><a class="headerlink" href="#anticipo-de-prestaciones-sociales" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.6.1. </span><strong>Anticipo de Prestaciones Sociales</strong><a class="headerlink" href="#anticipo-de-prestaciones-sociales" title="Permalink to this headline"></a></h2>
 <p>Corresponde al monto otorgado a cada empleado por concepto de anticipo de sus prestaciones sociales.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -3044,7 +3044,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id24">
-<h3><span class="section-number">6.6.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id24" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.6.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id24" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de anticipo de prestaciones sociales es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3123,10 +3123,10 @@
 </section>
 </section>
 <section id="nomina-de-prestaciones-sociales">
-<h1><span class="section-number">6.7. </span><strong>Nómina de Prestaciones Sociales</strong><a class="headerlink" href="#nomina-de-prestaciones-sociales" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">7.7. </span><strong>Nómina de Prestaciones Sociales</strong><a class="headerlink" href="#nomina-de-prestaciones-sociales" title="Permalink to this headline"></a></h1>
 <p>ERPyA requiere el siguiente formato de importación para la “<strong>Nómina de Prestaciones Sociales</strong>”.</p>
 <section id="acumulado-por-prestaciones-de-garantia">
-<h2><span class="section-number">6.7.1. </span><strong>Acumulado por Prestaciones de Garantía</strong><a class="headerlink" href="#acumulado-por-prestaciones-de-garantia" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.7.1. </span><strong>Acumulado por Prestaciones de Garantía</strong><a class="headerlink" href="#acumulado-por-prestaciones-de-garantia" title="Permalink to this headline"></a></h2>
 <p>Corresponde al monto total que lleva acumulado el empleado por concepto de sus prestaciones de garantía.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -3152,7 +3152,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id25">
-<h3><span class="section-number">6.7.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id25" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.7.1.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id25" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de prestaciones sociales es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3230,7 +3230,7 @@
 </section>
 </section>
 <section id="acumulado-por-prestaciones-de-antiguedad">
-<h2><span class="section-number">6.7.2. </span><strong>Acumulado por Prestaciones de Antiguedad</strong><a class="headerlink" href="#acumulado-por-prestaciones-de-antiguedad" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.7.2. </span><strong>Acumulado por Prestaciones de Antiguedad</strong><a class="headerlink" href="#acumulado-por-prestaciones-de-antiguedad" title="Permalink to this headline"></a></h2>
 <p>Corresponde al monto total que lleva acumulado el empleado por concepto de sus prestaciones de antiguedad.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -3256,7 +3256,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id26">
-<h3><span class="section-number">6.7.2.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id26" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.7.2.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id26" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de prestaciones sociales es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3334,7 +3334,7 @@
 </section>
 </section>
 <section id="porcion-mensual-prestaciones-de-garantia">
-<h2><span class="section-number">6.7.3. </span><strong>Porción Mensual Prestaciones de Garantía</strong><a class="headerlink" href="#porcion-mensual-prestaciones-de-garantia" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.7.3. </span><strong>Porción Mensual Prestaciones de Garantía</strong><a class="headerlink" href="#porcion-mensual-prestaciones-de-garantia" title="Permalink to this headline"></a></h2>
 <p>Corresponde a la porción mensual de los 2 meses anteriores de las prestaciones de garantía.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -3363,7 +3363,7 @@
 <li><p>Se debe registrar un formato indicando la porción de garantía de prestaciones del mes anterior y otro formato indicando el penultimo mes a la implementación de ADempiere que le correspondio al empleado por concepto de sus garantía de prestaciones.</p></li>
 </ul>
 <section id="id27">
-<h3><span class="section-number">6.7.3.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id27" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.7.3.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id27" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de prestaciones sociales es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3441,7 +3441,7 @@
 </section>
 </section>
 <section id="porcion-mensual-intereses-prestaciones-de-garantia">
-<h2><span class="section-number">6.7.4. </span><strong>Porción Mensual Intereses Prestaciones de Garantía</strong><a class="headerlink" href="#porcion-mensual-intereses-prestaciones-de-garantia" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.7.4. </span><strong>Porción Mensual Intereses Prestaciones de Garantía</strong><a class="headerlink" href="#porcion-mensual-intereses-prestaciones-de-garantia" title="Permalink to this headline"></a></h2>
 <p>Corresponde a la porción mensual de los 2 meses anteriores de los intereses de prestaciones de garantía.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -3470,7 +3470,7 @@
 <li><p>Se debe registrar un formato indicando la porción de intereses de garantía de prestaciones del mes anterior y otro formato indicando el penultimo mes a la implementación de ADempiere que le correspondio al empleado por concepto de sus garantía de prestaciones.</p></li>
 </ul>
 <section id="id28">
-<h3><span class="section-number">6.7.4.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id28" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.7.4.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id28" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de prestaciones sociales es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3548,7 +3548,7 @@
 </section>
 </section>
 <section id="promedio-salario-vacaciones">
-<h2><span class="section-number">6.7.5. </span><strong>Promedio Salario Vacaciones</strong><a class="headerlink" href="#promedio-salario-vacaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.7.5. </span><strong>Promedio Salario Vacaciones</strong><a class="headerlink" href="#promedio-salario-vacaciones" title="Permalink to this headline"></a></h2>
 <p>Corresponde al salario que se utilizará para calcular las vacaciones al empleado si fuese el caso.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -3574,7 +3574,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id29">
-<h3><span class="section-number">6.7.5.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id29" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.7.5.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id29" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de prestaciones sociales es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3652,7 +3652,7 @@
 </section>
 </section>
 <section id="promedio-salario-prestaciones">
-<h2><span class="section-number">6.7.6. </span><strong>Promedio Salario Prestaciones</strong><a class="headerlink" href="#promedio-salario-prestaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.7.6. </span><strong>Promedio Salario Prestaciones</strong><a class="headerlink" href="#promedio-salario-prestaciones" title="Permalink to this headline"></a></h2>
 <p>Corresponde al salario que se utilizará para calcular las prestaciones sociales al empleado si fuese el caso.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -3678,7 +3678,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id30">
-<h3><span class="section-number">6.7.6.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id30" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.7.6.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id30" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de prestaciones sociales es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3756,7 +3756,7 @@
 </section>
 </section>
 <section id="promedio-salario-utilidades">
-<h2><span class="section-number">6.7.7. </span><strong>Promedio Salario Utilidades</strong><a class="headerlink" href="#promedio-salario-utilidades" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.7.7. </span><strong>Promedio Salario Utilidades</strong><a class="headerlink" href="#promedio-salario-utilidades" title="Permalink to this headline"></a></h2>
 <p>Corresponde al salario que se utilizará para calcular las utilidades al empleado si fuese el caso.</p>
 <p>Los datos correspondientes a los campos del formato de importación deben ser registrados considerando los siguientes puntos:</p>
 <ul>
@@ -3782,7 +3782,7 @@
 <li><p><strong>CANTIDAD</strong>: Registre el valor del concepto (no utilice puntos ni espacios) solo números enteros. Si el concepto no tiene valor coloque el número cero (0) en la celda.</p></li>
 </ul>
 <section id="id31">
-<h3><span class="section-number">6.7.7.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id31" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">7.7.7.1. </span><strong>Formato de Importación</strong><a class="headerlink" href="#id31" title="Permalink to this headline"></a></h3>
 <p>El formato para la importación de la nómina de prestaciones sociales es el siguiente:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3865,8 +3865,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="6. Gestión de Nóminas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="bonus-cancellation-with-intermediary.html" class="btn btn-neutral float-right" title="6.8. Cancelación de Pasivo con Intermediarios" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="7. Gestión de Nóminas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bonus-cancellation-with-intermediary.html" class="btn btn-neutral float-right" title="7.8. Cancelación de Pasivo con Intermediarios" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
