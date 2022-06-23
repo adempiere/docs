@@ -24,12 +24,12 @@
 
 project = 'ADempiereDocs'
 copyright = '2022, ADempiere ERP'
-author = 'E.R.P. Consultores y Asociados, C.A.'
+author = 'Yamel Senih'
 # The short X.Y version
 version = '1.0'
 
 # The full version, including alpha/beta/rc tags.
-release = '3.9.3'
+release = '3.9.4'
 
 # Html logo in drawer.
 # Fit in the drawer at the width of image is 240 px.
