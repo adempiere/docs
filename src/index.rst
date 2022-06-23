@@ -19,7 +19,7 @@ Table of Contents
     :maxdepth: 2
     :numbered:
     
-    general/procedures/index
+    functional-guide/index
 
 More References
 ===============
