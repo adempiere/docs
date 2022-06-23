@@ -33,7 +33,7 @@ release = '3.9.3'
 
 # Html logo in drawer.
 # Fit in the drawer at the width of image is 240 px.
-html_logo = 'static/ERP_Logo.png'
+html_logo = 'static/ADempiere_Logo.jpg'
 
 html_title = " ".join([project, version, "Documentation"])
 
