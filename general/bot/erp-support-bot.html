@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultar Tareas Específicas &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Consultar Tareas Específicas</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/general/bot/erp-support-bot.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="consultar-tareas-especificas">
+<span id="documento-consultar-tarea-especifica"></span><h1><strong>Consultar Tareas Específicas</strong><a class="headerlink" href="#consultar-tareas-especificas" title="Permalink to this headline"></a></h1>
+<p>Al abrir la conversación de <strong>Soporte ERP</strong>, seleccione la opción “<strong>INICIAR</strong>”, ubicada en la parte inferior de la conversación. Posteriormentre podrá visualizar un mensaje donde el bot indica que <strong>Por favor ejecute un comando</strong>.</p>
+<blockquote>
+<div><p><img alt="mensaje principal por favor indique un comando" src="../../_images/main-message-please-enter-a-command.png" /></p>
+<p>Imagen 1. Mensaje Principal “Por favor indique un comando”</p>
+</div></blockquote>
+<p>Para consultar la información de una tarea en específico, de la cual conoce el número de identificación o nombre de la misma, debe ingresar en el campo “<strong>Mensaje</strong>”, la palabra “<strong>&#64;SoporteERPBot</strong>”, seguido de un espacio en blanco y el número o nombre de la tarea.</p>
+<blockquote>
+<div><p>La búsqueda se realiza de manera automática al ingresar algún valor después del espacio en blanco que le sigue a la palabra “<strong>&#64;SoporteERPBot</strong>”, los resultados de la búsqueda se visualizan en la parte superior del campo “<strong>Mensaje</strong>”.</p>
+<p><img alt="variable soporte para consultar tarea" src="../../_images/support-variable-to-query-task.png" /></p>
+<p>Imagen 2. Variable ADempiere</p>
+</div></blockquote>
+<p>Finalmente, al seleccionar alguna de las coincidencias que se reflejan en la parte superior del campo “<strong>Mensaje</strong>”, se envia un mensaje con el comando “<strong>vía &#64;SoporteERPBot</strong>” y el número de tarea correspondiente a lo seleccionado en la búsqueda. Adicional a ello, se recibe un mensaje con la información detallada de la tarea, en el cual se indica lo siguiente:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Número de la tarea</p></li>
+<li><p>Nombre de la tarea</p></li>
+<li><p>Proyecto al que pertenece la tarea</p></li>
+<li><p>Nombre y apellido del autor de la tarea</p></li>
+<li><p>Fecha y hora en la que fue creada la tarea</p></li>
+<li><p>Nombre y apellido del encargado de la tarea</p></li>
+<li><p>Fecha y hora de la última actualización de la tarea</p></li>
+<li><p>Estado en el que se encuentra la tarea</p></li>
+<li><p>Descripción que contiene la tarea</p></li>
+</ul>
+<p><img alt="mensaje recibido con consulta de tarea" src="../../_images/message-received-with-task-query.png" /></p>
+<p>Imagen 3. Mensaje con Consulta de Tarea</p>
+</div></blockquote>
+<p>Adicional a ello, se muestra en la parte inferior del mensaje con la consulta, tres opciones que le permiten al usuario agregar un comentario a la tarea, cambiar el estado o la persona asignada de la misma.</p>
+<blockquote>
+<div><p><img alt="opciones de la consulta de la tarea específica" src="../../_images/specific-task-query-options.png" /></p>
+<p>Imagen 4. Opciones de la Tarea Específica</p>
+<p>Seleccione la opción “<strong>Agregar Comentario</strong>”, para agregar un comentario a la tarea consultada.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Esta opción también permite agregar una imagen.</p>
+</div>
+<p><img alt="opción agregar comentario de la tarea específica" src="../../_images/option-add-comment-of-specific-task.png" /></p>
+<p>Imagen 5. Opción Agregar Comentario</p>
+<p>Al agregar un comentario desde el bot, se agrega el mismo de manera automática en dicha tarea en el OpenProject.</p>
+<blockquote>
+<div><p><img alt="comentario de la tarea en el bot" src="../../_images/task-comment-in-bot.png" /></p>
+<p>Imagen 6. Comentario de la Tarea en el Bot</p>
+<p><img alt="comentario de la tarea en el openproject" src="../../_images/task-comment-in-openproject.png" /></p>
+<p>Imagen 7. Comentario de la Tarea en el OpenProject</p>
+</div></blockquote>
+</div></blockquote>
+<p>Seleccione la opción “<strong>Asignar A</strong>”, para agregar o cambiar el responsable de la tarea.</p>
+<blockquote>
+<div><p><img alt="opción asignar a de la tarea específica" src="../../_images/option-assign-to-of-specific-task.png" /></p>
+<p>Imagen 7. Opción Asignar A</p>
+<p>Al cambiar la persona responsable de la tarea desde el bot, se cambia de manera automática en dicha tarea en el OpenProject.</p>
+<blockquote>
+<div><p><img alt="asignado a de la tarea en el bot" src="../../_images/assigned-to-task-in-bot.png" /></p>
+<p>Imagen 8. Asignado A de la Tarea en el Bot</p>
+<p><img alt="asignado a de la tarea en el openproject" src="../../_images/assigned-to-of-the-task-in-the-openproject.png" /></p>
+<p>Imagen 9. Asignado A de la Tarea en el OpenProject</p>
+</div></blockquote>
+</div></blockquote>
+<p>Seleccione la opción “<strong>Cambiar Estado</strong>”, para cambiar el estado en el que se encuentra la tarea.</p>
+<blockquote>
+<div><p><img alt="opción cambiar estado de la tarea específica" src="../../_images/option-change-specific-task-status.png" /></p>
+<p>Imagen 9. Opción Cambiar Estado</p>
+<p>Al cambiar el estado de la tarea desde el bot, se cambia de manera automática en dicha tarea en el OpenProject.</p>
+<blockquote>
+<div><p><img alt="estado de la tarea en el bot" src="../../_images/task-status-in-the-bot.png" /></p>
+<p>Imagen 10. Estado de la Tarea en el Bot</p>
+<p><img alt="estado de la tarea en el openproject" src="../../_images/task-status-in-openproject.png" /></p>
+<p>Imagen 11. Estado de la Tarea en el OpenProject</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

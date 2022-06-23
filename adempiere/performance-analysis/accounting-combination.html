@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combinación Contable &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Combinación Contable</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/adempiere/performance-analysis/accounting-combination.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="combinacion-contable">
+<span id="documento-combinacion-contable"></span><h1><strong>Combinación Contable</strong><a class="headerlink" href="#combinacion-contable" title="Permalink to this headline"></a></h1>
+<p>Para realizar una configuración de combinación contable en ADempiere, se debe ingresar a la ventana a la cual se le va a configurar la combinación contable, siguiendo el procedimiento detallado a continuación.</p>
+<p>Una vez ubicado en la ventana “<strong>Combinación</strong>”, proceda al llenado de los campos correspondientes para definir la combinación contable.</p>
+<blockquote>
+<div><p><img alt="Ventana Combinación" src="../../_images/combination-window.png" /></p>
+<p>Imagen 1. Ventana Combinación</p>
+<p>Seleccione en el campo “<strong>Alias</strong>”, el alias correspondiente a la combinación contable que está configurando.</p>
+<blockquote>
+<div><p>El alias no es un campo obligatorio, sin embargo, le permite definir un nombre a la combinación que define, por defecto ADempiere crea un alias.</p>
+<p><img alt="Campo Alias" src="../../_images/alias-field-of-combination-window.png" /></p>
+<p>Imagen 2. Campo Alias de la Ventana Combinación</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Organización</strong>, la organización para la cual está realizando la configuración contable.</p>
+<blockquote>
+<div><p>La organización puede ser o no obligatorio dependiendo de la definición del cliente, es decir, un cliente puede definir como obligatoria la organización, para este caso el registro de la combinación no podrá ser guardada si no selecciona una organización.</p>
+<p>De esta forma, permite dimensionar el asiento contable por organización, para entender un poco más este tema vaya al documento: <a class="reference internal" href="accounting-dimensions.html#documento-dimensiones-contable"><span class="std std-ref">Dimensiones Contables</span></a>.</p>
+<p><img alt="Campo Organización" src="../../_images/combination-window-organization-field.png" /></p>
+<p>Imagen 3. Campo Organización de la Ventana Combinación</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Actividad</strong>”, la actividad para la cual está realizando la configuración contable.</p>
+<blockquote>
+<div><p>La actividad puede ser o no obligatoria dependiendo de la definición del cliente, es decir, un cliente puede definir como obligatoria la actividad, para este caso el registro de la combinación no podrá ser guardado si no selecciona una actividad.</p>
+<p>De esta forma, permite dimensionar el asiento contable por actividad, para entender un poco más este tema vaya al documento: <a class="reference internal" href="accounting-dimensions.html#documento-dimensiones-contable"><span class="std std-ref">Dimensiones Contables</span></a>.</p>
+<p><img alt="Campo Actividad" src="../../_images/combination-window-activity-field.png" /></p>
+<p>Imagen 4. Campo Actividad de la Ventana Combinación</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Socio del Negocio</strong>”, el socio del negocio para el cual está realizando la configuración contable.</p>
+<blockquote>
+<div><p>El socio de negocio puede ser o no obligatoria dependiendo de la definición del cliente, es decir, un cliente puede definir como obligatorio un socio de negocio, para este caso el registro de la combinación no podrá ser guardado si no selecciona un socio de negocio.</p>
+<p>De esta forma, permite dimensionar el asiento contable por socio de negocio, para entender un poco más este tema vaya al documento: <a class="reference internal" href="accounting-dimensions.html#documento-dimensiones-contable"><span class="std std-ref">Dimensiones Contables</span></a>.</p>
+<p><img alt="Campo Socio del Negocio" src="../../_images/business-partner-field-of-combination-window.png" /></p>
+<p>Imagen 5. Campo Socio del Negocio de la Ventana Combinación</p>
+</div></blockquote>
+<p>Introduzca en el campo “<strong>Combinación</strong>”, el nombre de la combinación contable que está configurando.</p>
+<blockquote>
+<div><p>La combinación no es un campo obligatorio, sin embargo, le permite definir un nombre a la combinación que define, por defecto ADempiere crea un nombre.</p>
+<p><img alt="Campo Combinación" src="../../_images/combination-field-of-combination-window.png" /></p>
+<p>Imagen 6. Campo Combinación de la Ventana Combinación</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Este campo no es obligatorio, ya que al agregar la cuenta y</p>
+</div>
+</div></blockquote>
+<p>Seleccione con ayuda del identificador del campo “<strong>Cuenta</strong>”, la cuenta en la cual se van a reflejar los movimientos que se van a realizar.</p>
+<blockquote>
+<div><p>La cuenta es un campo obligatorio, y le permite seleccionar la cuenta en la cual será registrado el hecho contable.</p>
+<p><img alt="Campo Cuenta" src="../../_images/combination-window-account-field.png" /></p>
+<p>Imagen 7. Campo Cuenta de la Ventana Combinación</p>
+<blockquote>
+<div><p>Seleccione la cuenta en la que se desea hacer el movimiento y la opción “<strong>OK</strong>” para cargar la convinación de la misma a la ventana “<strong>Combinación</strong>”.</p>
+<blockquote>
+<div><p><img alt="Selección de Cuenta y Opción Ok" src="../../_images/account-selection-and-option-ok.png" /></p>
+<p>Imagen 8. Selección de Cuenta y Opción Ok</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Centro de Costos</strong>”, el centro de costos definido para los movimientos que se van a realizar en la cuenta seleccionada.</p>
+<blockquote>
+<div><p>El centro de costo puede ser o no obligatoria dependiendo de la definición del cliente, es decir, un cliente puede definir como obligatorio un centro de costo, para este caso el registro de la combinación no podrá ser guardado si no selecciona un centro de costo.</p>
+<p>De esta forma, permite dimensionar el asiento contable por centro de costo, para entender un poco más este tema vaya al documento: <a class="reference internal" href="accounting-dimensions.html#documento-dimensiones-contable"><span class="std std-ref">Dimensiones Contables</span></a>.</p>
+<p><img alt="Campo Centro de Costos" src="../../_images/combination-window-cost-center-field.png" /></p>
+<p>Imagen 9. Campo Centro de Costos de la Ventana Combinación</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Producto</strong>”, el producto al cual le será aplicado la combinación contable que está configurando.</p>
+<blockquote>
+<div><p>El producto puede ser o no obligatoria dependiendo de la definición del cliente, es decir, un cliente puede definir como obligatorio un producto, para este caso el registro de la combinación no podrá ser guardado si no selecciona un producto.</p>
+<p>De esta forma, permite dimensionar el asiento contable por producto, para entender un poco más este tema vaya al documento: <a class="reference internal" href="accounting-dimensions.html#documento-dimensiones-contable"><span class="std std-ref">Dimensiones Contables</span></a>.</p>
+<p><img alt="Campo Producto" src="../../_images/combination-window-product-field.png" /></p>
+<p>Imagen 10. Campo Producto de la Ventana Combinación</p>
+<p>Seleccione el icono “<strong>Guardar</strong>”, ubicado del lado derecho de la ventana “<strong>Combinación</strong>”.</p>
+<blockquote>
+<div><p><img alt="Icono Guardar" src="../../_images/combination-window-save-icon.png" /></p>
+<p>Imagen 11. Icono Guardar de la Ventana Combinación</p>
+</div></blockquote>
+<p>Seleccione la opción “<strong>OK</strong>”, para cargar a la ventana “<strong>Diario Contable</strong>”, la información ingresada en la ventana “<strong>Combinación</strong>”.</p>
+<blockquote>
+<div><p><img alt="Opción OK" src="../../_images/combination-window-ok-option.png" /></p>
+<p>Imagen 12. Opción OK de la Ventana Combinación</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

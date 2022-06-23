@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devengado Salario Normal &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Devengado Salario Normal</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/lve/procedures/payroll/payroll-report/accrued-normal-salary.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="devengado-salario-normal">
+<span id="documento-devengado-salario-normal"></span><h1><strong>Devengado Salario Normal</strong><a class="headerlink" href="#devengado-salario-normal" title="Permalink to this headline"></a></h1>
+<p>El reporte “** Devengado Salario Normal**” se refiere al salario que devengó el trabajador de forma regular y permanente durante cada uno de sus procesos de nóminas. Para ADempiere el salario normal está representado por el salario base más los salarios obtenidos en sus días de descanso de su periodo de nómina.</p>
+<p>Para obtener dicho reporte debemos seleccionar los siguientes campos:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>PARÁMETROS</strong></p></th>
+<th class="head"><p><strong>REFERENCIA</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Organización</p></td>
+<td><p>Seleccione la Organización a la cual pertenece  la nómina o
+el socio de negocio que desea solicitar el reporte</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nómina</p></td>
+<td><p>Selecciones entre los distintos tipos de nómina, aquella que
+desea visualizar el reporte, este filtro lo puede usar si
+quiere visualizar varias nóminas de un mismo tipo y no una
+en específico</p></td>
+</tr>
+<tr class="row-even"><td><p>Proceso de Nómina</p></td>
+<td><p>Seleccione el proceso de nómina en específico basado en el
+tipo de nómina que seleccionó anteriormente  (Tambien puede
+ubicarlo en la ventana proceso de nómina)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Socio del Negocio</p></td>
+<td><p>Seleccione el nombre del socio del negocio que necesite
+visualizar la información. Si desea ver la información de
+todos los socios de negocios deje en campo en blanco</p></td>
+</tr>
+<tr class="row-even"><td><p>Fecha Contable</p></td>
+<td><p>Seleccione la fecha contable entre el rango desde, hasta
+si selecciona un proceso específico de nómina no debe
+utilizar este  filtro ya que se traerá la fecha  o
+periodo que tenga la nómina en particular</p></td>
+</tr>
+<tr class="row-odd"><td><p>Estado del Documento</p></td>
+<td><p>Siempre es recomendable utilizar el estado COMPLETO, para
+que el reporte todo en cuenta solo los procesos de nóminas
+en estado Completo no los anulados, ni en borrador</p></td>
+</tr>
+<tr class="row-even"><td><p>Configuración del Reporte de
+Nómina.</p></td>
+<td><p>Seleccione en este caso Devengado Salario Normal</p></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Parámetros para generar el reporte" src="../../../../_images/reportparametersearningnormalsalary.png" /></p>
+<p>Imagen 1. Parámetros para generar el reporte</p>
+</div></blockquote>
+<p>Los campos que podrá visualizar en este reporte son:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>PARÁMETROS</strong></p></th>
+<th class="head"><p><strong>REFERENCIA</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Contrato</p></td>
+<td><p>Corresponde a el contrato configurado para la
+nómina en ejecución</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nómina</p></td>
+<td><p>Identifica el nombre de la nómina que ha sido
+procesada, para este caso será la nómina
+regular a la que pertenece el empleado</p></td>
+</tr>
+<tr class="row-even"><td><p>Trabajador</p></td>
+<td><p>Identifica el nombre de cada uno de los
+empleados</p></td>
+</tr>
+<tr class="row-odd"><td><p>Concepto de Nómina</p></td>
+<td><p>Identifica el nombre de concepto de nómina
+en este caso aparecerá el nombre de las
+asignaciones y deducciones mencionadas
+anteriormente</p></td>
+</tr>
+<tr class="row-even"><td><p>Mes</p></td>
+<td><p>Corresponde al monto otorgado por el empleado
+por el concepto de asignación o durante ese
+mes</p></td>
+</tr>
+<tr class="row-odd"><td><p>Total</p></td>
+<td><p>Corresponde al monto total obtenido por
+concepto</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>En el siguiente ejemplo se presenta  el monto devengado por salario normal  por el empleado durante el proceso de una nómina regular determinada.</p>
+<p>Si desea conocer el valor de dicho concepto durante varias nóminas, no seleccione en el campo proceso de nómina y coloca un parametros de fechas con la finalidad de que pueda visualizar el monto obtenido durante varios procesos de nómina</p>
+<p><img alt="Reporte Devengado Salario Normal" src="../../../../_images/normalsalary.png" /></p>
+<p>Imagen 2. Reporte Devengado Salario Normal</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco Nacional de Crédito &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Banco Nacional de Crédito</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../_sources/lve/procedures/treasury-management/upload-bank-statement-to-bank/bnc/bnc.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="banco-nacional-de-credito">
+<span id="documento-banco-bnc"></span><h1><strong>Banco Nacional de Crédito</strong><a class="headerlink" href="#banco-nacional-de-credito" title="Permalink to this headline"></a></h1>
+<p>Para la exportación de los archivos desde ADempiere al banco nacional de crédito, <a class="reference external" href="http://erpya.com">ERPyA</a> soporta el siguiente formato facilitado por el banco, que puede ser descargado para su análisis y adaptación.</p>
+<section id="archivo-para-pagos-de-nomina">
+<h2><strong>Archivo para Pagos de Nómina</strong><a class="headerlink" href="#archivo-para-pagos-de-nomina" title="Permalink to this headline"></a></h2>
+<p>Al ejecutar el proceso de selección de pago de la nómina quincenal “<strong>NQ-19</strong>” procesada en ADempiere, con los siguientes empleados:</p>
+<ul class="simple">
+<li><p>Socio del Negocio “<strong>Empleado Estándar Uno</strong>”, con cédula de identidad “<strong>V000000001</strong>”, perteneciente a la nómina “<strong>Quincenal</strong>”.</p></li>
+<li><p>Socio del Negocio “<strong>Empleado Estándar Dos</strong>”, con cédula de identidad “<strong>V000000002</strong>”, perteneciente a la nómina “<strong>Quincenal</strong>”.</p></li>
+<li><p>Socio del Negocio “<strong>Empleado Estándar Tres</strong>”, con cédula de identidad “<strong>V000000003</strong>”, perteneciente a la nómina “<strong>Quincenal</strong>”.</p></li>
+<li><p>Socio del Negocio “<strong>Empleado Estándar Cuatro</strong>”, con cédula de identidad “<strong>V000000004</strong>”, perteneciente a la nómina “<strong>Quincenal</strong>”.</p></li>
+</ul>
+<p>Se obtiene como resultado del proceso “<strong>Imprimir /Exportar</strong>”, un documento en formato “<strong>.txt</strong>” con los detalles de los pagos a ser realizados desde el banco nacional de crédito a terceros en el mismo banco, así como también a terceros en otros bancos. El mismo se puede descargar en el enlace <a class="reference download internal" download="" href="../../../../../_downloads/09445467e58f4d2853967c5c8642d3f1/Banco_Nacional_de_Crdito_C.A_1000040.txt"><code class="xref download docutils literal notranslate"><span class="pre">Archivo</span> <span class="pre">de</span> <span class="pre">Pago</span> <span class="pre">de</span> <span class="pre">Nómina</span> <span class="pre">del</span> <span class="pre">BNC</span></code></a> y visualizar de la siguiente manera:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ND</span> <span class="mi">019100000000000000000000172537848</span><span class="n">J000000000</span>
+<span class="n">NC</span> <span class="mi">013400000000000000000000043134462</span><span class="n">V000000001</span>
+<span class="n">NC</span> <span class="mi">010200000000000000000000043134462</span><span class="n">V000000002</span>
+<span class="n">NC</span> <span class="mi">013400000000000000000000043134462</span><span class="n">V000000003</span>
+<span class="n">NC</span> <span class="mi">019100000000000000000000043134462</span><span class="n">V000000004</span>
+</pre></div>
+</div>
+<p><strong>Descripción del Archivo</strong></p>
+<ul class="simple">
+<li><p><strong>Tipo de Registro de Encabezado</strong>: Identificación del encabezado del lote. Ejemplo: “<strong>ND</strong>”</p></li>
+<li><p><strong>Número de Cuenta de la Empresa</strong>: Número de cuenta a debitar. Ejemplo: “<strong>01910000000000000000</strong>”</p></li>
+<li><p><strong>Monto Total</strong>: Monto total del lote de pagos. Ejemplo: “<strong>0000172537848</strong>”</p></li>
+<li><p><strong>RIF de la Empresa</strong>: Número de RIF de la empresa. Ejemplo: “<strong>J000000000</strong>”</p></li>
+<li><p><strong>Tipo de Registro de Detalle por Cada Pago</strong>: “<strong>NC</strong>”</p></li>
+<li><p><strong>Número de Cuenta del Beneficiario</strong>: Número de cuenta a acreditar. Ejemplo: “<strong>01340000000000000000</strong>”, “<strong>01020000000000000000</strong>”, “<strong>01340000000000000000</strong>” y “<strong>01910000000000000000</strong>”.</p></li>
+<li><p><strong>Monto</strong>: Monto del pago. Ejemplo: “<strong>0000043134462</strong>”</p></li>
+<li><p><strong>CI o RIF del Beneficiario</strong>: Número de CI o RIF del beneficiario. Ejemplo: “<strong>V000000001</strong>”, “<strong>V000000002</strong>”, “<strong>V000000003</strong>” y “<strong>V000000004</strong>”.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuración Cliente de Impresión en ADempiere &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Configuración Cliente de Impresión en ADempiere</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/lve/fiscal-printer/adempiere-config-local-printing-all-in-one.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuracion-cliente-de-impresion-en-adempiere">
+<span id="documento-adempiere-config-local-printing-all-in-one"></span><h1>Configuración Cliente de Impresión en ADempiere<a class="headerlink" href="#configuracion-cliente-de-impresion-en-adempiere" title="Permalink to this headline"></a></h1>
+<p>En ADempiere la Configuración (Local-Printing-All-In-One-DotNet) se realiza en la ventana Registro de Aplicación, la configuración a emplear dependera del uso final de la aplicación ya que puede controlar a impresoras fiscales de The Factory HKA y Imprimir PDF.</p>
+<section id="configurar-la-aplicacion-para-imprimir-pdf-documentos-desde-adempiere">
+<h2>Configurar la aplicación para Imprimir PDF (Documentos) desde ADempiere<a class="headerlink" href="#configurar-la-aplicacion-para-imprimir-pdf-documentos-desde-adempiere" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Dirijase a la ventana registros de aplicación y cree un nuevo registro llenando los siguientes campos.</p></li>
+</ol>
+<p><img alt="Registro de Aplicación" src="../../_images/config-print-queue.png" /></p>
+<ul class="simple">
+<li><p><strong>Código</strong>: Codigo Descriptivo para identificar la impresora</p></li>
+<li><p><strong>Tipo de Aplicación</strong>:   Cola de Impresión</p></li>
+<li><p><strong>Aplicación Soportada</strong>: Kafka-Queue_Kafka Queue</p></li>
+<li><p><strong>Nombre</strong>: Nombre Descriptivo para identificar la impresora</p></li>
+<li><p><strong>Descripción</strong>: En está sección se puede Decribir la impresora o la ubicación de la misma para un mejor referencia para identificarla</p></li>
+<li><p><strong>Servidor</strong>: Dominio o Dirección IP donde se encuentra ejecutandose el servicio de cola de Kafka.</p></li>
+<li><p><strong>Puerto</strong>: Puerto por el cual responde el servicio de cola de Kafka.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Una vez llenos los campos anteriores se debe ingresar en la pestaña paramteros, alli deben estar 2 registros PORT_NAME y QUEUE_NAME</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>PORT_NAME</strong>: Corresponde al nombre por el cual se va a identificar la impresora dentro de la cola de impresión, se puede colocar el departamento o el nombre que tiene la impresora  en windows</p></li>
+</ul>
+<p><img alt="Nombre de Impresora" src="../../_images/config-print-queue-printer-name.png" /></p>
+<ul class="simple">
+<li><p><strong>QUEUE_NAME</strong>: Corresponde al Nombre de la cola de impresión.</p></li>
+</ul>
+<p><img alt="Nombre de Impresora" src="../../_images/config-print-queue-printer-name.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>Prueba de impresión:</p></li>
+</ol>
+<p>Este paso es importante, debido a que en este punto es donde se crea la cola de impresión, para que ADempiere envie los Documentos y el Cliente de Impresión Todo en Uno los reciba y los envie a la impresora, cuande es ejecute el proceso Test Conectión inmediatamente se enviara a la cola de impresión un documento aleatorio desde ADempiere (Es recomendable hacer esto antes de iniciar la configuración en Windows de la aplicación).</p>
+<p><img alt="Prueba de Impresión" src="../../_images/config-print-queue-test-print.png" /></p>
+<p>El Resultado de está prueba es el siguiente se imprime un documento en la impresora prederterminada del sistema operativo.</p>
+</section>
+<section id="configurar-la-aplicacion-para-controlar-una-impresora-fiscal">
+<h2>Configurar la aplicación para controlar una impresora Fiscal<a class="headerlink" href="#configurar-la-aplicacion-para-controlar-una-impresora-fiscal" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Dirijase a la ventana registros de aplicación y cree un nuevo registro llenando los siguientes campos.</p></li>
+</ol>
+<p><img alt="Registro de Aplicación Impresora Fiscal" src="../../_images/config-fiscal-printer.png" /></p>
+<ul class="simple">
+<li><p><strong>Código</strong>: Codigo Descriptivo para identificar la impresora</p></li>
+<li><p><strong>Tipo de Aplicación</strong>: Impresora Fiscal</p></li>
+<li><p><strong>Aplicación Soportada</strong>: FiscalPrintKafkaAPI_Fiscal Printer Kafka API</p></li>
+<li><p><strong>Nombre</strong>: Nombre Descriptivo para identificar la impresora</p></li>
+<li><p><strong>Descripción</strong>: En está sección se puede Decribir la impresora o la ubicación de la misma para un mejor referencia para identificarla</p></li>
+<li><p><strong>Servidor</strong>: Dominio o Dirección IP donde se encuentra ejecutandose el servicio de cola de Kafka.</p></li>
+<li><p><strong>Puerto</strong>: Puerto por el cual responde el servicio de cola de Kafka.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Una vez llenos los campos anteriores se debe ingresar en la pestaña paramteros, alli deben estar 2 registros PORT_NAME y QUEUE_NAME</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>printer_name</strong>: Corresponde al nombre por el cual se va a identificar la impresora dentro de la cola de impresión.</p></li>
+</ul>
+<p><img alt="Nombre de cola de Impresión Impresora Fiscal" src="../../_images/config-fiscal-printer-queue-name.png" /></p>
+<ul class="simple">
+<li><p><strong>port_name</strong>: Corresponde al Puerto COM al que se encuentra conectado la impresora.</p></li>
+</ul>
+<p><img alt="Puerto COM Impresora Fical" src="../../_images/config-fiscal-printer-com-port.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>Prueba de impresión:</p></li>
+</ol>
+<p>Este se debe realizar luego de realizar la configuración en Windows de la aplicación(Local-Printing-All-In-One-DotNet). Se Debe ejecutar el proceso <strong>Imprimir Reporte Fiscal</strong> con los siguiente paramtros.</p>
+<p><img alt="Prueba de Impresión impresora fiscal" src="../../_images/config-fiscal-printer-test-print.png" /></p>
+<p>El Resultado de está prueba es que se imprime un Reporte X en la impresora fiscal, si esto no sucede se debe verificar la conexión de la impresora el puerto que se configuro tanto en ADempiere como en el archivo printer.yaml</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

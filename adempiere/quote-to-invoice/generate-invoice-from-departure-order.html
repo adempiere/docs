@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generar Factura desde Orden de Salida &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Generar Factura desde Orden de Salida</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/adempiere/quote-to-invoice/generate-invoice-from-departure-order.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="generar-factura-desde-orden-de-salida">
+<span id="documento-generar-factura-orden-salida"></span><h1><strong>Generar Factura desde Orden de Salida</strong><a class="headerlink" href="#generar-factura-desde-orden-de-salida" title="Permalink to this headline"></a></h1>
+<p>El presente material elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a> pretende ofrecerle una explicación eficiente a nuestros clientes del procedimiento a seguir para realizar y obtener un resultado exitoso al momento de generar facturas desde orden de salida en la versión 3.9.2 de ADempiere en la localización Venezuela.</p>
+<p>El proceso “<strong>Generar Facturas desde Orden de Salida</strong>” cuenta con el checklist “<strong>Consolidado en un Documento</strong>” que al estar tildado permite agrupar todas las órdenes de salida que tenga un mismo socio del negocio para generar una factura. Si en las órdenes de salida seleccionadas se encuentran productos con un mismo código, ADempiere suma en la factura todos los productos que posean el mismo código, ubicándolos en una sola línea.</p>
+<p>En el caso de que el checklist no se encuentre tildado, el proceso “<strong>Generar Facturas desde Orden de Salida</strong>” es ejecutado de forma regular, generando tantas facturas como órdenes de venta tenga la orden de salida.</p>
+<p>A continuación se explica el procedimiento que debe ser realizado para generar facturas desde orden de salida.</p>
+<p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Ventas</strong>”, luego seleccione la carpeta “<strong>Facturas de Ventas</strong>”, por último seleccione el proceso “<strong>Generar Factura desde Orden de Salida</strong>”.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Menú de ADempiere" src="../../_images/menu4.png" />
+</figure>
+<p>Imagen 1. Menú de ADempiere</p>
+</div></blockquote>
+<p>Podrá visualizar la ventana “<strong>Generar Factura desde Orden de Salida</strong>” y proceder al llenado de los campos correspondientes para filtrar la búsqueda.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Generar Factura desde Orden de Salida" src="../../_images/ventana4.png" />
+</figure>
+<p>Imagen 2. Ventana Generar Factura desde Orden de Salida</p>
+<p>Seleccione en el campo “<strong>Orden de Salida</strong>”, la orden de salida de la cual se va a filtrar la búsqueda.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Campo Orden de Salida" src="../../_images/salida.png" />
+</figure>
+<p>Imagen 3. Campo Orden de Salida</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Para ejemplificar el registro solo es seleccionada la orden de salida como filtro de búsqueda, los filtros de búsqueda son acorde a la comodidad del cliente.</p>
+</div>
+<p>Seleccione la opción “<strong>Comenzar Búsqueda</strong>” para realizar la búsqueda de los documentos según los filtros indicados.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Opción Comenzar Búsqueda" src="../../_images/busq.png" />
+</figure>
+<p>Imagen 4. Opción Comenzar Búsqueda</p>
+</div></blockquote>
+<p>Seleccione la orden de salida por la cual será generada la factura.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Seleccionar Orden de Salida" src="../../_images/seleccionar.png" />
+</figure>
+<p>Imagen 5. Seleccionar Orden de Salida</p>
+</div></blockquote>
+<p>Seleccione la opción “<strong>OK</strong>”, para generar la factura desde la orden de salida seleccionada.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Opción OK" src="../../_images/opcionOk.png" />
+</figure>
+<p>Imagen 6. Opción OK</p>
+</div></blockquote>
+<p>Podrá visualizar la siguiente ventana de confirmación donde debe seleccionar la opción “<strong>OK</strong>”.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Ventana de Confirmación y Opción OK" src="../../_images/resultado.png" />
+</figure>
+<p>Imagen 7. Ventana de Confirmación y Opción OK</p>
+</div></blockquote>
+</div></blockquote>
+<section id="consultar-facturas-generadas">
+<h2><strong>Consultar Facturas Generadas</strong><a class="headerlink" href="#consultar-facturas-generadas" title="Permalink to this headline"></a></h2>
+<p>Al consultar el registro en la ventana “<strong>Documentos por Cobrar</strong>”, puede visualizar la factura de cuentas por cobrar generada desde la orden de salida.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Factura desde Orden de Salida" src="../../_images/factura.png" />
+</figure>
+<p>Imagen 8. Factura desde Orden de Salida</p>
+</div></blockquote>
+</section>
+<section id="imprimir-facturas-generadas">
+<h2><strong>Imprimir Facturas Generadas</strong><a class="headerlink" href="#imprimir-facturas-generadas" title="Permalink to this headline"></a></h2>
+<p>Al imprimir el registro en la ventana “<strong>Documentos por Cobrar</strong>”, seleccionando el icono “<strong>Imprimir</strong>” ubicado en la barra de herramientas de ADempiere, podrá visualizar de la siguiente manera la factura de ventas generada desde la orden de salida.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Factura Generada desde la Orden de Salida" src="../../_images/factura2.png" />
+</figure>
+<p>Imagen 9. Factura Generada desde la Orden de Salida</p>
+</div></blockquote>
+</section>
+</section>
+<section id="generar-factura-desde-orden-de-salida-consolidado-en-un-documento">
+<h1><strong>Generar Factura desde Orden de Salida Consolidado en un Documento</strong><a class="headerlink" href="#generar-factura-desde-orden-de-salida-consolidado-en-un-documento" title="Permalink to this headline"></a></h1>
+<p>Realice el procedimiento regular explicado anteriormente en <a class="reference internal" href="#documento-generar-factura-orden-salida"><span class="std std-ref">Generar Factura desde Orden de Salida</span></a>, luego de seleccionar las órdenes de salida por las cuales será generada la factura, tilde el checklist “<strong>Consolidado en un Documento</strong>” y la opción “<strong>OK</strong>” para generar las facturas por socios del negocio asociados a las órdenes de ventas seleccionadas.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Factura Generada desde la Orden de Salida" src="../../_images/check1.png" />
+</figure>
+<p>Imagen 10. Factura Generada desde la Orden de Salida</p>
+</div></blockquote>
+<p>Podrá visualizar la siguiente ventana de confirmación donde debe seleccionar la opción “<strong>OK</strong>”.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Ventana de Confirmación y Opción OK" src="../../_images/resultado2.png" />
+</figure>
+<p>Imagen 11. Ventana de Confirmación y Opción OK</p>
+</div></blockquote>
+<section id="id1">
+<h2><strong>Consultar Facturas Generadas</strong><a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<p>Al consultar el registro en la ventana “<strong>Documentos por Cobrar</strong>”, puede visualizar las facturas de cuentas por cobrar generadas desde la orden de salida.</p>
+<blockquote>
+<div><p>Documento por Cobrar “<strong>85932</strong>” correspondiente al socio del negocio “<strong>Socio Estándar 1</strong>”.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Factura Número 85932 Generada desde la Orden de Salida" src="../../_images/factura3.png" />
+</figure>
+<p>Imagen 12. Factura Número 85932 Generada desde la Orden de Salida</p>
+</div></blockquote>
+<p>Documento por Cobrar “<strong>85933</strong>” correspondiente al socio del negocio “<strong>Socio Estándar 2</strong>”.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Factura Número 85933 Generada desde la Orden de Salida" src="../../_images/factura4.png" />
+</figure>
+<p>Imagen 13. Factura Número 85933 Generada desde la Orden de Salida</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="id2">
+<h2><strong>Imprimir Facturas Generadas</strong><a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<p>Al imprimir el registro en la ventana “<strong>Documentos por Cobrar</strong>”, seleccionando el icono “<strong>Imprimir</strong>” ubicado en la barra de herramientas de ADempiere, podrá visualizar de la siguiente manera la factura de ventas generada desde la orden de salida.</p>
+<blockquote>
+<div><p>Factura “<strong>85932</strong>” correspondiente al socio del negocio “<strong>Socio Estándar 1</strong>”.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Factura Número 85932 Generada desde la Orden de Salida" src="../../_images/factura5.png" />
+</figure>
+<p>Imagen 14. Factura Número 85932 Generada desde la Orden de Salida</p>
+</div></blockquote>
+<p>Factura “<strong>85933</strong>” correspondiente al socio del negocio “<strong>Socio Estándar 2</strong>”.</p>
+<blockquote>
+<div><figure class="align-default">
+<img alt="Factura Número 85933 Generada desde la Orden de Salida" src="../../_images/factura6.png" />
+</figure>
+<p>Imagen 15. Factura Número 85933 Generada desde la Orden de Salida</p>
+</div></blockquote>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Podrá visualizar que la búsqueda inteligente “<strong>Generar Factura desde Orden de Salida</strong>”, genera una factura por socio del negocio; agrupando en una sola línea de la factura la cantidad total de un mismo producto que se ubique en diferentes órdenes de ventas.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

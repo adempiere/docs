@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validación de Inventario en Orden de Venta &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Validación de Inventario en Orden de Venta</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/adempiere/quote-to-invoice/sales-order/inventory-validation-in-sales-order.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="validacion-de-inventario-en-orden-de-venta">
+<span id="documento-validacion-de-inventario-en-orden-de-venta"></span><h1><strong>Validación de Inventario en Orden de Venta</strong><a class="headerlink" href="#validacion-de-inventario-en-orden-de-venta" title="Permalink to this headline"></a></h1>
+<p>Para validar la disponibilidad de los productos en las ventas por medio de las órdenes de venta, ya sea desde la ventana “<strong>Órdenes de Venta</strong>” o desde el formulario “<strong>Punto de Venta</strong>”, <a class="reference external" href="http://erpya.com">ERPyA</a> realizó una actualización en los tipos de documentos de órdenes de venta. Dicha actualización consta de un check que establece como regla principal la disponibilidad en almacén de los productos cargados a la orden.</p>
+<blockquote>
+<div><p><img alt="check validar disponibilidad" src="../../../_images/check-validate-availability.png" /></p>
+<p>Imagen 1. Check Validar Disponibilidad</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El check “<strong>Validar Disponibilidad</strong>”, en los tipos de documentos se encuentra deshabilitado por defecto, permitiendo que se complete el registro de la orden de venta desde la ventana “<strong>Órdenes de Venta</strong>” o desde el formulario “<strong>Punto de Venta</strong>”, sin validar que tengan disponibilidad en almacén los productos cargados a la orden de venta.</p>
+</div>
+<p>La validación se realiza en las órdenes de ventas por medio del check “<strong>Validar Disponibilidad</strong>”, que se encuentra en el tipo de documento utilizado para generar dicha orden. Para que la validación funcione se debe considerar lo siguiente:</p>
+<ul class="simple">
+<li><p>El tipo de documento debe estar marcado como “<strong>Validar Disponibilidad</strong>”.</p></li>
+<li><p>La línea de la orden de venta debe tener cantidades mayores a cero.</p></li>
+<li><p>Sólo aplica para lineas de órdenes con productos asociados.</p></li>
+<li><p>El registro del producto debe tener habilitado el check “<strong>Almacenado</strong>”.</p></li>
+<li><p>El almacén utilizado para la validación es el que se encuentra en la linea de la orden de venta.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Esta configuración no aplica para las <strong>Órdenes de Devolución</strong></p>
+</div>
+<section id="funcionalidad-de-la-validacion">
+<h2><strong>Funcionalidad de la Validación</strong><a class="headerlink" href="#funcionalidad-de-la-validacion" title="Permalink to this headline"></a></h2>
+<p>Cuando el check se encuentra habilitado, ADempiere sólo permitirá completar el registro de la orden de venta desde la ventana “<strong>Órdenes de Venta</strong>”, si todos los productos tienen disponibilidad en el almacén con el que se este trabajando. De no tener disponibilidad, será mostrado el siguiente mensaje:</p>
+<blockquote>
+<div><p><img alt="registro desde ventana órdenes de venta" src="../../../_images/register-from-window-sales-orders.png" /></p>
+<p>Imagen 2. Registro desde Ventana Órdenes de Venta</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Para crear una orden de venta desde la ventana “<strong>Órdenes de Venta</strong>”, puede consultar el material <a class="reference internal" href="sales-order.html#documento-orden-de-venta"><span class="std std-ref">Registro de Orden de Venta</span></a>.</p>
+</div>
+</div></blockquote>
+<p>De igual manera, al estar habilitado el check sólo será agregado el producto a la línea de la orden de venta desde el formulario “<strong>Punto de Venta</strong>”, si el producto seleccionado tiene disponibilidad en el almacén con el que se este trabajando. De no tener disponibilidad, será mostrado el siguiente mensaje:</p>
+<blockquote>
+<div><p><img alt="registro desde formulario punto de venta" src="../../../_images/registration-from-point-of-sale-form.png" /></p>
+<p>Imagen 3. Registro desde Formulario Punto de Venta</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Para crear una orden de venta desde el formulario “<strong>Punto de Venta</strong>”, puede consultar el material <a class="reference internal" href="../../pos-management/pos.html#documento-punto-de-venta"><span class="std std-ref">Toma de Pedido</span></a>.</p>
+</div>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

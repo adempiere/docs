@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asignación de Factura a Recepción &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Asignación de Factura a Recepción</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/adempiere/requisition-to-invoice/assign-purchase-order-receipt-invoice.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="asignacion-de-factura-a-recepcion">
+<span id="documento-asignar-orden-de-compra-recepcion-factura"></span><h1><strong>Asignación de Factura a Recepción</strong><a class="headerlink" href="#asignacion-de-factura-a-recepcion" title="Permalink to this headline"></a></h1>
+<p>Para realizar el procedimiento de asignación correctamente, es necesario cumplir con los siguientes requerimientos:</p>
+<blockquote>
+<div><p>Un documento de “<strong>Orden de Compra</strong>” directa, para este caso se presenta la orden de compra número “<strong>OCN-24</strong>”, relacionada con el socio del negocio “<strong>Estándar</strong>”, por la compra del producto “<strong>DOIS-000001    _Estandar</strong>” y con monto total de “<strong>2.500.000,00</strong>”.</p>
+<blockquote>
+<div><p><img alt="Orden de Compra" src="../../_images/purchase-order1.png" /></p>
+<p>Imagen 1. Orden de Compra</p>
+</div></blockquote>
+<p>Un documento de “<strong>Recepción de Productos</strong>” desde la orden de compra previamente realizada, para este caso se presenta la recepción de productos número “<strong>RN-2</strong>”, relacionada con la orden de compra número “<strong>OCN-24</strong>” y el producto “<strong>DOIS-000001    _Estandar</strong>”.</p>
+<blockquote>
+<div><p><img alt="Recepción de Productos" src="../../_images/product-receipt.png" /></p>
+<p>Imagen 2. Recepción de Productos</p>
+</div></blockquote>
+<p>Una “<strong>Factura</strong>” manual, sin llamar dentro de la misma a la orden de compra o recepción anteriormente realizada. Para este caso se presenta la factura número “<strong>1000112</strong>”, relacionada con el socio del negocio “<strong>Estándar</strong>”, por la compra del producto “<strong>DOIS-000001        _Estandar</strong>” y con monto total de “<strong>2.500.000,00</strong>”.</p>
+<blockquote>
+<div><p><img alt="Factura por Pagar" src="../../_images/invoice-payable.png" /></p>
+<p>Imagen 3. Factura por Pagar</p>
+</div></blockquote>
+</div></blockquote>
+<p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Compras</strong>”, luego seleccione el formulario “<strong>Asignar OC-Recibo-Factura</strong>”.</p>
+<blockquote>
+<div><p><img alt="Menú de ADempiere" src="../../_images/menu-assign-oc-receipt-invoice.png" /></p>
+<p>Imagen 4. Menú de ADempiere</p>
+</div></blockquote>
+<p>Podrá visualizar la ventana “<strong>Asignar OC Recepción Factura</strong>”, con diferentes campos que le permiten al usuario realizar la asignación de las órdenes de compra, recepciones y facturas por pagar.</p>
+<blockquote>
+<div><p><img alt="Ventana Asignar OC Recepción Factura" src="../../_images/assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 5. Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Asignar Desde</strong>”, el documento que requiere asignar.</p>
+<blockquote>
+<div><p><img alt="Campo Asignar Desde de la Ventana Asignar OC Recepción Factura" src="../../_images/assign-from-field-in-the-assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 6. Campo Asignar Desde de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Asignar Hasta</strong>”, el documento al cual se requiere asignar.</p>
+<blockquote>
+<div><p><img alt="Campo Asignar Hasta de la Ventana Asignar OC Recepción Factura" src="../../_images/assign-to-field-in-the-assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 7. Campo Asignar Hasta de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Modo de Búsqueda</strong>”, el método utilizado para filtrar la búsqueda de los documentos.</p>
+<blockquote>
+<div><p><img alt="Campo Modo de Búsqueda de la Ventana Asignar OC Recepción Factura" src="../../_images/search-mode-field-in-the-assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 8. Campo Modo de Búsqueda de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Socio del Negocio</strong>”, el socio del negocio por el cual requiere filtrar la búsqueda.</p>
+<blockquote>
+<div><p><img alt="Campo Socio del Negocio de la Ventana Asignar OC Recepción Factura" src="../../_images/business-partner-field-of-the-assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 9. Campo Socio del Negocio de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Producto</strong>”, el producto por el cual requiere filtrar la búsqueda.</p>
+<blockquote>
+<div><p><img alt="Campo Producto de la Ventana Asignar OC Recepción Factura" src="../../_images/product-field-of-the-assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 10. Campo Producto de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Fecha Desde</strong>”, el inicio del rango de fechas por el cual requiere filtrar la búsqueda.</p>
+<blockquote>
+<div><p><img alt="Campo Fecha Desde de la Ventana Asignar OC Recepción Factura" src="../../_images/date-from-field-in-the-assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 11. Campo Fecha Desde de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Fecha Hasta</strong>”, la fecha final del rango de fechas por el cual requiere filtrar la búsqueda.</p>
+<blockquote>
+<div><p><img alt="Campo Fecha Hasta de la Ventana Asignar OC Recepción Factura" src="../../_images/date-to-field-in-the-assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 12. Campo Fecha Hasta de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione la opción “<strong>Buscar Registros</strong>”, para realizar la búsqueda en base a lo seleccionado en los campos anteriormente explicados.</p>
+<blockquote>
+<div><p><img alt="Opción Buscar Registros de la Ventana Asignar OC Recepción Factura" src="../../_images/option-to-find-records-in-the-window-assign-oc-receipt-invoice.png" /></p>
+<p>Imagen 13. Opción Buscar Registros de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione en la sección “<strong>Factura</strong>”, la factura que requiere asignar.</p>
+<blockquote>
+<div><p><img alt="Selección de Factura de la Ventana Asignar OC Recepción Factura" src="../../_images/invoice-selection-from-the-assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 14. Selección de Factura de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>El checklist “<strong>Mismo Socio del Negocio</strong>”, filtra la búsqueda por el mismo socio del negocio de la factura seleccionada en la sección “<strong>Factura</strong>”.</p>
+<blockquote>
+<div><p><img alt="Checklist Mismo Socio del Negocio de la Ventana Asignar OC Recepción Factura" src="../../_images/checklist-same-business-partner-window-assign-oc-receipt-invoice.png" /></p>
+<p>Imagen 15. Checklist Mismo Socio del Negocio de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>El checklist “<strong>Mismo Producto</strong>”, filtra la búsqueda por el mismo producto de la factura seleccionada en la sección “<strong>Factura</strong>”.</p>
+<blockquote>
+<div><p><img alt="Checklist Mismo Producto de la Ventana Asignar OC Recepción Factura" src="../../_images/checklist-same-product-from-window-assign-oc-receipt-invoice.png" /></p>
+<p>Imagen 16. Checklist Mismo Producto de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>El checklist “<strong>Misma Cantidad</strong>”, filtra la búsqueda por la misma cantidad de productos de la factura seleccionada en la sección “<strong>Factura</strong>”.</p>
+<blockquote>
+<div><p><img alt="Checklist Misma Cantidad de la Ventana Asignar OC Recepción Factura" src="../../_images/checklist-same-amount-of-window-assign-oc-receipt-invoice.png" /></p>
+<p>Imagen 17. Checklist Misma Cantidad de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione en la sección “<strong>Entrega/Recibo</strong>”, la recepción a la cual requiere asignar la factura seleccionada en la sección “<strong>Factura</strong>”.</p>
+<blockquote>
+<div><p><img alt="Selección de Recepción de Productos de la Ventana Asignar OC Recepción Factura" src="../../_images/product-reception-selection-from-the-assign-oc-reception-invoice-window.png" /></p>
+<p>Imagen 18. Selección de Recepción de Productos de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>En el campo “<strong>Para ser asignadas</strong>”, se visualiza la cantidad total de productos que contiene la factura.</p>
+<blockquote>
+<div><p><img alt="Campo Para ser asignadas de la Ventana Asignar OC Recepción Factura" src="../../_images/field-to-be-assigned-from-the-window-assign-oc-receipt-invoice.png" /></p>
+<p>Imagen 19. Campo Para ser asignadas de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>En el campo “<strong>Asignando</strong>”, se visualiza la cantidad total de productos que contiene la recepción.</p>
+<blockquote>
+<div><p><img alt="Campo Asignando de la Ventana Asignar OC Recepción Factura" src="../../_images/assigning-field-of-the-assign-oc-receipt-invoice-window.png" /></p>
+<p>Imagen 20. Campo Asignando de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>En el campo “<strong>Diferencia</strong>”, se visualiza el resultado obtenido de la operación (Para ser asignadas - Asignando). Es decir, al restar el valor del campo “<strong>Asignando</strong>”, al valor del campo “<strong>Para ser asignadas</strong>”.</p>
+<blockquote>
+<div><p><img alt="Campo Diferencia de la Ventana Asignar OC Recepción Factura" src="../../_images/field-difference-of-the-window-assign-oc-receipt-invoice.png" /></p>
+<p>Imagen 21. Campo Diferencia de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<p>Seleccione la opción “<strong>Proceso</strong>”, para realizar la asignación de documentos en base a lo seleccionado en la ventana “<strong>Asignar OC Recepción Factura</strong>”.</p>
+<blockquote>
+<div><p><img alt="Opción Proceso de la Ventana Asignar OC Recepción Factura" src="../../_images/process-option-of-the-window-assign-oc-receipt-invoice.png" /></p>
+<p>Imagen 22. Opción Proceso de la Ventana Asignar OC Recepción Factura</p>
+</div></blockquote>
+<section id="consultar-asignacion-en-factura-por-pagar">
+<h2><strong>Consultar Asignación en Factura por Pagar</strong><a class="headerlink" href="#consultar-asignacion-en-factura-por-pagar" title="Permalink to this headline"></a></h2>
+<p>Para consultar la asignación realizada en la factura por pagar, se debe ubicar el registro de la misma en la ventana “<strong>Documentos por Pagar</strong>”, y seleccionar la pestaña “<strong>Recepciones de Producto Asignadas</strong>”.</p>
+<blockquote>
+<div><p><img alt="Pestaña Recepciones de Producto Asignadas" src="../../_images/assigned-product-receipts-tab.png" /></p>
+<p>Imagen 23. Pestaña Recepciones de Producto Asignadas</p>
+</div></blockquote>
+</section>
+<section id="consultar-asignacion-en-recepcion-de-productos">
+<h2><strong>Consultar Asignación en Recepción de Productos</strong><a class="headerlink" href="#consultar-asignacion-en-recepcion-de-productos" title="Permalink to this headline"></a></h2>
+<p>Para consultar la asignación realizada en la recepción de productos, se debe ubicar el registro de la misma en la ventana “<strong>Recepción de Productos</strong>”, y seleccionar la pestaña “<strong>Facturas Asignadas</strong>”.</p>
+<blockquote>
+<div><p><img alt="Pestaña Facturas Asignadas" src="../../_images/assigned-invoices-tab.png" /></p>
+<p>Imagen 24. Pestaña Facturas Asignadas</p>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

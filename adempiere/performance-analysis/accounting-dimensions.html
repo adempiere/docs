@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dimensiones Contables &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Dimensiones Contables</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/adempiere/performance-analysis/accounting-dimensions.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dimensiones-contables">
+<span id="documento-dimensiones-contable"></span><h1><strong>Dimensiones Contables</strong><a class="headerlink" href="#dimensiones-contables" title="Permalink to this headline"></a></h1>
+<p>La dimensión contable es una funcionalidad incorporada por ADempiere utilizada para unir información haciendo un recuento de los hechos contables que componen cada entidad. De esta forma, se define dimensiones primarias o secundarias respecto a las principales, esto quiere decir, que puede existir una dimensión acumulativa que derive a su vez múltiples dimensiones que posibilitan la implementación de métricas sumarias de cada una o agrupadas por la dimensión padre.</p>
+<p>Estas dimensiones contables sustituyen cuentas auxiliares utilizadas comúnmente por los contadores para visualizar en detalle saldos, por ejemplo de socios de negocios que actúan como accionistas, para entenderlo mejor veamos el siguiente ejemplo:</p>
+<blockquote>
+<div><p>Imaginemos una empresa que requiere ver el saldos contable de los pasivos de cada accionista de la empresa, para esto la empresa ha definido una cuentas llamada “<strong>CUENTAS POR PAGAR SOCIOS Y ACCIONISTAS-MARTÍN PIÑEROS</strong>” que muestra el detalle del pasivo del accionista <strong>Martín Piñeros</strong>. Así mismo, se agrega un nivel más al plan de cuentas, agregando tantas cuentas como accionistas existan, quedando de la siguiente forma:</p>
+<blockquote>
+<div><p><img alt="Ejemplo de Dimensión" src="../../_images/previous-accounting-dimension.png" /></p>
+<p>Imagen 1. Plan de cuentas con dimensiones</p>
+</div></blockquote>
+</div></blockquote>
+<p>Sin embargo, ADempiere contempla una visión holística y minimalista, que elimina la creación de múltiples cuentas contables para el detalle y a su vez las sustituye por las dimensiones contables, creando una combinación entre la cuenta contable y la dimensión, quedando de la siguiente forma:</p>
+<blockquote>
+<div><p><img alt="Dimensión Socio de Negocio" src="../../_images/current-accounting-dimension.png" /></p>
+<p>Imagen 2. Dimensión Contable de Socio de Negocio</p>
+</div></blockquote>
+<p>Por su parte, al crear una transacción con esta dimensión contable el resultado será el siguiente:</p>
+<blockquote>
+<div><p><img alt="Dimensión Contable" src="../../_images/Dimension-Accounting.png" /></p>
+<p>Imagen 3. Dimensión Contable ADempiere</p>
+</div></blockquote>
+<p>Las entidades con las que ADempiere permite dimensionar los diferentes hechos contables son las siguientes:</p>
+<blockquote>
+<div><p><strong>Organización</strong>: Representa una entidad legal dentro de la empresa, generalmente estructurada de forma dependiente a la compañía principal, esta puede ser una sucursal, tienda o franquicia.</p>
+<p><strong>Socio de negocio</strong>: Representa un sujeto jurídico o natural con el que la organización establece una alianza temporal o permanente, este puede ser un proveedor, cliente, accionista o empleado. Para profundizar más este tema vaya a el documento: <a class="reference internal" href="../master/business-partner/business-partner.html#documento-socio-negocio"><span class="std std-ref">Registro de Socio del Negocio</span></a>.</p>
+<p><strong>Producto</strong>: Representa el resultado obtenido de una producción, que es utilizado durante la compra o la venta,  este puede ser servicio o artículo. Para profundizar más este tema vaya a el documento: <a class="reference internal" href="../master/product/product.html#documento-producto"><span class="std std-ref">Registro de Producto</span></a>.</p>
+<p><strong>Región de Venta</strong>: Representa una zona de venta o conjunto de clientes o prospectos que son asignados a un vendedor y con las que la empresa puede establecer un negocio. Para profundizar más este tema vaya a el documento: <a class="reference internal" href="../quote-to-invoice/sales-region/sales-region.html#documento-region-ventas"><span class="std std-ref">Registro de Región de Ventas</span></a>.</p>
+<p><strong>Actividad</strong>: Representa las actividades realizadas en la empresa, generalmente un departamento, permitiendo determinar el costo o el gasto de cada actividad.</p>
+<p><strong>Proyecto</strong>: Representa la planificación de actividades relacionadas al cumplimiento de un objetivo específico, generalmente delimitado por fases y tareas.</p>
+<p><strong>Campaña</strong>: Representa la agrupación de actividades realizadas con la finalidad de lograr un determinado objetivo.</p>
+<p><strong>Elementos Personalizados:</strong> A menudo los clientes han preguntado ¿Cómo hacemos si nosotros manejamos una dimensión u otro elemento para medir nuestro desempeño?.</p>
+<p>Pues bien, ADempiere deja a disposición del cliente cinco campos para personalizar a su criterio, los mismos, funcionan exactamente igual a las dimensiones anteriormente explicadas, estos son:</p>
+<blockquote>
+<div><p>Usuario1</p>
+<p>Usuario2</p>
+<p>Usuario3</p>
+<p>Usuario4</p>
+<p>Usuario5</p>
+</div></blockquote>
+</div></blockquote>
+<p>Se puede decir entonces que una dimensión es el respaldo que da una entidad a un hecho contable, este sustituye la segmentación de cuentas contables mediante creación de cuentas detalles, en consecuencia, los asientos contables son generados a partir de las transacciones en las cuales intervienen las entidades consideradas dimensiones.</p>
+<p>Finalmente, esta funcionalidad es implementada desde los reportes contables detallados hasta los informes financieros, permitiendo esquematizar la información de forma segmentada por entidad.</p>
+<blockquote>
+<div><p><img alt="Menú de ADempiere" src="../../_images/accounting-dimensions-menu.png" /></p>
+<p>Imagen 4. Menú de ADempiere</p>
+</div></blockquote>
+<section id="dimension-organizacion">
+<h2><strong>Dimensión Organización</strong><a class="headerlink" href="#dimension-organizacion" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Organización" src="../../_images/accounting-dimensions-window.png" /></p>
+<p>Imagen 5. Pestaña Dimensión Organización</p>
+</div></blockquote>
+</section>
+<section id="dimension-region-de-ventas">
+<h2><strong>Dimensión Región de Ventas</strong><a class="headerlink" href="#dimension-region-de-ventas" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Región de Ventas" src="../../_images/sales-region-dimension-tab.png" /></p>
+<p>Imagen 6. Pestaña Dimensión Región de Ventas</p>
+</div></blockquote>
+</section>
+<section id="dimension-actividad">
+<h2><strong>Dimensión Actividad</strong><a class="headerlink" href="#dimension-actividad" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Actividad" src="../../_images/activity-dimension-tab.png" /></p>
+<p>Imagen 7. Pestaña Dimensión Actividad</p>
+</div></blockquote>
+</section>
+<section id="dimension-proyecto">
+<h2><strong>Dimensión Proyecto</strong><a class="headerlink" href="#dimension-proyecto" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Proyecto" src="../../_images/project-dimension-tab.png" /></p>
+<p>Imagen 8. Pestaña Dimensión Proyecto</p>
+</div></blockquote>
+</section>
+<section id="dimension-socio-del-negocio">
+<h2><strong>Dimensión Socio del Negocio</strong><a class="headerlink" href="#dimension-socio-del-negocio" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Socio del Negocio" src="../../_images/business-partner-dimension-tab.png" /></p>
+<p>Imagen 9. Pestaña Dimensión Socio del Negocio</p>
+</div></blockquote>
+</section>
+<section id="dimension-producto">
+<h2><strong>Dimensión Producto</strong><a class="headerlink" href="#dimension-producto" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Producto" src="../../_images/product-dimension-tab.png" /></p>
+<p>Imagen 10. Pestaña Dimensión Producto</p>
+</div></blockquote>
+</section>
+<section id="dimension-campana">
+<h2><strong>Dimensión Campaña</strong><a class="headerlink" href="#dimension-campana" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p><img alt="Pestaña Dimensión Campaña" src="../../_images/campaign-dimension-tab.png" /></p>
+<p>Imagen 11. Pestaña Dimensión Campaña</p>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

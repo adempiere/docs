@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nómina Pagos Especiales &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Nómina Pagos Especiales</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/lve/procedures/payroll/procedure-to-process-payroll/payroll-special-payments.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="nomina-pagos-especiales">
+<span id="documento-nomina-pagos-especiales"></span><h1><strong>Nómina Pagos Especiales</strong><a class="headerlink" href="#nomina-pagos-especiales" title="Permalink to this headline"></a></h1>
+<blockquote>
+<div><p>Para procesar una “<strong>Nómina de Pagos Especiales</strong>” debemos realizar el proceso de nómina estándar mencionado en el documento <a class="reference internal" href="../../../../adempiere/human-resources-management/payroll/process-payroll/procedure-to-process-payroll.html#documento-procedimiento-para-procesar-nomina"><span class="std std-ref">Registro de Nómina</span></a> elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>. En esta ventana se registran los datos principales que ADempiere requiere para crear una nómina de pagos especiales. El comportamiento de esta nómina puede representarse a través 2 formas diferentes, una de ellas parte del registro de una incidencia pagos especiales, la cual le  permitirá asignarle un monto diferente a cada empleado por cada nómina de pagos especiales que realice, también tiene disponible el  factor bono pagos especiales a través del mismo puede determinar un monto fijo de un pago especial que le otorgará al empleado por un período determinado de tiempo. Cada uno de los campos detallados a continuación son relevantes para obtener un registro exitoso:</p>
+</div></blockquote>
+<p>Estatus del Documento:</p>
+<blockquote>
+<div><p>Seleccione <strong>Nómina por Pagos Especiales</strong> en el campo “<strong>Tipo de Documento</strong>”.</p>
+<blockquote>
+<div><p>El tipo de documento le permitirá definir la acción del documento que esté registrando en ADempiere.</p>
+</div></blockquote>
+<p>Seleccione <strong>Nómina Pagos Especiales</strong> en el campo “<strong>Nómina</strong>”</p>
+<blockquote>
+<div><p>La nómina de Pagos Especiales define el comportamiento de la nómina, para este caso tiene las siguientes características:</p>
+<blockquote>
+<div><p>Regla de Pago: Débito Directo
+Cargo: Sueldos y Salarios por Pagar</p>
+</div></blockquote>
+</div></blockquote>
+<p>Seleccione la fecha “Hasta” o el último día del período que seleccionó anteriormente en el campo “<strong>Fecha Contable</strong>”</p>
+<blockquote>
+<div><blockquote>
+<div><p>A través de la fecha contable se determina contablemente la fecha de pago de la nómina de pagos especiales en ejecución, por tal motivo se recomienda colocar la fecha “<strong>Hasta</strong>” o el último día del período que seleccionó anteriormente.</p>
+</div></blockquote>
+<p><img alt="Nómina Pagos Especiales" src="../../../../_images/pagosespeciales.png" /></p>
+<p>Imagen 1. Nómina Pagos Especiales</p>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Está nómina  por ser una nómina especial no debe registrarse con período</p>
+</div>
+</div></blockquote>
+<p>Incidencias</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>Para procesar una nómina de pagos especiales tiene disponible la incidencia llamada “<strong>Pagos Especiales</strong>” para registrar el monto del pago especial que le otorgará a cada empleado durante esa nómina.</p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 59%" />
+<col style="width: 24%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>INCIDENCIA</strong></p></th>
+<th class="head"><p><strong>CÓDIGO</strong></p></th>
+<th class="head"><p><strong>TIPO</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pagos Especiales</p></td>
+<td><p>(“IN_PE”)</p></td>
+<td><p>Monto</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Para conocer cómo registrar una incidencia puede utilizar el siguiente enlace <a class="reference internal" href="../../../../adempiere/human-resources-management/payroll/payroll-action-notice/payroll-action-notice.html#documento-novedades-de-nomina"><span class="std std-ref">Registro de Incidencias</span></a></p>
+<p><img alt="Incidencia de Nómina Pagos Especiales" src="../../../../_images/incidenciapagosespeciales.png" /></p>
+<p>Imagen 3. Incidencia de Nómina Pagos Especiales</p>
+</div></blockquote>
+<p>Factores</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>También tenemos disponible en el atributo del empleado  un factor llamado Pagos Especiales, en donde registrará el monto que le asignará al empleado durante un largo período de tiempo.</p>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 59%" />
+<col style="width: 24%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>CONCEPTO DE NÓMINA</strong></p></th>
+<th class="head"><p><strong>CÓDIGO</strong></p></th>
+<th class="head"><p><strong>TIPO</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Factor Bono Pagos Especiales por Empleado</p></td>
+<td><p>(“FA_BPE”)</p></td>
+<td><p>Monto</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Para conocer cómo registrar una atributo del empleado puede utilizar el siguiente enlace <a class="reference external" href="https://docs.erpya.com/es/latest/adempiere/master/business-partner/employee/employee.html#pestana-atributo-de-empleado">Atributo del Empleado</a></p>
+<p><img alt="Factor Nómina Pagos Especiales" src="../../../../_images/factorpagosespeciales.png" /></p>
+<p>Imagen 3. Factor Nómina Pagos Especiales</p>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Debe utilizar alguna de las 2 formas para asignar el monto del pago especial al empleado</p>
+</div>
+<p>Resultados:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>“<strong>Reportes</strong>”</p></li>
+</ul>
+<p>Para visualizar los reportes de nóminas  puede seguir los pasos que se encuentran en el documento <a class="reference internal" href="../../../../adempiere/human-resources-management/payroll/payroll-report/payroll-process-report.html#documento-reporte-de-nomina"><span class="std std-ref">Generar Reporte de Nómina</span></a> con los datos adicionales que se indican a continuación para cada reporte</p>
+<blockquote>
+<div><ul>
+<li><p>“<strong>Detalle de Pago</strong>”</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Nómina</strong>: Nómina Pagos Especiales</p></li>
+<li><p><strong>Proceso de Nómina</strong>: Ubique el número de documento del proceso de nómina que está ejecutando.</p></li>
+<li><p><strong>Configuración de Reporte de Nómina</strong>: Pagos Especiales</p></li>
+<li><p><strong>Plantilla de Reporte de Nómina</strong>: Detalle de Pago</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><img alt="Detalle de Pago Nómina Pagos Especiales" src="../../../../_images/detallepagosespeciales.png" /></p>
+<p>Imagen 3. Detalle de Pago Nómina Pagos Especiales</p>
+<ul>
+<li><p>“<strong>Resumen de Pago</strong>”</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Nómina</strong>: Nómina Pagos Especiales</p></li>
+<li><p><strong>Proceso de Nómina</strong>: Ubique el número de documento del proceso de nómina que está ejecutando.</p></li>
+<li><p><strong>Configuración de Reporte de Nómina</strong>: Pagos Especiales</p></li>
+<li><p><strong>Plantilla de Reporte de Nómina</strong>: Resumen de Pago</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><img alt="Resumen de Pago Nómina Pagos Especiales" src="../../../../_images/resumenpagosespeciales.png" /></p>
+<p>Imagen 4. Resumen de Pago Nómina Pagos Especiales</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

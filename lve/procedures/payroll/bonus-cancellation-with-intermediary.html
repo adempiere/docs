@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cancelación de Pasivo con Intermediarios &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Cancelación de Pasivo con Intermediarios</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/lve/procedures/payroll/bonus-cancellation-with-intermediary.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cancelacion-de-pasivo-con-intermediarios">
+<span id="documento-cancelacion-bono-intermediario"></span><h1><strong>Cancelación de Pasivo con Intermediarios</strong><a class="headerlink" href="#cancelacion-de-pasivo-con-intermediarios" title="Permalink to this headline"></a></h1>
+<section id="creacion-de-nomina">
+<h2><strong>Creación de Nómina</strong><a class="headerlink" href="#creacion-de-nomina" title="Permalink to this headline"></a></h2>
+<p>Se crea la nómina de forma regular siguiendo los pasos detallados en <a class="reference internal" href="../../../adempiere/human-resources-management/payroll/process-payroll/procedure-to-process-payroll.html#documento-procedimiento-para-procesar-nomina"><span class="std std-ref">Registro de Nómina</span></a>, el proceso generará el siguiente asiento contable.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 26%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Cuenta</strong></p></th>
+<th class="head"><p><strong>Débito Contabilizado</strong></p></th>
+<th class="head"><p><strong>Crédito Contabilizado</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>6.1.1.1.3.017 - BONO DE ALIMENTACIÓN</p></td>
+<td><p>25.000,00</p></td>
+<td><p>0,00</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.1.1.2.2.1.002 - BONO DE ALIMENTACIÓN POR PAGAR</p></td>
+<td><p>0,00</p></td>
+<td><p>25.000,00</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>25.000,00</p></td>
+<td><p>25.000,00</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+<section id="creacion-de-pago">
+<h2><strong>Creación de Pago</strong><a class="headerlink" href="#creacion-de-pago" title="Permalink to this headline"></a></h2>
+<p>Se crea el pago desde el proceso de caja transitoria siguiendo los pasos detallados en <a class="reference internal" href="../../../adempiere/human-resources-management/payroll/payment-payroll/payment-payroll.html#documento-pago-de-nomina"><span class="std std-ref">Registro de Pagos de Nómina</span></a>, o realizando las siguientes excepciones:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Crear selección de pago con “<strong>Caja Transito Bono de Alimentación</strong>”.</p></li>
+<li><p>Generar el TXT desde el proceso “<strong>Imprimir/Exportar</strong>”, esto generará los pagos de cada empleado cancelando el pasivo de “<strong>Bono de Alimentación por Pagar</strong>” y abonando a la cuenta “<strong>Cuentas por Pagar a Tercero</strong>” generando el siguiente asiento contable.</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 26%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Cuenta</strong></p></th>
+<th class="head"><p><strong>Débito Contabilizado</strong></p></th>
+<th class="head"><p><strong>Crédito Contabilizado</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2.1.1.2.2.1.002 - BONO DE ALIMENTACIÓN POR PAGAR</p></td>
+<td><p>25.000,00</p></td>
+<td><p>0,00</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.1.4.1.3.004 - CUENTAS POR PAGAR A TERCEROS</p></td>
+<td><p>0,00</p></td>
+<td><p>25.000,00</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>25.000,00</p></td>
+<td><p>25.000,00</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+<section id="creacion-de-la-factura">
+<h2><strong>Creación de la Factura</strong><a class="headerlink" href="#creacion-de-la-factura" title="Permalink to this headline"></a></h2>
+<p>Se crea la factura de cuenta por pagar al intermediario de forma regular siguiendo los pasos detallados en <a class="reference internal" href="../../../adempiere/requisition-to-invoice/invoice/invoice.html#documento-documento-por-pagar"><span class="std std-ref">Registro de Documento por Pagar</span></a>, registrando las líneas de la siguiente forma:</p>
+<blockquote>
+<div><ul>
+<li><p>Seleccione el cargo asociado al gasto optando entre las siguientes opciones:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Comisiones:</strong> Se refiere al gasto generado por concepto de comisiones de venta.</p></li>
+<li><p><strong>Emisión:</strong> Se refiere al gasto generado por concepto de emisión de tarjetas.</p></li>
+<li><p><strong>Cargos Adicionales:</strong> Se refiere al gasto generado por concepto de otros cargos por gastos adicionales.</p></li>
+<li><p><strong>Pago de Intermediarios:</strong> Se refiere al gasto generado por concepto de pagos a terceros que fungen como intermediaros entre el pago al empleado y el empleador.</p></li>
+</ul>
+<p>Esta línea carga a la cuenta “<strong>Cuentas por Pagar a Tercero</strong>” y abona a “<strong>Cuentas por Pagar Proveedores</strong>”, generando el siguiente asiento contable.</p>
+</div></blockquote>
+</li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 24%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Cuenta</strong></p></th>
+<th class="head"><p><strong>Débito Contabilizado</strong></p></th>
+<th class="head"><p><strong>Crédito Contabilizado</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2.1.4.1.3.004 - CUENTAS POR PAGAR A TERCEROS</p></td>
+<td><p>25.000,00</p></td>
+<td><p>0,00</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.1.1.1.1.001 - CUENTAS POR PAGAR PROVEEDORES NACIONALES</p></td>
+<td><p>0,00</p></td>
+<td><p>25.000,00</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>25.000,00</p></td>
+<td><p>25.000,00</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Este proceso no requiere que sea realizado un cierre de caja.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

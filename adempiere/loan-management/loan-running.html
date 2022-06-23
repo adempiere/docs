@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejecución &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Ejecución</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/adempiere/loan-management/loan-running.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ejecucion">
+<span id="documento-ejecucion"></span><h1><strong>Ejecución</strong><a class="headerlink" href="#ejecucion" title="Permalink to this headline"></a></h1>
+<section id="simulacion">
+<h2><strong>Simulación</strong><a class="headerlink" href="#simulacion" title="Permalink to this headline"></a></h2>
+<p>La simulación de préstamos es ideal para realizar cálculos rápidos y consultas de préstamos a solicitantes, generando una tabla simulada de amortización completa, además de monto total estimado de impuesto a pagar, monto total estimado de interés a pagar y cuota fija estimada.</p>
+<p>Se creó un formulario o ventana personalizada convirtiendo a ADempiere en una herramienta eficiente y sumamente útil en cuanto a tomas de decisiones se trata tanto para la entidad (Prestamista) como para el solicitante sin ser necesario generar datos y guardar en nuestra base de datos, asimismo, reduce los tiempos de gestión del usuario con ADempiere.</p>
+<p>A continuación se detalla las instrucciones para proceder a simular un préstamo de forma exitosa:</p>
+<p>Vaya a la ventana de Simulador de Préstamo (Adjunto Imagen)</p>
+<blockquote>
+<div><p><img alt="Menú de Préstamos" src="../../_images/loan-menu.png" /></p>
+<p>Imagen 1. Menú de Préstamos</p>
+</div></blockquote>
+<p>A continuación se desplegará la siguiente ventana disponible para simular un préstamo.</p>
+<blockquote>
+<div><p><img alt="Simulador de Préstamo" src="../../_images/loan-simulator-clean.png" /></p>
+<p>Imagen 2. Simulador de Préstamo</p>
+</div></blockquote>
+<p>Proceda a llenar los parámetros necesarios para la simulación de préstamo:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Socio del Negocio:</strong> Indique el socio del negocio solicitante previamente configurado (Vea <em>Configuraciones Esenciales para el Proceso de Préstamo</em>).</p></li>
+<li><p><strong>Producto Financiero:</strong> Seleccione el producto financiero o préstamo a aplicar previamente configurado (<em>Vea Configuración de Producto Financiero (Préstamo)</em>),este parámetro posee una validación, los préstamos disponibles en esta lista dependerá de el grupo de socio de negocio al cual pertenezca el socio de negocio seleccionado y la configuración del producto financiero en aplicación de producto.</p></li>
+<li><p><strong>Monto de Capital:</strong> Indique el monto del préstamo solicitado.</p></li>
+<li><p><strong>Frecuencia de Pago:</strong> ADempiere establece por herencia la frecuencia configurada en el producto financiero seleccionado, sin embargo puede modificarlo.</p></li>
+<li><p><strong>Fecha Inicio:</strong> Indique la fecha de inicio del préstamo.</p></li>
+<li><p><strong>Fecha Final:</strong> ADempiere calcula y establece la fecha basada en la frecuencia y la fecha de inicio, sin embargo puede modificarlo.</p></li>
+<li><p><strong>Nro de Cuotas:</strong> ADempiere establece por herencia el Nro de cuotas basadas en la cantidad mínima de cuotas configurada en el producto financiero seleccionado, sin embargo puede modificarlo.</p></li>
+<li><p><strong>Moneda:</strong> ADempiere establece por herencia la moneda basada en la configuración del producto financiero seleccionado, sin embargo puede modificarlo.</p></li>
+<li><p><strong>Tasa Financiera:</strong> ADempiere establece por herencia la tasa financiera basada en la configuración del producto financiero seleccionado, no puede ser modificado.</p></li>
+</ul>
+<p><img alt="Simulador de Préstamo con Parámetros" src="../../_images/loan-simulator-filled.png" /></p>
+<p>Imagen 3. Simulador de Préstamo con Parámetros</p>
+</div></blockquote>
+<p>Seleccione la opción procesar <img alt="text" src="../../_images/loan-run-icon.png" /></p>
+<p>A continuación verá los siguientes resultados:</p>
+<blockquote>
+<div><p><img alt="Ejecución de Simulador" src="../../_images/loan-simulator-run.png" /></p>
+<p>Imagen 4. Ejecución de Simulador</p>
+</div></blockquote>
+</section>
+<section id="interpretando-la-ventana">
+<h2><strong>Interpretando la Ventana</strong><a class="headerlink" href="#interpretando-la-ventana" title="Permalink to this headline"></a></h2>
+<p>Panel de resultados de <strong>Amortización Estimada:</strong></p>
+<p>La amortización estimada es generada basada en el sistema francés, el mismo consiste en mantener cuotas de amortización constantes, debido a esto, cada mes la entidad recibe intereses en función del capital pendiente, es decir, en los primeros períodos, la entidad percibe una cantidad mayor de intereses que de capital y en los períodos finales más capital e intereses menores, la frecuencia de las cuotas estimadas (Resultado) varía según la frecuencia de pago seleccionada como parámetro ó heredado desde el producto financiero, el número de cuotas dependerá del Nro de Cuota indicado en el simulador ó heredado desde el producto financiero.</p>
+<blockquote>
+<div><p><img alt="Área de Simulación" src="../../_images/loan-simulator-run-simulation-area.png" /></p>
+<p>Imagen 5. Área de Simulación</p>
+</div></blockquote>
+<p>Panel de resultados <strong>Totales Estimados</strong>:</p>
+<p>Los totales estimados le indicarán al solicitante el Total de Interés, Total de Impuesto, y el Total General en la cual es sumado el Capital más el Total de Interés más Total de Impuesto, arrojando entonces el monto que definitivamente se estima cancelará el solicitante si es procesado el préstamo.</p>
+<blockquote>
+<div><p><img alt="Área de Totales" src="../../_images/loan-simulator-run-total-area.png" /></p>
+<p>Imagen 6. Área de Totales</p>
+</div></blockquote>
+</section>
+<section id="generar-prestamo-desde-simulacion">
+<h2><strong>Generar Préstamo desde Simulación</strong><a class="headerlink" href="#generar-prestamo-desde-simulacion" title="Permalink to this headline"></a></h2>
+<p>Una vez procesada la simulación:</p>
+<blockquote>
+<div><p><img alt="Ejecución de Simulador" src="../../_images/loan-simulator-run.png" /></p>
+<p>Imagen 7. Ejecución de Simulador</p>
+</div></blockquote>
+<p>Seleccione la opción ok <img alt="Ok" src="../../_images/loan-ok-icon.png" /></p>
+<blockquote>
+<div><p><img alt="Área de Acciones" src="../../_images/loan-simulator-run-action-area.png" /></p>
+<p>Imagen 8. Área de Acciones</p>
+</div></blockquote>
+<p>A continuación se desplegará el siguiente dialogo</p>
+<blockquote>
+<div><p><img alt="Área de Proceso" src="../../_images/loan-simulator-ask-area.png" /></p>
+<p>Imagen 9. Área de Proceso</p>
+</div></blockquote>
+<p>Si desea generar el préstamo seleccione la opción ok <img alt="Ok" src="../../_images/loan-ok-icon.png" />, caso contrario seleccione la opción cancelar <img alt="Cancelar" src="../../_images/loan-cancel-icon.png" /></p>
+<blockquote>
+<div><p><img alt="Área de Pregunta" src="../../_images/loan-simulator-ask-dialog-area.png" /></p>
+<p>Imagen 10. Área de Pregunta</p>
+</div></blockquote>
+<p>Si seleccionó la opción OK el sistema generará el préstamo de forma exitosa generando el siguiente mensaje indicando el número del préstamo generado:</p>
+<blockquote>
+<div><p><img alt="Área de Resultado" src="../../_images/loan-simulator-result-area.png" /></p>
+<p>Imagen 11. Área de Resultado</p>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

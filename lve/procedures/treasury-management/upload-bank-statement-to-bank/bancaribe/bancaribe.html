@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco del Caribe &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Banco del Caribe</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../_sources/lve/procedures/treasury-management/upload-bank-statement-to-bank/bancaribe/bancaribe.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="banco-del-caribe">
+<span id="documento-banco-bancaribe"></span><h1><strong>Banco del Caribe</strong><a class="headerlink" href="#banco-del-caribe" title="Permalink to this headline"></a></h1>
+<p>Para la exportación de los archivos desde ADempiere al banco del caribe, <a class="reference external" href="http://erpya.com">ERPyA</a> soporta los siguientes formatos facilitados por el banco, que pueden ser descargados para su análisis y adaptación.</p>
+<p>El banco cuenta con el documento <a class="reference download internal" download="" href="../../../../../_downloads/9b7f2f3452fb3821898adc27b35b27f4/Estuctura_TXT_Bancaribe.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Estructura</span> <span class="pre">del</span> <span class="pre">txt</span> <span class="pre">de</span> <span class="pre">Bancaribe</span></code></a>, que explica algunos formatos que sirven de ayuda para la construcción el archivo a cargar.</p>
+<section id="archivo-para-pagos-a-otros-bancos">
+<h2><strong>Archivo para Pagos a Otros Bancos</strong><a class="headerlink" href="#archivo-para-pagos-a-otros-bancos" title="Permalink to this headline"></a></h2>
+<p>Al ejecutar el proceso de selección de pago de las siguientes facturas en ADempiere:</p>
+<ul class="simple">
+<li><p>Factura “<strong>1000107</strong>” al socio del negocio “<strong>Estándar</strong>” por monto total de “<strong>1.000.000,00</strong>”.</p></li>
+<li><p>Factura “<strong>1000108</strong>” al socio del negocio “<strong>Dhl Express Aduanas Venezuela C.A.</strong>” por monto total de “<strong>4.000.000,00</strong>”.</p></li>
+<li><p>Factura “<strong>1000109</strong>” al socio del negocio “<strong>Bolivariana de Puertos  ( Bolipuertos)  S A</strong>” por monto total de “<strong>2.500.000,00</strong>”.</p></li>
+<li><p>Factura “<strong>1000110</strong>” al socio del negocio “<strong>Servicio Nacional Integrado de Administración (SENIAT)</strong>” por monto total de “<strong>2.000.000,00</strong>”.</p></li>
+<li><p>Factura “<strong>1000111</strong>” al socio del negocio “<strong>Estándar</strong>” por monto total de “<strong>1.515.000,00</strong>”.</p></li>
+</ul>
+<p>Se obtiene como resultado del proceso “<strong>Imprimir /Exportar</strong>”, un documento en formato “<strong>.txt</strong>” con los detalles de los pagos a ser realizados desde el banco del caribe a otros bancos, el mismo se puede descargar en el enlace <a class="reference download internal" download="" href="../../../../../_downloads/be050d3b3a2cb1e68f2df64a92b240f4/Banco_del_Caribe_CA_Banco_Universal_1000022.txt"><code class="xref download docutils literal notranslate"><span class="pre">Banco</span> <span class="pre">del</span> <span class="pre">Caribe</span> <span class="pre">CA</span> <span class="pre">Banco</span> <span class="pre">Universal</span></code></a> y visualizar de la siguiente manera:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">01020000000000000000</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">515</span><span class="p">,</span><span class="mf">000.00</span><span class="o">/</span><span class="n">Estndar</span>
+<span class="mi">01020000000000000000</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">000</span><span class="p">,</span><span class="mf">000.00</span><span class="o">/</span><span class="n">Servicio</span> <span class="n">Nacional</span> <span class="n">Integrado</span> <span class="n">de</span>
+<span class="mi">01020000000000000000</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mf">000.00</span><span class="o">/</span><span class="n">Bolivariana</span> <span class="n">de</span> <span class="n">Puertos</span>  <span class="p">(</span> <span class="n">Boli</span>
+<span class="mi">01020000000000000000</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span><span class="mi">000</span><span class="p">,</span><span class="mf">000.00</span><span class="o">/</span><span class="n">Dhl</span> <span class="n">Express</span> <span class="n">Aduanas</span> <span class="n">Venezuela</span>
+</pre></div>
+</div>
+<p><strong>Descripción del Archivo</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Número de Cuenta del Tercero</strong>: Número de cuenta del banco beneficiario. Este se compone de veinte (20) dígitos.</p></li>
+<li><p><strong>Monto</strong>: Monto del pago enviado, bajo el formato separadores de miles con “<strong>,</strong>” y decimales con “<strong>.</strong>”</p></li>
+<li><p><strong>Nombre del Tercero</strong>: Nombre del titular de la cuenta beneficiaria. Este posee un límite de treinta (30) caracteres.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Se debe realizar una archivo para cuentas del banco bancaribe y otro archivo para cuentas de otros bancos.</p>
+</div>
+</section>
+<section id="archivo-para-pagos-del-mismo-banco-del-caribe">
+<h2><strong>Archivo para Pagos del Mismo Banco del Caribe</strong><a class="headerlink" href="#archivo-para-pagos-del-mismo-banco-del-caribe" title="Permalink to this headline"></a></h2>
+<p>Al ejecutar el proceso de selección de pago de las siguientes facturas en ADempiere:</p>
+<ul class="simple">
+<li><p>Factura “<strong>1000112</strong>” al socio del negocio “<strong>Estándar</strong>” por monto total de “<strong>1.000.000,00</strong>”.</p></li>
+<li><p>Factura “<strong>1000113</strong>” al socio del negocio “<strong>Dhl Express Aduanas Venezuela C.A.</strong>” por monto total de “<strong>4.000.000,00</strong>”.</p></li>
+<li><p>Factura “<strong>1000114</strong>” al socio del negocio “<strong>Bolivariana de Puertos  ( Bolipuertos)  S A</strong>” por monto total de “<strong>2.500.000,00</strong>”.</p></li>
+<li><p>Factura “<strong>1000115</strong>” al socio del negocio “<strong>Servicio Nacional Integrado de Administración (SENIAT)</strong>” por monto total de “<strong>2.000.000,00</strong>”.</p></li>
+<li><p>Factura “<strong>1000116</strong>” al socio del negocio “<strong>Estándar</strong>” por monto total de “<strong>1.515.000,00</strong>”.</p></li>
+</ul>
+<p>Se obtiene como resultado del proceso “<strong>Imprimir /Exportar</strong>”, un documento en formato “<strong>.txt</strong>” con los detalles de los pagos a ser realizados desde el banco del caribe a terceros en el mismo banco. Este documento se puede descargar en el enlace <a class="reference download internal" download="" href="../../../../../_downloads/0d341172223a7a79f6e8e64294d7ace6/Banco_del_Caribe_CA_Banco_Universal_1000023.txt"><code class="xref download docutils literal notranslate"><span class="pre">Archivo</span> <span class="pre">de</span> <span class="pre">Pago</span> <span class="pre">del</span> <span class="pre">Banco</span> <span class="pre">del</span> <span class="pre">Caribe</span> <span class="pre">CA</span> <span class="pre">Banco</span> <span class="pre">Universal</span></code></a> y visualizar de la siguiente manera:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">01140000000000000000</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">515</span><span class="p">,</span><span class="mf">000.00</span><span class="o">/</span><span class="n">Estndar</span>
+<span class="mi">01140000000000000000</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">000</span><span class="p">,</span><span class="mf">000.00</span><span class="o">/</span><span class="n">Servicio</span> <span class="n">Nacional</span> <span class="n">Integrado</span> <span class="n">de</span>
+<span class="mi">01140000000000000000</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mf">000.00</span><span class="o">/</span><span class="n">Bolivariana</span> <span class="n">de</span> <span class="n">Puertos</span>  <span class="p">(</span> <span class="n">Boli</span>
+<span class="mi">01140000000000000000</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span><span class="mi">000</span><span class="p">,</span><span class="mf">000.00</span><span class="o">/</span><span class="n">Dhl</span> <span class="n">Express</span> <span class="n">Aduanas</span> <span class="n">Venezuela</span>
+</pre></div>
+</div>
+<p><strong>Descripción del Archivo</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Número de Cuenta del Tercero</strong>: Número de cuenta del banco beneficiario. Este se compone de veinte (20) dígitos.</p></li>
+<li><p><strong>Monto</strong>: Monto del pago enviado, bajo el formato separadores de miles con “<strong>,</strong>” y decimales con “<strong>.</strong>”</p></li>
+<li><p><strong>Nombre del Tercero</strong>: Nombre del titular de la cuenta beneficiaria. Este posee un límite de treinta (30) caracteres.</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

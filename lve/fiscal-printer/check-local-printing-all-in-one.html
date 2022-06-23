@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verificar el funcionamiento del Cliente de Cola de Impresión &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Verificar el funcionamiento del Cliente de Cola de Impresión</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/lve/fiscal-printer/check-local-printing-all-in-one.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="verificar-el-funcionamiento-del-cliente-de-cola-de-impresion">
+<span id="documento-check-printpdf-local-printing-all-in-one"></span><h1>Verificar el funcionamiento del Cliente de Cola de Impresión<a class="headerlink" href="#verificar-el-funcionamiento-del-cliente-de-cola-de-impresion" title="Permalink to this headline"></a></h1>
+<section id="verificar-que-la-aplicacion-este-ejecutando-la-version-correcta">
+<h2>Verificar que la Aplicacion este ejecutando la version correcta<a class="headerlink" href="#verificar-que-la-aplicacion-este-ejecutando-la-version-correcta" title="Permalink to this headline"></a></h2>
+<p>Se debe acceder a las propiedades del Acceso Directo de la aplicacion que se encuentra en el escritorio.</p>
+<p><a href="#id1"><span class="problematic" id="id2">|Acceso directo|</span></a></p>
+<p>Por Ejemplo si la version instalada es la siguiente: <strong>Local-Printing-All-In-One-DotNet-rs-2.3.exe</strong></p>
+<p>Esta parte en el nombre del instalador <strong>rs-2.3</strong> corresponde a la version en la que se encuentra la aplicación.</p>
+<p><img alt="Propiedades Acceso directo de la aplicación" src="../../_images/config-print-queue-shortcut-properties.PNG" /></p>
+<p>Se Deben verificar los siguiente campos viendo si corresponden con la versión instalada:</p>
+<ul class="simple">
+<li><p>Ubicación de Destino: rs-2.3</p></li>
+<li><p>Destino:  C:Users(Usuario de Windows)AppDataLocalLocal-Printing-All-In-One-DotNetrs-2.3StartPrintService.bat</p></li>
+<li><p>Iniciar en:  C:Users(Usuario de Windows)AppDataLocalLocal-Printing-All-In-One-DotNetrs-2.3</p></li>
+</ul>
+<p>En caso de que alguno de estos valores no coincida, se debe modificar el acceso directo colocando la version correcta en este caso <strong>rs-2.3</strong>.</p>
+</section>
+<section id="verificar-que-la-aplicacion-reciba-datos">
+<h2>Verificar que la aplicacion reciba datos<a class="headerlink" href="#verificar-que-la-aplicacion-reciba-datos" title="Permalink to this headline"></a></h2>
+<p>Para hacer esto se debe iniciar la Aplicacion Local-Printing-All-In-One-DotNet y enviar un documento desde ADempiere:</p>
+<p>Observando en la consola que consola se reciba un mensaje con la siguiente estrcutura:</p>
+<div class="highlight-batch notranslate"><div class="highlight"><pre><span></span>Document: C-Order1003061-1966357589737257033.pdf
+Document To Print = {C-Order1003061-1966357589737257033.pdf}
+Printer Name = {HP LaserJet 1020}
+C-Order1003061-1966357589737257033.pdf
+</pre></div>
+</div>
+<p><img alt="Imprimir Documento" src="../../_images/config-print-queue-printing-document.PNG" /></p>
+<p>En estas lineas se muestra informacion del documento recibido, nombre de documento y el nombre definido en ADempiere para la impresora.</p>
+<section id="problemas-al-momento-de-recibir-el-documento">
+<h3>Problemas al momento de recibir el documento<a class="headerlink" href="#problemas-al-momento-de-recibir-el-documento" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Verificar si se escogio la impresora correcta al momento de imprimir.</p></li>
+<li><p>Verificar que los datos de conexión configurado en ADempiere corresponden con los definidos en el archivo printer.yaml</p></li>
+</ul>
+</section>
+</section>
+<section id="verificar-que-la-aplicacion-imprima-por-la-impresora-predeterminada">
+<h2>Verificar que la Aplicacion Imprima por la impresora predeterminada<a class="headerlink" href="#verificar-que-la-aplicacion-imprima-por-la-impresora-predeterminada" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Abrimos impresoras y faxes, luego ubicamos la impresora predeterminada y pulsamos en abrir cola.</p></li>
+</ol>
+<p><img alt="Impresoras y faxes" src="../../_images/config-print-queue-printer-and-faxes.PNG" /></p>
+<p><img alt="Impresoras y faxes cola de impresión" src="../../_images/config-print-queue-printer-and-faxes-queue.PNG" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Abrimos la aplicación <strong>Local-Printing-All-In-One-DotNet</strong>.</p></li>
+<li><p>Se abrira la consola de windows, y mostrara lo siguiente</p></li>
+</ol>
+<p><img alt="Funciónamiento Correcto" src="../../_images/config-print-queue-correct-operation.png" /></p>
+<ol class="arabic simple" start="4">
+<li><p>Enviar un documento de desde ADempiere.</p></li>
+</ol>
+<div class="highlight-batch notranslate"><div class="highlight"><pre><span></span>Document: C-Order1003061-1966357589737257033.pdf
+Document To Print = {C-Order1003061-1966357589737257033.pdf}
+Printer Name = {HP LaserJet 1020}
+C-Order1003061-1966357589737257033.pdf
+</pre></div>
+</div>
+<p><img alt="Imprimir Documento" src="../../_images/config-print-queue-printing-document.PNG" /></p>
+<p>Se recomienda tener en primer plano la ventana que se abrio en el primer paso, y de esta manera observar lo que se envia hacia la impresora predeterminada, ya que de otro modo por la velocidad a la se ejecuta no tendra tiempo suficiente para ver el documento recibido.</p>
+<section id="problemas-al-momento-de-imprimir">
+<h3>Problemas al momento de imprimir<a class="headerlink" href="#problemas-al-momento-de-imprimir" title="Permalink to this headline"></a></h3>
+<p>Si al momento de imprimir no se envia el documento a la impresora predeterminada, se debe tomar en cuantea lo siguiente</p>
+<ul class="simple">
+<li><p>La impresora no esta configurada como predeterminada.</p></li>
+<li><p>Acrobat Reader DC o Foxit Reader no estan establecidos como la aplicacion por defecto para visualizar PDF.</p></li>
+<li><p>El nombre de la impresora no es el mismo en el archivo printe.yaml y en ADempiere.</p></li>
+</ul>
+<p>Cuando usas Adobe Acrobat Reader DC y el archivo se recibe correctamente y se guarda en la carpeta temporal, pero no se envia a la cola de la impresora. Se debe optar por cambiar la aplicion por Foxit Reader.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

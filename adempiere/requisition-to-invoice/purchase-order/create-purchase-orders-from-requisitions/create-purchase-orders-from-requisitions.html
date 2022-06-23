@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Orden de Compra desde Requisición &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Registro de Orden de Compra desde Requisición</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/adempiere/requisition-to-invoice/purchase-order/create-purchase-orders-from-requisitions/create-purchase-orders-from-requisitions.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="registro-de-orden-de-compra-desde-requisicion">
+<span id="documento-crear-orden-compra-desde-requisicion"></span><h1><strong>Registro de Orden de Compra desde Requisición</strong><a class="headerlink" href="#registro-de-orden-de-compra-desde-requisicion" title="Permalink to this headline"></a></h1>
+<p>Para ejemplificar el registro de crear orden de compra desde requisición, es utilizado el documento de requisición “<strong>RCN-1000004</strong>”.</p>
+<blockquote>
+<div><p><img alt="Documento de Requisición" src="../../../../_images/requisicion.png" /></p>
+<p>Imagen 1. Documento de Requisición</p>
+</div></blockquote>
+<p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Compras</strong>”, luego seleccione el proceso “<strong>Crear OC desde Requisición</strong>”.</p>
+<blockquote>
+<div><p><img alt="Menú de ADempiere 1" src="../../../../_images/menu-oc-desde-req.png" /></p>
+<p>Imagen 2. Menú de ADempiere</p>
+</div></blockquote>
+<p>Podrá visualizar la ventana del proceso “<strong>Crear OC desde Requisición</strong>” con diferentes campos que pueden ser utilizados para generar la orden de compra según lo requerido por el usuario.</p>
+<blockquote>
+<div><p><img alt="Ventana del Proceso Crear OC desde Requisición" src="../../../../_images/vent-oc-des-req1.png" /></p>
+<p>Imagen 3. Ventana del Proceso Crear OC desde Requisición</p>
+<p>Seleccione en el campo “<strong>Requisición de Material</strong>”, el documento de requisición por el cual será generado el documento de “<strong>Orden de Compra</strong>”.</p>
+<blockquote>
+<div><p><img alt="Campo Requisición de Material" src="../../../../_images/req-mat.png" /></p>
+<p>Imagen 4. Campo Requisición de Material</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Organización</strong>”, la organización para la cual esta realizando el documento “<strong>Orden de Compra</strong>”.</p>
+<blockquote>
+<div><p><img alt="Campo Organización" src="../../../../_images/org4.png" /></p>
+<p>Imagen 5. Campo Organización</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Almacén</strong>”, el nombre del almacén donde serán almacenados los productos registrados en el documento de requisición seleccionado.</p>
+<blockquote>
+<div><p><img alt="Campo Almacén" src="../../../../_images/almacen2.png" /></p>
+<p>Imagen 6. Campo Almacén</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Para generar una orden de compra desde una requisición determinada, los campos principales son “<strong>Requisición de Material</strong>”, “<strong>Organización</strong>” y “<strong>Almacén</strong>”. La selección de los campos “<strong>F. Documento</strong>”, “<strong>Fecha Requerida</strong>”, “<strong>Prioridad</strong>”, “<strong>Usuario</strong>”, “<strong>Producto</strong>”, “<strong>Categoría del Producto</strong>” y “<strong>Grupo de Socio del Negocio</strong>”, quedan a criterio de lo requerido por el usuario. De igual forma el checklist “<strong>Consolidado en un Documento</strong>”.</p>
+</div>
+</div></blockquote>
+<p>Seleccione la opción “<strong>OK</strong>”, para generar la orden de compra desde la requisición seleccionada anteriormente.</p>
+<blockquote>
+<div><p><img alt="Opción OK" src="../../../../_images/op-ok.png" /></p>
+<p>Imagen 7. Opción OK</p>
+</div></blockquote>
+<p>Podrá visualizar en la ventana del proceso “<strong>Crear OC desde Requisición</strong>”, el número del documento de “<strong>Orden de Compra</strong>” generado.</p>
+<blockquote>
+<div><p><img alt="Ventana del Proceso Crear OC desde Requisición con el Número de Documento Generado" src="../../../../_images/vent-oc-des-req2.png" /></p>
+<p>Imagen 8. Ventana del Proceso Crear OC desde Requisición con el Número de Documento Generado</p>
+</div></blockquote>
+</section>
+<section id="consultar-y-completar-orden-de-compra-generada">
+<h1><strong>Consultar y Completar Orden de Compra Generada</strong><a class="headerlink" href="#consultar-y-completar-orden-de-compra-generada" title="Permalink to this headline"></a></h1>
+<p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Compras</strong>”, luego seleccione la ventana “<strong>Órdenes de Compra</strong>”.</p>
+<blockquote>
+<div><p><img alt="Menú de ADempiere 2" src="../../../../_images/menu-orden-compra.png" /></p>
+<p>Imagen 9. Menú de ADempiere</p>
+</div></blockquote>
+<p>Al buscar el documento “<strong>Orden de Compra</strong>” con ayuda del número de documento generado en la ventana del proceso “<strong>Crear OC desde Requisición</strong>”, se puede visualizar el mismo de la siguiente manera.</p>
+<blockquote>
+<div><p><img alt="Orden de Compra Generada desde el Proceso Crear OC desde Requisición" src="../../../../_images/oc-generada.png" /></p>
+<p>Imagen 10. Orden de Compra Generada desde el Proceso Crear OC desde Requisición</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El proceso genera el documento “<strong>Orden de Compra</strong>” en estado “<strong>Borrador</strong>” y la opción establecida de estado del documento es “<strong>Preparar</strong>”.</p>
+</div>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Agente Compañía</strong>”, el usuario que esta realizando la orden de compra. Para ejemplificar el registro es utilizado el agente de compañía “<strong>Compañía Estándar C.A.</strong>”.</p>
+<blockquote>
+<div><p><img alt="Campo Agente Compañía" src="../../../../_images/agente3.png" /></p>
+<p>Imagen 11. Campo Agente Compañía</p>
+</div></blockquote>
+<p>Seleccione la pestaña “<strong>Línea Orden Compra</strong>”, para ingresar el precio unitario de los productos solicitados.</p>
+<blockquote>
+<div><p><img alt="Pestaña Línea Orden Compra" src="../../../../_images/pest-linea.png" /></p>
+<p>Imagen 12. Pestaña Línea Orden Compra</p>
+</div></blockquote>
+<p>Introduzca en el campo “<strong>Precio</strong>”, el precio unitario de los productos solicitados en el documento “<strong>Requisición</strong>”.</p>
+<blockquote>
+<div><p><img alt="Campo Precio" src="../../../../_images/precio-unitario.png" /></p>
+<p>Imagen 13. Campo Precio</p>
+</div></blockquote>
+<p>Seleccione la pestaña “<strong>Orden de Compra</strong>” para regresar a la ventana principal del registro, luego seleccione la opción “<strong>Preparar</strong>”, ubicado en la parte inferior derecha del documento para completar el mismo.</p>
+<blockquote>
+<div><p><img alt="Pestaña Orden de Compra y Opción Completar" src="../../../../_images/preparar.png" /></p>
+<p>Imagen 14. Opción Preparar</p>
+<p>Seleccione la acción “<strong>Completar</strong>” y la opción “<strong>OK</strong>”, para completar el documento “<strong>Orden de Compra</strong>”.</p>
+<blockquote>
+<div><p><img alt="Acción Completar" src="../../../../_images/accion-completar6.png" /></p>
+<p>Imagen 15. Acción Completar y Opción OK</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

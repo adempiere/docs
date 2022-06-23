@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Costos de Material &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Costos de Material</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/adempiere/performance-analysis/costing/material-costs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="costos-de-material">
+<span id="documento-costos-de-material"></span><h1><strong>Costos de Material</strong><a class="headerlink" href="#costos-de-material" title="Permalink to this headline"></a></h1>
+<p>Para explicar el proceso de registro automático de costo de un producto y que el usuario pueda entender el mismo, es ubicado un producto sin relación con alguna transacción en ADempiere. Para este caso, es ubicado el producto “<strong>Estandar</strong>”, con código “<strong>DOIS-000001</strong>”.</p>
+<blockquote>
+<div><p><img alt="Ventana Producto" src="../../../_images/product-window1.png" /></p>
+<p>Imagen 1. Ventana Producto</p>
+<p>Seleccione la pestaña “<strong>Costo</strong>” para verificar si el mismo posee algún registro, es decir, si ha sido utilizado en alguna transacción en ADempiere.</p>
+<blockquote>
+<div><p><img alt="Pestaña Costo" src="../../../_images/costs-tab-of-the-product-window.png" /></p>
+<p>Imagen 2. Pestaña Costo</p>
+</div></blockquote>
+<p>Luego se procede a realizar y completar una “<strong>Orden de Compra</strong>”, utilizando el producto anteriormente mostrado.</p>
+<blockquote>
+<div><p><img alt="Ventana Orden de Compra" src="../../../_images/purchase-order.png" /></p>
+<p>Imagen 3. Ventana Orden de Compra</p>
+<p>Podrá visualizar en la pestaña “<strong>Línea Orden de Compra</strong>”, el producto, la cantidad y el precio ingresado.</p>
+<blockquote>
+<div><p><img alt="Pestaña Línea de la Orden de Compra" src="../../../_images/purchase-order-line-tab.png" /></p>
+<p>Imagen 4. Pestaña Línea de la Orden de Compra</p>
+</div></blockquote>
+</div></blockquote>
+<p>Para finalizar el proceso es realizada una “<strong>Recepción</strong>”, la misma es creada desde la orden de compra realizada anteriormente.</p>
+<blockquote>
+<div><p><img alt="Recepción de Producto" src="../../../_images/reception.png" /></p>
+<p>Imagen 5. Recepción de Producto</p>
+<p>En la pestaña “<strong>Línea del Recibo</strong>”, puede visualizar el producto y la cantidad recepcionada.</p>
+<blockquote>
+<div><p><img alt="Pestaña Línea del Recibo" src="../../../_images/reception-line-tab.png" /></p>
+<p>Imagen 6. Pestaña Línea del Recibo</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>Puede consultar el resultado del proceso realizado anteriormente, ubicando el producto “<strong>Estandar</strong>”, con código “<strong>DOIS-000001</strong>” utilizado en el ejemplo expuesto.</p>
+<blockquote>
+<div><p><img alt="Ventana Producto" src="../../../_images/product-window1.png" /></p>
+<p>Imagen 7. Ventana Producto</p>
+<p>Como resultado del proceso realizado, se tienen dos (2) registros de tipos de costo en la pestaña “<strong>Costos</strong>” de la ventana “<strong>Producto</strong>”:</p>
+<blockquote>
+<div><p>Tipo de Costo Estándar</p>
+<blockquote>
+<div><p><img alt="Tipo de Costo Estándar" src="../../../_images/standard-cost-type-of-product-window-cost-tab.png" /></p>
+<p>Imagen 8. Tipo de Costo Estándar</p>
+</div></blockquote>
+<p>Tipo de Costo Facturación Promedio</p>
+<blockquote>
+<div><p><img alt="Tipo de Costo Facturación Promedio" src="../../../_images/type-of-average-billing-cost-from-the-cost-tab-of-the-product-window.png" /></p>
+<p>Imagen 9. Tipo de Costo Facturación Promedio</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

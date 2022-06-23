@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anular Factura Fiscal &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Anular Factura Fiscal</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/adempiere/pos-management/cancel-tax-invoice.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="anular-factura-fiscal">
+<span id="documento-anular-facturas-fiscales"></span><h1><strong>Anular Factura Fiscal</strong><a class="headerlink" href="#anular-factura-fiscal" title="Permalink to this headline"></a></h1>
+<p>Suponiendo que el día “<strong>10/02/2021</strong>”, se tiene la orden de venta “<strong>OPOS-5186</strong>” y la factura asociada a dicha orden es la “<strong>TMP- 0004912</strong>”. Adicional a ello, el cobro correspondiente a las mismas es el “<strong>AC465</strong>”. En ADempiere cuando por algún motivo se requiere anular una factura fiscal cuando la misma no fue impresa en su momento. Se debe realizar el siguiente procedimiento.</p>
+<section id="reversar-cobros">
+<h2><strong>Reversar Cobros</strong><a class="headerlink" href="#reversar-cobros" title="Permalink to this headline"></a></h2>
+<p>Ubique en el menú de ADempiere, la carpeta “<strong>Gestión de Saldos Pendientes</strong>”, luego seleccione la carpeta “<strong>Diario de Caja</strong>”, por último seleccione la ventana “<strong>Caja</strong>”.</p>
+<blockquote>
+<div><p><img alt="menú de ventana caja para anular cobros" src="../../_images/window-menu-box-to-cancel-collections.png" /></p>
+<p>Imagen 1. Menú de ADempiere</p>
+</div></blockquote>
+<p>Con ayuda del número de documento, ubique el cobro asociado a la factura que requiere anular.</p>
+<blockquote>
+<div><p><img alt="cobro asociado a la factura para anular" src="../../_images/charge-associated-with-the-invoice-to-cancel.png" /></p>
+<p>Imagen 2. Ubicar Cobro</p>
+</div></blockquote>
+<p>Seleccione la opción “<strong>Cerrar</strong>”, ubicada en la parte inferior derecha de la ventana “<strong>Caja</strong>”.</p>
+<blockquote>
+<div><p><img alt="opción cerrar de la ventana caja" src="../../_images/option-close-window-box.png" /></p>
+<p>Imagen 3. Opciónb Cerrar de la Ventana Caja</p>
+</div></blockquote>
+<p>Seleccione la acción “<strong>Reversar-Corregir</strong>” y la opción “<strong>OK</strong>”, para ejecutar el proceso de reverso del cobro.</p>
+<blockquote>
+<div><p><img alt="acción reversar y opción ok" src="../../_images/action-revert-and-option-ok.png" /></p>
+<p>Imagen 4. Acción Reversar-Corregir y Opción OK</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El procedimiento explicado anteriormente, debe ser realizado con los diferentes cobros que tiene asociado la factura.</p>
+</div>
+</section>
+<section id="anular-factura">
+<h2><strong>Anular Factura</strong><a class="headerlink" href="#anular-factura" title="Permalink to this headline"></a></h2>
+<p>Unique en el menú de ADempiere, la carpeta “<strong>Gestión de Sistema</strong>”, luego seleccione la carpeta “<strong>Reglas Generales</strong>”, por último seleccione la carpeta “<strong>Impresora Fiscal</strong>”. Finalmente, seleccione el proceso “<strong>Autorizar Documento Fiscal</strong>”.</p>
+<blockquote>
+<div><p><img alt="menú del proceso autorizar documento fiscal" src="../../_images/process-menu-authorize-tax-document.png" /></p>
+<p>Imagen 5. Menú de ADempiere</p>
+</div></blockquote>
+<p>Podrá visualizar la ventana del proceso “<strong>Autorizar Documento Fiscal</strong>”, con los campos necesarios para ejecutar el proceso requerido por el usuario.</p>
+<blockquote>
+<div><p><img alt="ventana del proceso autorizar documento fiscal" src="../../_images/process-window-authorize-tax-document.png" /></p>
+<p>Imagen 6. Ventana Autorizar Documento Fiscal</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Factura</strong>”, la factura involucrada en el proceso que requiere ejecutar.</p>
+<blockquote>
+<div><p><img alt="campo factura del proceso autorizar documento fiscal" src="../../_images/invoice-field-of-the-process-authorize-fiscal-document.png" /></p>
+<p>Imagen 7. Campo Factura</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Tipo de Autorización</strong>”, la opción “<strong>Anulación</strong>”, para anular la factura seleccionada en el campo “<strong>Factura</strong>”.</p>
+<blockquote>
+<div><p><img alt="opción anulación en el campo tipo de autorización del proceso autorizar documento fiscal" src="../../_images/cancellation-option-in-the-authorization-type-field-of-the-process-authorize-tax-document.png" /></p>
+<p>Imagen 8. Campo Tipo de Autorización</p>
+</div></blockquote>
+<p>Seleccione la opción “<strong>OK</strong>”, para ejecutar el proceso “<strong>Autorizar Documento Fiscal</strong>”, en base a lo seleccionado en los campos explicados anteriormente.</p>
+<blockquote>
+<div><p><img alt="opción ok para ejecutar el proceso autorizar documento fiscal" src="../../_images/option-ok-to-execute-the-process-authorize-fiscal-document.png" /></p>
+<p>Imagen 9. Opción OK</p>
+</div></blockquote>
+</section>
+<section id="anular-orden-de-venta">
+<h2><strong>Anular Orden de Venta</strong><a class="headerlink" href="#anular-orden-de-venta" title="Permalink to this headline"></a></h2>
+<p>Ubique en el menú de ADempiere, la carpeta “<strong>Gestión de Ventas</strong>”, luego seleccione la carpeta “<strong>Órdenes de Venta</strong>”, por último seleccione la ventana “<strong>Órdenes de Venta</strong>”.</p>
+<blockquote>
+<div><p><img alt="menú de ventana órdenes de venta para anular" src="../../_images/window-menu-sales-orders-to-void.png" /></p>
+<p>Imagen 10. Menú de ADempiere</p>
+</div></blockquote>
+<p>Con ayuda del número de documento, ubique la orden de venta asociada a la factura anulada.</p>
+<blockquote>
+<div><p><img alt="orden de venta para anular" src="../../_images/sell-order-to-void.png" /></p>
+<p>Imagen 11. Ubicar Orden de Venta</p>
+</div></blockquote>
+<p>Seleccione la opción “<strong>Cerrar</strong>”, ubicada en la parte inferior derecha de la ventana “<strong>Órdenes de Venta</strong>”.</p>
+<blockquote>
+<div><p><img alt="opción cerrar de la ventana órdenes de venta" src="../../_images/close-option-of-the-sales-orders-window.png" /></p>
+<p>Imagen 12. Opciónb Cerrar de la Ventana Órdenes de Venta</p>
+</div></blockquote>
+<p>Seleccione la acción “<strong>Anular</strong>” y la opción “<strong>OK</strong>”, para ejecutar el proceso de anular orden.</p>
+<blockquote>
+<div><p><img alt="acción anular y opción ok" src="../../_images/cancel-action-and-option-ok.png" /></p>
+<p>Imagen 13. Acción Anular y Opción OK</p>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

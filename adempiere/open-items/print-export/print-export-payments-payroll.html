@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Imprimir / Exportar Pagos de Nómina &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Registro de Imprimir / Exportar Pagos de Nómina</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/adempiere/open-items/print-export/print-export-payments-payroll.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="registro-de-imprimir-exportar-pagos-de-nomina">
+<span id="documento-imprimir-exportar-pagos-nomina"></span><h1><strong>Registro de Imprimir / Exportar Pagos de Nómina</strong><a class="headerlink" href="#registro-de-imprimir-exportar-pagos-de-nomina" title="Permalink to this headline"></a></h1>
+<p>Es un proceso que permite generar un lote de pagos asociados a una selección de pagos, esto se puede realizar de 2 maneras</p>
+<blockquote>
+<div><p>Exportar Pagos: Asocia las transacciones bancarias cuyas reglas de pagos sean Depósito ó Débito Directo</p>
+<p>Imprimir Pagos: Asocia las transacciones cuyas reglas de pago sean de tipo Cheque</p>
+</div></blockquote>
+<p>Luego de completar la selección de pago, procedemos a exportar los lotes de pagos. No se puede exportar los pagos sí no a completado la selección de pago</p>
+<p>Debemos dirigirnos en la ventana “<strong>Imprimir Exportar Pagos</strong>” y lo primero que vamos a seleccionar es la selección de pagos que completamos anteriormente en el campo que dice “<strong>Selección de Pagos</strong>”.</p>
+<p>Automáticamente aparecerá la cuenta bancaria que está definida en la selección de pagos en el Campo “<strong>Cuenta Bancaria</strong>”</p>
+<p>La regla de pago debe decir “<strong>Débito Directo</strong>” en el campo “<strong>Regla de Pago</strong>”</p>
+<p>#&gt; Después de realizado este procedimiento debe ir al icono llamado exportar que se encuentra en la parte inferior izquierda de la ventana.</p>
+<blockquote>
+<div><p><img alt="Imprimir Exportar" src="../../../_images/imprimirexportar.png" /></p>
+<p>Imagen 1. Imprimir Exportar</p>
+</div></blockquote>
+<p>Para terminar este procedimiento el ADempiere le mostrará un mensaje de alerta que le dirá la cantidad de líneas que serán generadas dentro del formato txt, debe darle ok.</p>
+<blockquote>
+<div><p><img alt="Lineas Exportadas" src="../../../_images/alerta1.png" /></p>
+<p>Imagen 2. Líneas Exportadas</p>
+</div></blockquote>
+<p>Después le dará otro mensaje de alerta para que usted confirme si el archivo descargado es correcto, si usted no está seguro por favor seleccione la opción NO, sí  el archivo es correcto proceda a confirmar este procedimiento.</p>
+<blockquote>
+<div><p><img alt="Confirmar Archivo Descargado" src="../../../_images/alerta2.png" /></p>
+<p>Imagen 3. Confirmar Archivo Descargado</p>
+</div></blockquote>
+<p>Posteriormente se descargara el archivo txt, previamente configurado con los datos que requiere el banco emisor para que pueda ser subido al banco sin ningún problema</p>
+<blockquote>
+<div><p><img alt="Archivo Descargado" src="../../../_images/archivoimportado.png" /></p>
+<p>Imagen 4. Archivo Descargado</p>
+</div></blockquote>
+<p>Al culminar este proceso automáticamente serán generados los pagos a cada empleado en ADempiere</p>
+<p>..note:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Para</span> <span class="n">este</span> <span class="n">ejemplo</span> <span class="n">de</span> <span class="n">Transferencia</span> <span class="n">Bancaria</span> <span class="n">se</span> <span class="n">trabajo</span> <span class="n">con</span> <span class="n">la</span> <span class="n">cuenta</span> <span class="n">de</span> <span class="n">la</span> <span class="n">caja</span> <span class="n">asociada</span> <span class="n">al</span> <span class="n">Banco</span> <span class="n">Nacional</span> <span class="n">de</span> <span class="n">Crédito</span><span class="p">,</span> <span class="n">y</span> <span class="n">el</span> <span class="n">archivo</span> <span class="n">descargado</span> <span class="n">contiene</span> <span class="n">todos</span> <span class="n">los</span> <span class="n">requisitos</span> <span class="n">exigidos</span> <span class="n">por</span> <span class="n">este</span> <span class="n">banco</span> <span class="n">para</span> <span class="n">su</span> <span class="n">aprobación</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

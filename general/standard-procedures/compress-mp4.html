@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generar Videos Comprimidos como GIF &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Generar Videos Comprimidos como GIF</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/general/standard-procedures/compress-mp4.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="generar-videos-comprimidos-como-gif">
+<span id="documento-generar-videos-comprimidos-como-gif"></span><h1><strong>Generar Videos Comprimidos como GIF</strong><a class="headerlink" href="#generar-videos-comprimidos-como-gif" title="Permalink to this headline"></a></h1>
+<section id="instalando-kazam">
+<h2><strong>Instalando Kazam</strong><a class="headerlink" href="#instalando-kazam" title="Permalink to this headline"></a></h2>
+<p>Para grabar la pantalla de la computadora se puede usar cualquier grabador, en este caso se usa Kazam como ejemplo. Puede consultar los detalles de la aplicación en <a class="reference external" href="https://launchpad.net/kazam">Kazam</a>.</p>
+<section id="desde-el-terminal-de-linux">
+<h3><strong>Desde el Terminal de Linux</strong><a class="headerlink" href="#desde-el-terminal-de-linux" title="Permalink to this headline"></a></h3>
+<p>Para instalar Kazam simplemente abra el terminal de linux (Como root) y ejecute el siguiente comando:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">kazam</span>
+</pre></div>
+</div>
+<p>Luego de instalar Kazam puede abrir la aplicación desde el menú y se mostrará algo como la siguiente imagen:</p>
+<p><img alt="Kazam" src="../../_images/Kazam.png" /></p>
+<p>Imagen 1 KAZAM</p>
+</section>
+</section>
+<section id="instalacion-y-uso-de-ffmpeg">
+<h2><strong>Instalación y uso de FFMPEG</strong><a class="headerlink" href="#instalacion-y-uso-de-ffmpeg" title="Permalink to this headline"></a></h2>
+<section id="instalando-ffmpeg">
+<h3><strong>Instalando FFMPEG</strong><a class="headerlink" href="#instalando-ffmpeg" title="Permalink to this headline"></a></h3>
+<p>El ffmpeg es una aplicación que puede ser utilizada para comprimir videos o convertirlos a gif, para instalarlo simplemente abra el terminal de linux (Como root) y ejecute el siguiente comando:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">ffmpeg</span>
+</pre></div>
+</div>
+</section>
+<section id="comprimiendo-un-video">
+<h3><strong>Comprimiendo un Video</strong><a class="headerlink" href="#comprimiendo-un-video" title="Permalink to this headline"></a></h3>
+<p>Para comprimir un video siga los siguientes pasos:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Vaya al directorio donde se encuentra el video.</p></li>
+<li><p>Presione la tecla especial F4 (Se abrirá un terminal en la parte inferior).</p></li>
+<li><p>A continuación ejecute el siguiente comando <strong>(Note que la propiedad vid indica el nombre del archivo)</strong>:</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>vid=Current.mp4
+start_time=00:00:01
+height=ih/2      # input height halved , can replace with pixils .
+width=-2         # keeps aspect ratio . can replace with pixils .
+fps=40           # frames per a second .
+
+filters=&quot;fps=$fps,scale=$width:$height:flags=lanczos&quot;
+
+ffmpeg -ss $start_time                             \
+    -i  &quot;$vid&quot;                                  \
+    -vf &quot;$filters,palettegen&quot;                   \
+    -y  palette.png                             &amp;&amp;
+ffmpeg -ss $start_time                             \
+    -i  &quot;$vid&quot;                                  \
+    -i  palette.png                                \
+    -lavfi &quot;$filters [x]; [x][1:v] paletteuse&quot;  \
+    -y  &quot;$vid&quot;.gif                              &amp;&amp;
+rm palette.png
+</pre></div>
+</div>
+</section>
+<section id="convirtiendo-desde-sh">
+<h3><strong>Convirtiendo desde SH</strong><a class="headerlink" href="#convirtiendo-desde-sh" title="Permalink to this headline"></a></h3>
+<p>Para evitar abrir la consola simplemente descargue el archivo que se encuentra en <a class="reference download internal" download="" href="../../_downloads/94b88d9259fc85cadf429379f4be6cf8/convert.sh"><code class="xref download docutils literal notranslate"><span class="pre">convert.sh</span></code></a> y coloque el mismo dentro del directorio donde se encuentran los archivos a convertir.</p>
+<p>Tome en cuenta que el archivo a convertir debe tener el siguiente nombre: <strong>Current.ogv</strong></p>
+<p>A continuación se encuentra un demo del recorrido:</p>
+<figure class="align-default">
+<img alt="../../_images/Current.ogv.gif" src="../../_images/Current.ogv.gif" />
+</figure>
+<p>Video 1. Convert Video</p>
+<p><a class="reference download internal" download="" href="../../_downloads/edeef01530bdb0e16244c672df7da310/Current.ogv.gif"><code class="xref download docutils literal notranslate"><span class="pre">Convert</span> <span class="pre">Video</span></code></a></p>
+</section>
+</section>
+<section id="crear-gif-utilizando-peek">
+<h2><strong>Crear gif utilizando Peek</strong><a class="headerlink" href="#crear-gif-utilizando-peek" title="Permalink to this headline"></a></h2>
+<p>Peek es un grabador de pantalla simple con una interfaz fácil de usar.</p>
+<figure class="align-default">
+<img alt="../../_images/peek-recording-itself.gif" src="../../_images/peek-recording-itself.gif" />
+</figure>
+<p>Video 2. Peek</p>
+<p><a class="reference download internal" download="" href="../../_downloads/1616c6960f8bc55c34d0d43016a5ab1f/peek-recording-itself.gif"><code class="xref download docutils literal notranslate"><span class="pre">peek</span></code></a></p>
+<section id="instalando-peek">
+<h3><strong>Instalando `Peek`_</strong><a class="headerlink" href="#instalando-peek" title="Permalink to this headline"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">peek</span>
+</pre></div>
+</div>
+</section>
+<section id="instalando-key-mon">
+<h3><strong>Instalando key-mon</strong><a class="headerlink" href="#instalando-key-mon" title="Permalink to this headline"></a></h3>
+<p>Key-mon es un plugin que permite dibujar pequeños círculos alrededor de los clics del mouse.</p>
+<ul>
+<li><p>Dirigirse a la pagina oficial de descargas de este plugin <a class="reference external" href="https://code.google.com/archive/p/key-mon/downloads">key-mon</a>.</p></li>
+<li><p>Elegir de la siguiente lista la version y la extensión del archivo deseado.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En mi caso particular utilizo la versión 1.17 con la extensión del archivo <em>.zip</em></p>
+<p><img alt="options-list" src="../../_images/key-mon-list.png" /></p>
+<p>Imagen 2. options-list</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Una vez descargado el paquete debemos ejecutar los siguientes comandos para instalarlo</p>
+<blockquote>
+<div><ul>
+<li><p>Si el formato es <em>.deb</em> debemos usar el siguiente comando:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">key</span><span class="o">-</span><span class="n">mon</span><span class="o">*.</span><span class="n">deb</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Si el formato es <em>.zip</em> debemos usar los siguientes comandos:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">unzip</span> <span class="n">key</span><span class="o">-</span><span class="n">mon</span><span class="o">*.</span><span class="n">zip</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">key</span><span class="o">-</span><span class="n">mon</span><span class="o">*</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Al finalizar la instalación exitosamente debemos ejecutar el siguiente comando:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">key</span><span class="o">-</span><span class="n">mon</span> <span class="o">--</span><span class="n">visible_click</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p>Esto permitira que al grabar un gif se pueda vizualizar un pequeño circulo de color rojo cada vez que se clickea, esto permite al usuario o receptor del archivo saber si debe hacer click en una opción o no.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

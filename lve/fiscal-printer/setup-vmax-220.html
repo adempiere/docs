@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/lve/fiscal-printer/setup-vmax-220.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuracion-de-impresora-fiscal-vmax-220-para-usar-con-adempiere">
+<span id="documento-configuracion-impresora"></span><h1><strong>Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere</strong><a class="headerlink" href="#configuracion-de-impresora-fiscal-vmax-220-para-usar-con-adempiere" title="Permalink to this headline"></a></h1>
+<p>Requisitos previos:</p>
+<ul class="simple">
+<li><p>Tener un equipo con Windows instalado, bajo la Arquitectura procesador de 32 bits.</p></li>
+<li><p>Adaptador USB-Serial Compatible con Windows en la versión del sistema operativo usado (Conector DB9 a USB).</p></li>
+<li><p>Instalar la Aplicación Spooler.</p></li>
+</ul>
+<p>Es necesario ingresar a ADempiere desde la versión de escritorio, para un correcto funcionamiento es necesario modificar el archivo “RUN_Adempiere.bat” actualizando los parámetros:</p>
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">&quot;Configuración</span> <span class="pre">del</span> <span class="pre">Classpath&quot;</span></span></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ADEMPIERE_HOME</strong> – (Ruta de ADempiere).</p></li>
+<li><p><strong>JAVA_HOME</strong> – (Ruta de Instalación de JAVA).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Es recomendable colocar un acceso directo en el escritorio, para ejecutar con mayor Facilidad ADempiere.</p>
+</div>
+<section id="configurar-la-impresora-requiere-los-siguientes-pasos">
+<h2><strong>Configurar la impresora requiere los siguientes pasos:</strong><a class="headerlink" href="#configurar-la-impresora-requiere-los-siguientes-pasos" title="Permalink to this headline"></a></h2>
+<p>Ingresar a ADempiere con el Rol asignado correspondiente.</p>
+<blockquote>
+<div><figure class="align-center" id="id1">
+<img alt="Inicio de Sesión" src="../../_images/login.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 1. Inicio de Sesión</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>Posicionarse en el menú de ADempiere.</p>
+<p>Ingresar al directorio <strong>Administración de Sistema</strong> / <strong>ReglasGenerales</strong> / <strong>Configuración de Dispositivo</strong>.</p>
+<blockquote>
+<div><figure class="align-center" id="id2">
+<img alt="Menú Fiscal" src="../../_images/setup-menu.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 2. Menú Fiscal</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>Abrir la Ventana Configuración de Dispositivo.</p>
+<blockquote>
+<div><figure class="align-center" id="id3">
+<img alt="Configuración de Dispositivo" src="../../_images/device-configuration.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 3. Configuración de Dispositivo</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>Crear un Nuevo Registro</p>
+<p>Agregando los siguientes Valores en sus correspondientes campos:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Campo</p></th>
+<th class="head"><p>Valor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Clave de Búsqueda</p></td>
+<td><p>Código asignado a la configuración’</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nombre</p></td>
+<td><p>Nombre de Configuración</p></td>
+</tr>
+<tr class="row-even"><td><p>Tipo de Dispositivo</p></td>
+<td><p>VMAx (Impresora Fiscal)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Conjunto de Atributos de Dispositivo</p></td>
+<td><p>Configuración de Spooler</p></td>
+</tr>
+<tr class="row-even"><td><p>Descripción</p></td>
+<td><p>Una breve descripción del dispositivo y su uso</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Luego de Cargar los Valores es Necesario Presionar el Botón crear Atributos para configuración.</p>
+<p>Se desplegara una ventana donde se debe seleccionar el directorio de instalación de la Aplicación Spooler y el Ejecutable de las misma.</p>
+<blockquote>
+<div><dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">&quot;Ejemplo</span> <span class="pre">de</span> <span class="pre">Configuración&quot;</span></span></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Folder</strong> (<em>Spooler</em>) – C:Program FilesSpoolerVmax.</p></li>
+<li><p><strong>App</strong> (<em>Spooler</em>) – epsSpoolerVmax.exe.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<figure class="align-center" id="id4">
+<img alt="Diálogo de Configuracion de Dispositivo" src="../../_images/device-configuration-dialog.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 4. Diálogo de Configuracion de Dispositivo</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="crear-el-nuevo-dispositivo-impresora">
+<h2><strong>Crear el nuevo Dispositivo (impresora):</strong><a class="headerlink" href="#crear-el-nuevo-dispositivo-impresora" title="Permalink to this headline"></a></h2>
+<p>Abrir la Ventana Dispositivo ubicada en el menú <strong>Administración de Sistema</strong> / <strong>Reglas Generales</strong> / <strong>Configuración de Dispositivo</strong>.</p>
+<p>Crear un Nuevo Registro Agregando los siguientes Valores en sus correspondientes campos:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Campo</p></th>
+<th class="head"><p>Valor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Clave de
+Búsqueda</p></td>
+<td><p>Clave de
+búsqueda
+para
+Impresora’
+(Este Valor
+corresponde
+al Serial
+de la
+impresora)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tipo de
+Dispositivo</p></td>
+<td><p>VMAx
+(Impresora
+Fiscal)</p></td>
+</tr>
+<tr class="row-even"><td><p>Nombre</p></td>
+<td><p>Nombre de
+la
+Impresora</p></td>
+</tr>
+<tr class="row-odd"><td><p>Descripción</p></td>
+<td><p>Descripción</p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id5">
+<img alt="Dispositivo" src="../../_images/device.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 5. Dispositivo</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="configuracion-de-uso-de-dispositivo">
+<h2><strong>Configuración de uso de Dispositivo:</strong><a class="headerlink" href="#configuracion-de-uso-de-dispositivo" title="Permalink to this headline"></a></h2>
+<p>Luego de los pasos anteriores es necesario acceder a la Pestaña Configuración de uso de Dispositivo, en esta ventana se establece la manera en la que ADempire se comunicara con el dispositivo creado.</p>
+<ul>
+<li><p>crear un nuevo registro:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Campo</p></th>
+<th class="head"><p>Valor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dispositivo</p></td>
+<td><p>VMAx (Impresora Fiscal)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tipo de Configuración</p></td>
+<td><p>Connection</p></td>
+</tr>
+<tr class="row-even"><td><p>Configuración de Dispositivo</p></td>
+<td><p>Configuración de Cajas</p></td>
+</tr>
+<tr class="row-odd"><td><p>Descripción</p></td>
+<td><p>Breve descripción de la funcionalidad</p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id6">
+<img alt="Configuración de uso Dispositivo" src="../../_images/device-setup.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 6. Configuración de uso Dispositivo</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Para confirmar que la configuración de todo lo anterior esta correcta, ingresar de nuevo a ADempiere, en la ventana de seleccion de rol seleccionar la impresora fiscal creada y continuar, dentro de ADempiere procedemos a ejecutar el proceso: Imprimir Reporte Fiscal.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

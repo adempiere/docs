@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Errores comunes Impresora Fiscal &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Errores comunes Impresora Fiscal</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/lve/fiscal-printer/commons-errors-fiscal-printer.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="errores-comunes-impresora-fiscal">
+<span id="documento-errores-impresora"></span><h1><strong>Errores comunes Impresora Fiscal</strong><a class="headerlink" href="#errores-comunes-impresora-fiscal" title="Permalink to this headline"></a></h1>
+<p>A continuación se presentan las fallas o incidentes comunes, que debe considerar durante la configuración de la Impresora fiscal VMAX 220, cubriendo así los incidentes que afecten el funcionamiento de esta.</p>
+<section id="no-se-imprimen-los-archivos-en-la-impresora">
+<h2><strong>No se imprimen los archivos en la Impresora</strong><a class="headerlink" href="#no-se-imprimen-los-archivos-en-la-impresora" title="Permalink to this headline"></a></h2>
+<p>Puede ocurrir por varias razones, las principales son conexión por Hardware a la impresora Fiscal y la configuración de la aplicación Spooler.</p>
+<p>Para hacer un diagnostico de lo que ocurre lo principal es iniciar desde la conexión por Hardware, esta tiene 3 puntos a tener en cuenta:</p>
+<ul>
+<li><p>Adaptador USB-SERIAL:</p>
+<blockquote>
+<div><figure class="align-center" id="id1">
+<img alt="Adaptador USB-Serial" src="../../_images/usb-serial-adapter.jpg" />
+<figcaption>
+<p><span class="caption-text">Imagen 1. Adaptador USB-Serial</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Verificar Drivers del dispositivo al conectar el Adaptador, esto se hace desde el administrador de dispositivos, allí verificar que se conecto un nuevo puerto COM ejemplo: “<strong>COM1</strong>”.</p>
+<figure class="align-center" id="id2">
+<img alt="Driver Instalado Correctamente" src="../../_images/com-port.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 2. Driver Instalado Correctamente</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Si se conecto y no se puede identificar un dispositivo, es decir, ningún dispositivo posee “<strong>COM</strong>” en su nombre, debe instalarse nuevamente los controladores para la correcta comunicación con el Hardware.</p>
+</div></blockquote>
+</li>
+<li><p>Conexión de Cable Serie:</p>
+<blockquote>
+<div><figure class="align-center" id="id3">
+<img alt="Cable Conexión Serial" src="../../_images/ciscoconsolecable.jpg" />
+<figcaption>
+<p><span class="caption-text">Imagen 3. Cable Conexión Serial</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>En esté caso observar si la conexión entre el adaptador y el cable, a través del conector DB9 este hecha de manera correcta.</p>
+</div></blockquote>
+</li>
+<li><p>Posición en la que esta el conector RJ45:</p>
+<blockquote>
+<div><figure class="align-center" id="id4">
+<img alt="Parte Posterior de La Impresora" src="../../_images/rear-view-printer.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 4. Parte Posterior de La Impresora</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</li>
+</ul>
+<p>Comprobar que el conector RJ45 este en el puerto de la impresora marcado con las Siglas “<strong>PC</strong>” en la parte posterior de la impresora.</p>
+<p>Si lo anterior esta Correcto Proceder a verificar la aplicación Spooler, en esté caso se debe revisar lo siguiente:</p>
+<ul>
+<li><p>Comprobar Instalación de Spooler</p>
+<blockquote>
+<div><p>Ingresar al Panel de Control e ingresar a Programas y Características, comprobar si en la lista existe el nombre “<strong>Spooler de impresión VMAX</strong>”, si existe esto quiere decir que la aplicación esta instalada, caso contrario es necesario instalar el Spooler tal como se indica en el manual del fabricante.</p>
+</div></blockquote>
+</li>
+<li><p>Comprobar Directorio de instalación</p>
+<blockquote>
+<div><p>Para ello basta con ingresar al disco duro donde se encuentre instalado Windows, entrar en la carpeta “<strong>Archivos de Programas</strong>”, debe existir un directorio con el Nombre “<strong>SpoolerVmax</strong>”.</p>
+<p>Comúnmente se mueve el directorio de instalación de la aplicación. Esto se hace para evitar la necesidad de ejecutar con privilegios de administrador, para casos en los que no se tiene la seguridad conocer la ruta de instalación, se puede buscar con el buscador de archivos de Windows colocando el nombre “<strong>epsSpoolerVmax.exe</strong>”</p>
+</div></blockquote>
+</li>
+<li><p>Verificar archivo “<strong>config.dat</strong>” dentro del Directorio de instalación</p>
+<blockquote>
+<div><p>Este archivo contiene los datos necesarios para que la impresora interactue con la PC, Tales como puerto de conexión (COMX) y el documento a través del cual recibe los comandos (Document.txt).</p>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="fecha-y-hora-incorrectas-en-documentos-impresos">
+<h2><strong>Fecha y Hora incorrectas en documentos impresos.</strong><a class="headerlink" href="#fecha-y-hora-incorrectas-en-documentos-impresos" title="Permalink to this headline"></a></h2>
+<p>Cuando sucede que la fecha y hora no esta sincronizada con la fecha actual, dentro de ADempiere existe un Proceso que permite Actualizar esta información.</p>
+</section>
+<section id="mensaje-error-dispositivo-no-conectado">
+<h2><strong>Mensaje error “Dispositivo no Conectado”</strong><a class="headerlink" href="#mensaje-error-dispositivo-no-conectado" title="Permalink to this headline"></a></h2>
+<p>En primera Instancia verificar que la conexión y configuración de la impresora esta debidamente hecha, si luego de esto sigue ocurriendo el problema estaría de parte de la configuración hecha en ADempiere, lo mas recomendable revisar toda la configuración de dispositivo.</p>
+</section>
+<section id="la-pantalla-de-del-impresora-muestra-el-mensaje-comando-no-ejecutado">
+<h2><strong>La pantalla de del impresora muestra el mensaje “Comando no ejecutado”</strong><a class="headerlink" href="#la-pantalla-de-del-impresora-muestra-el-mensaje-comando-no-ejecutado" title="Permalink to this headline"></a></h2>
+<p>Suele suceder cuando se le envía un comando invalido a la impresora, no se permite completar la acción dentro de esta directamente. Cuando la impresora se encuentra en esa condición no permite continuar imprimiendo ningún tipo de archivo.</p>
+<p>La opción mas recomendable, para volver a colocar la impresora operativa es generar un “<strong>Reporte X</strong>” manualmente, esto se hace manteniendo presionados los botones “<strong>X</strong>” y “<strong>OK</strong>” del panel frontal, hasta que inicie la impresión.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>“<strong>Si Persiste el Problema</strong>”</p>
+<p>Si el problema persiste o no se genera el reporte, apagar el equipo durante 30 segundos y luego volver a encenderlo, la impresora debe iniciar normalmente y estar operativa, esto debe hacerse como una ultima opción.</p>
+</div>
+</section>
+<section id="errores-de-impresion-o-procesando-el-documento">
+<h2><strong>Errores de Impresión o procesando el Documento</strong><a class="headerlink" href="#errores-de-impresion-o-procesando-el-documento" title="Permalink to this headline"></a></h2>
+<p>Cuando esto ocurre normalmente viene acompañado del mensaje “Comando no ejecutado”, es prudente verificar el estado del documento en ADempiere y verificar que el documento no tenga estado “No Valido”, o este marcado como Impreso. Pasado el transcurso de unos minutos avanzara el carrete de papel de la impresora mostrando el mensaje “<strong>ANULADO</strong>”.</p>
+<p>Confirmada alguna de las situaciones previamente descrita, puede identificarse como alguno de los problemas descritos a continuación:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Caso</p></th>
+<th class="head"><p>Documento en Físico(Impresión)</p></th>
+<th class="head"><p>Documento en ADempiere</p></th>
+<th class="head"><p>Acción a Ejecutar</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ideal</p></td>
+<td><p>Impreso Correctamente</p></td>
+<td><p>Completado Correctamente</p></td>
+<td><p>Nada (Situación Ideal)</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Impreso Correctamente</p></td>
+<td><p>Factura no Completa</p></td>
+<td><p><a class="reference external" href="http://docs.erpya.com/lve/fiscal-printer/commons-errors-fiscal-printer/#primer-caso-impreso-correctamente-a-traves-de-la-impresora-y-factura-no-completada-en-admempiere">Completar sin Imprimir</a></p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Factura Anulada</p></td>
+<td><p>Completado Correctamente</p></td>
+<td><p><a class="reference external" href="http://docs.erpya.com/lve/fiscal-printer/commons-errors-fiscal-printer/#segundo-caso-la-factura-impresa-esta-anulada-pero-se-encuentra-completada-correctamente-en-adempiere">Anular el Documento</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>Sin Impresión</p></td>
+<td><p>Completado Correctamente</p></td>
+<td><p><a class="reference external" href="http://docs.erpya.com/lve/fiscal-printer/commons-errors-fiscal-printer/#tercer-caso-completado-correctamente-en-adempiere-pero-no-se-realiza-la-impresion">Reimprimir</a></p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>Documento Impreso Incompleto</p></td>
+<td><p>Documento Incompleto o Invalido</p></td>
+<td><p><a class="reference external" href="http://docs.erpya.com/lve/fiscal-printer/commons-errors-fiscal-printer/#cuarto-caso-el-documento-impreso-quedo-incompleto-y-en-adempiere-el-documento-tiene-un-es-incompleto-o-no-valido">Completar sin Imprimir y Luego Anular</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>A Continuación se detalla de una manera más Gráfica como proceder con los caso de error de los cuales se tiene registro.</p>
+</section>
+<section id="primer-caso-impreso-correctamente-a-traves-de-la-impresora-y-factura-no-completada-en-adempiere">
+<h2><strong>Primer caso Impreso Correctamente a través de la impresora y Factura no Completada en ADempiere.</strong><a class="headerlink" href="#primer-caso-impreso-correctamente-a-traves-de-la-impresora-y-factura-no-completada-en-adempiere" title="Permalink to this headline"></a></h2>
+<p>Existe un proceso “<strong>Autorizar Documento Fiscal</strong>” para reactivar el completar el documento ADempiere, este se usa de la siguiente manera:</p>
+<blockquote>
+<div><figure class="align-center" id="id5">
+<img alt="Autorizar Reimpresión" src="../../_images/re-print.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 5. Autorizar reimpresión</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>El primer campo de la ventana desplegada sirve para seleccionar el Documento a reimprimir, mientras que el segundo permite elegir la acción sobre el documento.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipo de Autorización</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Anulación</p></td>
+</tr>
+<tr class="row-odd"><td><p>Completar (Sin Impresión)</p></td>
+</tr>
+<tr class="row-even"><td><p>Reimpresión</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><figure class="align-center" id="id6">
+<img alt="Autorizar Reimpresión" src="../../_images/re-print-window.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 6. Autorizar reimpresión</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>Para el caso actual debe usarse la opción “<strong>Completar el Documento(Sin Impresión)</strong>”. Esta opción permite completar el documento existente en ADempiere y de esta manera generar el documento, que respalde el que se encuentra impreso.</p>
+</section>
+<section id="segundo-caso-la-factura-impresa-esta-anulada-pero-se-encuentra-completada-correctamente-en-adempiere">
+<h2><strong>Segundo caso la Factura impresa esta Anulada pero se encuentra Completada Correctamente en ADempiere.</strong><a class="headerlink" href="#segundo-caso-la-factura-impresa-esta-anulada-pero-se-encuentra-completada-correctamente-en-adempiere" title="Permalink to this headline"></a></h2>
+<p>Se requiere el Aplicar el Proceso “<strong>Autorizar Documento Fiscal</strong>” a la factura no generada, seleccionando la opción Anular.</p>
+<blockquote>
+<div><figure class="align-center" id="id7">
+<img alt="Autorizar Reimpresión" src="../../_images/re-print.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 7. Autorizar reimpresión</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>En campo de la ventana seleccionar el Documento a anular, en el segundo permite elegir la acción anular sobre el documento.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipo de Autorización</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Anulación</p></td>
+</tr>
+<tr class="row-odd"><td><p>Completar (Sin Impresión)</p></td>
+</tr>
+<tr class="row-even"><td><p>Reimpresión</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><figure class="align-center" id="id8">
+<img alt="Autorizar Reimpresión" src="../../_images/re-print-window.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 8. Autorizar reimpresión</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>Esto se debe hacer para evitar que el documento impreso anulado tenga una referencia generada en ADempiere con un estado exitoso.</p>
+<blockquote>
+<div><figure class="align-center" id="id9">
+<img alt="Resultado del proceso" src="../../_images/reversedocadempiere.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 9. Resultado del proceso</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+<section id="tercer-caso-completado-correctamente-en-adempiere-pero-no-se-realiza-la-impresion">
+<h2><strong>Tercer Caso Completado Correctamente en ADempiere pero no se realiza la impresión</strong><a class="headerlink" href="#tercer-caso-completado-correctamente-en-adempiere-pero-no-se-realiza-la-impresion" title="Permalink to this headline"></a></h2>
+<p>Cuando esto sucede se debe aplicar el mismo proceso de “<strong>Autorizar Documento Fiscal</strong>” , utilizando la opción “<strong>Reimprimir</strong>”.</p>
+<blockquote>
+<div><figure class="align-center" id="id10">
+<img alt="Autorizar Reimpresión" src="../../_images/re-print-window.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 10. Autorizar reimpresión</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>En campo de la ventana seleccionar el Documento a reimprimir, en el segundo permite elegir la acción Reimpresión sobre el documento.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipo de Autorización</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Anulación</p></td>
+</tr>
+<tr class="row-odd"><td><p>Completar (Sin Impresión)</p></td>
+</tr>
+<tr class="row-even"><td><p>Reimpresión</p></td>
+</tr>
+</tbody>
+</table>
+<p>Luego acceder a la ventana donde esta la factura en cuestión, e imprimir manualmente usando el botón “<strong>Imprimir Factura en Impresora Fiscal</strong>”.</p>
+</section>
+<section id="cuarto-caso-el-documento-impreso-quedo-incompleto-y-en-adempiere-el-documento-tiene-un-es-incompleto-o-no-valido">
+<h2><strong>Cuarto Caso El Documento impreso quedo incompleto y en ADempiere el Documento tiene un es Incompleto o No-valido</strong><a class="headerlink" href="#cuarto-caso-el-documento-impreso-quedo-incompleto-y-en-adempiere-el-documento-tiene-un-es-incompleto-o-no-valido" title="Permalink to this headline"></a></h2>
+<p>El documento en ADempiere es necesario Anularlo. La forma de solventar esta falla es proceder en dos etapas en la primera se aplica el proceso con la factura afectada seleccionando el parámetro “<strong>Completar (Sin Impresión)</strong>”.</p>
+<blockquote>
+<div><figure class="align-center" id="id11">
+<img alt="Autorizar Reimpresión" src="../../_images/re-print-window.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 11. Autorizar reimpresión</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>En la segunda etapa se procede aplicar el proceso tomando en cuenta el numero de factura generado por la primera etapa, se le se aplica el proceso seleccionando el parámetro “<strong>Anulación</strong>”.</p>
+<blockquote>
+<div><figure class="align-center" id="id12">
+<img alt="Resultado del proceso" src="../../_images/reversedocadempiere.png" />
+<figcaption>
+<p><span class="caption-text">Imagen 12. Resultado del proceso</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

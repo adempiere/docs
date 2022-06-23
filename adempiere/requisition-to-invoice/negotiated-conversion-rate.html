@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasa de Conversión Negociada &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Tasa de Conversión Negociada</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/adempiere/requisition-to-invoice/negotiated-conversion-rate.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tasa-de-conversion-negociada">
+<span id="documento-tasa-de-conversion-negociada"></span><h1><strong>Tasa de Conversión Negociada</strong><a class="headerlink" href="#tasa-de-conversion-negociada" title="Permalink to this headline"></a></h1>
+<p>El procedimiento “<strong>Tasa de Conversión Negociada</strong>”, consiste en mantener una tasa de cambio para una compra determinada cuando la orden es realizada con moneda diferente a la moneda base de la compañía.</p>
+<p>La configuración del proceso consiste en activar el check “<strong>Generar Tipo de Conversión Automaticamente</strong>” en el tipo de documento “<strong>Orden de Compra</strong>”.</p>
+<blockquote>
+<div><p><img alt="check en el tipo de documento orden de compra" src="../../_images/check-in-the-purchase-order-document-type.png" /></p>
+<p>Imagen 1. Check en el Tipo de Documento Orden de Compra</p>
+</div></blockquote>
+<p>Al establecer la tasa negociada en la orden de compra y completar la misma, ADempiere crea un tipo de conversión con su respectiva tasa de cambio, donde el valor de la tasa es igual al valor ingresado en la orden. Adicionalmente, se reemplaza el valor del campo “<strong>Tipo de Conversión</strong>” de la pestaña “<strong>Orden de Compra</strong>”, asignando el tipo de conversión creado con la tasa negociada.</p>
+<p>Para explicar de manera detallada el proceso indicado anteriormente, se procede a realizar el registro del encabezado y las líneas de la orden de compra “<strong>OCN-11</strong>”, este se realiza en las pestañas “<strong>Orden de Compra</strong>” y “<strong>Línea Orden Compra</strong>” de la ventana “<strong>Órdenes de Compra</strong>”. De no conocer dicho procedimiento, puede consultar el material <a class="reference internal" href="purchase-order/direct-order/purchase-order.html#documento-orden-de-compra"><span class="std std-ref">Registro de Orden de Compra Directa</span></a>, sin completar el documento. Es decir, que la orden debe estar en estado “<strong>Borrador</strong>”.</p>
+<blockquote>
+<div><p><img alt="orden de compra en estado borrador" src="../../_images/purchase-order-in-draft-status.png" /></p>
+<p>Imagen 1. Orden de Compra en Estado Borrador</p>
+</div></blockquote>
+<p>Luego de tener el registro de las pestañas “<strong>Orden de Compra</strong>” y “<strong>Línea Orden Compra</strong>” de la ventana “<strong>Órdenes de Compra</strong>”, se procede a seleccionar la pestaña “<strong>Conversión de Moneda de la Orden de Compra</strong>” y llenar los campos correspondientes.</p>
+<blockquote>
+<div><p><img alt="pestaña conversión de moneda de la orden de compra" src="../../_images/purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 2. Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<p>En el campo “<strong>Compañía</strong>”, se puede visualizar el nombre de la compañía para la cual se esta realizando la orden de compra. Esta información viene cargada desde la pestaña “<strong>Orden de Compra</strong>”.</p>
+<blockquote>
+<div><p><img alt="campo compañía de la pestaña conversión de moneda de la orden de compra" src="../../_images/company-field-of-the-purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 3. Campo Compañía de la Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<p>En el campo “<strong>Organización</strong>”, se puede visualizar el nombre de la organización para la cual se esta realizando la orden de compra. Esta información viene cargada desde la pestaña “<strong>Orden de Compra</strong>”.</p>
+<blockquote>
+<div><p><img alt="campo organización de la pestaña conversión de moneda de la orden de compra" src="../../_images/organization-field-of-the-purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 4. Campo Organización de la Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<p>De igual manera, podrá visualizar en el campo “<strong>Orden de Compra</strong>”, el número de orden de compra establecido en la pestaña “<strong>Orden de Compra</strong>” al guardar el registro.</p>
+<blockquote>
+<div><p><img alt="campo orden de compra de la pestaña conversión de moneda de la orden de compra" src="../../_images/purchase-order-field-of-the-purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 5. Campo Orden de Compra de la Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<p>La fecha en la que fue realizado el registro de la orden de compra, es visualizado en el campo “<strong>F. Documento</strong>”.</p>
+<blockquote>
+<div><p><img alt="campo fecha del documento de la pestaña conversión de moneda de la orden de compra" src="../../_images/document-date-field-of-the-purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 6. Campo F. Documento de la Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<p>En el campo “<strong>Moneda</strong>”, se puede visualizar la modena de la negociación de la orden de compra.</p>
+<blockquote>
+<div><p><img alt="campo moneda de la pestaña conversión de moneda de la orden de compra" src="../../_images/currency-field-of-the-purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 7. Campo Moneda de la Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<p>En el campo “<strong>Tipo de Conversión</strong>”, se debe seleccionar el tipo de conversión con el cual se realizó el encabezado de la orden de compra.</p>
+<blockquote>
+<div><p><img alt="campo tipo de conversión de la pestaña conversión de moneda de la orden de compra" src="../../_images/conversion-type-field-of-the-purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 8. Campo Tipo de Conversión de la Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<p>La fecha de la tasa de la negociación, se visualiza en el campo “<strong>Fecha de Conversión Negociada</strong>”.</p>
+<blockquote>
+<div><p><img alt="campo fecha de conversión negociada de la pestaña conversión de moneda de la orden de compra" src="../../_images/traded-conversion-date-field-of-the-purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 9. Campo Fecha de Conversión Negociada de la Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<p>Finalmente, la tasa cambio de la negociación se debe ingresar en el campo “<strong>Tasa de Cambio Negociada</strong>”.</p>
+<blockquote>
+<div><p><img alt="campo tasa de cambio negociada de la pestaña conversión de moneda de la orden de compra" src="../../_images/traded-exchange-rate-field-of-the-purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 10. Campo Tasa de Cambio Negociada de la Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recuerde que debe guardar el registro de los campos, antes de posicionarse en cualquier otra pestaña de la ventana “<strong>Órdenes de Compra</strong>”.</p>
+</div>
+<p>Seleccione la pestaña principal “<strong>Orden de Compra</strong>” y proceda a completar el registro de la orden de manera regular como se indica en el material <a class="reference internal" href="purchase-order/direct-order/purchase-order.html#documento-orden-de-compra"><span class="std std-ref">Registro de Orden de Compra Directa</span></a>.</p>
+<p>Una vez la orden se encuentre en estado “<strong>Completo</strong>”, se crea de manera automática el tipo de conversión con el número de la orden “<strong>BCV - OCN-11</strong>” y la tasa de cambio negociada previamente establecida en la pestaña “<strong>Conversión de Moneda de la Orden de Compra</strong>” y a su vez, se reemplaza el tipo de conversión de la orden de compra en el encabezado, por el nuevo tipo de conversión creado.</p>
+<blockquote>
+<div><p><img alt="orden de compra en estado completo" src="../../_images/purchase-order-in-complete-state.png" /></p>
+<p>Imagen 11. Orden de Compra en Estado Completo con Tipo de Conversión de la Negociación</p>
+</div></blockquote>
+<p>Adicionalmente, se reemplaza el tipo de conversión de la pestaña “<strong>Conversión de Moneda de la Orden de Compra</strong>” por el tipo de conversión de la negociación asignado de manera automática en el encabezado de la orden. Para el presente ejemplo, dicho tipo de conversión es “<strong>BCV - OCN-11</strong>”.</p>
+<blockquote>
+<div><p><img alt="tipo de conversión nuevo de la pestaña conversión de moneda de la orden de compra" src="../../_images/new-conversion-type-from-the-purchase-order-currency-conversion-tab.png" /></p>
+<p>Imagen 12. Tipo de Conversión de la Negociación en Pestaña Conversión de Moneda de la Orden de Compra</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Al momento de realizar el documento por pagar correspondiente a la orden de compra previamente creada, ADempiere respeta el tipo de conversión y la tasa de cambio negociada que contiene dicha orden, generando el documento con los mismos valores en cuanto al tipo de conversión y la tasa de cambio.</p>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

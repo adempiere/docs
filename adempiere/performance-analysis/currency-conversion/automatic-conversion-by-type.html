@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversión Automática por Tipo de Conversión &mdash; ADempiereDocs 1.0 Documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> ADempiereDocs
+            <img src="../../../_static/ADempiere_Logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+<h2>Table of Contents</h2>
+
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
+</ul>
+
+
+<h2>See all contents</h2>
+<ul>
+<li><a href="http://adempiere.net/">ADempiere Docs</a></li>
+<li><a href="https://github.com/adempiere/docs/issues">GitHub</a></li>
+<li><a href="../../../download.html">Descargar Documentación</a></li>
+</ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">ADempiereDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><strong>Conversión Automática por Tipo de Conversión</strong></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/adempiere/performance-analysis/currency-conversion/automatic-conversion-by-type.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="conversion-automatica-por-tipo-de-conversion">
+<span id="documento-conversion-automatica-por-tipo-conversion"></span><h1><strong>Conversión Automática por Tipo de Conversión</strong><a class="headerlink" href="#conversion-automatica-por-tipo-de-conversion" title="Permalink to this headline"></a></h1>
+<p>Ubique y seleccione en el mené de ADempiere, la carpeta “<strong>Análisis de Desempeño</strong>”, luego seleccione la carpeta “<strong>Reglas Contables</strong>”, por último seleccione la ventana “<strong>Tipo de Conversión</strong>”.</p>
+<blockquote>
+<div><p><img alt="menú de adempiere" src="../../../_images/conversion-type-menu.png" /></p>
+<p>Imagen 1. Menú de ADempiere</p>
+</div></blockquote>
+<p>Podrá visualizar la ventana “<strong>Tipo de Conversión</strong>”, con los registros de tipos de conversión que contiene ADempiere.</p>
+<blockquote>
+<div><p><img alt="ventana tipo de conversión desde proveedor" src="../../../_images/window-type-of-conversion-from-provider.png" /></p>
+<p>Imagen 2. Ventana Tipo de Conversión</p>
+</div></blockquote>
+<p>Ubique el registro correspondiente al tipo de conversión desde el cual requiere obtener las tasas de cambio. Para el presente caso, se utiliza el tipo de conversión “<strong>BCV</strong>”.</p>
+<blockquote>
+<div><p><img alt="tipo de converción bcv" src="../../../_images/bcv-conversion-rate.png" /></p>
+<p>Imagen 3. Tipo de Conversión BCV</p>
+</div></blockquote>
+<p>Verifique que el registro de tipo de conversión seleccionado, tenga asociado el proveedor en el campo “<strong>Proveedor de Tasas de Cambio</strong>”.</p>
+<blockquote>
+<div><p><img alt="campo proveedor de tasas de cambio" src="../../../_images/exchange-rate-provider-field.png" /></p>
+<p>Imagen 4. Campo Proveedor de Tasas de Cambio</p>
+</div></blockquote>
+<p>Seleccione la opción “<strong>Obtener Tasas de Cambio desde Proveedor</strong>”, desplegada al seleccionar el icono “<strong>Proceso</strong>”, ubicado en la barra de herramientas de ADempiere.</p>
+<blockquote>
+<div><p><img alt="opción obtener tasas de cambio desde proveedor" src="../../../_images/option-to-obtain-exchange-rates-from-provider.png" /></p>
+<p>Imagen 5. Opción Obtener Tasas de Cambio desde Proveedor</p>
+<p>Podrá visualizar la ventana “<strong>Obtener Tasas de Cambio desde Proveedor</strong>”, con diferentes campos que permiten obtener las tasas de cambio dependiendo de la selección de los mismos.</p>
+<blockquote>
+<div><p><img alt="ventana del proceso" src="../../../_images/process-window.png" /></p>
+<p>Imagen 6. Ventana del Proceso</p>
+</div></blockquote>
+<p>El checklist “<strong>Obtener Tasas para la Moneda del Esquema Contable</strong>”, se encuentra tildado para filtrar la búsqueda de tasas de cambio a la moneda del esquema.</p>
+<blockquote>
+<div><p><img alt="checklist obtener tasas para la moneda del esquema contable" src="../../../_images/checklist-get-rates-for-the-currency-of-the-accounting-scheme.png" /></p>
+<p>Imagen 7. Checklist Obtener Tasas para la Moneda del Esquema Contable</p>
+</div></blockquote>
+<p>Seleccione en el campo “<strong>Fecha de la Transacción</strong>”, el rango de fecha para filtrar la búsqueda de tasas de cambio.</p>
+<blockquote>
+<div><p><img alt="campo fecha de transacción del proceso" src="../../../_images/process-transaction-date-field.png" /></p>
+<p>Imagen 8. Campo Fecha de la Transacción</p>
+</div></blockquote>
+<p>El checklist “<strong>Actualizar Tasas Actuales</strong>”, permite atualizar las tasas actuales si coinciden con la fecha.</p>
+<blockquote>
+<div><p><img alt="checklist actualizar tasas actuales" src="../../../_images/checklist-update-current-rates.png" /></p>
+<p>Imagen 9. Checklist Actualizar Tasas Actuales</p>
+</div></blockquote>
+<p>Seleccione la opción “<strong>OK</strong>”, para ejecutar el proceso “<strong>Obtener Tasas de Cambio desde Proveedor</strong>” en base a lo seleccionado en los campos explicados anteriormente.</p>
+<blockquote>
+<div><p><img alt="opción ok del proceso obtener tasas" src="../../../_images/ok-option-of-the-process-get-rates.png" /></p>
+<p>Imagen 10. Opción OK</p>
+</div></blockquote>
+</div></blockquote>
+<p>Al ejecutar el proceso “<strong>Obtener Tasas de Cambio desde Proveedor</strong>”, podrá visualizar las tasas de cambio de la siguiente manera.</p>
+<blockquote>
+<div><p><img alt="tasas de cambio obtenidas" src="../../../_images/exchange-rates-obtained.png" /></p>
+<p>Imagen 11. Tasas de Cambio Obtenidas del Proveedor</p>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ADempiere ERP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: 
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+      <dl>
+          <dt>Versions</dt>
+
+          <strong> 
+            <dd><a href="/">ADempiere</a></dd>
+        </strong> 
+
+      </dl>
+
+      <hr/>
+  </div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
