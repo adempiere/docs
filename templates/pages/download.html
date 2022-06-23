@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% set title = 'Download' %}
+{% set url = 'https://url.com.%s' %}
+{% if git_branch == 'master' %}
+  {% set rtd_ver = 'latest' %}
+{% else %}
+  {% set rtd_ver = git_branch %}
+{% endif %}
+
+{% block body %}
+<h1>Download ADempiere Documentation {{ release }} </h1>
+
+<p>For download a file of ADempiere version just choice a option.</p>
+
+<table class="docutils">
+  <tr>
+    <td>PDF (A4 paper size)</td>
+    <td><a href="https://url.com/latex/erpya.pdf">Download</a> (~230 MB)</td>
+  </tr>
+  <tr>
+    <td>EPUB</td>
+    <td><a href="https://url.com/epub/ERPYA.epub">Download</a> (~230 MB)</td>
+  </tr>
+</table>
+
+<p>These files have all adempiere documentation.</p>
+
+{% endblock %}
+
