@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Impresora Fiscal &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>7. Impresora Fiscal &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
@@ -19,7 +19,9 @@
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7.1. Añadir Java 8 a las Variables de Entorno" href="add-java-to-path.html" />
+    <link rel="prev" title="6.12.14. Nómina Liquidación" href="../procedures/payroll/procedure-to-process-payroll/payroll-liquidation.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,8 +45,31 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 <h2>Table of Contents</h2>
 
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../foundation-guide/index.html">Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/master/index.html">1. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/requisition-to-invoice/index.html">2. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/open-items/index.html">3. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/quote-to-invoice/index.html">4. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procedures/payroll/index.html">6. <strong>Gestión de Nóminas</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. <strong>Impresora Fiscal</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add-java-to-path.html">7.1. <strong>Añadir Java 8 a las Variables de Entorno</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html">7.2. <strong>Errores comunes Impresora Fiscal</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual-reports.html">7.3. <strong>Generar Reportes Manualmente en la impresora</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-vmax-220.html">7.4. <strong>Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-pnp-fiscalprinter.html">7.5. <strong>Instalar Impresora Fiscal PNP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="daily-setup-pnp-fiscalPrinter.html">7.6. Revisión de Rutina para Impresora Fiscal PNP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-client-pnp-fiscalPrinter.html">7.7. <strong>Actualizar Cliente de cola de impresión para Impresora Fiscal PNP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-tfhka-fiscalprinter.html">7.8. <strong>Instalar Impresora Fiscal The Factory HKA</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html">7.9. Instalar Cliente de Impresión Todo en Uno (Local-Printing-All-In-One-DotNet)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adempiere-config-local-printing-all-in-one.html">7.10. Configuración Cliente de Impresión en ADempiere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="local-config-local-printing-all-in-one.html">7.11. Configuración Cliente de Impresión en Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-local-printing-all-in-one.html">7.12. Actualizar Cliente de Impresión Todo en Uno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check-local-printing-all-in-one.html">7.13. Verificar el funcionamiento del Cliente de Cola de Impresión</a></li>
+</ul>
+</li>
 </ul>
 
 
@@ -70,7 +95,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li><strong>Impresora Fiscal</strong></li>
+      <li><span class="section-number">7. </span><strong>Impresora Fiscal</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/lve/fiscal-printer/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,7 +106,7 @@
            <div itemprop="articleBody">
              
   <section id="impresora-fiscal">
-<span id="lve-fiscal-printer"></span><h1><strong>Impresora Fiscal</strong><a class="headerlink" href="#impresora-fiscal" title="Permalink to this headline"></a></h1>
+<span id="lve-fiscal-printer"></span><h1><span class="section-number">7. </span><strong>Impresora Fiscal</strong><a class="headerlink" href="#impresora-fiscal" title="Permalink to this headline"></a></h1>
 <p>Comprende todo lo relacionado con la emisión de documentos a través de un dispositivo fiscal (Impresora), el mismo puede conectarse a ADempiere por medio de un controlador desarrollado por <a class="reference external" href="http://erpya.com">E.R.P. Consultores y Asociados, C.A.</a></p>
 <p>Actualmente se tiene soporte para las marcas:</p>
 <ul class="simple">
@@ -92,65 +117,65 @@
 </ul>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="add-java-to-path.html"><strong>Añadir Java 8 a las Variables de Entorno</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="commons-errors-fiscal-printer.html"><strong>Errores comunes Impresora Fiscal</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#no-se-imprimen-los-archivos-en-la-impresora"><strong>No se imprimen los archivos en la Impresora</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#fecha-y-hora-incorrectas-en-documentos-impresos"><strong>Fecha y Hora incorrectas en documentos impresos.</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#mensaje-error-dispositivo-no-conectado"><strong>Mensaje error “Dispositivo no Conectado”</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#la-pantalla-de-del-impresora-muestra-el-mensaje-comando-no-ejecutado"><strong>La pantalla de del impresora muestra el mensaje “Comando no ejecutado”</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#errores-de-impresion-o-procesando-el-documento"><strong>Errores de Impresión o procesando el Documento</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#primer-caso-impreso-correctamente-a-traves-de-la-impresora-y-factura-no-completada-en-adempiere"><strong>Primer caso Impreso Correctamente a través de la impresora y Factura no Completada en ADempiere.</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#segundo-caso-la-factura-impresa-esta-anulada-pero-se-encuentra-completada-correctamente-en-adempiere"><strong>Segundo caso la Factura impresa esta Anulada pero se encuentra Completada Correctamente en ADempiere.</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#tercer-caso-completado-correctamente-en-adempiere-pero-no-se-realiza-la-impresion"><strong>Tercer Caso Completado Correctamente en ADempiere pero no se realiza la impresión</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#cuarto-caso-el-documento-impreso-quedo-incompleto-y-en-adempiere-el-documento-tiene-un-es-incompleto-o-no-valido"><strong>Cuarto Caso El Documento impreso quedo incompleto y en ADempiere el Documento tiene un es Incompleto o No-valido</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="add-java-to-path.html">7.1. <strong>Añadir Java 8 a las Variables de Entorno</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="commons-errors-fiscal-printer.html">7.2. <strong>Errores comunes Impresora Fiscal</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#no-se-imprimen-los-archivos-en-la-impresora">7.2.1. <strong>No se imprimen los archivos en la Impresora</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#fecha-y-hora-incorrectas-en-documentos-impresos">7.2.2. <strong>Fecha y Hora incorrectas en documentos impresos.</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#mensaje-error-dispositivo-no-conectado">7.2.3. <strong>Mensaje error “Dispositivo no Conectado”</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#la-pantalla-de-del-impresora-muestra-el-mensaje-comando-no-ejecutado">7.2.4. <strong>La pantalla de del impresora muestra el mensaje “Comando no ejecutado”</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#errores-de-impresion-o-procesando-el-documento">7.2.5. <strong>Errores de Impresión o procesando el Documento</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#primer-caso-impreso-correctamente-a-traves-de-la-impresora-y-factura-no-completada-en-adempiere">7.2.6. <strong>Primer caso Impreso Correctamente a través de la impresora y Factura no Completada en ADempiere.</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#segundo-caso-la-factura-impresa-esta-anulada-pero-se-encuentra-completada-correctamente-en-adempiere">7.2.7. <strong>Segundo caso la Factura impresa esta Anulada pero se encuentra Completada Correctamente en ADempiere.</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#tercer-caso-completado-correctamente-en-adempiere-pero-no-se-realiza-la-impresion">7.2.8. <strong>Tercer Caso Completado Correctamente en ADempiere pero no se realiza la impresión</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html#cuarto-caso-el-documento-impreso-quedo-incompleto-y-en-adempiere-el-documento-tiene-un-es-incompleto-o-no-valido">7.2.9. <strong>Cuarto Caso El Documento impreso quedo incompleto y en ADempiere el Documento tiene un es Incompleto o No-valido</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="manual-reports.html"><strong>Generar Reportes Manualmente en la impresora</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="manual-reports.html#generar-reporte-x"><strong>Generar Reporte “X”.</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="manual-reports.html#generar-reporte-z"><strong>Generar Reporte “Z”.</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="manual-reports.html#generar-reporte-de-memoria-fiscal-por-dias"><strong>Generar “Reporte de Memoria Fiscal por días”.</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="manual-reports.html#generar-reporte-de-memoria-fiscal-por-mes"><strong>Generar “Reporte de Memoria Fiscal por mes”.</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual-reports.html">7.3. <strong>Generar Reportes Manualmente en la impresora</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual-reports.html#generar-reporte-x">7.3.1. <strong>Generar Reporte “X”.</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual-reports.html#generar-reporte-z">7.3.2. <strong>Generar Reporte “Z”.</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual-reports.html#generar-reporte-de-memoria-fiscal-por-dias">7.3.3. <strong>Generar “Reporte de Memoria Fiscal por días”.</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual-reports.html#generar-reporte-de-memoria-fiscal-por-mes">7.3.4. <strong>Generar “Reporte de Memoria Fiscal por mes”.</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="setup-vmax-220.html"><strong>Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="setup-vmax-220.html#configurar-la-impresora-requiere-los-siguientes-pasos"><strong>Configurar la impresora requiere los siguientes pasos:</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="setup-vmax-220.html#crear-el-nuevo-dispositivo-impresora"><strong>Crear el nuevo Dispositivo (impresora):</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="setup-vmax-220.html#configuracion-de-uso-de-dispositivo"><strong>Configuración de uso de Dispositivo:</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup-vmax-220.html">7.4. <strong>Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup-vmax-220.html#configurar-la-impresora-requiere-los-siguientes-pasos">7.4.1. <strong>Configurar la impresora requiere los siguientes pasos:</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-vmax-220.html#crear-el-nuevo-dispositivo-impresora">7.4.2. <strong>Crear el nuevo Dispositivo (impresora):</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-vmax-220.html#configuracion-de-uso-de-dispositivo">7.4.3. <strong>Configuración de uso de Dispositivo:</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="install-pnp-fiscalprinter.html"><strong>Instalar Impresora Fiscal PNP</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="daily-setup-pnp-fiscalPrinter.html">Revisión de Rutina para Impresora Fiscal PNP</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="daily-setup-pnp-fiscalPrinter.html#verificacion-por-impresora-al-inicio-del-dia">Verificación por impresora al inicio del día:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install-pnp-fiscalprinter.html">7.5. <strong>Instalar Impresora Fiscal PNP</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="daily-setup-pnp-fiscalPrinter.html">7.6. Revisión de Rutina para Impresora Fiscal PNP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="daily-setup-pnp-fiscalPrinter.html#verificacion-por-impresora-al-inicio-del-dia">7.6.1. Verificación por impresora al inicio del día:</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="update-client-pnp-fiscalPrinter.html"><strong>Actualizar Cliente de cola de impresión para Impresora Fiscal PNP</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-tfhka-fiscalprinter.html"><strong>Instalar Impresora Fiscal The Factory HKA</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-local-printing-all-in-one.html">Instalar Cliente de Impresión Todo en Uno (Local-Printing-All-In-One-DotNet)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html#requisitos">Requisitos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html#instalacion">Instalación</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html#configurar-la-aplicacion-para-imprimir">Configurar la aplicación para Imprimir</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html#problemas-luego-instalar">Problemas luego instalar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-client-pnp-fiscalPrinter.html">7.7. <strong>Actualizar Cliente de cola de impresión para Impresora Fiscal PNP</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="install-tfhka-fiscalprinter.html">7.8. <strong>Instalar Impresora Fiscal The Factory HKA</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="install-local-printing-all-in-one.html">7.9. Instalar Cliente de Impresión Todo en Uno (Local-Printing-All-In-One-DotNet)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html#requisitos">7.9.1. Requisitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html#instalacion">7.9.2. Instalación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html#configurar-la-aplicacion-para-imprimir">7.9.3. Configurar la aplicación para Imprimir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html#problemas-luego-instalar">7.9.4. Problemas luego instalar</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="adempiere-config-local-printing-all-in-one.html">Configuración Cliente de Impresión en ADempiere</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="adempiere-config-local-printing-all-in-one.html#configurar-la-aplicacion-para-imprimir-pdf-documentos-desde-adempiere">Configurar la aplicación para Imprimir PDF (Documentos) desde ADempiere</a></li>
-<li class="toctree-l2"><a class="reference internal" href="adempiere-config-local-printing-all-in-one.html#configurar-la-aplicacion-para-controlar-una-impresora-fiscal">Configurar la aplicación para controlar una impresora Fiscal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adempiere-config-local-printing-all-in-one.html">7.10. Configuración Cliente de Impresión en ADempiere</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adempiere-config-local-printing-all-in-one.html#configurar-la-aplicacion-para-imprimir-pdf-documentos-desde-adempiere">7.10.1. Configurar la aplicación para Imprimir PDF (Documentos) desde ADempiere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adempiere-config-local-printing-all-in-one.html#configurar-la-aplicacion-para-controlar-una-impresora-fiscal">7.10.2. Configurar la aplicación para controlar una impresora Fiscal</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="local-config-local-printing-all-in-one.html">Configuración Cliente de Impresión en Windows</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="local-config-local-printing-all-in-one.html#configurar-la-aplicacion-para-imprimir-pdf-documentos">Configurar la aplicación para Imprimir PDF(Documentos)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="local-config-local-printing-all-in-one.html#configurar-la-aplicacion-para-imprimir-documentos-fiscales-con-the-factory-hka">Configurar la aplicación para Imprimir Documentos Fiscales con The Factory HKA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="local-config-local-printing-all-in-one.html">7.11. Configuración Cliente de Impresión en Windows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="local-config-local-printing-all-in-one.html#configurar-la-aplicacion-para-imprimir-pdf-documentos">7.11.1. Configurar la aplicación para Imprimir PDF(Documentos)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="local-config-local-printing-all-in-one.html#configurar-la-aplicacion-para-imprimir-documentos-fiscales-con-the-factory-hka">7.11.2. Configurar la aplicación para Imprimir Documentos Fiscales con The Factory HKA</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="update-local-printing-all-in-one.html">Actualizar Cliente de Impresión Todo en Uno</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="update-local-printing-all-in-one.html#requisitos">Requisitos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="update-local-printing-all-in-one.html#instalacion">Instalación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-local-printing-all-in-one.html">7.12. Actualizar Cliente de Impresión Todo en Uno</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="update-local-printing-all-in-one.html#requisitos">7.12.1. Requisitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-local-printing-all-in-one.html#instalacion">7.12.2. Instalación</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="check-local-printing-all-in-one.html">Verificar el funcionamiento del Cliente de Cola de Impresión</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="check-local-printing-all-in-one.html#verificar-que-la-aplicacion-este-ejecutando-la-version-correcta">Verificar que la Aplicacion este ejecutando la version correcta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check-local-printing-all-in-one.html#verificar-que-la-aplicacion-reciba-datos">Verificar que la aplicacion reciba datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check-local-printing-all-in-one.html#verificar-que-la-aplicacion-imprima-por-la-impresora-predeterminada">Verificar que la Aplicacion Imprima por la impresora predeterminada</a></li>
+<li class="toctree-l1"><a class="reference internal" href="check-local-printing-all-in-one.html">7.13. Verificar el funcionamiento del Cliente de Cola de Impresión</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="check-local-printing-all-in-one.html#verificar-que-la-aplicacion-este-ejecutando-la-version-correcta">7.13.1. Verificar que la Aplicacion este ejecutando la version correcta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check-local-printing-all-in-one.html#verificar-que-la-aplicacion-reciba-datos">7.13.2. Verificar que la aplicacion reciba datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check-local-printing-all-in-one.html#verificar-que-la-aplicacion-imprima-por-la-impresora-predeterminada">7.13.3. Verificar que la Aplicacion Imprima por la impresora predeterminada</a></li>
 </ul>
 </li>
 </ul>
@@ -160,7 +185,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../procedures/payroll/procedure-to-process-payroll/payroll-liquidation.html" class="btn btn-neutral float-left" title="6.12.14. Nómina Liquidación" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="add-java-to-path.html" class="btn btn-neutral float-right" title="7.1. Añadir Java 8 a las Variables de Entorno" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

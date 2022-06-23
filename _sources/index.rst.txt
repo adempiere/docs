@@ -20,6 +20,15 @@ Table of Contents
     :numbered:
     
     functional-guide/index
+    foundation-guide/index
+    adempiere/master/index
+    adempiere/requisition-to-invoice/index
+    adempiere/open-items/index
+    adempiere/quote-to-invoice/index
+    lve/standard-coding/index
+    lve/procedures/payroll/index
+    lve/fiscal-printer/index
+
 
 More References
 ===============

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Selección de Pago &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>3.2. Selección de Pago &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
@@ -19,7 +19,9 @@
         <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="3.2.1. Registro desde Orden" href="payment-order-from-purchase-order.html" />
+    <link rel="prev" title="3.1.2. Transferencia Bancaria de Nómina" href="../bank-transfer/bank-transfer-payroll.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,8 +45,35 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 <h2>Table of Contents</h2>
 
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master/index.html">1. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html">2. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">3. <strong>Gestión de Saldos Pendientes</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bank-transfer/index.html">3.1. <strong>Transferencia Bancaria</strong></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.2. <strong>Selección de Pago</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="payment-order-from-purchase-order.html">3.2.1. <strong>Registro desde Orden</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pay-order.html">3.2.2. <strong>Registro desde Factura</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="payment-selection-payroll.html">3.2.3. <strong>Registro desde Nómina</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="payment-selection-cxp.html">3.2.4. <strong>Registro desde Selección de Pago</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../print-export/index.html">3.3. <strong>Imprimir / Exportar Pagos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../payment/index.html">3.4. <strong>Pago</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection/index.html">3.5. <strong>Cobro</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-refund/index.html">3.6. <strong>Caja Reembolso</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-per-diems/index.html">3.7. <strong>Caja Viáticos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection-cash/index.html">3.8. <strong>Caja Cobranza</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pay-assignment/index.html">3.9. <strong>Asignación de Pagos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-closing/index.html">3.10. <strong>Cierre de Caja</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../automatic-conciliations/index.html">3.11. <strong>Conciliaciones Automáticas</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../quote-to-invoice/index.html">4. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/payroll/index.html">6. <strong>Gestión de Nóminas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html">7. <strong>Impresora Fiscal</strong></a></li>
 </ul>
 
 
@@ -70,7 +99,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li><strong>Selección de Pago</strong></li>
+          <li><a href="../index.html"><span class="section-number">3. </span><strong>Gestión de Saldos Pendientes</strong></a> &raquo;</li>
+      <li><span class="section-number">3.2. </span><strong>Selección de Pago</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/adempiere/open-items/payment-selection/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,17 +111,17 @@
            <div itemprop="articleBody">
              
   <section id="seleccion-de-pago">
-<span id="src-adempiere-open-items-payment-selection"></span><h1><strong>Selección de Pago</strong><a class="headerlink" href="#seleccion-de-pago" title="Permalink to this headline"></a></h1>
+<span id="src-adempiere-open-items-payment-selection"></span><h1><span class="section-number">3.2. </span><strong>Selección de Pago</strong><a class="headerlink" href="#seleccion-de-pago" title="Permalink to this headline"></a></h1>
 <p>Una selección de pagos en ADempiere no es más que la agrupación de documentos de CxP o de compras que se necesitan ser cancelados ya sean en su totalidad o de manera parcial, dentro de la selección de pagos se encuentran los tipos de documentos “<strong>Orden de Pago</strong>” y la “<strong>Selección de Pagos de Cuentas por Pagar</strong>”, los cuales son utilizados para seguir los canales regulares entre los departamentos de compras, cuenta por pagar y tesorería.</p>
 <p>La “<strong>Orden de Pago</strong>” es utilizada para crear aquellas solicitud de pago de los documentos pendientes por pagar, comúnmente es utilizada por los departamentos de compras y de cuentas pagar, ya qué ellos solo se encargan de agrupar aquellos documentos los cuales necesitan qué sean cancelados.</p>
 <p>La “<strong>Selección de Pagos de Cuentas por Pagar</strong>” es utilizada cuando se define cuales son los documentos que sí se les generará el pago y desde qué cuenta bancaria de la compañía saldrán la cancelación de los documentos seleccionados; la selección parte de la agrupación de facturas asociadas en la “<strong>Orden de Pago</strong>” este procedimiento es comúnmente realizado por el departamento de tesorería, ya qué ellos son los encargados de llevar los saldos en banco lo cual le permite tener una toma de decisión del banco a utilizar para saldar una factura de CxP o realizar un anticipo a proveedores.</p>
 <p>Para conocer mejor este procedimiento de la selección de pagos <a class="reference external" href="http://erpya.com">ERPyA</a> ofrece una explicación eficiente y sencilla de este proceso para así obtener un resultado exitoso al momento de generar una orden de pago y posteriormente una selección de pago de cuentas por pagar para culminar el procedimiento de manera exitosa en la versión 3.9.2 de ADempiere en la localización Venezuela.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="payment-order-from-purchase-order.html"><strong>Registro desde Orden</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="pay-order.html"><strong>Registro desde Factura</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="payment-selection-payroll.html"><strong>Registro desde Nómina</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="payment-selection-cxp.html"><strong>Registro desde Selección de Pago</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="payment-order-from-purchase-order.html">3.2.1. <strong>Registro desde Orden</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="pay-order.html">3.2.2. <strong>Registro desde Factura</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="payment-selection-payroll.html">3.2.3. <strong>Registro desde Nómina</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="payment-selection-cxp.html">3.2.4. <strong>Registro desde Selección de Pago</strong></a></li>
 </ul>
 </div>
 </section>
@@ -99,7 +129,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../bank-transfer/bank-transfer-payroll.html" class="btn btn-neutral float-left" title="3.1.2. Transferencia Bancaria de Nómina" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="payment-order-from-purchase-order.html" class="btn btn-neutral float-right" title="3.2.1. Registro desde Orden" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

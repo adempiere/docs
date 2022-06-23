@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registro de Conciliación Automática &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>3.11.2. Registro de Conciliación Automática &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
@@ -19,7 +19,9 @@
         <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="3.11.3. Crear Pagos desde Estado de Cuenta" href="create-payments-from-account-statement.html" />
+    <link rel="prev" title="3.11.1. Descarga de Extracto Bancario desde Banco" href="download.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,8 +45,42 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 <h2>Table of Contents</h2>
 
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master/index.html">1. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html">2. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">3. <strong>Gestión de Saldos Pendientes</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bank-transfer/index.html">3.1. <strong>Transferencia Bancaria</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../payment-selection/index.html">3.2. <strong>Selección de Pago</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../print-export/index.html">3.3. <strong>Imprimir / Exportar Pagos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../payment/index.html">3.4. <strong>Pago</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection/index.html">3.5. <strong>Cobro</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-refund/index.html">3.6. <strong>Caja Reembolso</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-per-diems/index.html">3.7. <strong>Caja Viáticos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection-cash/index.html">3.8. <strong>Caja Cobranza</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pay-assignment/index.html">3.9. <strong>Asignación de Pagos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-closing/index.html">3.10. <strong>Cierre de Caja</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">3.11. <strong>Conciliaciones Automáticas</strong></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="download.html">3.11.1. <strong>Descarga de Extracto Bancario desde Banco</strong></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.11.2. <strong>Registro de Conciliación Automática</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#importacion-de-extracto-bancario">3.11.2.1. <strong>Importación de Extracto Bancario</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conciliacion-automatica">3.11.2.2. <strong>Conciliación Automática</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#coincidencia-bancarias">3.11.2.3. <strong>Coincidencia Bancarias</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#revision-de-conciliaciones">3.11.2.4. <strong>Revisión de Conciliaciones</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#crear-pagos-desde-linea-de-estado-de-cuenta">3.11.2.5. <strong>Crear Pagos Desde Línea de Estado de Cuenta</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="create-payments-from-account-statement.html">3.11.3. <strong>Crear Pagos desde Estado de Cuenta</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="create-payments-from-account-statement.html#pagos-cobros-sin-registros">3.11.4. <strong>Pagos/Cobros sin Registros</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../quote-to-invoice/index.html">4. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/payroll/index.html">6. <strong>Gestión de Nóminas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html">7. <strong>Impresora Fiscal</strong></a></li>
 </ul>
 
 
@@ -70,7 +106,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li><strong>Registro de Conciliación Automática</strong></li>
+          <li><a href="../index.html"><span class="section-number">3. </span><strong>Gestión de Saldos Pendientes</strong></a> &raquo;</li>
+          <li><a href="index.html"><span class="section-number">3.11. </span><strong>Conciliaciones Automáticas</strong></a> &raquo;</li>
+      <li><span class="section-number">3.11.2. </span><strong>Registro de Conciliación Automática</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/adempiere/open-items/automatic-conciliations/conciliation.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,7 +119,7 @@
            <div itemprop="articleBody">
              
   <section id="registro-de-conciliacion-automatica">
-<span id="documento-conciliacion-automatica"></span><h1><strong>Registro de Conciliación Automática</strong><a class="headerlink" href="#registro-de-conciliacion-automatica" title="Permalink to this headline"></a></h1>
+<span id="documento-conciliacion-automatica"></span><h1><span class="section-number">3.11.2. </span><strong>Registro de Conciliación Automática</strong><a class="headerlink" href="#registro-de-conciliacion-automatica" title="Permalink to this headline"></a></h1>
 <p>Para poder crear una conciliación automática en ADempiere debe seguir los siguientes pasos:</p>
 <p>Ubique en el menú de ADempiere la carpeta “<strong>Gestión de Saldos Pendientes</strong>” y luego seleccione la ventana “<strong>Estado de Cuenta Bancario</strong>”.</p>
 <blockquote>
@@ -118,7 +156,7 @@
 <p>Hasta este paso es el llenado del encabezado de la conciliación, donde se define el banco en el cual se va a realizar la conciliación de los pagos/cobros que ha tenido la empresa en un rango determinado. En adelante se procederá a realizar la conciliación.</p>
 </div>
 <section id="importacion-de-extracto-bancario">
-<h2><strong>Importación de Extracto Bancario</strong><a class="headerlink" href="#importacion-de-extracto-bancario" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">3.11.2.1. </span><strong>Importación de Extracto Bancario</strong><a class="headerlink" href="#importacion-de-extracto-bancario" title="Permalink to this headline"></a></h2>
 <p>Para que ADempiere pueda conciliar y verificar los pagos/cobros en una cuenta bancaria y los registrados pagos/cobros en ADempiere, se debe importar el extracto bancario generado del banco para ello se deben seguir los siguientes pasos.</p>
 <p>Ya estando posicionados en la ventana “<strong>Estado de Cuenta Bancario</strong>” seleccione el icono “<strong>Proceso</strong>” en la barra de herramientas de ADempiere.</p>
 <blockquote>
@@ -171,7 +209,7 @@
 </div>
 </section>
 <section id="conciliacion-automatica">
-<h2><strong>Conciliación Automática</strong><a class="headerlink" href="#conciliacion-automatica" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">3.11.2.2. </span><strong>Conciliación Automática</strong><a class="headerlink" href="#conciliacion-automatica" title="Permalink to this headline"></a></h2>
 <p>Una vez seleccionado el banco con el que se realizará la conciliación bancaria e importado el extracto bancario se procede a realizar la conciliación automática:</p>
 <p>Estando posicionados en la ventana <strong>“Estado de Cuenta bancario”</strong> Seleccione el icono “<strong>Proceso</strong>” en la barra de herramientas de ADempiere.</p>
 <blockquote>
@@ -241,7 +279,7 @@
 <p>Al seleccionar “<strong>Ok</strong>” ADempiere lo llevará nuevamente a la ventana principal “<strong>Estado de Cuenta Bancario</strong>”.</p>
 </section>
 <section id="coincidencia-bancarias">
-<h2><strong>Coincidencia Bancarias</strong><a class="headerlink" href="#coincidencia-bancarias" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">3.11.2.3. </span><strong>Coincidencia Bancarias</strong><a class="headerlink" href="#coincidencia-bancarias" title="Permalink to this headline"></a></h2>
 <p>Al momento de realizar la conciliación bancaria ADempiere maneja una serie verificaciones para poder encontrar las coincidencias bancarias, los datos que toma ADempiere tanto en los movimientos del extracto bancario como los movimientos registrados en ADempiere son los siguientes por banco:</p>
 <ul>
 <li><p><strong>Banco Banesco</strong></p>
@@ -540,7 +578,7 @@
 </ul>
 </section>
 <section id="revision-de-conciliaciones">
-<h2><strong>Revisión de Conciliaciones</strong><a class="headerlink" href="#revision-de-conciliaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">3.11.2.4. </span><strong>Revisión de Conciliaciones</strong><a class="headerlink" href="#revision-de-conciliaciones" title="Permalink to this headline"></a></h2>
 <p>Una vez aplicado el proceso de conciliación automática, se debe verificar que tanto los pagos/cobros que coincidieron como los que no coincidieron se carguen correctamente dentro del registro de la conciliación bancaria en la que se este trabajando, para ello debe seguir los siguientes paso:</p>
 <p>Seleccione la pestaña “<strong>Línea Estado Cuentas</strong>” para verificar que se encuentren los registros de todos los movimientos del estado de cuenta bancario cargado desde la ventana de búsqueda inteligente.</p>
 <blockquote>
@@ -558,7 +596,7 @@
 </div>
 </section>
 <section id="crear-pagos-desde-linea-de-estado-de-cuenta">
-<h2><strong>Crear Pagos Desde Línea de Estado de Cuenta</strong><a class="headerlink" href="#crear-pagos-desde-linea-de-estado-de-cuenta" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">3.11.2.5. </span><strong>Crear Pagos Desde Línea de Estado de Cuenta</strong><a class="headerlink" href="#crear-pagos-desde-linea-de-estado-de-cuenta" title="Permalink to this headline"></a></h2>
 <p>Si al realizar la conciliación existen movimientos sin registros en ADempiere, se debe realizar el proceso “<strong>Crear pagos desde Estado de Cuenta</strong>” para generar los pagos/cobros correspondientes a cada uno de los movimientos,ya que es muy importante que todos los movimientos bancarios coincidan en su totalidad con los registros en ADempiere o que los mismos logren ser identificados, ya que de lo contrario la conciliación no podrá ser completada en ADempiere, del mismo modo este proceso también  es explicado en el documento <a class="reference internal" href="create-payments-from-account-statement.html#documento-crear-pagos-desde-estado-de-cuenta"><span class="std std-ref">Crear Pagos desde Estado de Cuenta</span></a>.</p>
 <p>En el caso de que existan movimientos con registros en ADempiere pero sin documentos de pagos/cobros asociados en la línea, se debe seleccionar de la siguiente manera el documento “<strong>Pago/Cobro</strong>”.</p>
 <p>Ubique el registro de la línea sin documento “<strong>Pagos/Cobros</strong>” asociado y seleccione el documento con ayuda del identificador del campo “<strong>Pago</strong>”.</p>
@@ -591,7 +629,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="download.html" class="btn btn-neutral float-left" title="3.11.1. Descarga de Extracto Bancario desde Banco" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="create-payments-from-account-statement.html" class="btn btn-neutral float-right" title="3.11.3. Crear Pagos desde Estado de Cuenta" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

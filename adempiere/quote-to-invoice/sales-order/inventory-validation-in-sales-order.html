@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Validación de Inventario en Orden de Venta &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>4.5.2. Validación de Inventario en Orden de Venta &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
@@ -19,7 +19,9 @@
         <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="4.6. Documento por Cobrar" href="../invoice-customer/index.html" />
+    <link rel="prev" title="4.5.1. Registro de Orden de Venta" href="sales-order.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,8 +45,36 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 <h2>Table of Contents</h2>
 
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master/index.html">1. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html">2. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open-items/index.html">3. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">4. <strong>Gestión de Ventas</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../commission/index.html">4.1. <strong>Comisión de Ventas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sales-region/index.html">4.2. <strong>Región de Ventas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../price-list/index.html">4.3. <strong>Lista de Precios</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../proposal/index.html">4.4. <strong>Propuesta</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">4.5. <strong>Orden de Venta</strong></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="sales-order.html">4.5.1. <strong>Registro de Orden de Venta</strong></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4.5.2. <strong>Validación de Inventario en Orden de Venta</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#funcionalidad-de-la-validacion">4.5.2.1. <strong>Funcionalidad de la Validación</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../invoice-customer/index.html">4.6. <strong>Documento por Cobrar</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generate-invoice-from-departure-order.html">4.7. <strong>Generar Factura desde Orden de Salida</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generate-invoice-from-departure-order.html#generar-factura-desde-orden-de-salida-consolidado-en-un-documento">4.8. <strong>Generar Factura desde Orden de Salida Consolidado en un Documento</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shipment/index.html">4.9. <strong>Entregas (Cliente)</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../credit-note-cxc.html">4.10. <strong>Nota de Crédito</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debit-note-cxc.html">4.11. <strong>Nota de Débito</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/payroll/index.html">6. <strong>Gestión de Nóminas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html">7. <strong>Impresora Fiscal</strong></a></li>
 </ul>
 
 
@@ -70,7 +100,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li><strong>Validación de Inventario en Orden de Venta</strong></li>
+          <li><a href="../index.html"><span class="section-number">4. </span><strong>Gestión de Ventas</strong></a> &raquo;</li>
+          <li><a href="index.html"><span class="section-number">4.5. </span><strong>Orden de Venta</strong></a> &raquo;</li>
+      <li><span class="section-number">4.5.2. </span><strong>Validación de Inventario en Orden de Venta</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/adempiere/quote-to-invoice/sales-order/inventory-validation-in-sales-order.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,7 +113,7 @@
            <div itemprop="articleBody">
              
   <section id="validacion-de-inventario-en-orden-de-venta">
-<span id="documento-validacion-de-inventario-en-orden-de-venta"></span><h1><strong>Validación de Inventario en Orden de Venta</strong><a class="headerlink" href="#validacion-de-inventario-en-orden-de-venta" title="Permalink to this headline"></a></h1>
+<span id="documento-validacion-de-inventario-en-orden-de-venta"></span><h1><span class="section-number">4.5.2. </span><strong>Validación de Inventario en Orden de Venta</strong><a class="headerlink" href="#validacion-de-inventario-en-orden-de-venta" title="Permalink to this headline"></a></h1>
 <p>Para validar la disponibilidad de los productos en las ventas por medio de las órdenes de venta, ya sea desde la ventana “<strong>Órdenes de Venta</strong>” o desde el formulario “<strong>Punto de Venta</strong>”, <a class="reference external" href="http://erpya.com">ERPyA</a> realizó una actualización en los tipos de documentos de órdenes de venta. Dicha actualización consta de un check que establece como regla principal la disponibilidad en almacén de los productos cargados a la orden.</p>
 <blockquote>
 <div><p><img alt="check validar disponibilidad" src="../../../_images/check-validate-availability.png" /></p>
@@ -104,7 +136,7 @@
 <p>Esta configuración no aplica para las <strong>Órdenes de Devolución</strong></p>
 </div>
 <section id="funcionalidad-de-la-validacion">
-<h2><strong>Funcionalidad de la Validación</strong><a class="headerlink" href="#funcionalidad-de-la-validacion" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">4.5.2.1. </span><strong>Funcionalidad de la Validación</strong><a class="headerlink" href="#funcionalidad-de-la-validacion" title="Permalink to this headline"></a></h2>
 <p>Cuando el check se encuentra habilitado, ADempiere sólo permitirá completar el registro de la orden de venta desde la ventana “<strong>Órdenes de Venta</strong>”, si todos los productos tienen disponibilidad en el almacén con el que se este trabajando. De no tener disponibilidad, será mostrado el siguiente mensaje:</p>
 <blockquote>
 <div><p><img alt="registro desde ventana órdenes de venta" src="../../../_images/register-from-window-sales-orders.png" /></p>
@@ -129,7 +161,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sales-order.html" class="btn btn-neutral float-left" title="4.5.1. Registro de Orden de Venta" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../invoice-customer/index.html" class="btn btn-neutral float-right" title="4.6. Documento por Cobrar" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

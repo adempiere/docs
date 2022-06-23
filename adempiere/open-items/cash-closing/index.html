@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cierre de Caja &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>3.10. Cierre de Caja &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
@@ -19,7 +19,9 @@
         <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="3.10.1. Registro de Cierre de Caja" href="cash-closing.html" />
+    <link rel="prev" title="3.9.1. Asignación de Pagos/Cobros a Documentos por Pagar o Cobrar" href="../pay-assignment/pay-assignment.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,8 +45,33 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 <h2>Table of Contents</h2>
 
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master/index.html">1. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html">2. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">3. <strong>Gestión de Saldos Pendientes</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bank-transfer/index.html">3.1. <strong>Transferencia Bancaria</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../payment-selection/index.html">3.2. <strong>Selección de Pago</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../print-export/index.html">3.3. <strong>Imprimir / Exportar Pagos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../payment/index.html">3.4. <strong>Pago</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection/index.html">3.5. <strong>Cobro</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-refund/index.html">3.6. <strong>Caja Reembolso</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-per-diems/index.html">3.7. <strong>Caja Viáticos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection-cash/index.html">3.8. <strong>Caja Cobranza</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pay-assignment/index.html">3.9. <strong>Asignación de Pagos</strong></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.10. <strong>Cierre de Caja</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cash-closing.html">3.10.1. <strong>Registro de Cierre de Caja</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cash-register-payroll.html">3.10.2. <strong>Cierre de Caja Nómina</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../automatic-conciliations/index.html">3.11. <strong>Conciliaciones Automáticas</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../quote-to-invoice/index.html">4. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/payroll/index.html">6. <strong>Gestión de Nóminas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html">7. <strong>Impresora Fiscal</strong></a></li>
 </ul>
 
 
@@ -70,7 +97,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li><strong>Cierre de Caja</strong></li>
+          <li><a href="../index.html"><span class="section-number">3. </span><strong>Gestión de Saldos Pendientes</strong></a> &raquo;</li>
+      <li><span class="section-number">3.10. </span><strong>Cierre de Caja</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/adempiere/open-items/cash-closing/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,15 +109,15 @@
            <div itemprop="articleBody">
              
   <section id="cierre-de-caja">
-<span id="src-adempiere-open-items-cash-closing"></span><h1><strong>Cierre de Caja</strong><a class="headerlink" href="#cierre-de-caja" title="Permalink to this headline"></a></h1>
+<span id="src-adempiere-open-items-cash-closing"></span><h1><span class="section-number">3.10. </span><strong>Cierre de Caja</strong><a class="headerlink" href="#cierre-de-caja" title="Permalink to this headline"></a></h1>
 <p>ADempiere contempla diferentes funcionalidades que le permiten a las empresas controlar los movimientos monetarios realizados en las diferentes cajas que la misma utiliza para gestionar las operaciones de compra, venta, préstamos, reembolso, entre otras operaciones que requieren del proceso que es realizado en caja.</p>
 <p>El procedimiento cierre de caja permite controlar y dar seguimiento al dinero que la empresa asigna, presta, reembolsa, entre otras acciones que generan un ingreso o egreso a las diferentes cajas. El mismo debe realizarce a diario, ya que inicialmente el saldo en caja corresponde al monto “<strong>0,00</strong>”. De igual manera, al final del día el monto de la caja debe corresponder a los mismos “<strong>0,00</strong>”.</p>
 <p>El monto de la caja al final del día luego del proceso de cierre de caja, puede ser diferente al “<strong>0,00</strong>”, sólo en aquellos casos en los que la caja amerite un monto diferente y dependiento del proceso que se realice en la misma.</p>
 <p>El presente material elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>, pretende ofrecerle una explicación eficiente a nuestros clientes del procedimiento a seguir para generar en ADempiere un cierre de caja, en su versión 3.9.2 para la localización Venezuela.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="cash-closing.html"><strong>Registro de Cierre de Caja</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="cash-register-payroll.html"><strong>Cierre de Caja Nómina</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="cash-closing.html">3.10.1. <strong>Registro de Cierre de Caja</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="cash-register-payroll.html">3.10.2. <strong>Cierre de Caja Nómina</strong></a></li>
 </ul>
 </div>
 </section>
@@ -97,7 +125,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../pay-assignment/pay-assignment.html" class="btn btn-neutral float-left" title="3.9.1. Asignación de Pagos/Cobros a Documentos por Pagar o Cobrar" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="cash-closing.html" class="btn btn-neutral float-right" title="3.10.1. Registro de Cierre de Caja" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

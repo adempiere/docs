@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Actualizar Cliente de Impresión Todo en Uno &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>7.12. Actualizar Cliente de Impresión Todo en Uno &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
@@ -19,7 +19,9 @@
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7.13. Verificar el funcionamiento del Cliente de Cola de Impresión" href="check-local-printing-all-in-one.html" />
+    <link rel="prev" title="7.11. Configuración Cliente de Impresión en Windows" href="local-config-local-printing-all-in-one.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,8 +45,35 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 <h2>Table of Contents</h2>
 
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../foundation-guide/index.html">Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/master/index.html">1. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/requisition-to-invoice/index.html">2. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/open-items/index.html">3. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/quote-to-invoice/index.html">4. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procedures/payroll/index.html">6. <strong>Gestión de Nóminas</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">7. <strong>Impresora Fiscal</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="add-java-to-path.html">7.1. <strong>Añadir Java 8 a las Variables de Entorno</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html">7.2. <strong>Errores comunes Impresora Fiscal</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual-reports.html">7.3. <strong>Generar Reportes Manualmente en la impresora</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-vmax-220.html">7.4. <strong>Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-pnp-fiscalprinter.html">7.5. <strong>Instalar Impresora Fiscal PNP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="daily-setup-pnp-fiscalPrinter.html">7.6. Revisión de Rutina para Impresora Fiscal PNP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-client-pnp-fiscalPrinter.html">7.7. <strong>Actualizar Cliente de cola de impresión para Impresora Fiscal PNP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-tfhka-fiscalprinter.html">7.8. <strong>Instalar Impresora Fiscal The Factory HKA</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html">7.9. Instalar Cliente de Impresión Todo en Uno (Local-Printing-All-In-One-DotNet)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adempiere-config-local-printing-all-in-one.html">7.10. Configuración Cliente de Impresión en ADempiere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="local-config-local-printing-all-in-one.html">7.11. Configuración Cliente de Impresión en Windows</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7.12. Actualizar Cliente de Impresión Todo en Uno</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#requisitos">7.12.1. Requisitos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instalacion">7.12.2. Instalación</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="check-local-printing-all-in-one.html">7.13. Verificar el funcionamiento del Cliente de Cola de Impresión</a></li>
+</ul>
+</li>
 </ul>
 
 
@@ -70,7 +99,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Actualizar Cliente de Impresión Todo en Uno</li>
+          <li><a href="index.html"><span class="section-number">7. </span><strong>Impresora Fiscal</strong></a> &raquo;</li>
+      <li><span class="section-number">7.12. </span>Actualizar Cliente de Impresión Todo en Uno</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/lve/fiscal-printer/update-local-printing-all-in-one.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,16 +111,16 @@
            <div itemprop="articleBody">
              
   <section id="actualizar-cliente-de-impresion-todo-en-uno">
-<span id="documento-instalar-local-printing-all-in-one"></span><span id="src-lve-fiscal-printer"></span><h1>Actualizar Cliente de Impresión Todo en Uno<a class="headerlink" href="#actualizar-cliente-de-impresion-todo-en-uno" title="Permalink to this headline"></a></h1>
+<span id="documento-instalar-local-printing-all-in-one"></span><span id="src-lve-fiscal-printer"></span><h1><span class="section-number">7.12. </span>Actualizar Cliente de Impresión Todo en Uno<a class="headerlink" href="#actualizar-cliente-de-impresion-todo-en-uno" title="Permalink to this headline"></a></h1>
 <p>Al actualizar la aplicación no es necescario volver a configurar la aplicación, ya que los datos anteriores se mantienen al momento de instalar.</p>
 <section id="requisitos">
-<h2>Requisitos<a class="headerlink" href="#requisitos" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.12.1. </span>Requisitos<a class="headerlink" href="#requisitos" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p>Instalador -  Instalador <a class="reference external" href="https://erpya.ams3.digitaloceanspaces.com/public/Local-Printing-All-In-One-DotNet-rs-2.4.exe">Local-Printing-All-In-One-DotNet</a></p></li>
 </ul>
 </section>
 <section id="instalacion">
-<h2>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.12.2. </span>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline"></a></h2>
 <p>Ejecute el archivo <strong>Local-Printing-All-In-One-DotNet-rs-x.x.exe</strong> y siga los
 siguientes pasos:</p>
 <ol class="arabic simple">
@@ -148,7 +178,10 @@ siguientes pasos:</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="local-config-local-printing-all-in-one.html" class="btn btn-neutral float-left" title="7.11. Configuración Cliente de Impresión en Windows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="check-local-printing-all-in-one.html" class="btn btn-neutral float-right" title="7.13. Verificar el funcionamiento del Cliente de Cola de Impresión" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

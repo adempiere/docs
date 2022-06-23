@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Generar Reportes Manualmente en la impresora &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>7.3. Generar Reportes Manualmente en la impresora &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
@@ -19,7 +19,9 @@
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7.4. Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere" href="setup-vmax-220.html" />
+    <link rel="prev" title="7.2. Errores comunes Impresora Fiscal" href="commons-errors-fiscal-printer.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,8 +45,37 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 <h2>Table of Contents</h2>
 
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">1. Functional User Guide</a></li>
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../foundation-guide/index.html">Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/master/index.html">1. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/requisition-to-invoice/index.html">2. <strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/open-items/index.html">3. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../adempiere/quote-to-invoice/index.html">4. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../standard-coding/index.html">5. <strong>Codificación Estándar de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procedures/payroll/index.html">6. <strong>Gestión de Nóminas</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">7. <strong>Impresora Fiscal</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="add-java-to-path.html">7.1. <strong>Añadir Java 8 a las Variables de Entorno</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="commons-errors-fiscal-printer.html">7.2. <strong>Errores comunes Impresora Fiscal</strong></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7.3. <strong>Generar Reportes Manualmente en la impresora</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#generar-reporte-x">7.3.1. <strong>Generar Reporte “X”.</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generar-reporte-z">7.3.2. <strong>Generar Reporte “Z”.</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generar-reporte-de-memoria-fiscal-por-dias">7.3.3. <strong>Generar “Reporte de Memoria Fiscal por días”.</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generar-reporte-de-memoria-fiscal-por-mes">7.3.4. <strong>Generar “Reporte de Memoria Fiscal por mes”.</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="setup-vmax-220.html">7.4. <strong>Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-pnp-fiscalprinter.html">7.5. <strong>Instalar Impresora Fiscal PNP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="daily-setup-pnp-fiscalPrinter.html">7.6. Revisión de Rutina para Impresora Fiscal PNP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-client-pnp-fiscalPrinter.html">7.7. <strong>Actualizar Cliente de cola de impresión para Impresora Fiscal PNP</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-tfhka-fiscalprinter.html">7.8. <strong>Instalar Impresora Fiscal The Factory HKA</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-local-printing-all-in-one.html">7.9. Instalar Cliente de Impresión Todo en Uno (Local-Printing-All-In-One-DotNet)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adempiere-config-local-printing-all-in-one.html">7.10. Configuración Cliente de Impresión en ADempiere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="local-config-local-printing-all-in-one.html">7.11. Configuración Cliente de Impresión en Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-local-printing-all-in-one.html">7.12. Actualizar Cliente de Impresión Todo en Uno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check-local-printing-all-in-one.html">7.13. Verificar el funcionamiento del Cliente de Cola de Impresión</a></li>
+</ul>
+</li>
 </ul>
 
 
@@ -70,7 +101,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li><strong>Generar Reportes Manualmente en la impresora</strong></li>
+          <li><a href="index.html"><span class="section-number">7. </span><strong>Impresora Fiscal</strong></a> &raquo;</li>
+      <li><span class="section-number">7.3. </span><strong>Generar Reportes Manualmente en la impresora</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/lve/fiscal-printer/manual-reports.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,7 +113,7 @@
            <div itemprop="articleBody">
              
   <section id="generar-reportes-manualmente-en-la-impresora">
-<span id="documento-generar-reporte"></span><h1><strong>Generar Reportes Manualmente en la impresora</strong><a class="headerlink" href="#generar-reportes-manualmente-en-la-impresora" title="Permalink to this headline"></a></h1>
+<span id="documento-generar-reporte"></span><h1><span class="section-number">7.3. </span><strong>Generar Reportes Manualmente en la impresora</strong><a class="headerlink" href="#generar-reportes-manualmente-en-la-impresora" title="Permalink to this headline"></a></h1>
 <blockquote>
 <div><figure class="align-center" id="id2">
 <img alt="Panel Frontal de la impresora" src="../../_images/front.png" />
@@ -92,7 +124,7 @@
 </div></blockquote>
 <p>En en caso de error o cuando se confirma que se trabo la impresora durante una impresión, se hace necesario generar un reporte para consolidar que la data de ADempiere concuerda con la almacenada en la impresora, por motivos de de seguridad o auditoria, se hace conveniente generarlo a través de la impresora misma.</p>
 <section id="generar-reporte-x">
-<h2><strong>Generar Reporte “X”.</strong><a class="headerlink" href="#generar-reporte-x" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.3.1. </span><strong>Generar Reporte “X”.</strong><a class="headerlink" href="#generar-reporte-x" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><figure class="align-center" id="id3">
 <img alt="Generar Reporte X" src="../../_images/print-x-report.png" />
@@ -104,7 +136,7 @@
 <p>Se hace a través de la combinación de los botones “<strong>OK</strong>” + “<strong>X</strong>” Se debe mantener pulsados ambos hasta que la impresión inicie.</p>
 </section>
 <section id="generar-reporte-z">
-<h2><strong>Generar Reporte “Z”.</strong><a class="headerlink" href="#generar-reporte-z" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.3.2. </span><strong>Generar Reporte “Z”.</strong><a class="headerlink" href="#generar-reporte-z" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><figure class="align-center" id="id4">
 <img alt="Generar Reporte Z" src="../../_images/print-report-z.png" />
@@ -116,7 +148,7 @@
 <p>Se hace a través de la combinación de los botones “<strong>OK</strong>” + “<strong>Z</strong>” Se debe mantener pulsados ambos hasta que la impresión inicie.</p>
 </section>
 <section id="generar-reporte-de-memoria-fiscal-por-dias">
-<h2><strong>Generar “Reporte de Memoria Fiscal por días”.</strong><a class="headerlink" href="#generar-reporte-de-memoria-fiscal-por-dias" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.3.3. </span><strong>Generar “Reporte de Memoria Fiscal por días”.</strong><a class="headerlink" href="#generar-reporte-de-memoria-fiscal-por-dias" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -182,7 +214,7 @@
 </div></blockquote>
 </section>
 <section id="generar-reporte-de-memoria-fiscal-por-mes">
-<h2><strong>Generar “Reporte de Memoria Fiscal por mes”.</strong><a class="headerlink" href="#generar-reporte-de-memoria-fiscal-por-mes" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">7.3.4. </span><strong>Generar “Reporte de Memoria Fiscal por mes”.</strong><a class="headerlink" href="#generar-reporte-de-memoria-fiscal-por-mes" title="Permalink to this headline"></a></h2>
 <blockquote>
 <div><div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -250,7 +282,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="commons-errors-fiscal-printer.html" class="btn btn-neutral float-left" title="7.2. Errores comunes Impresora Fiscal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="setup-vmax-220.html" class="btn btn-neutral float-right" title="7.4. Configuración de Impresora Fiscal VMax 220 para Usar con ADempiere" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
