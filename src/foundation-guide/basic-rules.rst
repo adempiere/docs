@@ -1,4 +1,7 @@
-## **Basic Rules of the Community**
+=============================
+Basic Rules of the Community
+=============================
+
 
 This Code of Conduct covers your behavior as a member of the ADempiere Community, in any forum, mailing list, wiki, web site, IRC channel, public meeting or private correspondence. The ADempiere Association arbitrate in any dispute over the conduct of a member of the community.
 
@@ -17,6 +20,7 @@ This Code of Conduct covers your behavior as a member of the ADempiere Community
 **Leave with consideration.** Developers on every project come and go and the ADempiere project is no different. When youleave the project, in whole or in part, we ask that you do so in a way that minimizes disruption to the project. This means you should tell people you're working with you, you are leaving and take appropriate measures to ensure that others can pick up where you leave.
 
 
-### **Shearing**
+**Shearing**
+=============
 
 The Code of Conduct ADempiere is based on Ubuntu Code of Conduct. You can re-use it for your own project, and modify it as you wish, and when you allow others to use your modifications,please give credit to the ADempiere project.

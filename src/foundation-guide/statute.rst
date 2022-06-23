@@ -1,15 +1,19 @@
-# Statute
+==========
+Statute
+==========
 
 
-## **Charter of ADempiere e.V.**
+Charter of ADempiere e.V.
+=============================
 
-### **Preamble:**
+Preamble
+--------
 
 ADempiere e.V. (ADeV) is the representative of the free and open ERP system Adempiere. The association is understood to be the active partner of companies and persons which implement and develope ADempiere. 
 
 
-### **1. Name, headquarters and fiscal year**
-
+1. Name, headquarters and fiscal year
+--------------------------------------
 
 
 *   The name of the association is ADempiere e.V.
@@ -17,8 +21,8 @@ ADempiere e.V. (ADeV) is the representative of the free and open ERP system Adem
 *   The fiscal year shall be the calendar year.
 
 
-### **2. Association's purpose**
-
+2. Association's purpose
+------------------------
 
 
 *   The purpose of the association is the promotion and dissemination of free ERP software in the sense of free software while taking the Adempiere programme package into special consideration. Free software, also referred to as "open source software", in accordance with this charter is considered to be computer programmes which are provided free of charge to the general public by the author in a non-retrievable manner. The author thus grants to third parties the freedom to use the programme for any purpose, to examine how the programme functions and to modify it for one's own needs, to make copies for other persons and to improve the programme and to make these improvements available to the general public.
@@ -31,8 +35,8 @@ ADempiere e.V. (ADeV) is the representative of the free and open ERP system Adem
 *   The association shall pursue no commercial purposes of its own. It shall not endeavour to earn a profit. It is not permitted to have political and ideological goals. 
 
 
-### **3. Non-profit status **
-
+3. Non-profit status
+--------------------
 
 
 *   In accordance with its duties that are specified in § 2 of the charter, the association is pursuing, exclusively and directly, charitable purposes in accordance with the section of the tax code regarding tax advantages (§§ 51ff. AO). It is non-profit and does not primarily pursue its own commercial goals.
@@ -40,8 +44,8 @@ ADempiere e.V. (ADeV) is the representative of the free and open ERP system Adem
 *   No one may benefit for expenditures of the association which are not related to the association's purpose or through disproportionately high compensation. The Federal Travel Cost Act shall be prevailing for the reimbursement of expenditures provided that no other statutory provisions are applicable.
 
 
-### **4. Types of membership and members of the association **
-
+4. Types of membership and members of the association
+-----------------------------------------------------
 
 
 *   Members of the association may be natural and juridical persons who wish to support and help to pursue the goals of the association. In order to give members the option of withdrawing from the active support of the continuing development of Adempiere without giving up their membership, the following types of memberships are available: 
@@ -60,7 +64,8 @@ ADempiere e.V. (ADeV) is the representative of the free and open ERP system Adem
 *   If a member leaves the association or the association is dissolved, no claim to the reimbursement of financial assets that have been contributed shall apply.
 
 
-### **5. Bodies of the association**
+5. Bodies of the association
+----------------------------
 
 Bodies of the association are:
 
@@ -71,8 +76,8 @@ Bodies of the association are:
 *   The advisory council
 
 
-### **6. Members' meeting **
-
+6. Members' meeting
+-------------------
 
 
 *   All of the association's members belong to the members' meeting. Only active members shall receive one voting right to cast one vote.
@@ -83,8 +88,8 @@ Bodies of the association are:
 *   An active member who does not personally appear at the members' meeting may be represented by another member who personally appears at the members' meeting. In addition to his own vote, the representative shall cast the vote of the member being represented. The representative shall legitimise himself at the beginning of the members' meeting by presenting a written power of attorney in its original form to the management board. A representative may represent a maximum of two members.
 
 
-### **7. Responsibilities of the members' meeting**
-
+7. Responsibilities of the members' meeting
+-------------------------------------------
 
 
 *   As the highest resolution-adopting body of the association, the members' meeting is fundamentally competent to fulfil all duties provided that certain duties have not been assigned to another body of the association in accordance with this charter.
@@ -102,8 +107,8 @@ Bodies of the association are:
 *   It may adopt resolutions regarding other maters which are submitted to it by the management board or the membership. 
 
 
-### **8. Management board**
-
+8. Management board
+--------------------
 
 
 *   The management board shall consist of three active members. Only natural persons may be members of the management board. Their terms on the management board shall be three years. It is possible to be re-elected. The respectively serving members of the management board shall remain in office after their terms expire until successors are elected.
@@ -120,8 +125,8 @@ Bodies of the association are:
  
 
 
-### **9. Advisory council**
-
+9. Advisory council
+-------------------
 
 
 *   The association may have an advisory council. The advisory council shall have the responsibility of advising and supporting the management board.
@@ -129,23 +134,29 @@ Bodies of the association are:
 *   If an advisory council is created, an advisory council meeting shall take place at least once per year which is convened by the management board.
 
 
-### **10. By-Laws**
+10. By-Laws
+-----------
+
 
 The by-laws shall regulate the details of the association's work beyond the parameters of the charter. The management board shall make the by-laws effective after their approval by the members. The approval of the members shall be made by an Internet vote with a simple majority of the active members being required for such approval.
 
 
-### **11. Written minutes of the meeting**
+11. Written minutes of the meeting
+----------------------------------
+
 
   The resolutions of the management board and the members' meetings shall be fixed in writing and shall be provided to the members for their review.
 
 
-### **12. Collective bargaining agreements**
+12. Collective bargaining agreements
+------------------------------------
+
 
 Before full-time employees are hired, the management board shall regulate their wages in the by-laws. 
 
 
-### **13. Financing of the association**
-
+13. Financing of the association
+--------------------------------
 
 
 *   The required financial funds of the association shall be obtained through
@@ -157,16 +168,16 @@ Before full-time employees are hired, the management board shall regulate their 
 *   The members shall pay dues in accordance with a resolution of the members' meeting or the active members through an Internet vote with a simple majority being required for approval. The regulation of the amount of the membership dues shall be a component of the by-laws.
 
 
-### **14. Dissolution of the association, use of the association's assets **
-
+14. Dissolution of the association, use of the association's assets
+-------------------------------------------------------------------
 
 
 *   The dissolution of the association may be adopted by resolution only by a members' meeting specifically convened for this purpose. The dissolution resolution shall require a majority of two-thirds of the active members who are present. If less than half of the members entitled to vote are present, then the resolution shall require a majority of three-fourths of the active members who are present.
 *  If the association is dissolved, after the settlement of all liabilities, the remaining assets of the association shall be bestowed upon FSF Europe - Chapter Germany e.V. which is entitled to use it for tax deducted purposes. 
 
 
-### **15. Other provisions**
-
+15. Other provisions
+--------------------
 
 
 *  Communication among members and between the association and its members shall be carried out preferentially by electronic means. For this purpose, an "Information exchange system" (bulletin board or mailing list) has been set up. Members who are not linked to this system have no claim to receiving this information by other means (e.g. via the postal service). Within the parameters of this communication system, each member has been provided with only one access right.
