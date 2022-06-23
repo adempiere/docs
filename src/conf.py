@@ -12,22 +12,34 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+#import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
 
+
+
+
 # -- Project information -----------------------------------------------------
 
-project = 'adempiere-docs'
-copyright = '2018, ADempiere ERP'
-author = 'Raul Munoz'
-
+project = 'ADempiereDocs'
+copyright = '2022, ADempiere ERP'
+author = 'E.R.P. Consultores y Asociados, C.A.'
 # The short X.Y version
-version = ''
-# The full version, including alpha/beta/rc tags
-release = '3.9.1'
+version = '1.0'
 
+# The full version, including alpha/beta/rc tags.
+release = '3.9.3'
+
+# Html logo in drawer.
+# Fit in the drawer at the width of image is 240 px.
+html_logo = 'static/ERP_Logo.png'
+
+html_title = " ".join([project, version, "Documentation"])
+
+templates_path = ["../templates"]
+
+html_additional_pages = {"download": "pages/download.html", "index": "pages/index.html"}
 
 # -- General configuration ---------------------------------------------------
 
@@ -38,7 +50,7 @@ release = '3.9.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
+extensions = ['sphinx.ext.doctest'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -65,6 +77,8 @@ language = None
 # This pattern also affects html_static_path and html_extra_path .
 exclude_patterns = []
 
+#extensions = ['rst2pdf.pdfbuilder']
+#  pdf_documents = [('index', 'rst2pdf', 'Sample rst2pdf doc', 'Your Name')]
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
@@ -74,19 +88,49 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'default'
+html_theme = 'sphinx_rtd_theme'
+#html_theme_path = ['/usr/local/lib/python2.7/site-packages']
+
+# Control display of sidebars
+html_sidebars = {'**': [
+    'localtoc.html',
+    'ethicalads.html',
+    'relations.html',
+    'sourcelink.html',
+    'searchbox.html',
+    'versions.html'
+]}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+#html_theme_options = {
+#  'primary_color': 'indigo',
+    # Values: Same as primary_color. (Default: pink)
+#    'accent_color': 'blue',
+
+#    'fixed_drawer': True,
+#    'fixed_header': True,
+#    'header_waterfall': True,
+#    'header_scroll': False,
+
+    # Render title in header.
+    # Values: True, False (Default: False)
+#    'show_header_title': True,
+    # Render title in drawer.
+    # Values: True, False (Default: True)
+#    'show_drawer_title': True,
+    # Render footer.
+    # Values: True, False (Default: True)
+#    'show_footer': True
+#}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 #html_static_path = ['_staticstatic']
-
+html_static_path = ['static']
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #
@@ -101,12 +145,16 @@ html_theme = 'default'
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'ADempiereDocsdoc'
+htmlhelp_basename = 'DocsErpya'
 
 
 # -- Options for LaTeX output ------------------------------------------------
-
+fh = open('latex_preamble.tex', 'r+')
+PREAMBLE = fh.read()
+fh.close()
 latex_elements = {
+    # Additional stuff for the LaTeX preamble.
+    'preamble': PREAMBLE,
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',
@@ -130,10 +178,12 @@ locale_dirs = ['locale/']
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'ADempiereDocs.tex', 'ADempiereDocs Documentation',
-     'Raul Munoz', 'manual'),
-]
+#latex_documents = [
+#    (master_doc, 'ADempiereDocs.tex', 'E.R.P. Consultores y Asociados, C.A.', 'Documentation E.R.P. Consultores y Asociados, C.A.', 'manual'),
+#]
+
+pdf_documents = [('index', u'rst2pdf', u'ADempiereDocs', u'Documentation E.R.P. Consultores y Asociados, C.A'),]
+
 
 
 # -- Options for manual page output ------------------------------------------
@@ -141,7 +191,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'adempieredocs', 'ADempiereDocs Documentation',
+    (master_doc, 'DocsErpya', 'Documentation Erpya',
      [author], 1)
 ]
 
@@ -152,7 +202,13 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'ADempiereDocs', 'ADempiereDocs Documentation',
-     author, 'ADempiereDocs', 'One line description of project.',
+    (master_doc, 'DocsADempiere', 'ADempiere Documentation',
+     author, 'ADempiere', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+html_css_files = [
+    'css/style.css',
+]
+def setup(app):
+    app.add_css_file("css/style.css")
