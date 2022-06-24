@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>5.2.2. Registro desde Factura &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>Registro desde Factura &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
@@ -21,8 +21,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="5.2.3. Registro desde Nómina" href="payment-selection-payroll.html" />
-    <link rel="prev" title="5.2.1. Registro desde Orden" href="payment-order-from-purchase-order.html" /> 
+    <link rel="next" title="Registro desde Nómina" href="payment-selection-payroll.html" />
+    <link rel="prev" title="Registro desde Orden" href="payment-order-from-purchase-order.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,35 +46,78 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 <h2>Table of Contents</h2>
 
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">2. Foundation Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../master/index.html">3. <strong>Datos Maestros</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html">4. <strong>Gestión de Compras</strong></a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">5. <strong>Gestión de Saldos Pendientes</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../bank-transfer/index.html">5.1. <strong>Transferencia Bancaria</strong></a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">5.2. <strong>Selección de Pago</strong></a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="payment-order-from-purchase-order.html">5.2.1. <strong>Registro desde Orden</strong></a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">5.2.2. <strong>Registro desde Factura</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="payment-selection-payroll.html">5.2.3. <strong>Registro desde Nómina</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="payment-selection-cxp.html">5.2.4. <strong>Registro desde Selección de Pago</strong></a></li>
+              <p class="caption" role="heading"><span class="caption-text">STANDARD DOCUMENTATION</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master/index.html"><strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html"><strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html"><strong>Gestión de Saldos Pendientes</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bank-transfer/index.html"><strong>Transferencia Bancaria</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html"><strong>Selección de Pago</strong></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="payment-order-from-purchase-order.html"><strong>Registro desde Orden</strong></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><strong>Registro desde Factura</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="payment-selection-payroll.html"><strong>Registro desde Nómina</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="payment-selection-cxp.html"><strong>Registro desde Selección de Pago</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../print-export/index.html">5.3. <strong>Imprimir / Exportar Pagos</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../payment/index.html">5.4. <strong>Pago</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../collection/index.html">5.5. <strong>Cobro</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cash-refund/index.html">5.6. <strong>Caja Reembolso</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cash-per-diems/index.html">5.7. <strong>Caja Viáticos</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../collection-cash/index.html">5.8. <strong>Caja Cobranza</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pay-assignment/index.html">5.9. <strong>Asignación de Pagos</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../cash-closing/index.html">5.10. <strong>Cierre de Caja</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../automatic-conciliations/index.html">5.11. <strong>Conciliaciones Automáticas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../print-export/index.html"><strong>Imprimir / Exportar Pagos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../payment/index.html"><strong>Pago</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection/index.html"><strong>Cobro</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-refund/index.html"><strong>Caja Reembolso</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-per-diems/index.html"><strong>Caja Viáticos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection-cash/index.html"><strong>Caja Cobranza</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pay-assignment/index.html"><strong>Asignación de Pagos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-closing/index.html"><strong>Cierre de Caja</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../automatic-conciliations/index.html"><strong>Conciliaciones Automáticas</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../quote-to-invoice/index.html">6. <strong>Gestión de Ventas</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html">7. <strong>Codificación Estándar de ADempiere</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/payroll/index.html">8. <strong>Gestión de Nóminas</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html">9. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quote-to-invoice/index.html"><strong>Gestión de Ventas</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../basic-steps/index.html"><strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master/index.html"><strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../material-management/index.html"><strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../production-management/index.html"><strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distribution-management/index.html"><strong>Gestión de Distribución</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quote-to-invoice/index.html"><strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../customer-relations/index.html"><strong>Gestión de Relaciones con Clientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pos-management/index.html"><strong>Gestión PDV</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html"><strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../returns/index.html"><strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html"><strong>Gestión de Saldos Pendientes</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../bank-transfer/index.html"><strong>Transferencia Bancaria</strong></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html"><strong>Selección de Pago</strong></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="payment-order-from-purchase-order.html"><strong>Registro desde Orden</strong></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><strong>Registro desde Factura</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="payment-selection-payroll.html"><strong>Registro desde Nómina</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="payment-selection-cxp.html"><strong>Registro desde Selección de Pago</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../print-export/index.html"><strong>Imprimir / Exportar Pagos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../payment/index.html"><strong>Pago</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection/index.html"><strong>Cobro</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-refund/index.html"><strong>Caja Reembolso</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-per-diems/index.html"><strong>Caja Viáticos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../collection-cash/index.html"><strong>Caja Cobranza</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pay-assignment/index.html"><strong>Asignación de Pagos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cash-closing/index.html"><strong>Cierre de Caja</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../automatic-conciliations/index.html"><strong>Conciliaciones Automáticas</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../loan-management/index.html"><strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../human-resources-management/index.html"><strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../asset-management/index.html"><strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance-analysis/index.html"><strong>Gestión Contable</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/document-utility/index.html"><strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html"><strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/index.html"><strong>Procedimientos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/report/index.html"><strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html"><strong>Codificación Estándar de ADempiere</strong></a></li>
 </ul>
 
 
@@ -100,9 +143,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html"><span class="section-number">5. </span><strong>Gestión de Saldos Pendientes</strong></a> &raquo;</li>
-          <li><a href="index.html"><span class="section-number">5.2. </span><strong>Selección de Pago</strong></a> &raquo;</li>
-      <li><span class="section-number">5.2.2. </span><strong>Registro desde Factura</strong></li>
+          <li><a href="../index.html"><strong>Gestión de Saldos Pendientes</strong></a> &raquo;</li>
+          <li><a href="index.html"><strong>Selección de Pago</strong></a> &raquo;</li>
+      <li><strong>Registro desde Factura</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/adempiere/open-items/payment-selection/pay-order.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -113,7 +156,7 @@
            <div itemprop="articleBody">
              
   <section id="registro-desde-factura">
-<span id="documento-orden-de-pago"></span><h1><span class="section-number">5.2.2. </span><strong>Registro desde Factura</strong><a class="headerlink" href="#registro-desde-factura" title="Permalink to this heading"></a></h1>
+<span id="documento-orden-de-pago"></span><h1><strong>Registro desde Factura</strong><a class="headerlink" href="#registro-desde-factura" title="Permalink to this heading"></a></h1>
 <p>Para realizar una “<strong>Orden de Pagos</strong>” en ADempiere el cual permite montar una solicitud de todas aquellas  facturas que estén pendientes por pagar, se deben aplicar los siguientes pasos:</p>
 <p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Saldos Pendientes</strong>”, luego seleccione la ventana “<strong>Selección de Pagos</strong>”.</p>
 <blockquote>
@@ -489,8 +532,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="payment-order-from-purchase-order.html" class="btn btn-neutral float-left" title="5.2.1. Registro desde Orden" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="payment-selection-payroll.html" class="btn btn-neutral float-right" title="5.2.3. Registro desde Nómina" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="payment-order-from-purchase-order.html" class="btn btn-neutral float-left" title="Registro desde Orden" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="payment-selection-payroll.html" class="btn btn-neutral float-right" title="Registro desde Nómina" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

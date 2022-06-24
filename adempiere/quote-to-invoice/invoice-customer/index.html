@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>6.6. Documento por Cobrar &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>Documento por Cobrar &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
@@ -21,8 +21,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="6.6.1. Registro de Documento por Cobrar" href="invoice-customer.html" />
-    <link rel="prev" title="6.5.2. Validación de Inventario en Orden de Venta" href="../sales-order/inventory-validation-in-sales-order.html" /> 
+    <link rel="next" title="Registro de Documento por Cobrar" href="invoice-customer.html" />
+    <link rel="prev" title="Validación de Inventario en Orden de Venta" href="../sales-order/inventory-validation-in-sales-order.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,33 +46,74 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
 <h2>Table of Contents</h2>
 
-              <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">2. Foundation Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../master/index.html">3. <strong>Datos Maestros</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html">4. <strong>Gestión de Compras</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../open-items/index.html">5. <strong>Gestión de Saldos Pendientes</strong></a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">6. <strong>Gestión de Ventas</strong></a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../commission/index.html">6.1. <strong>Comisión de Ventas</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sales-region/index.html">6.2. <strong>Región de Ventas</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../price-list/index.html">6.3. <strong>Lista de Precios</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../proposal/index.html">6.4. <strong>Propuesta</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sales-order/index.html">6.5. <strong>Orden de Venta</strong></a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">6.6. <strong>Documento por Cobrar</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="invoice-customer.html">6.6.1. <strong>Registro de Documento por Cobrar</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="generate-invoice-from-order-lines.html">6.6.2. <strong>Generar Factura desde Líneas de la Orden</strong></a></li>
+              <p class="caption" role="heading"><span class="caption-text">STANDARD DOCUMENTATION</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">Functional User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master/index.html"><strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html"><strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open-items/index.html"><strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html"><strong>Gestión de Ventas</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../commission/index.html"><strong>Comisión de Ventas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sales-region/index.html"><strong>Región de Ventas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../price-list/index.html"><strong>Lista de Precios</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../proposal/index.html"><strong>Propuesta</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sales-order/index.html"><strong>Orden de Venta</strong></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><strong>Documento por Cobrar</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="invoice-customer.html"><strong>Registro de Documento por Cobrar</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generate-invoice-from-order-lines.html"><strong>Generar Factura desde Líneas de la Orden</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../generate-invoice-from-departure-order.html">6.7. <strong>Generar Factura desde Orden de Salida</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../generate-invoice-from-departure-order.html#generar-factura-desde-orden-de-salida-consolidado-en-un-documento">6.8. <strong>Generar Factura desde Orden de Salida Consolidado en un Documento</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../shipment/index.html">6.9. <strong>Entregas (Cliente)</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../credit-note-cxc.html">6.10. <strong>Nota de Crédito</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../debit-note-cxc.html">6.11. <strong>Nota de Débito</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generate-invoice-from-departure-order.html"><strong>Generar Factura desde Orden de Salida</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generate-invoice-from-departure-order.html#generar-factura-desde-orden-de-salida-consolidado-en-un-documento"><strong>Generar Factura desde Orden de Salida Consolidado en un Documento</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shipment/index.html"><strong>Entregas (Cliente)</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../credit-note-cxc.html"><strong>Nota de Crédito</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debit-note-cxc.html"><strong>Nota de Débito</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html">7. <strong>Codificación Estándar de ADempiere</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/payroll/index.html">8. <strong>Gestión de Nóminas</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html">9. <strong>Impresora Fiscal</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ADEMPIERE ERP/CRM</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../basic-steps/index.html"><strong>Gestión Básica</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master/index.html"><strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../material-management/index.html"><strong>Gestión de Materiales</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../production-management/index.html"><strong>Gestión de Producción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distribution-management/index.html"><strong>Gestión de Distribución</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html"><strong>Gestión de Ventas</strong></a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../commission/index.html"><strong>Comisión de Ventas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sales-region/index.html"><strong>Región de Ventas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../price-list/index.html"><strong>Lista de Precios</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../proposal/index.html"><strong>Propuesta</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sales-order/index.html"><strong>Orden de Venta</strong></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><strong>Documento por Cobrar</strong></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="invoice-customer.html"><strong>Registro de Documento por Cobrar</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="generate-invoice-from-order-lines.html"><strong>Generar Factura desde Líneas de la Orden</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../generate-invoice-from-departure-order.html"><strong>Generar Factura desde Orden de Salida</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generate-invoice-from-departure-order.html#generar-factura-desde-orden-de-salida-consolidado-en-un-documento"><strong>Generar Factura desde Orden de Salida Consolidado en un Documento</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shipment/index.html"><strong>Entregas (Cliente)</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../credit-note-cxc.html"><strong>Nota de Crédito</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debit-note-cxc.html"><strong>Nota de Débito</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../customer-relations/index.html"><strong>Gestión de Relaciones con Clientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pos-management/index.html"><strong>Gestión PDV</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requisition-to-invoice/index.html"><strong>Gestión de Compras</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../returns/index.html"><strong>Gestión de Devoluciones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open-items/index.html"><strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../loan-management/index.html"><strong>Gestión de Préstamos e Inversiones</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../human-resources-management/index.html"><strong>Gestión de Recursos Humanos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../asset-management/index.html"><strong>Gestión de Activos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../performance-analysis/index.html"><strong>Gestión Contable</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">LOCALIZACIÓN VENEZUELA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/document-utility/index.html"><strong>Utilidad de Documentos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html"><strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/index.html"><strong>Procedimientos</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/report/index.html"><strong>Reportes de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html"><strong>Codificación Estándar de ADempiere</strong></a></li>
 </ul>
 
 
@@ -98,8 +139,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html"><span class="section-number">6. </span><strong>Gestión de Ventas</strong></a> &raquo;</li>
-      <li><span class="section-number">6.6. </span><strong>Documento por Cobrar</strong></li>
+          <li><a href="../index.html"><strong>Gestión de Ventas</strong></a> &raquo;</li>
+      <li><strong>Documento por Cobrar</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/adempiere/quote-to-invoice/invoice-customer/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -110,15 +151,15 @@
            <div itemprop="articleBody">
              
   <section id="documento-por-cobrar">
-<span id="src-adempiere-quote-to-invoice-invoice-customer"></span><h1><span class="section-number">6.6. </span><strong>Documento por Cobrar</strong><a class="headerlink" href="#documento-por-cobrar" title="Permalink to this heading"></a></h1>
+<span id="src-adempiere-quote-to-invoice-invoice-customer"></span><h1><strong>Documento por Cobrar</strong><a class="headerlink" href="#documento-por-cobrar" title="Permalink to this heading"></a></h1>
 <p>Una factura en cuentas por cobrar, es el documento legal que representa una deuda contraída por un cliente determinado con la compañía u organización, por la compra de productos y servicios que el mismo necesita de forma directa o indirecta.</p>
 <p>En ADempiere es posible generar una factura de cuentas por cobrar de forma directa. El presente material elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a>, pretende ofrecerle una explicación eficiente a nuestros clientes del procedimiento a seguir para generar una factura de cuentas por cobrar en ADempiere, en su versión 3.9.2 para la localización Venezuela.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="invoice-customer.html">6.6.1. <strong>Registro de Documento por Cobrar</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="generate-invoice-from-order-lines.html">6.6.2. <strong>Generar Factura desde Líneas de la Orden</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="generate-invoice-from-order-lines.html#consultar-facturas-generadas">6.6.2.1. <strong>Consultar Facturas Generadas</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="generate-invoice-from-order-lines.html#imprimir-facturas-generadas">6.6.2.2. <strong>Imprimir Facturas Generadas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="invoice-customer.html"><strong>Registro de Documento por Cobrar</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="generate-invoice-from-order-lines.html"><strong>Generar Factura desde Líneas de la Orden</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generate-invoice-from-order-lines.html#consultar-facturas-generadas"><strong>Consultar Facturas Generadas</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="generate-invoice-from-order-lines.html#imprimir-facturas-generadas"><strong>Imprimir Facturas Generadas</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -129,8 +170,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../sales-order/inventory-validation-in-sales-order.html" class="btn btn-neutral float-left" title="6.5.2. Validación de Inventario en Orden de Venta" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="invoice-customer.html" class="btn btn-neutral float-right" title="6.6.1. Registro de Documento por Cobrar" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../sales-order/inventory-validation-in-sales-order.html" class="btn btn-neutral float-left" title="Validación de Inventario en Orden de Venta" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="invoice-customer.html" class="btn btn-neutral float-right" title="Registro de Documento por Cobrar" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
