@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: raul-mz/sphinx-action@master
+    - uses: erpcya/sphinx-action@feature/#update-sphinx-base-image
       with:
         pre-build-command: "pip install sphinx_rtd_theme"
         docs-folder: "src/"
         build-command: "sphinx-build -b html . _build/html"
-    - uses: raul-mz/sphinx-action@master
+    - uses: erpcya/sphinx-action@feature/#update-sphinx-base-image
       with:
         pre-build-command: "pip install sphinx_rtd_theme"
         docs-folder: "src/"
