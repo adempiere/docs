@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3.1.1. Crear Tema de Solicitud para Cotizar &mdash; ADempiereDocs 1.0 Documentation</title>
+  <title>4.1.1. Crear Tema de Solicitud para Cotizar &mdash; ADempiereDocs 1.0 Documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/style.css" type="text/css" />
@@ -21,8 +21,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="3.2. Requisición a Compra" href="../requisition/index.html" />
-    <link rel="prev" title="3.1. Solicitud de Cotización a Proveedor" href="index.html" /> 
+    <link rel="next" title="4.2. Requisición a Compra" href="../requisition/index.html" />
+    <link rel="prev" title="4.1. Solicitud de Cotización a Proveedor" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -48,65 +48,65 @@
 
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../functional-guide/index.html">1. Functional User Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">Foundation Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../master/index.html">2. <strong>Datos Maestros</strong></a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">3. <strong>Gestión de Compras</strong></a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">3.1. <strong>Solicitud de Cotización a Proveedor</strong></a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.1. <strong>Crear Tema de Solicitud para Cotizar</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#pestana-suscriptor">3.1.1.1. <strong>Pestaña Suscriptor</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pestana-restriccion">3.1.1.2. <strong>Pestaña Restricción</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../foundation-guide/index.html">2. Foundation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master/index.html">3. <strong>Datos Maestros</strong></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">4. <strong>Gestión de Compras</strong></a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">4.1. <strong>Solicitud de Cotización a Proveedor</strong></a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4.1.1. <strong>Crear Tema de Solicitud para Cotizar</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pestana-suscriptor">4.1.1.1. <strong>Pestaña Suscriptor</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pestana-restriccion">4.1.1.2. <strong>Pestaña Restricción</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#solicitud-para-cotizacion">3.1.2. <strong>Solicitud para Cotización</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#caso-1-solicitud-para-cotizacion-por-tipo-cotiza-lineas-seleccionadas">3.1.2.1. <strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#caso-2-solicitud-para-cotizacion-por-tipo-cotiza-solo-el-total">3.1.2.2. <strong>Caso 2: Solicitud para Cotización por Tipo Cotiza Sólo el Total</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#caso-3-solicitud-para-cotizacion-por-tipo-cotiza-todas-las-lineas">3.1.2.3. <strong>Caso 3: Solicitud para Cotización por Tipo Cótiza todas las Líneas</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#solicitud-para-cotizacion">4.1.2. <strong>Solicitud para Cotización</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#caso-1-solicitud-para-cotizacion-por-tipo-cotiza-lineas-seleccionadas">4.1.2.1. <strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caso-2-solicitud-para-cotizacion-por-tipo-cotiza-solo-el-total">4.1.2.2. <strong>Caso 2: Solicitud para Cotización por Tipo Cotiza Sólo el Total</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caso-3-solicitud-para-cotizacion-por-tipo-cotiza-todas-las-lineas">4.1.2.3. <strong>Caso 3: Solicitud para Cotización por Tipo Cótiza todas las Líneas</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#solicitud-para-cotizacion-con-respuesta">3.1.3. <strong>Solicitud para Cotización con Respuesta</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#caso-1-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-lineas-seleccionadas">3.1.3.1. <strong>Caso 1: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#consultar-el-reporte-de-respuesta-de-solicitud-para-cotizacion">3.1.3.2. <strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#caso-2-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-solo-el-total">3.1.3.3. <strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">3.1.3.4. <strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#caso-3-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-todas-las-lineas">3.1.3.5. <strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">3.1.3.6. <strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#solicitud-para-cotizacion-con-respuesta">4.1.3. <strong>Solicitud para Cotización con Respuesta</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#caso-1-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-lineas-seleccionadas">4.1.3.1. <strong>Caso 1: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#consultar-el-reporte-de-respuesta-de-solicitud-para-cotizacion">4.1.3.2. <strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caso-2-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-solo-el-total">4.1.3.3. <strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">4.1.3.4. <strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caso-3-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-todas-las-lineas">4.1.3.5. <strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">4.1.3.6. <strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#valuacion-de-respuestas-de-la-solicitud-para-cotizacion">3.1.4. <strong>Valuación de Respuestas de la Solicitud para Cotización</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id4">3.1.4.1. <strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">3.1.4.2. <strong>Caso 2: Solicitud para Cotización por Tipo Cotiza Sólo el Total</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id6">3.1.4.3. <strong>Caso 3: Solicitud para Cotización por Tipo Cótiza todas las Líneas</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#valuacion-de-respuestas-de-la-solicitud-para-cotizacion">4.1.4. <strong>Valuación de Respuestas de la Solicitud para Cotización</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">4.1.4.1. <strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">4.1.4.2. <strong>Caso 2: Solicitud para Cotización por Tipo Cotiza Sólo el Total</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">4.1.4.3. <strong>Caso 3: Solicitud para Cotización por Tipo Cótiza todas las Líneas</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#consulta-de-ganador-seleccionado-en-la-solicitud-para-cotizacion-con-respuesta">3.1.5. <strong>Consulta de Ganador Seleccionado en la Solicitud para Cotización con Respuesta</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id7">3.1.5.1. <strong>Caso 1: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id8">3.1.5.2. <strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9">3.1.5.3. <strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#consulta-de-ganador-seleccionado-en-la-solicitud-para-cotizacion-con-respuesta">4.1.5. <strong>Consulta de Ganador Seleccionado en la Solicitud para Cotización con Respuesta</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">4.1.5.1. <strong>Caso 1: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">4.1.5.2. <strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">4.1.5.3. <strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#crear-orden-de-compra-desde-solicitud-de-cotizacion">3.1.6. <strong>Crear Orden de Compra desde Solicitud de Cotización</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id10">3.1.6.1. <strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id11">3.1.6.2. <strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id12">3.1.6.3. <strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#crear-orden-de-compra-desde-solicitud-de-cotizacion">4.1.6. <strong>Crear Orden de Compra desde Solicitud de Cotización</strong></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">4.1.6.1. <strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">4.1.6.2. <strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">4.1.6.3. <strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../requisition/index.html">3.2. <strong>Requisición a Compra</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../purchase-order/index.html">3.3. <strong>Órdenes de Compra</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../invoice/index.html">3.4. <strong>Documento por Pagar</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../material-receipt/index.html">3.5. <strong>Recepción de Productos</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../assign-purchase-order-receipt-invoice.html">3.6. <strong>Asignación de Factura a Recepción</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../credit-note-cxp.html">3.7. <strong>Nota de Crédito</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../debit-note-cxp.html">3.8. <strong>Nota de Débito</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../negotiated-conversion-rate.html">3.9. <strong>Tasa de Conversión Negociada</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../requisition/index.html">4.2. <strong>Requisición a Compra</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../purchase-order/index.html">4.3. <strong>Órdenes de Compra</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../invoice/index.html">4.4. <strong>Documento por Pagar</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../material-receipt/index.html">4.5. <strong>Recepción de Productos</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../assign-purchase-order-receipt-invoice.html">4.6. <strong>Asignación de Factura a Recepción</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../credit-note-cxp.html">4.7. <strong>Nota de Crédito</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debit-note-cxp.html">4.8. <strong>Nota de Débito</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../negotiated-conversion-rate.html">4.9. <strong>Tasa de Conversión Negociada</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../open-items/index.html">4. <strong>Gestión de Saldos Pendientes</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quote-to-invoice/index.html">5. <strong>Gestión de Ventas</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html">6. <strong>Codificación Estándar de ADempiere</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/payroll/index.html">7. <strong>Gestión de Nóminas</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html">8. <strong>Impresora Fiscal</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../open-items/index.html">5. <strong>Gestión de Saldos Pendientes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quote-to-invoice/index.html">6. <strong>Gestión de Ventas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/standard-coding/index.html">7. <strong>Codificación Estándar de ADempiere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/procedures/payroll/index.html">8. <strong>Gestión de Nóminas</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lve/fiscal-printer/index.html">9. <strong>Impresora Fiscal</strong></a></li>
 </ul>
 
 
@@ -132,9 +132,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../index.html"><span class="section-number">3. </span><strong>Gestión de Compras</strong></a> &raquo;</li>
-          <li><a href="index.html"><span class="section-number">3.1. </span><strong>Solicitud de Cotización a Proveedor</strong></a> &raquo;</li>
-      <li><span class="section-number">3.1.1. </span><strong>Crear Tema de Solicitud para Cotizar</strong></li>
+          <li><a href="../index.html"><span class="section-number">4. </span><strong>Gestión de Compras</strong></a> &raquo;</li>
+          <li><a href="index.html"><span class="section-number">4.1. </span><strong>Solicitud de Cotización a Proveedor</strong></a> &raquo;</li>
+      <li><span class="section-number">4.1.1. </span><strong>Crear Tema de Solicitud para Cotizar</strong></li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/adempiere/requisition-to-invoice/request-for-quotation/request-for-quotation.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -145,7 +145,7 @@
            <div itemprop="articleBody">
              
   <section id="crear-tema-de-solicitud-para-cotizar">
-<span id="documento-solicitud-cotizacion"></span><h1><span class="section-number">3.1.1. </span><strong>Crear Tema de Solicitud para Cotizar</strong><a class="headerlink" href="#crear-tema-de-solicitud-para-cotizar" title="Permalink to this heading"></a></h1>
+<span id="documento-solicitud-cotizacion"></span><h1><span class="section-number">4.1.1. </span><strong>Crear Tema de Solicitud para Cotizar</strong><a class="headerlink" href="#crear-tema-de-solicitud-para-cotizar" title="Permalink to this heading"></a></h1>
 <p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Compras</strong>”, luego seleccione la ventana “<strong>Tema de Solicitud para Cotizar</strong>”.</p>
 <blockquote>
 <div><p><img alt="Menú de ADempiere" src="../../../_images/menu13.png" /></p>
@@ -167,7 +167,7 @@
 </div></blockquote>
 </div></blockquote>
 <section id="pestana-suscriptor">
-<h2><span class="section-number">3.1.1.1. </span><strong>Pestaña Suscriptor</strong><a class="headerlink" href="#pestana-suscriptor" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.1.1. </span><strong>Pestaña Suscriptor</strong><a class="headerlink" href="#pestana-suscriptor" title="Permalink to this heading"></a></h2>
 <p>Seleccione la pestaña “<strong>Suscriptor</strong>” y proceda al llenado de los campos correspondientes.</p>
 <blockquote>
 <div><p><img alt="Pestaña Suscriptor" src="../../../_images/pest11.png" /></p>
@@ -203,7 +203,7 @@
 </div></blockquote>
 </section>
 <section id="pestana-restriccion">
-<h2><span class="section-number">3.1.1.2. </span><strong>Pestaña Restricción</strong><a class="headerlink" href="#pestana-restriccion" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.1.2. </span><strong>Pestaña Restricción</strong><a class="headerlink" href="#pestana-restriccion" title="Permalink to this heading"></a></h2>
 <p>Seleccione la pestaña “<strong>Restricción</strong>” y proceda al llenado de los campos correspondientes.</p>
 <blockquote>
 <div><p><img alt="Pestaña Restricción" src="../../../_images/pest31.png" /></p>
@@ -240,7 +240,7 @@
 </section>
 </section>
 <section id="solicitud-para-cotizacion">
-<h1><span class="section-number">3.1.2. </span><strong>Solicitud para Cotización</strong><a class="headerlink" href="#solicitud-para-cotizacion" title="Permalink to this heading"></a></h1>
+<h1><span class="section-number">4.1.2. </span><strong>Solicitud para Cotización</strong><a class="headerlink" href="#solicitud-para-cotizacion" title="Permalink to this heading"></a></h1>
 <p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Compras</strong>”, luego seleccione la ventana “<strong>Solicitud para Cotización</strong>”.</p>
 <blockquote>
 <div><p><img alt="Menú de ADempiere 2" src="../../../_images/menu23.png" /></p>
@@ -252,9 +252,9 @@
 <p>Para ejemplificar el registro del presente documento, es presentado un caso por cada forma de cotización.</p>
 </div>
 <section id="caso-1-solicitud-para-cotizacion-por-tipo-cotiza-lineas-seleccionadas">
-<h2><span class="section-number">3.1.2.1. </span><strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#caso-1-solicitud-para-cotizacion-por-tipo-cotiza-lineas-seleccionadas" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.2.1. </span><strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#caso-1-solicitud-para-cotizacion-por-tipo-cotiza-lineas-seleccionadas" title="Permalink to this heading"></a></h2>
 <section id="pestana-scp-rfq">
-<h3><span class="section-number">3.1.2.1.1. </span><strong>Pestaña SCP (RfQ)</strong><a class="headerlink" href="#pestana-scp-rfq" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">4.1.2.1.1. </span><strong>Pestaña SCP (RfQ)</strong><a class="headerlink" href="#pestana-scp-rfq" title="Permalink to this heading"></a></h3>
 <p>Podrá visualizar la siguiente ventana con los registros de solicitud de cotización que la empresa tiene. Seleccione el icono “<strong>Registro Nuevo</strong>” que se encuentra ubicado en la barra de herramientas de ADempiere y proceda al llenado de los campos correspondientes.</p>
 <blockquote>
 <div><p><img alt="Ventana Solicitud para Cotización" src="../../../_images/ventana21.png" /></p>
@@ -301,7 +301,7 @@
 </div></blockquote>
 </section>
 <section id="pestana-linea">
-<h3><span class="section-number">3.1.2.1.2. </span><strong>Pestaña Línea</strong><a class="headerlink" href="#pestana-linea" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">4.1.2.1.2. </span><strong>Pestaña Línea</strong><a class="headerlink" href="#pestana-linea" title="Permalink to this heading"></a></h3>
 <p>Seleccione la pestaña “<strong>Línea</strong>” y proceda al llenado de los campos correspondientes.</p>
 <blockquote>
 <div><p><img alt="Pestaña Línea" src="../../../_images/pest41.png" /></p>
@@ -324,7 +324,7 @@
 </div></blockquote>
 </section>
 <section id="pestana-cantidad">
-<h3><span class="section-number">3.1.2.1.3. </span><strong>Pestaña Cantidad</strong><a class="headerlink" href="#pestana-cantidad" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">4.1.2.1.3. </span><strong>Pestaña Cantidad</strong><a class="headerlink" href="#pestana-cantidad" title="Permalink to this heading"></a></h3>
 <p>Seleccione la pestaña “<strong>Cantidad</strong>” y proceda al llenado de los campos correspondientes.</p>
 <blockquote>
 <div><p><img alt="Pestaña Cantidad" src="../../../_images/pest5.png" /></p>
@@ -351,7 +351,7 @@
 </div></blockquote>
 </section>
 <section id="id1">
-<h3><span class="section-number">3.1.2.1.4. </span><strong>Pestaña SCP (RfQ)</strong><a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">4.1.2.1.4. </span><strong>Pestaña SCP (RfQ)</strong><a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <p>Regrese a la ventana principal “<strong>SCP (RfQ)</strong>” y seleccione la opción “<strong>Crea e Invita</strong>”, para enviar la notifiación vía correo electrónico a los socios del negocio proveedores agrupados en el tema de solicitud realizado anteriormente.</p>
 <blockquote>
 <div><p><img alt="Opción Crea e Invita" src="../../../_images/crear1.png" /></p>
@@ -365,7 +365,7 @@
 </section>
 </section>
 <section id="caso-2-solicitud-para-cotizacion-por-tipo-cotiza-solo-el-total">
-<h2><span class="section-number">3.1.2.2. </span><strong>Caso 2: Solicitud para Cotización por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#caso-2-solicitud-para-cotizacion-por-tipo-cotiza-solo-el-total" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.2.2. </span><strong>Caso 2: Solicitud para Cotización por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#caso-2-solicitud-para-cotizacion-por-tipo-cotiza-solo-el-total" title="Permalink to this heading"></a></h2>
 <p>Realice el procedimiento regular para generar una “<strong>Solicitud para Cotización</strong>” explicado anteriormente, con la diferencia de que debe seleccionar en el campo “<strong>Tipo SCP (RfQ)</strong>”, la opción “<strong>Cotiza Sólo el Total</strong>”. Al culminar todo el procedimiento hasta el envío de la notificación a los socios del negocio proveedores, el registro quedaría de la siguiente manera.</p>
 <blockquote>
 <div><p><img alt="Caso Solicitud 2" src="../../../_images/casosol2.png" /></p>
@@ -377,7 +377,7 @@
 </div></blockquote>
 </section>
 <section id="caso-3-solicitud-para-cotizacion-por-tipo-cotiza-todas-las-lineas">
-<h2><span class="section-number">3.1.2.3. </span><strong>Caso 3: Solicitud para Cotización por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#caso-3-solicitud-para-cotizacion-por-tipo-cotiza-todas-las-lineas" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.2.3. </span><strong>Caso 3: Solicitud para Cotización por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#caso-3-solicitud-para-cotizacion-por-tipo-cotiza-todas-las-lineas" title="Permalink to this heading"></a></h2>
 <p>Realice el procedimiento regular para generar una “<strong>Solicitud para Cotización</strong>” explicado anteriormente, con la diferencia de que debe seleccionar en el campo “<strong>Tipo SCP (RfQ)</strong>”, la opción “<strong>Cotiza todas las Líneas</strong>”. Al culminar todo el procedimiento hasta el envío de la notificación a los socios del negocio proveedores, el registro quedaría de la siguiente manera.</p>
 <blockquote>
 <div><p><img alt="Caso Solicitud 3" src="../../../_images/casosol3.png" /></p>
@@ -390,7 +390,7 @@
 </section>
 </section>
 <section id="solicitud-para-cotizacion-con-respuesta">
-<h1><span class="section-number">3.1.3. </span><strong>Solicitud para Cotización con Respuesta</strong><a class="headerlink" href="#solicitud-para-cotizacion-con-respuesta" title="Permalink to this heading"></a></h1>
+<h1><span class="section-number">4.1.3. </span><strong>Solicitud para Cotización con Respuesta</strong><a class="headerlink" href="#solicitud-para-cotizacion-con-respuesta" title="Permalink to this heading"></a></h1>
 <p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Compras</strong>”, luego seleccione la ventana “<strong>Solicitud para Cotización</strong>”.</p>
 <blockquote>
 <div><p><img alt="Menú de ADempiere 3" src="../../../_images/menu31.png" /></p>
@@ -412,9 +412,9 @@
 </div></blockquote>
 </div></blockquote>
 <section id="caso-1-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-lineas-seleccionadas">
-<h2><span class="section-number">3.1.3.1. </span><strong>Caso 1: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#caso-1-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-lineas-seleccionadas" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.3.1. </span><strong>Caso 1: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#caso-1-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-lineas-seleccionadas" title="Permalink to this heading"></a></h2>
 <section id="pestana-linea-respuesta">
-<h3><span class="section-number">3.1.3.1.1. </span><strong>Pestaña Línea Respuesta</strong><a class="headerlink" href="#pestana-linea-respuesta" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">4.1.3.1.1. </span><strong>Pestaña Línea Respuesta</strong><a class="headerlink" href="#pestana-linea-respuesta" title="Permalink to this heading"></a></h3>
 <p>Seleccione la pestaña “<strong>Línea Respuesta</strong>” para navegar entre los registros de productos o servicios que fueron cotizados al socio del negocio proveedor.</p>
 <blockquote>
 <div><p><img alt="Pestaña Línea Respuesta 1" src="../../../_images/pest6.png" /></p>
@@ -431,7 +431,7 @@
 </div></blockquote>
 </section>
 <section id="pestana-cantidad-respuesta">
-<h3><span class="section-number">3.1.3.1.2. </span><strong>Pestaña Cantidad Respuesta</strong><a class="headerlink" href="#pestana-cantidad-respuesta" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">4.1.3.1.2. </span><strong>Pestaña Cantidad Respuesta</strong><a class="headerlink" href="#pestana-cantidad-respuesta" title="Permalink to this heading"></a></h3>
 <p>Seleccione la pestaña “<strong>Cantidad Respuesta</strong>” para cargar el precio cotizado por el socio del negocio proveedor.</p>
 <blockquote>
 <div><p><img alt="Pestaña Cantidad Respuesta 1" src="../../../_images/pest7.png" /></p>
@@ -453,7 +453,7 @@
 </div></blockquote>
 </section>
 <section id="pestana-respuesta">
-<h3><span class="section-number">3.1.3.1.3. </span><strong>Pestaña Respuesta</strong><a class="headerlink" href="#pestana-respuesta" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">4.1.3.1.3. </span><strong>Pestaña Respuesta</strong><a class="headerlink" href="#pestana-respuesta" title="Permalink to this heading"></a></h3>
 <p>Regrese a la ventana principal “<strong>Respuesta</strong>” y seleccione la opción “<strong>Completar Verificación</strong>”, para completar el documento de solicitud de cotización con respuesta.</p>
 <blockquote>
 <div><p><img alt="Opción Completar Verificación" src="../../../_images/completar12.png" /></p>
@@ -476,7 +476,7 @@
 </section>
 </section>
 <section id="consultar-el-reporte-de-respuesta-de-solicitud-para-cotizacion">
-<h2><span class="section-number">3.1.3.2. </span><strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong><a class="headerlink" href="#consultar-el-reporte-de-respuesta-de-solicitud-para-cotizacion" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.3.2. </span><strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong><a class="headerlink" href="#consultar-el-reporte-de-respuesta-de-solicitud-para-cotizacion" title="Permalink to this heading"></a></h2>
 <p>Al consultar la solicitud de cotización con respuesta de “<strong>Caso 1: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Líneas Seleccionadas</strong>”, se obtiene el siguiente reporte.</p>
 <blockquote>
 <div><p><img alt="Reporte de Solicitud de Cotización con Respuesta 1" src="../../../_images/reporte1.png" /></p>
@@ -484,7 +484,7 @@
 </div></blockquote>
 </section>
 <section id="caso-2-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-solo-el-total">
-<h2><span class="section-number">3.1.3.3. </span><strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#caso-2-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-solo-el-total" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.3.3. </span><strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#caso-2-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-solo-el-total" title="Permalink to this heading"></a></h2>
 <p>Realice el procedimiento regular para generar una “<strong>Solicitud para Cotización con Respuesta</strong>” explicado anteriormente.</p>
 <blockquote>
 <div><p><img alt="Caso Solicitud con Respuesta 2" src="../../../_images/registro4.png" /></p>
@@ -492,7 +492,7 @@
 </div></blockquote>
 </section>
 <section id="id2">
-<h2><span class="section-number">3.1.3.4. </span><strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong><a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.3.4. </span><strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong><a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <p>Al consultar la solicitud de cotización con respuesta de “<strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong>”, se obtiene el siguiente reporte.</p>
 <blockquote>
 <div><p><img alt="Reporte de Solicitud de Cotización con Respuesta 2" src="../../../_images/reporte2.png" /></p>
@@ -500,7 +500,7 @@
 </div></blockquote>
 </section>
 <section id="caso-3-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-todas-las-lineas">
-<h2><span class="section-number">3.1.3.5. </span><strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#caso-3-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-todas-las-lineas" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.3.5. </span><strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#caso-3-solicitud-para-cotizacion-con-respuesta-por-tipo-cotiza-todas-las-lineas" title="Permalink to this heading"></a></h2>
 <p>Realice el procedimiento regular para generar una “<strong>Solicitud para Cotización con Respuesta</strong>” explicado anteriormente.</p>
 <blockquote>
 <div><p><img alt="Caso Solicitud con Respuesta 3" src="../../../_images/registro5.png" /></p>
@@ -508,7 +508,7 @@
 </div></blockquote>
 </section>
 <section id="id3">
-<h2><span class="section-number">3.1.3.6. </span><strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong><a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.3.6. </span><strong>Consultar el Reporte de Respuesta de Solicitud para Cotización</strong><a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
 <p>Al consultar la solicitud de cotización con respuesta de “<strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong>”, se obtiene el siguiente reporte.</p>
 <blockquote>
 <div><p><img alt="Reporte de Solicitud de Cotización con Respuesta 3" src="../../../_images/reporte3.png" /></p>
@@ -517,9 +517,9 @@
 </section>
 </section>
 <section id="valuacion-de-respuestas-de-la-solicitud-para-cotizacion">
-<h1><span class="section-number">3.1.4. </span><strong>Valuación de Respuestas de la Solicitud para Cotización</strong><a class="headerlink" href="#valuacion-de-respuestas-de-la-solicitud-para-cotizacion" title="Permalink to this heading"></a></h1>
+<h1><span class="section-number">4.1.4. </span><strong>Valuación de Respuestas de la Solicitud para Cotización</strong><a class="headerlink" href="#valuacion-de-respuestas-de-la-solicitud-para-cotizacion" title="Permalink to this heading"></a></h1>
 <section id="id4">
-<h2><span class="section-number">3.1.4.1. </span><strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.4.1. </span><strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#id4" title="Permalink to this heading"></a></h2>
 <p>Ubique en la ventana “<strong>Solicitud para Cotización</strong>” el registro del “<strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong>” y seleccione la opción “<strong>Valuación de Respuestas</strong>”.</p>
 <blockquote>
 <div><p><img alt="Registro del Caso 1" src="../../../_images/registro6.png" /></p>
@@ -532,7 +532,7 @@
 </div></blockquote>
 </section>
 <section id="id5">
-<h2><span class="section-number">3.1.4.2. </span><strong>Caso 2: Solicitud para Cotización por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.4.2. </span><strong>Caso 2: Solicitud para Cotización por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
 <p>Ubique en la ventana “<strong>Solicitud para Cotización</strong>” el registro del “<strong>Caso 2: Solicitud para Cotización por Tipo Cotiza Sólo el Total</strong>” y seleccione la opción “<strong>Valuación de Respuestas</strong>”.</p>
 <blockquote>
 <div><p><img alt="Registro del Caso 2" src="../../../_images/registro7.png" /></p>
@@ -545,7 +545,7 @@
 </div></blockquote>
 </section>
 <section id="id6">
-<h2><span class="section-number">3.1.4.3. </span><strong>Caso 3: Solicitud para Cotización por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.4.3. </span><strong>Caso 3: Solicitud para Cotización por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
 <p>Ubique en la ventana “<strong>Solicitud para Cotización</strong>” el registro del “<strong>Caso 3: Solicitud para Cotización por Tipo Cótiza todas las Líneas</strong>” y seleccione la opción “<strong>Valuación de Respuestas</strong>”.</p>
 <blockquote>
 <div><p><img alt="Registro del Caso 3" src="../../../_images/registro8.png" /></p>
@@ -559,9 +559,9 @@
 </section>
 </section>
 <section id="consulta-de-ganador-seleccionado-en-la-solicitud-para-cotizacion-con-respuesta">
-<h1><span class="section-number">3.1.5. </span><strong>Consulta de Ganador Seleccionado en la Solicitud para Cotización con Respuesta</strong><a class="headerlink" href="#consulta-de-ganador-seleccionado-en-la-solicitud-para-cotizacion-con-respuesta" title="Permalink to this heading"></a></h1>
+<h1><span class="section-number">4.1.5. </span><strong>Consulta de Ganador Seleccionado en la Solicitud para Cotización con Respuesta</strong><a class="headerlink" href="#consulta-de-ganador-seleccionado-en-la-solicitud-para-cotizacion-con-respuesta" title="Permalink to this heading"></a></h1>
 <section id="id7">
-<h2><span class="section-number">3.1.5.1. </span><strong>Caso 1: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.5.1. </span><strong>Caso 1: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
 <p>Ubique en la ventana “<strong>Solicitud para Cotización (Con Respuesta)</strong>” el registro del “<strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong>” y navegue entre los registros de la pestaña “<strong>Línea Respuesta</strong>” de cada socio del negocio proveedor para buscar el registro que tenga el checklist “<strong>Ganador Seleccionado</strong>” tildado de la siguiente manera.</p>
 <blockquote>
 <div><p><img alt="Checklist Ganador Seleccionado 1" src="../../../_images/ganador1.png" /></p>
@@ -569,7 +569,7 @@
 </div></blockquote>
 </section>
 <section id="id8">
-<h2><span class="section-number">3.1.5.2. </span><strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.5.2. </span><strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
 <p>Ubique en la ventana “<strong>Solicitud para Cotización (Con Respuesta)</strong>” el registro del “<strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong>” y navegue entre los registros de cada socio del negocio proveedor para buscar el registro que tenga el checklist “<strong>Ganador Seleccionado</strong>” tildado de la siguiente manera.</p>
 <blockquote>
 <div><p><img alt="Checklist Ganador Seleccionado 2" src="../../../_images/ganador2.png" /></p>
@@ -577,7 +577,7 @@
 </div></blockquote>
 </section>
 <section id="id9">
-<h2><span class="section-number">3.1.5.3. </span><strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.5.3. </span><strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#id9" title="Permalink to this heading"></a></h2>
 <p>Ubique en la ventana “<strong>Solicitud para Cotización (Con Respuesta)</strong>” el registro del “<strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong>” y navegue entre los registros de cada socio del negocio proveedor para buscar el registro que tenga el checklist “<strong>Ganador Seleccionado</strong>” tildado de la siguiente manera.</p>
 <blockquote>
 <div><p><img alt="Checklist Ganador Seleccionado 3" src="../../../_images/ganador3.png" /></p>
@@ -586,9 +586,9 @@
 </section>
 </section>
 <section id="crear-orden-de-compra-desde-solicitud-de-cotizacion">
-<h1><span class="section-number">3.1.6. </span><strong>Crear Orden de Compra desde Solicitud de Cotización</strong><a class="headerlink" href="#crear-orden-de-compra-desde-solicitud-de-cotizacion" title="Permalink to this heading"></a></h1>
+<h1><span class="section-number">4.1.6. </span><strong>Crear Orden de Compra desde Solicitud de Cotización</strong><a class="headerlink" href="#crear-orden-de-compra-desde-solicitud-de-cotizacion" title="Permalink to this heading"></a></h1>
 <section id="id10">
-<h2><span class="section-number">3.1.6.1. </span><strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.6.1. </span><strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong><a class="headerlink" href="#id10" title="Permalink to this heading"></a></h2>
 <p>Ubique en la ventana “<strong>Solicitud para Cotización</strong>” el registro del “<strong>Caso 1: Solicitud para Cotización por Tipo Cotiza Líneas Seleccionadas</strong>” y seleccione la opción “<strong>Crear Orden de Compra</strong>”, ubicada en el icono “<strong>Proceso</strong>” de la barra de herramientas de ADempiere.</p>
 <blockquote>
 <div><p><img alt="Icono Proceso" src="../../../_images/proceso1.png" /></p>
@@ -608,7 +608,7 @@
 </div></blockquote>
 </section>
 <section id="id11">
-<h2><span class="section-number">3.1.6.2. </span><strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#id11" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.6.2. </span><strong>Caso 2: Solicitud para Cotización (Con Respuesta) por Tipo Cotiza Sólo el Total</strong><a class="headerlink" href="#id11" title="Permalink to this heading"></a></h2>
 <p>Realice el procedimiento regular para generar una “<strong>Orden de Compra</strong>” explicado anteriormente.</p>
 <blockquote>
 <div><p><img alt="Orden de Compra 2" src="../../../_images/compra2.png" /></p>
@@ -616,7 +616,7 @@
 </div></blockquote>
 </section>
 <section id="id12">
-<h2><span class="section-number">3.1.6.3. </span><strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#id12" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">4.1.6.3. </span><strong>Caso 3: Solicitud para Cotización (Con Respuesta) por Tipo Cótiza todas las Líneas</strong><a class="headerlink" href="#id12" title="Permalink to this heading"></a></h2>
 <p>Realice el procedimiento regular para generar una “<strong>Orden de Compra</strong>” explicado anteriormente.</p>
 <blockquote>
 <div><p><img alt="Orden de Compra 3" src="../../../_images/compra4.png" /></p>
@@ -629,8 +629,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="3.1. Solicitud de Cotización a Proveedor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../requisition/index.html" class="btn btn-neutral float-right" title="3.2. Requisición a Compra" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="4.1. Solicitud de Cotización a Proveedor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../requisition/index.html" class="btn btn-neutral float-right" title="4.2. Requisición a Compra" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
