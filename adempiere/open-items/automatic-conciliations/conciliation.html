@@ -16,6 +16,7 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -119,7 +120,7 @@
            <div itemprop="articleBody">
              
   <section id="registro-de-conciliacion-automatica">
-<span id="documento-conciliacion-automatica"></span><h1><span class="section-number">4.11.2. </span><strong>Registro de Conciliación Automática</strong><a class="headerlink" href="#registro-de-conciliacion-automatica" title="Permalink to this headline"></a></h1>
+<span id="documento-conciliacion-automatica"></span><h1><span class="section-number">4.11.2. </span><strong>Registro de Conciliación Automática</strong><a class="headerlink" href="#registro-de-conciliacion-automatica" title="Permalink to this heading"></a></h1>
 <p>Para poder crear una conciliación automática en ADempiere debe seguir los siguientes pasos:</p>
 <p>Ubique en el menú de ADempiere la carpeta “<strong>Gestión de Saldos Pendientes</strong>” y luego seleccione la ventana “<strong>Estado de Cuenta Bancario</strong>”.</p>
 <blockquote>
@@ -156,7 +157,7 @@
 <p>Hasta este paso es el llenado del encabezado de la conciliación, donde se define el banco en el cual se va a realizar la conciliación de los pagos/cobros que ha tenido la empresa en un rango determinado. En adelante se procederá a realizar la conciliación.</p>
 </div>
 <section id="importacion-de-extracto-bancario">
-<h2><span class="section-number">4.11.2.1. </span><strong>Importación de Extracto Bancario</strong><a class="headerlink" href="#importacion-de-extracto-bancario" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">4.11.2.1. </span><strong>Importación de Extracto Bancario</strong><a class="headerlink" href="#importacion-de-extracto-bancario" title="Permalink to this heading"></a></h2>
 <p>Para que ADempiere pueda conciliar y verificar los pagos/cobros en una cuenta bancaria y los registrados pagos/cobros en ADempiere, se debe importar el extracto bancario generado del banco para ello se deben seguir los siguientes pasos.</p>
 <p>Ya estando posicionados en la ventana “<strong>Estado de Cuenta Bancario</strong>” seleccione el icono “<strong>Proceso</strong>” en la barra de herramientas de ADempiere.</p>
 <blockquote>
@@ -209,7 +210,7 @@
 </div>
 </section>
 <section id="conciliacion-automatica">
-<h2><span class="section-number">4.11.2.2. </span><strong>Conciliación Automática</strong><a class="headerlink" href="#conciliacion-automatica" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">4.11.2.2. </span><strong>Conciliación Automática</strong><a class="headerlink" href="#conciliacion-automatica" title="Permalink to this heading"></a></h2>
 <p>Una vez seleccionado el banco con el que se realizará la conciliación bancaria e importado el extracto bancario se procede a realizar la conciliación automática:</p>
 <p>Estando posicionados en la ventana <strong>“Estado de Cuenta bancario”</strong> Seleccione el icono “<strong>Proceso</strong>” en la barra de herramientas de ADempiere.</p>
 <blockquote>
@@ -279,7 +280,7 @@
 <p>Al seleccionar “<strong>Ok</strong>” ADempiere lo llevará nuevamente a la ventana principal “<strong>Estado de Cuenta Bancario</strong>”.</p>
 </section>
 <section id="coincidencia-bancarias">
-<h2><span class="section-number">4.11.2.3. </span><strong>Coincidencia Bancarias</strong><a class="headerlink" href="#coincidencia-bancarias" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">4.11.2.3. </span><strong>Coincidencia Bancarias</strong><a class="headerlink" href="#coincidencia-bancarias" title="Permalink to this heading"></a></h2>
 <p>Al momento de realizar la conciliación bancaria ADempiere maneja una serie verificaciones para poder encontrar las coincidencias bancarias, los datos que toma ADempiere tanto en los movimientos del extracto bancario como los movimientos registrados en ADempiere son los siguientes por banco:</p>
 <ul>
 <li><p><strong>Banco Banesco</strong></p>
@@ -578,7 +579,7 @@
 </ul>
 </section>
 <section id="revision-de-conciliaciones">
-<h2><span class="section-number">4.11.2.4. </span><strong>Revisión de Conciliaciones</strong><a class="headerlink" href="#revision-de-conciliaciones" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">4.11.2.4. </span><strong>Revisión de Conciliaciones</strong><a class="headerlink" href="#revision-de-conciliaciones" title="Permalink to this heading"></a></h2>
 <p>Una vez aplicado el proceso de conciliación automática, se debe verificar que tanto los pagos/cobros que coincidieron como los que no coincidieron se carguen correctamente dentro del registro de la conciliación bancaria en la que se este trabajando, para ello debe seguir los siguientes paso:</p>
 <p>Seleccione la pestaña “<strong>Línea Estado Cuentas</strong>” para verificar que se encuentren los registros de todos los movimientos del estado de cuenta bancario cargado desde la ventana de búsqueda inteligente.</p>
 <blockquote>
@@ -596,7 +597,7 @@
 </div>
 </section>
 <section id="crear-pagos-desde-linea-de-estado-de-cuenta">
-<h2><span class="section-number">4.11.2.5. </span><strong>Crear Pagos Desde Línea de Estado de Cuenta</strong><a class="headerlink" href="#crear-pagos-desde-linea-de-estado-de-cuenta" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">4.11.2.5. </span><strong>Crear Pagos Desde Línea de Estado de Cuenta</strong><a class="headerlink" href="#crear-pagos-desde-linea-de-estado-de-cuenta" title="Permalink to this heading"></a></h2>
 <p>Si al realizar la conciliación existen movimientos sin registros en ADempiere, se debe realizar el proceso “<strong>Crear pagos desde Estado de Cuenta</strong>” para generar los pagos/cobros correspondientes a cada uno de los movimientos,ya que es muy importante que todos los movimientos bancarios coincidan en su totalidad con los registros en ADempiere o que los mismos logren ser identificados, ya que de lo contrario la conciliación no podrá ser completada en ADempiere, del mismo modo este proceso también  es explicado en el documento <a class="reference internal" href="create-payments-from-account-statement.html#documento-crear-pagos-desde-estado-de-cuenta"><span class="std std-ref">Crear Pagos desde Estado de Cuenta</span></a>.</p>
 <p>En el caso de que existan movimientos con registros en ADempiere pero sin documentos de pagos/cobros asociados en la línea, se debe seleccionar de la siguiente manera el documento “<strong>Pago/Cobro</strong>”.</p>
 <p>Ubique el registro de la línea sin documento “<strong>Pagos/Cobros</strong>” asociado y seleccione el documento con ayuda del identificador del campo “<strong>Pago</strong>”.</p>

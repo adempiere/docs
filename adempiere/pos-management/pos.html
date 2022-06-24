@@ -16,6 +16,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -89,7 +90,7 @@
            <div itemprop="articleBody">
              
   <section id="toma-de-pedido">
-<span id="documento-punto-de-venta"></span><h1><strong>Toma de Pedido</strong><a class="headerlink" href="#toma-de-pedido" title="Permalink to this headline"></a></h1>
+<span id="documento-punto-de-venta"></span><h1><strong>Toma de Pedido</strong><a class="headerlink" href="#toma-de-pedido" title="Permalink to this heading"></a></h1>
 <p>El proceso toma de pedido consiste en la venta de los productos por medio del documento “<strong>Orden de Venta</strong>”, en el cual se cargan los datos del cliente, los productos y el cobro. Al realizar el cobro de la misma, se generan de manera automática los documentos “<strong>Cobro</strong>”, “<strong>Entrega</strong>” y “<strong>Factura por Cobrar</strong>”.</p>
 <p>El documento del cobro se genera en la ventana “<strong>Caja</strong>”, con la cuenta caja pos en la cual se realizó dicho cobro. Este es asociado a la línea del registro de cierre de caja de la cuenta “<strong>Caja POS</strong>”, creado al momento de la apertura de caja.</p>
 <p>Adicional a ello, el documento “<strong>Factura por Cobrar</strong>”, es generado en la ventana “<strong>Documentos por Cobrar</strong>”. Mientras que el documento “<strong>Entrega</strong>”, es generado en la ventana “<strong>Entrega (Cliente)</strong>”.</p>
@@ -99,7 +100,7 @@
 <p>Imagen 1. Diagrama de Toma de Pedido POS</p>
 </div></blockquote>
 <section id="ejecucion-del-proceso">
-<h2><strong>Ejecución del Proceso</strong><a class="headerlink" href="#ejecucion-del-proceso" title="Permalink to this headline"></a></h2>
+<h2><strong>Ejecución del Proceso</strong><a class="headerlink" href="#ejecucion-del-proceso" title="Permalink to this heading"></a></h2>
 <p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Ventas</strong>”, luego seleccione la carpeta “<strong>Órdenes de Venta</strong>”, por último seleccione la carpeta “<strong>Punto de Venta</strong>”, finalmente seleccione la ventana “<strong>Punto de Venta</strong>”.</p>
 <blockquote>
 <div><p><img alt="Menú de ADempiere" src="../../_images/point-of-sale-menu.png" /></p>
@@ -152,7 +153,7 @@
 </div></blockquote>
 </section>
 <section id="cobrar-pedido">
-<h2><strong>Cobrar Pedido</strong><a class="headerlink" href="#cobrar-pedido" title="Permalink to this headline"></a></h2>
+<h2><strong>Cobrar Pedido</strong><a class="headerlink" href="#cobrar-pedido" title="Permalink to this heading"></a></h2>
 <p>Luego de haber cargado todos los productos de la venta en la orden, debe seleccionar el icono “<strong>Pago</strong>” para generar el cobro de los mismos.</p>
 <blockquote>
 <div><p><img alt="Icono Pago de la Ventana Punto de Venta" src="../../_images/point-of-sale-window-payment-icon.png" /></p>
@@ -188,7 +189,7 @@
 <p>El cobro de los productos cargados en la orden de venta se puede ejecutar de diferentes formas, explicadas a continuación.</p>
 </div></blockquote>
 <section id="procedimiento-regular-con-una-forma-de-pago-y-una-moneda-especifica">
-<h3><strong>Procedimiento Regular con una Forma de Pago y una Moneda Específica</strong><a class="headerlink" href="#procedimiento-regular-con-una-forma-de-pago-y-una-moneda-especifica" title="Permalink to this headline"></a></h3>
+<h3><strong>Procedimiento Regular con una Forma de Pago y una Moneda Específica</strong><a class="headerlink" href="#procedimiento-regular-con-una-forma-de-pago-y-una-moneda-especifica" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>Seleccione en el campo “<strong>Forma de Pago</strong>”, la forma utilizada por el cliente para pagar los productos cargados en la orden de venta.</p>
 <blockquote>
@@ -228,7 +229,7 @@
 </div></blockquote>
 </section>
 <section id="procedimiento-especial-con-diferentes-formas-de-pago-y-monedas">
-<h3><strong>Procedimiento Especial con Diferentes Formas de Pago y Monedas</strong><a class="headerlink" href="#procedimiento-especial-con-diferentes-formas-de-pago-y-monedas" title="Permalink to this headline"></a></h3>
+<h3><strong>Procedimiento Especial con Diferentes Formas de Pago y Monedas</strong><a class="headerlink" href="#procedimiento-especial-con-diferentes-formas-de-pago-y-monedas" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><p>Seleccione en el campo “<strong>Forma de Pago</strong>”, la forma utilizada por el cliente para pagar los productos cargados en la orden de venta.</p>
 <blockquote>
@@ -289,7 +290,7 @@
 </section>
 </section>
 <section id="consultar-factura-generada">
-<h2><strong>Consultar Factura Generada</strong><a class="headerlink" href="#consultar-factura-generada" title="Permalink to this headline"></a></h2>
+<h2><strong>Consultar Factura Generada</strong><a class="headerlink" href="#consultar-factura-generada" title="Permalink to this heading"></a></h2>
 <p>Ubique la orden de venta generada en la ventana “<strong>Órdenes de Venta</strong>”, luego seleccione el icono “<strong>Visualiza Detalle (Donde es Usado)</strong>” y finalmente haga clic sobre la opción “<strong>Documentos por Cobrar</strong>”, para acercar la factura de la venta.</p>
 <blockquote>
 <div><p><img alt="Documento de Cobro Generado en la Ventana Documentos por Cobrar" src="../../_images/collection-document-generated-in-the-documents-receivable-window.png" /></p>
@@ -302,7 +303,7 @@
 </div></blockquote>
 </section>
 <section id="consultar-cobro-generado">
-<h2><strong>Consultar Cobro Generado</strong><a class="headerlink" href="#consultar-cobro-generado" title="Permalink to this headline"></a></h2>
+<h2><strong>Consultar Cobro Generado</strong><a class="headerlink" href="#consultar-cobro-generado" title="Permalink to this heading"></a></h2>
 <p>Ubique el documento de cobro generado en la ventana “<strong>Documentos por Cobrar</strong>” y luego seleccione la pestaña “<strong>Facturas Pagadas</strong>”, para visualizar las asignaciones de los diferentes documentos de cobro generados en la ventana “<strong>Caja</strong>”.</p>
 <blockquote>
 <div><p><img alt="Pestaña Facturas Pagadas de la Ventana Documentos por Cobrar" src="../../_images/paid-invoices-tab-of-the-documents-receivable-window1.png" /></p>
@@ -320,7 +321,7 @@
 </div></blockquote>
 </section>
 <section id="consultar-registro-en-cierre-de-caja">
-<h2><strong>Consultar Registro en Cierre de Caja</strong><a class="headerlink" href="#consultar-registro-en-cierre-de-caja" title="Permalink to this headline"></a></h2>
+<h2><strong>Consultar Registro en Cierre de Caja</strong><a class="headerlink" href="#consultar-registro-en-cierre-de-caja" title="Permalink to this heading"></a></h2>
 <p>Cada cobro desde el punto de venta genera un documento de ingreso en la ventana “<strong>Caja</strong>”, por cada documento de cobro generado se crea una línea con el cobro asociado en la pestaña “<strong>Línea de Cierre de Caja</strong>”, de la ventana “<strong>Cierre de Caja</strong>” correspondiente al registro de la “<strong>Caja 04</strong>”, creado en estado “<strong>Borrador</strong> al realizar la apertura de caja.</p>
 <blockquote>
 <div><p><img alt="Cobro Generado en Cierre de Caja" src="../../_images/collection-generated-at-closing-of-cash.png" /></p>

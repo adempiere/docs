@@ -16,6 +16,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -89,11 +90,11 @@
            <div itemprop="articleBody">
              
   <section id="retiro-detallado-de-punto-de-venta">
-<span id="documento-retiro-detallado-punto-de-venta"></span><h1><strong>Retiro Detallado de Punto de Venta</strong><a class="headerlink" href="#retiro-detallado-de-punto-de-venta" title="Permalink to this headline"></a></h1>
+<span id="documento-retiro-detallado-punto-de-venta"></span><h1><strong>Retiro Detallado de Punto de Venta</strong><a class="headerlink" href="#retiro-detallado-de-punto-de-venta" title="Permalink to this heading"></a></h1>
 <p>Un retiro de fondos es realizado cuando por algún motivo se saca dinero de alguna de las cajas donde es realizado el proceso de venta de productos, la mayoria de las veces suele suceder por un alivio de caja, cancelación de un gasto, entre otros. A continuación es explicado el procedimiento regular para reflejar en ADempiere, un retiro de fondos.</p>
 <p>A continuación, se específica el procedimiento que se debe realizar para retirar correctamente los fondos de caja POS.</p>
 <section id="ejecucion-del-proceso">
-<h2><strong>Ejecución del Proceso</strong><a class="headerlink" href="#ejecucion-del-proceso" title="Permalink to this headline"></a></h2>
+<h2><strong>Ejecución del Proceso</strong><a class="headerlink" href="#ejecucion-del-proceso" title="Permalink to this heading"></a></h2>
 <p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Ventas</strong>”, luego seleccione la carpeta “<strong>Órdenes de Venta</strong>”, por último seleccione la carpeta “<strong>Punto de Venta</strong>”. Para finalizar, seleccione la ventana “<strong>Punto de Venta</strong>”.</p>
 <blockquote>
 <div><p><img alt="Menú de ADempiere" src="../../_images/point-of-sale-menu.png" /></p>
@@ -265,7 +266,7 @@
 </div>
 </section>
 <section id="consulta-de-pago-y-cobro-generados-en-caja">
-<h2><strong>Consulta de Pago y Cobro Generados en Caja</strong><a class="headerlink" href="#consulta-de-pago-y-cobro-generados-en-caja" title="Permalink to this headline"></a></h2>
+<h2><strong>Consulta de Pago y Cobro Generados en Caja</strong><a class="headerlink" href="#consulta-de-pago-y-cobro-generados-en-caja" title="Permalink to this heading"></a></h2>
 <p>Ubique los registros creados por el retiro de fondos en la ventana “<strong>Caja</strong>”, con ayuda del número de documento ingresado en el campo “<strong>No. del Documento</strong>”, de la ventana “<strong>Retiro de Caja (Detallado)</strong>”.</p>
 <blockquote>
 <div><p><img alt="Número de Documento del Retiro de Fondos" src="../../_images/funds-withdrawal-document-number.png" /></p>
@@ -288,7 +289,7 @@
 </div></blockquote>
 </section>
 <section id="consultar-registro-en-cierre-de-caja">
-<h2><strong>Consultar Registro en Cierre de Caja</strong><a class="headerlink" href="#consultar-registro-en-cierre-de-caja" title="Permalink to this headline"></a></h2>
+<h2><strong>Consultar Registro en Cierre de Caja</strong><a class="headerlink" href="#consultar-registro-en-cierre-de-caja" title="Permalink to this heading"></a></h2>
 <p>Cada forma de pago y moneda por la que se realiza un retiro de fondos, se genera un documento de egreso y uno de ingreso en la ventana “<strong>Caja</strong>”. Por cada documento generado se crea una línea con el mismo asociado, en la pestaña “<strong>Línea de Cierre de Caja</strong>”, de la ventana “<strong>Cierre de Caja</strong>” correspondiente a los registros creados en estado “<strong>Borrador</strong> al realizar la apertura de caja.</p>
 <p>Registro de “<strong>Caja Administrativa</strong>” en la ventana “<strong>Cierre de Caja</strong>”.</p>
 <blockquote>

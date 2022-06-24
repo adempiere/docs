@@ -16,6 +16,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -113,7 +114,7 @@
            <div itemprop="articleBody">
              
   <section id="generar-factura-desde-orden-de-salida">
-<span id="documento-generar-factura-orden-salida"></span><h1><span class="section-number">5.7. </span><strong>Generar Factura desde Orden de Salida</strong><a class="headerlink" href="#generar-factura-desde-orden-de-salida" title="Permalink to this headline"></a></h1>
+<span id="documento-generar-factura-orden-salida"></span><h1><span class="section-number">5.7. </span><strong>Generar Factura desde Orden de Salida</strong><a class="headerlink" href="#generar-factura-desde-orden-de-salida" title="Permalink to this heading"></a></h1>
 <p>El presente material elaborado por <a class="reference external" href="http://erpya.com">ERPyA</a> pretende ofrecerle una explicación eficiente a nuestros clientes del procedimiento a seguir para realizar y obtener un resultado exitoso al momento de generar facturas desde orden de salida en la versión 3.9.2 de ADempiere en la localización Venezuela.</p>
 <p>El proceso “<strong>Generar Facturas desde Orden de Salida</strong>” cuenta con el checklist “<strong>Consolidado en un Documento</strong>” que al estar tildado permite agrupar todas las órdenes de salida que tenga un mismo socio del negocio para generar una factura. Si en las órdenes de salida seleccionadas se encuentran productos con un mismo código, ADempiere suma en la factura todos los productos que posean el mismo código, ubicándolos en una sola línea.</p>
 <p>En el caso de que el checklist no se encuentre tildado, el proceso “<strong>Generar Facturas desde Orden de Salida</strong>” es ejecutado de forma regular, generando tantas facturas como órdenes de venta tenga la orden de salida.</p>
@@ -172,7 +173,7 @@
 </div></blockquote>
 </div></blockquote>
 <section id="consultar-facturas-generadas">
-<h2><span class="section-number">5.7.1. </span><strong>Consultar Facturas Generadas</strong><a class="headerlink" href="#consultar-facturas-generadas" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">5.7.1. </span><strong>Consultar Facturas Generadas</strong><a class="headerlink" href="#consultar-facturas-generadas" title="Permalink to this heading"></a></h2>
 <p>Al consultar el registro en la ventana “<strong>Documentos por Cobrar</strong>”, puede visualizar la factura de cuentas por cobrar generada desde la orden de salida.</p>
 <blockquote>
 <div><figure class="align-default">
@@ -182,7 +183,7 @@
 </div></blockquote>
 </section>
 <section id="imprimir-facturas-generadas">
-<h2><span class="section-number">5.7.2. </span><strong>Imprimir Facturas Generadas</strong><a class="headerlink" href="#imprimir-facturas-generadas" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">5.7.2. </span><strong>Imprimir Facturas Generadas</strong><a class="headerlink" href="#imprimir-facturas-generadas" title="Permalink to this heading"></a></h2>
 <p>Al imprimir el registro en la ventana “<strong>Documentos por Cobrar</strong>”, seleccionando el icono “<strong>Imprimir</strong>” ubicado en la barra de herramientas de ADempiere, podrá visualizar de la siguiente manera la factura de ventas generada desde la orden de salida.</p>
 <blockquote>
 <div><figure class="align-default">
@@ -193,7 +194,7 @@
 </section>
 </section>
 <section id="generar-factura-desde-orden-de-salida-consolidado-en-un-documento">
-<h1><span class="section-number">5.8. </span><strong>Generar Factura desde Orden de Salida Consolidado en un Documento</strong><a class="headerlink" href="#generar-factura-desde-orden-de-salida-consolidado-en-un-documento" title="Permalink to this headline"></a></h1>
+<h1><span class="section-number">5.8. </span><strong>Generar Factura desde Orden de Salida Consolidado en un Documento</strong><a class="headerlink" href="#generar-factura-desde-orden-de-salida-consolidado-en-un-documento" title="Permalink to this heading"></a></h1>
 <p>Realice el procedimiento regular explicado anteriormente en <a class="reference internal" href="#documento-generar-factura-orden-salida"><span class="std std-ref">Generar Factura desde Orden de Salida</span></a>, luego de seleccionar las órdenes de salida por las cuales será generada la factura, tilde el checklist “<strong>Consolidado en un Documento</strong>” y la opción “<strong>OK</strong>” para generar las facturas por socios del negocio asociados a las órdenes de ventas seleccionadas.</p>
 <blockquote>
 <div><figure class="align-default">
@@ -209,7 +210,7 @@
 <p>Imagen 11. Ventana de Confirmación y Opción OK</p>
 </div></blockquote>
 <section id="id1">
-<h2><span class="section-number">5.8.1. </span><strong>Consultar Facturas Generadas</strong><a class="headerlink" href="#id1" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">5.8.1. </span><strong>Consultar Facturas Generadas</strong><a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
 <p>Al consultar el registro en la ventana “<strong>Documentos por Cobrar</strong>”, puede visualizar las facturas de cuentas por cobrar generadas desde la orden de salida.</p>
 <blockquote>
 <div><p>Documento por Cobrar “<strong>85932</strong>” correspondiente al socio del negocio “<strong>Socio Estándar 1</strong>”.</p>
@@ -229,7 +230,7 @@
 </div></blockquote>
 </section>
 <section id="id2">
-<h2><span class="section-number">5.8.2. </span><strong>Imprimir Facturas Generadas</strong><a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">5.8.2. </span><strong>Imprimir Facturas Generadas</strong><a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
 <p>Al imprimir el registro en la ventana “<strong>Documentos por Cobrar</strong>”, seleccionando el icono “<strong>Imprimir</strong>” ubicado en la barra de herramientas de ADempiere, podrá visualizar de la siguiente manera la factura de ventas generada desde la orden de salida.</p>
 <blockquote>
 <div><p>Factura “<strong>85932</strong>” correspondiente al socio del negocio “<strong>Socio Estándar 1</strong>”.</p>

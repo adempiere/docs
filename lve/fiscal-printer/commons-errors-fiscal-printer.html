@@ -16,6 +16,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -118,10 +119,10 @@
            <div itemprop="articleBody">
              
   <section id="errores-comunes-impresora-fiscal">
-<span id="documento-errores-impresora"></span><h1><span class="section-number">8.2. </span><strong>Errores comunes Impresora Fiscal</strong><a class="headerlink" href="#errores-comunes-impresora-fiscal" title="Permalink to this headline"></a></h1>
+<span id="documento-errores-impresora"></span><h1><span class="section-number">8.2. </span><strong>Errores comunes Impresora Fiscal</strong><a class="headerlink" href="#errores-comunes-impresora-fiscal" title="Permalink to this heading"></a></h1>
 <p>A continuación se presentan las fallas o incidentes comunes, que debe considerar durante la configuración de la Impresora fiscal VMAX 220, cubriendo así los incidentes que afecten el funcionamiento de esta.</p>
 <section id="no-se-imprimen-los-archivos-en-la-impresora">
-<h2><span class="section-number">8.2.1. </span><strong>No se imprimen los archivos en la Impresora</strong><a class="headerlink" href="#no-se-imprimen-los-archivos-en-la-impresora" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.2.1. </span><strong>No se imprimen los archivos en la Impresora</strong><a class="headerlink" href="#no-se-imprimen-los-archivos-en-la-impresora" title="Permalink to this heading"></a></h2>
 <p>Puede ocurrir por varias razones, las principales son conexión por Hardware a la impresora Fiscal y la configuración de la aplicación Spooler.</p>
 <p>Para hacer un diagnostico de lo que ocurre lo principal es iniciar desde la conexión por Hardware, esta tiene 3 puntos a tener en cuenta:</p>
 <ul>
@@ -187,15 +188,15 @@
 </ul>
 </section>
 <section id="fecha-y-hora-incorrectas-en-documentos-impresos">
-<h2><span class="section-number">8.2.2. </span><strong>Fecha y Hora incorrectas en documentos impresos.</strong><a class="headerlink" href="#fecha-y-hora-incorrectas-en-documentos-impresos" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.2.2. </span><strong>Fecha y Hora incorrectas en documentos impresos.</strong><a class="headerlink" href="#fecha-y-hora-incorrectas-en-documentos-impresos" title="Permalink to this heading"></a></h2>
 <p>Cuando sucede que la fecha y hora no esta sincronizada con la fecha actual, dentro de ADempiere existe un Proceso que permite Actualizar esta información.</p>
 </section>
 <section id="mensaje-error-dispositivo-no-conectado">
-<h2><span class="section-number">8.2.3. </span><strong>Mensaje error “Dispositivo no Conectado”</strong><a class="headerlink" href="#mensaje-error-dispositivo-no-conectado" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.2.3. </span><strong>Mensaje error “Dispositivo no Conectado”</strong><a class="headerlink" href="#mensaje-error-dispositivo-no-conectado" title="Permalink to this heading"></a></h2>
 <p>En primera Instancia verificar que la conexión y configuración de la impresora esta debidamente hecha, si luego de esto sigue ocurriendo el problema estaría de parte de la configuración hecha en ADempiere, lo mas recomendable revisar toda la configuración de dispositivo.</p>
 </section>
 <section id="la-pantalla-de-del-impresora-muestra-el-mensaje-comando-no-ejecutado">
-<h2><span class="section-number">8.2.4. </span><strong>La pantalla de del impresora muestra el mensaje “Comando no ejecutado”</strong><a class="headerlink" href="#la-pantalla-de-del-impresora-muestra-el-mensaje-comando-no-ejecutado" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.2.4. </span><strong>La pantalla de del impresora muestra el mensaje “Comando no ejecutado”</strong><a class="headerlink" href="#la-pantalla-de-del-impresora-muestra-el-mensaje-comando-no-ejecutado" title="Permalink to this heading"></a></h2>
 <p>Suele suceder cuando se le envía un comando invalido a la impresora, no se permite completar la acción dentro de esta directamente. Cuando la impresora se encuentra en esa condición no permite continuar imprimiendo ningún tipo de archivo.</p>
 <p>La opción mas recomendable, para volver a colocar la impresora operativa es generar un “<strong>Reporte X</strong>” manualmente, esto se hace manteniendo presionados los botones “<strong>X</strong>” y “<strong>OK</strong>” del panel frontal, hasta que inicie la impresión.</p>
 <div class="admonition warning">
@@ -205,7 +206,7 @@
 </div>
 </section>
 <section id="errores-de-impresion-o-procesando-el-documento">
-<h2><span class="section-number">8.2.5. </span><strong>Errores de Impresión o procesando el Documento</strong><a class="headerlink" href="#errores-de-impresion-o-procesando-el-documento" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.2.5. </span><strong>Errores de Impresión o procesando el Documento</strong><a class="headerlink" href="#errores-de-impresion-o-procesando-el-documento" title="Permalink to this heading"></a></h2>
 <p>Cuando esto ocurre normalmente viene acompañado del mensaje “Comando no ejecutado”, es prudente verificar el estado del documento en ADempiere y verificar que el documento no tenga estado “No Valido”, o este marcado como Impreso. Pasado el transcurso de unos minutos avanzara el carrete de papel de la impresora mostrando el mensaje “<strong>ANULADO</strong>”.</p>
 <p>Confirmada alguna de las situaciones previamente descrita, puede identificarse como alguno de los problemas descritos a continuación:</p>
 <table class="docutils align-default">
@@ -253,7 +254,7 @@
 <p>A Continuación se detalla de una manera más Gráfica como proceder con los caso de error de los cuales se tiene registro.</p>
 </section>
 <section id="primer-caso-impreso-correctamente-a-traves-de-la-impresora-y-factura-no-completada-en-adempiere">
-<h2><span class="section-number">8.2.6. </span><strong>Primer caso Impreso Correctamente a través de la impresora y Factura no Completada en ADempiere.</strong><a class="headerlink" href="#primer-caso-impreso-correctamente-a-traves-de-la-impresora-y-factura-no-completada-en-adempiere" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.2.6. </span><strong>Primer caso Impreso Correctamente a través de la impresora y Factura no Completada en ADempiere.</strong><a class="headerlink" href="#primer-caso-impreso-correctamente-a-traves-de-la-impresora-y-factura-no-completada-en-adempiere" title="Permalink to this heading"></a></h2>
 <p>Existe un proceso “<strong>Autorizar Documento Fiscal</strong>” para reactivar el completar el documento ADempiere, este se usa de la siguiente manera:</p>
 <blockquote>
 <div><figure class="align-center" id="id5">
@@ -292,7 +293,7 @@
 <p>Para el caso actual debe usarse la opción “<strong>Completar el Documento(Sin Impresión)</strong>”. Esta opción permite completar el documento existente en ADempiere y de esta manera generar el documento, que respalde el que se encuentra impreso.</p>
 </section>
 <section id="segundo-caso-la-factura-impresa-esta-anulada-pero-se-encuentra-completada-correctamente-en-adempiere">
-<h2><span class="section-number">8.2.7. </span><strong>Segundo caso la Factura impresa esta Anulada pero se encuentra Completada Correctamente en ADempiere.</strong><a class="headerlink" href="#segundo-caso-la-factura-impresa-esta-anulada-pero-se-encuentra-completada-correctamente-en-adempiere" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.2.7. </span><strong>Segundo caso la Factura impresa esta Anulada pero se encuentra Completada Correctamente en ADempiere.</strong><a class="headerlink" href="#segundo-caso-la-factura-impresa-esta-anulada-pero-se-encuentra-completada-correctamente-en-adempiere" title="Permalink to this heading"></a></h2>
 <p>Se requiere el Aplicar el Proceso “<strong>Autorizar Documento Fiscal</strong>” a la factura no generada, seleccionando la opción Anular.</p>
 <blockquote>
 <div><figure class="align-center" id="id7">
@@ -339,7 +340,7 @@
 </div></blockquote>
 </section>
 <section id="tercer-caso-completado-correctamente-en-adempiere-pero-no-se-realiza-la-impresion">
-<h2><span class="section-number">8.2.8. </span><strong>Tercer Caso Completado Correctamente en ADempiere pero no se realiza la impresión</strong><a class="headerlink" href="#tercer-caso-completado-correctamente-en-adempiere-pero-no-se-realiza-la-impresion" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.2.8. </span><strong>Tercer Caso Completado Correctamente en ADempiere pero no se realiza la impresión</strong><a class="headerlink" href="#tercer-caso-completado-correctamente-en-adempiere-pero-no-se-realiza-la-impresion" title="Permalink to this heading"></a></h2>
 <p>Cuando esto sucede se debe aplicar el mismo proceso de “<strong>Autorizar Documento Fiscal</strong>” , utilizando la opción “<strong>Reimprimir</strong>”.</p>
 <blockquote>
 <div><figure class="align-center" id="id10">
@@ -370,7 +371,7 @@
 <p>Luego acceder a la ventana donde esta la factura en cuestión, e imprimir manualmente usando el botón “<strong>Imprimir Factura en Impresora Fiscal</strong>”.</p>
 </section>
 <section id="cuarto-caso-el-documento-impreso-quedo-incompleto-y-en-adempiere-el-documento-tiene-un-es-incompleto-o-no-valido">
-<h2><span class="section-number">8.2.9. </span><strong>Cuarto Caso El Documento impreso quedo incompleto y en ADempiere el Documento tiene un es Incompleto o No-valido</strong><a class="headerlink" href="#cuarto-caso-el-documento-impreso-quedo-incompleto-y-en-adempiere-el-documento-tiene-un-es-incompleto-o-no-valido" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.2.9. </span><strong>Cuarto Caso El Documento impreso quedo incompleto y en ADempiere el Documento tiene un es Incompleto o No-valido</strong><a class="headerlink" href="#cuarto-caso-el-documento-impreso-quedo-incompleto-y-en-adempiere-el-documento-tiene-un-es-incompleto-o-no-valido" title="Permalink to this heading"></a></h2>
 <p>El documento en ADempiere es necesario Anularlo. La forma de solventar esta falla es proceder en dos etapas en la primera se aplica el proceso con la factura afectada seleccionando el parámetro “<strong>Completar (Sin Impresión)</strong>”.</p>
 <blockquote>
 <div><figure class="align-center" id="id11">

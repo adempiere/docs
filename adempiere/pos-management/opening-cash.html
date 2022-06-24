@@ -16,6 +16,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -89,7 +90,7 @@
            <div itemprop="articleBody">
              
   <section id="apertura-de-caja">
-<span id="documento-apertura-de-caja"></span><h1><strong>Apertura de Caja</strong><a class="headerlink" href="#apertura-de-caja" title="Permalink to this headline"></a></h1>
+<span id="documento-apertura-de-caja"></span><h1><strong>Apertura de Caja</strong><a class="headerlink" href="#apertura-de-caja" title="Permalink to this heading"></a></h1>
 <p>El proceso de apertura de caja consta en realizar una transferencia bancaria desde un proceso específico del punto de venta. Permitiendo con ello, realizar un egreso de la caja administrativa del punto de venta y posteriormente, un ingreso a la caja en la cual serán realizadas las operaciones de venta. Dichos movimientos son reflejados en la ventana “<strong>Caja</strong>”, por medio de los documentos “<strong>Pago Nacional</strong>” y “<strong>Cobro Nacional</strong>”.</p>
 <p>Este procedimiento crea un registro en la ventana “<strong>Cierre de Caja</strong>”, con la cuenta “<strong>Caja Administrativa</strong>”, desde la cual egresa el dinero. En la línea del mismo, se asocia el registro de “<strong>Pago Nacional</strong>”, generado en la ventana “<strong>Caja</strong>” por la apertura.</p>
 <p>Adicional a ello, crea un registro en dicha ventana “<strong>Cierre de Caja</strong>”, con la cuenta “<strong>Caja POS</strong>”, a la cual ingresa el dinero. De igual manera, se asocia en la línea del registro, el “<strong>Cobro Nacional</strong>”, generado en “<strong>Caja</strong>” por la apertura.</p>
@@ -107,7 +108,7 @@
 <p>No debe realizar el proceso de apertura de caja si no es entregado fisicamente el dinero en la respectiva caja. De lo contrario, los saldos de la caja en ADempiere no tendrán ninguna coincidencia con los saldos que existen fisicamente en la caja.</p>
 </div>
 <section id="ejecucion-del-proceso">
-<h2><strong>Ejecución del Proceso</strong><a class="headerlink" href="#ejecucion-del-proceso" title="Permalink to this headline"></a></h2>
+<h2><strong>Ejecución del Proceso</strong><a class="headerlink" href="#ejecucion-del-proceso" title="Permalink to this heading"></a></h2>
 <p>Ubique y seleccione en el menú de ADempiere, la carpeta “<strong>Gestión de Ventas</strong>”, luego seleccione la carpeta “<strong>Órdenes de Venta</strong>”, por último seleccione la carpeta “<strong>Punto de Venta</strong>”. Para finalizar, seleccione el proceso “<strong>Apertura de Punto de Venta</strong>”.</p>
 <blockquote>
 <div><p><img alt="Menú de ADempiere" src="../../_images/menu-opening-point-of-sale.png" /></p>
@@ -160,7 +161,7 @@
 </div></blockquote>
 </section>
 <section id="consultar-egreso-e-ingreso-generado-de-la-apertura-de-punto-de-venta">
-<h2><strong>Consultar Egreso e Ingreso Generado de la Apertura de Punto de Venta</strong><a class="headerlink" href="#consultar-egreso-e-ingreso-generado-de-la-apertura-de-punto-de-venta" title="Permalink to this headline"></a></h2>
+<h2><strong>Consultar Egreso e Ingreso Generado de la Apertura de Punto de Venta</strong><a class="headerlink" href="#consultar-egreso-e-ingreso-generado-de-la-apertura-de-punto-de-venta" title="Permalink to this heading"></a></h2>
 <p>Al buscar entre los registros de la ventana “<strong>Caja</strong>”, los valores ingresados en los campos “<strong>No. del Documento</strong>” y “<strong>Documento Destino</strong>”, de la ventana “<strong>Apertura de Punto de Venta</strong>”, se pueden visualizar dos (2) registros resultantes de la transferencia bancaria, entre ellos se encuentran.</p>
 <blockquote>
 <div><p>El egreso generado en la cuenta “<strong>Caja Administrativa</strong>” como pago nacional, con toda la información suministrada en el proceso ejecutado en la ventana “<strong>Apertura de Punto de Venta</strong>”.</p>
@@ -176,10 +177,10 @@
 </div></blockquote>
 </section>
 <section id="consultar-registros-creados-en-la-ventana-cierre-de-caja">
-<h2><strong>Consultar Registros Creados en la Ventana Cierre de Caja</strong><a class="headerlink" href="#consultar-registros-creados-en-la-ventana-cierre-de-caja" title="Permalink to this headline"></a></h2>
+<h2><strong>Consultar Registros Creados en la Ventana Cierre de Caja</strong><a class="headerlink" href="#consultar-registros-creados-en-la-ventana-cierre-de-caja" title="Permalink to this heading"></a></h2>
 <p>Al realizar una apertura de caja se crean dos registros en estado “<strong>Borrador</strong>”, en la ventana “<strong>Cierre de Caja</strong>”, uno para cada caja involucrada en el proceso ejecutado en la ventana “<strong>Apertura de Punto de Venta</strong>”.</p>
 <section id="caja-administracion-pos">
-<h3><strong>Caja Administración POS</strong><a class="headerlink" href="#caja-administracion-pos" title="Permalink to this headline"></a></h3>
+<h3><strong>Caja Administración POS</strong><a class="headerlink" href="#caja-administracion-pos" title="Permalink to this heading"></a></h3>
 <p>El registro con la cuenta “<strong>Caja Administración POS</strong>”, se crea automáticamente con las siguientes restricciones:</p>
 <blockquote>
 <div><ul class="simple">
@@ -198,7 +199,7 @@
 </div></blockquote>
 </section>
 <section id="caja-01">
-<h3><strong>Caja 01</strong><a class="headerlink" href="#caja-01" title="Permalink to this headline"></a></h3>
+<h3><strong>Caja 01</strong><a class="headerlink" href="#caja-01" title="Permalink to this heading"></a></h3>
 <p>El registro con la cuenta “<strong>Caja 01</strong>”, se crea automáticamente con las siguientes restricciones:</p>
 <blockquote>
 <div><ul class="simple">

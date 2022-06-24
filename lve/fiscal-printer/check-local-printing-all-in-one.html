@@ -16,6 +16,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -117,9 +118,9 @@
            <div itemprop="articleBody">
              
   <section id="verificar-el-funcionamiento-del-cliente-de-cola-de-impresion">
-<span id="documento-check-printpdf-local-printing-all-in-one"></span><h1><span class="section-number">8.13. </span>Verificar el funcionamiento del Cliente de Cola de Impresión<a class="headerlink" href="#verificar-el-funcionamiento-del-cliente-de-cola-de-impresion" title="Permalink to this headline"></a></h1>
+<span id="documento-check-printpdf-local-printing-all-in-one"></span><h1><span class="section-number">8.13. </span>Verificar el funcionamiento del Cliente de Cola de Impresión<a class="headerlink" href="#verificar-el-funcionamiento-del-cliente-de-cola-de-impresion" title="Permalink to this heading"></a></h1>
 <section id="verificar-que-la-aplicacion-este-ejecutando-la-version-correcta">
-<h2><span class="section-number">8.13.1. </span>Verificar que la Aplicacion este ejecutando la version correcta<a class="headerlink" href="#verificar-que-la-aplicacion-este-ejecutando-la-version-correcta" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.13.1. </span>Verificar que la Aplicacion este ejecutando la version correcta<a class="headerlink" href="#verificar-que-la-aplicacion-este-ejecutando-la-version-correcta" title="Permalink to this heading"></a></h2>
 <p>Se debe acceder a las propiedades del Acceso Directo de la aplicacion que se encuentra en el escritorio.</p>
 <p><a href="#id1"><span class="problematic" id="id2">|Acceso directo|</span></a></p>
 <p>Por Ejemplo si la version instalada es la siguiente: <strong>Local-Printing-All-In-One-DotNet-rs-2.3.exe</strong></p>
@@ -134,7 +135,7 @@
 <p>En caso de que alguno de estos valores no coincida, se debe modificar el acceso directo colocando la version correcta en este caso <strong>rs-2.3</strong>.</p>
 </section>
 <section id="verificar-que-la-aplicacion-reciba-datos">
-<h2><span class="section-number">8.13.2. </span>Verificar que la aplicacion reciba datos<a class="headerlink" href="#verificar-que-la-aplicacion-reciba-datos" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.13.2. </span>Verificar que la aplicacion reciba datos<a class="headerlink" href="#verificar-que-la-aplicacion-reciba-datos" title="Permalink to this heading"></a></h2>
 <p>Para hacer esto se debe iniciar la Aplicacion Local-Printing-All-In-One-DotNet y enviar un documento desde ADempiere:</p>
 <p>Observando en la consola que consola se reciba un mensaje con la siguiente estrcutura:</p>
 <div class="highlight-batch notranslate"><div class="highlight"><pre><span></span>Document: C-Order1003061-1966357589737257033.pdf
@@ -146,7 +147,7 @@ C-Order1003061-1966357589737257033.pdf
 <p><img alt="Imprimir Documento" src="../../_images/config-print-queue-printing-document.PNG" /></p>
 <p>En estas lineas se muestra informacion del documento recibido, nombre de documento y el nombre definido en ADempiere para la impresora.</p>
 <section id="problemas-al-momento-de-recibir-el-documento">
-<h3><span class="section-number">8.13.2.1. </span>Problemas al momento de recibir el documento<a class="headerlink" href="#problemas-al-momento-de-recibir-el-documento" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">8.13.2.1. </span>Problemas al momento de recibir el documento<a class="headerlink" href="#problemas-al-momento-de-recibir-el-documento" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>Verificar si se escogio la impresora correcta al momento de imprimir.</p></li>
 <li><p>Verificar que los datos de conexión configurado en ADempiere corresponden con los definidos en el archivo printer.yaml</p></li>
@@ -154,7 +155,7 @@ C-Order1003061-1966357589737257033.pdf
 </section>
 </section>
 <section id="verificar-que-la-aplicacion-imprima-por-la-impresora-predeterminada">
-<h2><span class="section-number">8.13.3. </span>Verificar que la Aplicacion Imprima por la impresora predeterminada<a class="headerlink" href="#verificar-que-la-aplicacion-imprima-por-la-impresora-predeterminada" title="Permalink to this headline"></a></h2>
+<h2><span class="section-number">8.13.3. </span>Verificar que la Aplicacion Imprima por la impresora predeterminada<a class="headerlink" href="#verificar-que-la-aplicacion-imprima-por-la-impresora-predeterminada" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Abrimos impresoras y faxes, luego ubicamos la impresora predeterminada y pulsamos en abrir cola.</p></li>
 </ol>
@@ -177,7 +178,7 @@ C-Order1003061-1966357589737257033.pdf
 <p><img alt="Imprimir Documento" src="../../_images/config-print-queue-printing-document.PNG" /></p>
 <p>Se recomienda tener en primer plano la ventana que se abrio en el primer paso, y de esta manera observar lo que se envia hacia la impresora predeterminada, ya que de otro modo por la velocidad a la se ejecuta no tendra tiempo suficiente para ver el documento recibido.</p>
 <section id="problemas-al-momento-de-imprimir">
-<h3><span class="section-number">8.13.3.1. </span>Problemas al momento de imprimir<a class="headerlink" href="#problemas-al-momento-de-imprimir" title="Permalink to this headline"></a></h3>
+<h3><span class="section-number">8.13.3.1. </span>Problemas al momento de imprimir<a class="headerlink" href="#problemas-al-momento-de-imprimir" title="Permalink to this heading"></a></h3>
 <p>Si al momento de imprimir no se envia el documento a la impresora predeterminada, se debe tomar en cuantea lo siguiente</p>
 <ul class="simple">
 <li><p>La impresora no esta configurada como predeterminada.</p></li>

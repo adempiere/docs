@@ -16,6 +16,7 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -89,7 +90,7 @@
            <div itemprop="articleBody">
              
   <section id="contribuir-a-la-documentacion">
-<span id="documento-contribuir-documento"></span><h1><strong>Contribuir a la Documentación</strong><a class="headerlink" href="#contribuir-a-la-documentacion" title="Permalink to this headline"></a></h1>
+<span id="documento-contribuir-documento"></span><h1><strong>Contribuir a la Documentación</strong><a class="headerlink" href="#contribuir-a-la-documentacion" title="Permalink to this heading"></a></h1>
 <p>La documentación es una forma de describir un proceso simple o complejo para un usuario final, dado que en el día a día existen muchas actividades y muy poco tiempo siempre es bueno contar con una guía para realizar los procesos que a veces se olvidan.</p>
 <p>Este material elaborado por <a class="reference external" href="http://erpya.com/">E.R.P. Consultores y Asociados, C.A.</a> está dirigido a las personas que se encargan de documentar cualquier proceso, paso a paso, guía de usuario o simplemente una publicación bajo el uso de la herramienta “<strong>reStructuredText</strong>”. Tome en cuenta todas las consideraciones expresadas en esta guía para evitar problemas de escalabilidad a futuro y mantenimiento.</p>
 <p>A diferencia de “<strong>Markdown</strong>”, la documentación en “<strong>rST</strong>” no es realizada de forma local, por lo tanto el equipo de trabajo necesita conexión a internet para visualizar los cambios realizados en la documentación.</p>
@@ -104,10 +105,10 @@
 <p>Seleccione en la barra de herramientas de “<strong>Visual Studio Code</strong>”, la opción “<strong>Terminal</strong>”, luego seleccione la opción “<strong>Nueva Terminal</strong>”. Ejecute el siguiente comando en la terminal: git remote add upstream <a class="reference external" href="https://github.com/erpcya/docs.git">https://github.com/erpcya/docs.git</a></p>
 <p>Luego de haber configurado “<strong>Visual Studio Code</strong>”, puede proceder a realizar o actualizar la documentación.</p>
 <section id="apuntes-para-la-documentacion">
-<h2><strong>Apuntes para la Documentación</strong><a class="headerlink" href="#apuntes-para-la-documentacion" title="Permalink to this headline"></a></h2>
+<h2><strong>Apuntes para la Documentación</strong><a class="headerlink" href="#apuntes-para-la-documentacion" title="Permalink to this heading"></a></h2>
 <p>El lenguaje “<strong>reStructuredText</strong>” o “<strong>rST</strong>” es muy parecido al lenguaje “<strong>Markdown</strong>”, al momento de documentar en “<strong>rST</strong>” se deben tener en cuenta algunos detalles diferentes de “<strong>Markdown</strong>”:</p>
 <section id="identificacion-del-documento">
-<h3><strong>Identificación del Documento</strong><a class="headerlink" href="#identificacion-del-documento" title="Permalink to this headline"></a></h3>
+<h3><strong>Identificación del Documento</strong><a class="headerlink" href="#identificacion-del-documento" title="Permalink to this heading"></a></h3>
 <p>Al principio del documento es recomendable identificarlo con una etiqueta, la misma se compone de dos puntos continuos “<strong>..</strong>”, seguido de un espacio en blanco y por último el símbolo “<strong>_</strong>”, pegado de la palabra “<strong>documento</strong>”, con el símbolo “<strong>/</strong>” y el nombre del documento, finalizando con el símbolo “<strong>:</strong>”</p>
 <p><strong>Ejemplo</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">_documento</span><span class="o">/</span><span class="n">contribuir</span><span class="p">:</span>
@@ -123,7 +124,7 @@
 </div>
 </section>
 <section id="titulos">
-<h3><strong>Titulos</strong><a class="headerlink" href="#titulos" title="Permalink to this headline"></a></h3>
+<h3><strong>Titulos</strong><a class="headerlink" href="#titulos" title="Permalink to this heading"></a></h3>
 <p>Los titulos en “<strong>rST</strong>” son identificados por caracteres especiales</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Con revestimiento, para piezas</span>
 
@@ -158,7 +159,7 @@
 </div>
 </section>
 <section id="formato-para-listas-numericas">
-<h3><strong>Formato para Listas Numericas</strong><a class="headerlink" href="#formato-para-listas-numericas" title="Permalink to this headline"></a></h3>
+<h3><strong>Formato para Listas Numericas</strong><a class="headerlink" href="#formato-para-listas-numericas" title="Permalink to this heading"></a></h3>
 <p>La numeración en la documentación se realiza agregando:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">Punto</span> <span class="n">uno</span>
 
@@ -187,7 +188,7 @@
 </ol>
 </section>
 <section id="formato-de-parrafos">
-<h3><strong>Formato de Párrafos</strong><a class="headerlink" href="#formato-de-parrafos" title="Permalink to this headline"></a></h3>
+<h3><strong>Formato de Párrafos</strong><a class="headerlink" href="#formato-de-parrafos" title="Permalink to this heading"></a></h3>
 <p>Los párrafos son simplemente fragmentos de texto separados por una o más líneas en blanco. En “<strong>reStructuredText</strong>” se puede dar formato a los párrafos de la siguiente manera:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- Un asterisco: *text* para énfasis (cursiva),
 
@@ -211,10 +212,10 @@
 </ul>
 </section>
 <section id="formato-para-tablas">
-<h3><strong>Formato para Tablas</strong><a class="headerlink" href="#formato-para-tablas" title="Permalink to this headline"></a></h3>
+<h3><strong>Formato para Tablas</strong><a class="headerlink" href="#formato-para-tablas" title="Permalink to this heading"></a></h3>
 <p>En rST se pueden realizar dos tipos de tablas:</p>
 <section id="tabla-compleja">
-<h4><strong>Tabla Compleja</strong><a class="headerlink" href="#tabla-compleja" title="Permalink to this headline"></a></h4>
+<h4><strong>Tabla Compleja</strong><a class="headerlink" href="#tabla-compleja" title="Permalink to this heading"></a></h4>
 <p>Permite adaptar las celdas al requerimiento que tenga el usuario para plasmar la información.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+------------------------+--------------------------+------------------------------+-----------------+</span>
 <span class="o">|</span>     <span class="n">Requerimientos</span>     <span class="o">|</span>         <span class="n">Usuario</span>          <span class="o">|</span>         <span class="n">Contraseña</span>           <span class="o">|</span>  <span class="n">Documentación</span>  <span class="o">|</span>
@@ -267,7 +268,7 @@ del Usuario</p></th>
 </div></blockquote>
 </section>
 <section id="tabla-sencilla">
-<h4><strong>Tabla Sencilla</strong><a class="headerlink" href="#tabla-sencilla" title="Permalink to this headline"></a></h4>
+<h4><strong>Tabla Sencilla</strong><a class="headerlink" href="#tabla-sencilla" title="Permalink to this heading"></a></h4>
 <p>Permite al usuario plasmar la información en una tabla sencilla.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==============</span>  <span class="o">===============</span>  <span class="o">=============</span>
 <span class="n">Requerimientos</span>      <span class="n">Usuario</span>       <span class="n">Contraseña</span>
@@ -306,10 +307,10 @@ del Usuario</p></th>
 </section>
 </section>
 <section id="formato-para-imagenes">
-<h3><strong>Formato para Imágenes</strong><a class="headerlink" href="#formato-para-imagenes" title="Permalink to this headline"></a></h3>
+<h3><strong>Formato para Imágenes</strong><a class="headerlink" href="#formato-para-imagenes" title="Permalink to this heading"></a></h3>
 <p>Las imágenes pueden ser llamadas en la documentación de dos (2) formas:</p>
 <section id="llamado-de-imagen">
-<h4><strong>Llamado de Imagen</strong><a class="headerlink" href="#llamado-de-imagen" title="Permalink to this headline"></a></h4>
+<h4><strong>Llamado de Imagen</strong><a class="headerlink" href="#llamado-de-imagen" title="Permalink to this heading"></a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Ejemplo de una imagen&quot;</span><span class="p">:</span>
 
 <span class="o">..</span> <span class="n">documento</span><span class="o">/</span><span class="n">contribuir</span><span class="o">-</span><span class="mi">01</span>
@@ -342,7 +343,7 @@ del Usuario</p></th>
 </div>
 </section>
 <section id="llamado-de-imagen-por-etiqueta">
-<h4><strong>Llamado de Imagen por Etiqueta</strong><a class="headerlink" href="#llamado-de-imagen-por-etiqueta" title="Permalink to this headline"></a></h4>
+<h4><strong>Llamado de Imagen por Etiqueta</strong><a class="headerlink" href="#llamado-de-imagen-por-etiqueta" title="Permalink to this heading"></a></h4>
 <p>“<strong>Ejemplo de ruta de la imagen</strong>”:</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">|Inicio</span> <span class="pre">de</span> <span class="pre">Sesión</span> <span class="pre">en</span> <span class="pre">GitHub|</span> <span class="pre">image::</span> <span class="pre">img/img1.png</span></code></p>
@@ -385,7 +386,7 @@ Imagen 2. Perfil de ERPyA
 </section>
 </section>
 <section id="formato-para-menu">
-<h3><strong>Formato para Menú</strong><a class="headerlink" href="#formato-para-menu" title="Permalink to this headline"></a></h3>
+<h3><strong>Formato para Menú</strong><a class="headerlink" href="#formato-para-menu" title="Permalink to this heading"></a></h3>
 <p>El menú en la documentación es conformado en el “<strong>index.rst</strong>” principal de la carpeta “<strong>src</strong>”. El documento se encuentra conformado por lo siguiente:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Título</span></code>: Título Principal de la Documentación.</p></li>
@@ -397,7 +398,7 @@ Imagen 2. Perfil de ERPyA
 </ul>
 </section>
 <section id="formato-para-notas-y-alertas">
-<h3><strong>Formato para Notas y Alertas</strong><a class="headerlink" href="#formato-para-notas-y-alertas" title="Permalink to this headline"></a></h3>
+<h3><strong>Formato para Notas y Alertas</strong><a class="headerlink" href="#formato-para-notas-y-alertas" title="Permalink to this heading"></a></h3>
 <p>Para agregar correctamente una nota o alerta, es necesario tomar en cuenta lo siguiente:</p>
 <blockquote>
 <div><ul class="simple">
@@ -410,10 +411,10 @@ Imagen 2. Perfil de ERPyA
 </section>
 </section>
 <section id="reglas-para-crear-una-documentacion">
-<h2><strong>Reglas para Crear una Documentación</strong><a class="headerlink" href="#reglas-para-crear-una-documentacion" title="Permalink to this headline"></a></h2>
+<h2><strong>Reglas para Crear una Documentación</strong><a class="headerlink" href="#reglas-para-crear-una-documentacion" title="Permalink to this heading"></a></h2>
 <p>E.R.P. Consultores y Asociados, C.A. tiene establecido como estándar de nombre de archivos, directorio e imágenes de la documentación en “<strong>reStructuredText</strong>” lo siguiente.</p>
 <section id="nombre-del-archivo-de-la-documentacion">
-<h3><strong>Nombre del Archivo de la Documentación</strong><a class="headerlink" href="#nombre-del-archivo-de-la-documentacion" title="Permalink to this headline"></a></h3>
+<h3><strong>Nombre del Archivo de la Documentación</strong><a class="headerlink" href="#nombre-del-archivo-de-la-documentacion" title="Permalink to this heading"></a></h3>
 <p>El nombre del archivo debe respetar lo siguiente:</p>
 <ul class="simple">
 <li><p>Debe ser un nombre que describa la funcionalidad.</p></li>
@@ -426,7 +427,7 @@ Imagen 2. Perfil de ERPyA
 <p><strong>Ejemplo de un nombre de archivo</strong>: setup-vmax-220.rst</p>
 </section>
 <section id="directorio-de-la-documentacion">
-<h3><strong>Directorio de la Documentación</strong><a class="headerlink" href="#directorio-de-la-documentacion" title="Permalink to this headline"></a></h3>
+<h3><strong>Directorio de la Documentación</strong><a class="headerlink" href="#directorio-de-la-documentacion" title="Permalink to this heading"></a></h3>
 <p>Dependiendo de lo complejo de la documentación se define la estructura de directorios, sea lo mas específico posible y preguntese primero lo siguiente:</p>
 <ul class="simple">
 <li><p>¿La documentación tiene muchas secciones?</p></li>
@@ -487,7 +488,7 @@ directorio por funcionalidad,</p>
 </div>
 </section>
 <section id="directorio-de-las-imagenes-de-la-documentacion">
-<h3><strong>Directorio de las Imágenes de la Documentación</strong><a class="headerlink" href="#directorio-de-las-imagenes-de-la-documentacion" title="Permalink to this headline"></a></h3>
+<h3><strong>Directorio de las Imágenes de la Documentación</strong><a class="headerlink" href="#directorio-de-las-imagenes-de-la-documentacion" title="Permalink to this heading"></a></h3>
 <p>El directorio de las imágenes se debe crear dentro del directorio de la funcionalidad, un ejemplo de ello puede ser el siguiente:</p>
 <p>Siguiendo con el ejemplo anterior, si se desea agregar alguna imagen al documento “<strong>setup-vmax-220.rst</strong>” se debe crear un directorio
 llamado “<strong>resources</strong>” dentro del directorio “<strong>fiscal-printer</strong>”, el resultado quedaría como el siguiente:</p>
@@ -529,9 +530,9 @@ llamado “<strong>resources</strong>” dentro del directorio “<strong>fiscal
 </section>
 </section>
 <section id="comandos-para-documentacion">
-<h2><strong>Comandos para Documentación</strong><a class="headerlink" href="#comandos-para-documentacion" title="Permalink to this headline"></a></h2>
+<h2><strong>Comandos para Documentación</strong><a class="headerlink" href="#comandos-para-documentacion" title="Permalink to this heading"></a></h2>
 <section id="descargar-repositorio">
-<h3><strong>Descargar Repositorio</strong><a class="headerlink" href="#descargar-repositorio" title="Permalink to this headline"></a></h3>
+<h3><strong>Descargar Repositorio</strong><a class="headerlink" href="#descargar-repositorio" title="Permalink to this heading"></a></h3>
 <p>Para descargar el repositorio en la carpeta local y poder contribuir a la documentación, es necesario ejecutar los siguientes comandos en la terminal de “<strong>Visual Studio Code</strong>”.</p>
 <p>Comando para ubicarse en la carpeta donde se va a almacenar el repositorio <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/opt/Development/Workspace/</span></code></p>
 <p>Copie la url del repositorio de <a class="reference external" href="http://erpya.com">ERPyA</a> con la opción “<strong>Clone or download</strong>”</p>
@@ -546,7 +547,7 @@ llamado “<strong>resources</strong>” dentro del directorio “<strong>fiscal
 </div>
 </section>
 <section id="actualizar-repositorio">
-<h3><strong>Actualizar Repositorio</strong><a class="headerlink" href="#actualizar-repositorio" title="Permalink to this headline"></a></h3>
+<h3><strong>Actualizar Repositorio</strong><a class="headerlink" href="#actualizar-repositorio" title="Permalink to this heading"></a></h3>
 <p>Para contribuir a la documentación es necesario tener el repositorio actualizado, para ello se debe ejecutar los siguientes comandos:</p>
 <p>Comando para ubicarse en la carpeta donde se encuentra el repositorio <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/opt/Development/Workspace/docs</span></code></p>
 <p>Comando para traer los cambios del repositorio de <a class="reference external" href="http://erpya.com">ERPyA</a> <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span> <span class="pre">upstream</span></code></p>
@@ -561,7 +562,7 @@ llamado “<strong>resources</strong>” dentro del directorio “<strong>fiscal
 </div>
 </section>
 <section id="actualizar-el-servicio-de-prueba">
-<h3><strong>Actualizar el Servicio de Prueba</strong><a class="headerlink" href="#actualizar-el-servicio-de-prueba" title="Permalink to this headline"></a></h3>
+<h3><strong>Actualizar el Servicio de Prueba</strong><a class="headerlink" href="#actualizar-el-servicio-de-prueba" title="Permalink to this heading"></a></h3>
 <p>Hacer commit en la rama creada para el documento.</p>
 <p>Ubicarse en 159.65.189.53:8000/projects/documentacion-uestandar/builds/ o en su defecto <a class="reference external" href="http://docs.erpya.com/projects/documentacion-uestandar/builds/">http://docs.erpya.com/projects/documentacion-uestandar/builds/</a></p>
 <blockquote>
